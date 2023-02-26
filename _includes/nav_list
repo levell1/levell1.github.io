@@ -50,7 +50,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "csharp" %}
+                    {% if category[0] == "Csharp" %}
                         <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -58,7 +58,7 @@
         <span class="nav__sub-title">Blog</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "markdown" %}
+                    {% if category[0] == "MarkDown" %}
                         <li><a href="/categories/markdown" class=""> MarkDown ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
