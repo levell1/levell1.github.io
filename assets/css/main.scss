@@ -4,7 +4,7 @@ search: false
 ---
 
 @charset "utf-8";
-
+@import "minimal-mistakes/skins/dark"; // skinminimal-mistakes
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -23,4 +23,4 @@ search: false
     font-style: normal;
 }
 
-//@import "minimal-mistakes/skins/dark"; // skinminimal-mistakes
+@import "minimal-mistakes/skins/dark"; // skinminimal-mistakes
