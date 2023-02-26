@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin  : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin  : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "Study Blog | 공부기록"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "PostIT(포스팃)"
+description              : "C#,Unity,UnReal 공뷰"
 url                      : "https://levell1.github.io"
 baseurl                  : "levell1/levell1.github.io"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -65,7 +65,7 @@ atom_feed:
 
 search                   : true
 search_full_content      : true
-search_provider          : google # lunr (default), algolia, google
+search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -111,8 +111,8 @@ author:
   name             : "PostIT(포스팃)"
   avatar           : "/assets/images/Cat1.jpg"
   bio              : "C#,Unity,UnReal 공뷰"
-  location         : 
-  email            :
+  location         : #
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
