@@ -12,22 +12,21 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin  : "defalut" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko"
-title                    : "Study Blog | 공부기록"
+locale                   : "en-US"
+title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "PostIT(포스팃)"
-description              : "C#,Unity,UnReal 공뷰"
-url                      : "https://levell1.github.io"
-baseurl                  : "levell1/levell1.github.io"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -54,17 +53,14 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-
 reCaptcha:
   siteKey                :
   secret                 :
-
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-
-search                   : true
-search_full_content      : true
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
@@ -108,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "PostIT(포스팃)"
-  avatar           : "/assets/images/Cat1.jpg"
-  bio              : "C#,Unity,UnReal 공뷰"
-  location         : #
-  email            : #
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -280,6 +276,7 @@ compress_html:
   ignore:
     envs: development
 
+
 # Defaults
 defaults:
   # _posts
@@ -290,8 +287,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
-      mathjax: true
       
