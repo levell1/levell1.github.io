@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "공부 기록 블로그"
+title                    : "공부 기록 블로그 📒 "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "📖종욱📖"
