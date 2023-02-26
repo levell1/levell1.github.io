@@ -19,8 +19,8 @@ locale                   : "ko"
 title                    : "공부 기록 블로그 📒 "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "📖종욱📖"
-description              : "📖StudyBlog📖"
+name                     : "📚 종욱 📚"
+description              : "📚 StudyBlog 📚"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "종 욱"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "📖공부중📖"
+  bio              : "📖 공 부 중 📖"
   location         : 
   email            :
   links:
@@ -290,4 +290,5 @@ defaults:
       comments: true
       share: true
       related: true
+      
       
