@@ -291,4 +291,4 @@ defaults:
       share: true
       related: true
       mathjax: true
-      sidebar_main: true
+      
