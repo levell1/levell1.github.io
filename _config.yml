@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "공부 기록 블로그 📒 "
+title                    : "개발 공부 기록BloG 📒 "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "📚 종욱 📚"
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "종 욱"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "📖 공 부 중 📖"
+  avatar           : "/assets/images/Cat1.jpg"
+  bio              : "📖 개발 공부 📖"
   location         : 
   email            :
   links:
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/levell1"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/levell1"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
