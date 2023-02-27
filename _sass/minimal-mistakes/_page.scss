@@ -356,18 +356,18 @@ body {
 .page__taxonomy-item-category {
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-  background-color: #f5f5dc;
+  background-color: #59657c;
   color: #000;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: #505050;
   }
 }
 .page__taxonomy-item-tag {
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-  background-color: #557579;
+  background-color: #343c49;
   color: #000;
 
   &:hover {
