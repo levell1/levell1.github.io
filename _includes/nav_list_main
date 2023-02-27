@@ -38,6 +38,15 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Unity</span> 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Unity" %}
+                        <li><a href="/categories/#unity" class=""> Unity ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
       </li>
   </ul>
 </nav>
