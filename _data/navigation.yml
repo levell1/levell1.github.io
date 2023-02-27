@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "👉 Home "
-    url: https://levell1.github.io/
+    url: /index.html
   - title: "CateGory 🔖"
     url: /categories/
 #  - title: "Sample Posts"
