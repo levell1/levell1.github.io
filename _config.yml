@@ -285,12 +285,12 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      # author_profile: true
+      # sidebar_main: true
       read_time: false
       comments: false
       share: false
       related: true
-      sidebar_main: true
       show_date: true
       search: false
       
