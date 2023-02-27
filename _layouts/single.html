@@ -58,28 +58,30 @@ layout: default
       </section>
 
       
+      
+      
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
-        {% include page__taxonomy.html %}
+        <h4 class="page__meta-title"><span style="font-family:'Humanbumsuk';" ><p style="font-size:300%" >&nbsp&nbsp&nbsp&nbsp감사합니다. </p></span></h4>
       </footer>
-
-      {% include post_pagination.html %}
     </div>
+    
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
     {% endif %}
   </article>
-
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+      {% include post_pagination.html %}<br><br><br><br>
       <h4 class="page__related-title">{{ "최근 글 10 개 :)" }}</h4>
         {% for post in site.related_posts limit:10 %}
           {% include archive-single3.html %}
         {% endfor %}
     </div>
+    
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
   {% elsif page.id and page.related %}
     <div class="page__related">
