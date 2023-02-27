@@ -1,4 +1,4 @@
-<!--첫 번째 문단-->
+
 {% assign cat = page.categories[0] %}
 {% assign cat_list = site.categories[cat] %}
 {% for post in cat_list %}
@@ -15,7 +15,7 @@
   {% endif %}
 {% endfor %}
 
-<!--두 번째 문단-->
+
 {% if prev_post or next_post %}
   <nav class="pagination">
     {% if prev_post %}
