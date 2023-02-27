@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "👉 Home "
-    url: /index.html
+    url: /index.markdown
   - title: "CateGory 🔖"
     url: /categories/
 #  - title: "Sample Posts"
