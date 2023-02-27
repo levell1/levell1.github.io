@@ -354,6 +354,8 @@ body {
   }
 }
 .page__taxonomy-item-category {
+  margin-left: 10px;
+  margin-right: 10px;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
   background-color: #59657c;
