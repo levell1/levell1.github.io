@@ -287,9 +287,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
       sidebar_main: true
       show_date: true
-      search: true
+      search: false
+      
