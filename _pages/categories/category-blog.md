@@ -1,5 +1,5 @@
 ---
-title: "blogpages"
+title: "bloG"
 layout: archive
 permalink: categories/blog
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-title:  "Blog 사용법 1 (Text,font,Button)"
+title:  "[Blog Post-IT]  Text,font,Button"
 excerpt: " Text font Button "
 
 categories:
