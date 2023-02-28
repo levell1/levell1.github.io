@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "개발 공부 기록BloG 📒 "
+title                    : "Post IT 📒 "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "📚 종욱 📚"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "|  &nbsp&nbsp  종 욱  &nbsp&nbsp   |"
   avatar           : "/assets/images/Cat1.jpg"
-  bio              : "📖 개발 공부 📖"
+  bio              : "📖 Study MeMo 📖"
   location         : 
   email            :
   links:

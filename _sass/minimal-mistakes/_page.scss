@@ -359,23 +359,31 @@ body {
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
   background-color: #59657c;
-  color: #000;
+  color: #FFCD28;
 
+  &:visited {
+    color:  #FFCD28;
+  }
   &:hover {
     text-decoration: none;
-    color: #505050;
+    color: #C0FFFF;
   }
+  
 }
 .page__taxonomy-item-tag {
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-  background-color: #343c49;
-  color: #000;
+  background-color: #59657c;
+  color: #FFF064;
 
+  &:visited {
+    color:  #FFF064;
+  }
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: #C0FFFF;
   }
+  
 }
 
 .taxonomy__section {
