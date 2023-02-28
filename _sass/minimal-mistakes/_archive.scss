@@ -34,8 +34,21 @@
 .archive__subtitle {
   margin: 1.414em 0 0.2em;
   padding-bottom: 0.2em;
-  font-size: $type-size-5;
-  color: $muted-text-color;
+  font-size: 1.5em;
+  color: #B9E2FA;
+
+  border-bottom: 1px solid $border-color;
+
+  + .list__item .archive__item-title {
+    margin-top: 0.5em;
+  } 
+}
+.archive__subtitle1 {
+  margin: 1.414em 0 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 1.5em;
+  color: #ffcd28;
+
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {

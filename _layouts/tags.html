@@ -1,5 +1,6 @@
 ---
 layout: archive
+classes: wide
 ---
 
 {{ content }}
@@ -16,8 +17,8 @@ layout: archive
     {% for tag in site.tags %}
       {% if tag[1].size == i %}
         <li>
-          <a href="#{{ tag[0] | slugify }}">
-            <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          <a style="font-size: 1.5em;font-family:Dovemayo_gothic;" href="#{{ tag[0] | slugify }}">
+            <strong style="color: #B9E2FA;">{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
       {% endif %}
@@ -35,7 +36,7 @@ layout: archive
           <article class="archive-item">
             <div>
                 <span>
-                  <a href="{{ post.url }}">{{post.title}}</a>&nbsp
+                  <a  href="{{ post.url }}">{{post.title}}</a>&nbsp
                 </span>
                 <small> 
                   <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
