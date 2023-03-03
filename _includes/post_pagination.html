@@ -19,14 +19,14 @@
 {% if prev_post or next_post %}
   <nav class="pagination">
     {% if prev_post %}
-      <a href="{{ prev_post.url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}[ {{ prev_post.title }} ]</a>
+      <a href="{{ prev_post.url }}" class="pagination--pager"><span class="prev_next">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span>[ {{ prev_post.title }} ]</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}[ 첫 번째 글 ]</a>
+      <a href="#" class="pagination--pager disabled">[ 첫 번째 글 ]</a>
     {% endif %}
     {% if next_post %}
-      <a href="{{ next_post.url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}[ {{ next_post.title }} ]</a>
+      <a href="{{ next_post.url }}" class="pagination--pager">[ {{ next_post.title }} ]<span class="prev_next">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span></a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}[ 마지막 글 ]</a>
+      <a href="#" class="pagination--pager disabled">[ 마지막 글 ]</a>
     {% endif %}
   </nav>
 {% endif %}

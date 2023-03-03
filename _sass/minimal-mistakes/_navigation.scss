@@ -121,8 +121,10 @@
   &--pager {
     display: block;
     padding: 1em 2em;
-    float: left;
-    width: 50%;
+    //float: left;
+    //width: 50%;
+    //float: left;
+    width: 100%;
     font-family: $sans-serif;
     font-size: $type-size-5;
     font-weight: bold;
@@ -132,6 +134,9 @@
     border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
+    .prev_next{
+      color: #ffc83d;
+    }
     &:hover {
       @include yiq-contrasted($muted-text-color);
     }
@@ -148,7 +153,7 @@
     }
 
     &.disabled {
-      color: rgba($muted-text-color, 0.5);
+      color: rgba(#ffc83d, 0.5);
       pointer-events: none;
       cursor: not-allowed;
     }

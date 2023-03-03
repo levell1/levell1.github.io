@@ -56,6 +56,12 @@ std::cout << "Hello. World! >> std::endl;
 </div>
 
 ##  간단  
+```
+<div class="notice">
+  <h4>블로그 사용하기</h4>
+  <p>블로그 1</p>
+</div>
+```  
 <div class="notice">
   <h4>블로그 사용하기</h4>
   <p>블로그 1</p>
