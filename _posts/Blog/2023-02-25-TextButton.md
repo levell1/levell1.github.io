@@ -1,5 +1,5 @@
 ---
-title:  "[Blog Post-IT]  Text,font,Button"
+title:  "[Blog Post-IT]  폰트설정, Text, Button"
 excerpt: " Text font Button "
 
 categories:
@@ -37,34 +37,34 @@ date: 2023-02-26
 
 ```
 <div class="notice--primary" markdown="1">
-안에 `코드`도 넣을 수 있다. 아래처럼! 
-  (```c++
-std::cout << "Hello. World! >> std::endl;
+`Html` 코드 
+  (```c#
+Console.WriteLine("C#코드");
   ```) 
-- C++ 열심히
-- 공부하자
+- C#, Unity
+- C++, Unreal
 </div>
 ```  
 
 <div class="notice--primary" markdown="1">
-안에 `코드`도 넣을 수 있다. 아래처럼! 
-  ```c++
-std::cout << "Hello. World! >> std::endl;
+`Html` 코드
+  ```c#
+Console.WriteLine("C#코드");
   ``` 
-- C++ 열심히
-- 공부하자
+- C#, Unity
+- C++, Unreal
 </div>
 
 ##  간단  
 ```
 <div class="notice">
-  <h4>블로그 사용하기</h4>
-  <p>블로그 1</p>
+  <h4> Post-IT블로그 </h4>
+  <p> Post-IT </p>
 </div>
 ```  
 <div class="notice">
-  <h4>블로그 사용하기</h4>
-  <p>블로그 1</p>
+  <h4> Post-IT블로그 </h4>
+  <p> Post-IT </p>
 </div>
 
 ##  버튼  
