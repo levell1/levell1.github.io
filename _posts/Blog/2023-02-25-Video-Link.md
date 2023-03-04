@@ -22,6 +22,7 @@ date: 2023-02-26
 
 ### 1.  HTML 태그 사용  
 iframe태그 : 유튜브 영상에 마우스 우클릭 후 소스 코드 복사 후 포스트 파일에 붙여넣기. HTML의 iframe태그로 이루어진 코드가 나온다.
+{: .notice}
 
 <iframe width="894" height="503" src="https://www.youtube.com/embed/73V3xrfiYMo" title="[MV] YOUNHA(윤하) _ 사건의 지평선(Event Horizon)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 

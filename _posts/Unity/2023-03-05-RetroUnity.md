@@ -1,9 +1,9 @@
 ---
-title:  "[Go-Unity 1]"
+title:  "[Retro-Unity] 1. "
 excerpt: ""
 
 categories:
-    - Go Unity
+    - Retro Unity
 tags:
     - [Unity, 고박사]
 
@@ -15,7 +15,7 @@ last_modified_at: 2023-03-04
 
 ---
 - - -
-<br><br>
+<br>
 
 #   &nbsp;&nbsp;&nbsp;2023-02-25 첫글 Post-IT Blog 시작
 

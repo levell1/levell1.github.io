@@ -46,10 +46,11 @@
   }
 
   a {
-    color: mix(#000, $notice-color, 10%);
+    color: #ACF3FF;
+    font-weight: bolder;
 
     &:hover {
-      color: mix(#000, $notice-color, 50%);
+      color: mix(#ACF3FF, $notice-color, 50%);
     }
   }
 
