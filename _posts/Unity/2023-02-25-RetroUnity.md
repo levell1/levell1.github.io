@@ -1,17 +1,18 @@
 ---
-title:  "기본 페이지"
-excerpt: "기본 페이지"
+title:  "[Retro-Unity 1]"
+excerpt: ""
 
-# categories:
-#     - Blog
-# tags:
-#     - [Blog]
+categories:
+    - Retro Unity
+tags:
+    - [Unity, 고박사]
 
-# toc: true
-# toc_sticky: true
+toc: true
+toc_sticky: true
  
 date: 2023-03-04 
 last_modified_at: 2023-03-04 
+
 ---
 - - -
 <br><br>

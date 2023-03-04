@@ -26,12 +26,18 @@
         <span class="nav__sub-title">Unity</span> 
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unity" %}
-                        <li><a href="/categories/unity" class=""> Unity ({{category[1].size}})</a></li>
+                    {% if category[0] == "Go Unity" %}
+                        <li><a href="/categories/go-unity" class=""> Unity Study1 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Retro Unity" %}
+                        <li><a href="/categories/retro-unity" class=""> Unity Study2 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
 
 
