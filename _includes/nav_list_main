@@ -41,7 +41,7 @@
 
 
 
-
+            
 
 
 
@@ -71,6 +71,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Book" %}
                         <li><a href="/categories/book" class=""> Book ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Daily" %}
+                        <li><a href="/categories/daily" class=""> Daily ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
