@@ -19,7 +19,7 @@ locale                   : "ko"
 title                    : "Post IT 📒 "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "📚 종욱 📚"
+name                     : "📚 포스팃 📚"
 description              : "📚 StudyBlog 📚"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "|  &nbsp&nbsp  종 욱  &nbsp&nbsp   |"
+  name             : "|  &nbsp&nbsp  종 잇  &nbsp&nbsp   |"
   avatar           : "/assets/images/Cat1.jpg"
   bio              : "📖 Study Memo 📖"
   location         : 
