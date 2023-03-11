@@ -1,0 +1,57 @@
+---
+title:  "[Go-Unity] 3. C# 스크립트 이벤트 함수 "
+excerpt: "이벤트함수 초기화, 업데이트, 파괴, 종료"
+
+categories:
+    - Go Unity
+tags:
+    - [Unity, 고박사]
+
+toc: true
+toc_sticky: true
+ 
+date: 2023-03-11
+last_modified_at: 2023-03-11
+
+---
+- - -
+
+공부한 [고박사의 유니티 기초](https://www.inflearn.com/course/%EA%B3%A0%EB%B0%95%EC%82%AC-%EC%9C%A0%EB%8B%88%ED%8B%B0-%EA%B8%B0%EC%B4%88/dashboard)를 복습하면서 기록하려고 합니다. 
+{: .notice--info}
+
+# C# 스크립트
+
+##  Debug.log
+```
+Debug.Log("콘솔출력");
+```
+
+## 함수
+### 초기화를 위한 
+`Awake` :오브젝트가 처음 실행될 때  
+`Start` : 오브젝트속 스크립트 첫 실행  
+`OnEnable` : 오브젝트가 실행될 때마다   
+
+### 업데이트 
+`Update` : 프레임마다 호출  
+`LateUpdate` : Update 이후 실행  
+`FixedUpdate` : 프레임 영향을 받지 않고 일정 간격 호출  
+
+### 파괴
+`OnDestroy` : 오브젝트가 파괴될 때 호출  
+
+### 종료
+`OnApplicationQuit` : 게임이 종료될 때 1회 (오브젝트가 활성화되어 있어야)  
+`OnDisable` : 컴포넌트가 비활성화될 때마다  
+
+####    `C# Script(test)`  
+![image](https://user-images.githubusercontent.com/96651722/224494393-452026b6-6332-479d-b62e-c3a295a884ae.png)  
+####    `Console View`  
+![image](https://user-images.githubusercontent.com/96651722/224494144-e51b837d-ef9a-4092-a55a-4888f15c62e6.png)
+
+<br>
+
+참고 : [유니티](https://docs.unity3d.com/kr/)
+[맨 위로 이동하기](#){: .btn .btn--info .btn--small }{: .align-right}
+<br>
+- - -
