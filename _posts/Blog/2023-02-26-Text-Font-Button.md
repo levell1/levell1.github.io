@@ -38,7 +38,7 @@ date: 2023-02-26
 ```
 <div class="notice--primary" markdown="1">
 `Html` 코드 
-  (```c#
+  (```c#      ()제거
 Console.WriteLine("C#코드");
   ```) 
 - C#, Unity

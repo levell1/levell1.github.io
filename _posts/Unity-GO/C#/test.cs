@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    //처음
+    //초기화
     private void Awake(){
         Debug.Log("오브젝트가 처음실행될 때");
     }
     private void Start(){
         Debug.Log("오브젝트속 스크립트 첫 실행");
     }
-    private void Onenable(){
+    private void OnEnable(){
         Debug.Log("오브젝트가 실행될 때마다");
     }
 
-    //초기화
+    //업데이트
     private void Update(){
         Debug.Log("프레임마다 호출");
     }
@@ -26,11 +26,11 @@ public class test : MonoBehaviour
         Debug.Log("프레임영향을 받지않고 일정간격 호출");
     }
 
-    //파괴,종료
+    //파괴
     private void OnDestroy(){
         Debug.Log("오브젝트 파괴될 때 호출");
     }
-    //
+    //종료
     private void OnApplicationQuit(){
         Debug.Log("게임이 종료될 때 1회 (오브젝트가 활성화 되어있어야)");
     }
