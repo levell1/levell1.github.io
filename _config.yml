@@ -306,5 +306,5 @@ defaults:
       share: false
       related: true
       show_date: true
-      search: false
+      search: true
       
