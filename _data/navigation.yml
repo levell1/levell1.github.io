@@ -2,5 +2,7 @@
 main:
   - title: "CateGory 🔖"
     url: /categories/
-#  - title: "Sample Posts"
-#    url: /year-archive/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  - title: "🔍 검색"
+    url: /search/
