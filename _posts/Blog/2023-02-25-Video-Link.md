@@ -1,5 +1,5 @@
 ---
-title:  "[Blog Post-IT] 영상 추가"
+title:  "[Blog Github.io] 영상 추가"
 excerpt: " Video"
 
 categories:
@@ -39,6 +39,6 @@ video helper 사용하기
 
 <br>
 
-[맨 위로 이동하기](#){: .btn .btn--info .btn--small }{: .align-right}
+[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

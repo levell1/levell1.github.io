@@ -60,6 +60,6 @@ date: 2023-02-26
 
 <br>
 
-[맨 위로 이동하기](#){: .btn .btn--info .btn--small }{: .align-right}
+[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

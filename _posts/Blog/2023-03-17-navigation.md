@@ -1,5 +1,5 @@
 ---
-title:  "[Blog Post-IT] 우측상단 Navigatio ,검색(search)기능 추가"
+title:  "[Blog Github.io] 우측상단 Navigation ,검색(search)기능 추가"
 excerpt: "Navigation ,search "
 
 categories:
@@ -40,6 +40,6 @@ date: 2023-03-17
 
 <br>
 
-[맨 위로 이동하기](#){: .btn .btn--info .btn--small }{: .align-right}
+[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

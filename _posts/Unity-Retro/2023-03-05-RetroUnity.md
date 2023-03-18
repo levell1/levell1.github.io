@@ -21,6 +21,6 @@ last_modified_at: 2023-03-04
 
 <br>
 
-[맨 위로 이동하기](#){: .btn .btn--info .btn--small }{: .align-right}
+[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

@@ -1,5 +1,5 @@
 ---
-title:  "[Blog Post-IT]  폰트설정, Text, Button"
+title:  "[Blog Github.io]  폰트설정, Text, Button"
 excerpt: " Text font Button "
 
 categories:
@@ -80,6 +80,6 @@ Console.WriteLine("C#코드");
 
 <br>
 
-[맨 위로 이동하기](#){: .btn .btn--info .btn--small }{: .align-right}
+[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
