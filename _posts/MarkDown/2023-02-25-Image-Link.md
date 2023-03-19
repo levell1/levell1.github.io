@@ -42,9 +42,9 @@ date: 2023-02-26
 *   ### 페이지네 문단이동  
 형식 (```[설명어](문단의 주소)```)  
 ```
-[3](#3-blockquote)
+[1.버튼 바로가기](#1버튼)
 ```
-[3.blockquote 바로가기](#3-blockquote)
+[1.버튼 바로가기](#1버튼)
 
 *   ### 그림삽입  
 ```
@@ -54,7 +54,7 @@ date: 2023-02-26
 
 *   ### 그림에 링크 걸기  
 ```
-[![image](이미지주소)(이동하려는 링크 주소)
+[![image](이미지주소)](이동하려는 링크 주소)
 ```  
 [![image](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)](https://www.google.com)  
 

@@ -5,7 +5,7 @@ excerpt: "Navigation ,search "
 categories:
     - Blog
 tags:
-    - [Blog]
+    - [Blog, Minimal Mistakes]
 
 toc: true
 toc_sticky: true
