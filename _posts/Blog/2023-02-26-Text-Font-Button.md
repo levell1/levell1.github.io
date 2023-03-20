@@ -14,26 +14,36 @@ date: 2023-02-26
 - - -
 <br><br>
 
+---
+# 1. 폰트 설정하기
+## 1) 폰트사이트 - [눈누](https://noonnu.cc/)  마음에드는 폰트 선택   
+## 2) 웹폰트로 사용 복사후 main.scss에 추가  
+![image](https://user-images.githubusercontent.com/96651722/226320419-4500bd01-f902-4e44-b009-26b5e1970053.png){: .align-left}{: width="40%" height="40%"}
+![image](https://user-images.githubusercontent.com/96651722/226320491-1badb422-e0ea-4dfd-adc0-d70ff73c0f7f.png){: .align-right}{: width="50%" height="50%"} 
 
-# Blog 사용법 1
+<br><br><br><br><br><br><br><br>
 
-## 폰트 설정하기
-### 1. 폰트사이트 - [눈누](https://noonnu.cc/)  마음에드는 폰트 선택   
-### 2. 웹폰트로 사용 복사후 main.scss에 추가  
-### 3. _variables.scss 에 추가   
+
+## 3) _variables.scss 에 추가   
 
 ![image](https://user-images.githubusercontent.com/96651722/221398446-bc6895c6-8eea-4954-88eb-5e35cc4d455e.png)  
   
-##  공지사항  
+<br><br><br>
+---
+
+# 2. 글 강조  
 ![image](https://user-images.githubusercontent.com/96651722/221509144-3a028211-67e5-4ce4-8857-24c25562046d.png)
 ```
-**<u>공지 사항</u>** 하하
+**<u>글 강조</u>** 하하
 {: .notice--primary}
 ```  
-**<u>공지 사항</u>** 하하
+**<u>글 강조</u>** 하하
 {: .notice--primary}  
 
-##  HTML코드  
+<br><br><br>
+
+---
+# 3.  HTML코드  
 
 ```
 <div class="notice--primary" markdown="1">
@@ -55,7 +65,10 @@ Console.WriteLine("C#코드");
 - C++, Unreal
 </div>
 
-##  간단  
+<br><br><br>
+
+---
+# 4.  간단  
 ```
 <div class="notice">
   <h4> Post-IT블로그 </h4>
@@ -67,7 +80,10 @@ Console.WriteLine("C#코드");
   <p> Post-IT </p>
 </div>
 
-##  버튼  
+<br><br><br>
+
+---
+# 5.  버튼  
 
 ![image](https://user-images.githubusercontent.com/96651722/221512400-cacf42d0-efb6-4c73-96f8-6a32307bbb5f.png)  
 
