@@ -1,5 +1,5 @@
 ---
-title: "고박사의 유니티 기초"
+title: "유니티 기능 정리"
 layout: archive
 permalink: categories/memo-unity
 author_profile: true
