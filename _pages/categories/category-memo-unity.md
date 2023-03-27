@@ -1,5 +1,5 @@
 ---
-title: "유니티 기능 정리"
+title: "유니티 메모장"
 layout: archive
 permalink: categories/memo-unity
 author_profile: true
