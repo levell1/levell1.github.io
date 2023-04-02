@@ -120,6 +120,6 @@ public class GoldManager : MonoBehaviour
 
 <br><br>
 
----
-
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
+<br>
+- - -

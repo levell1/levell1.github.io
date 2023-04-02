@@ -47,6 +47,6 @@ public class NotateNumber
 
 <br><br>
 
----
-
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
+<br>
+- - -
