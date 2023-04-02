@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 2. 조이스틱(JoyStick)"
+title:  "수정 [Memo-Unity] 2. 조이스틱(JoyStick)"
 excerpt: ""
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-03-26
+date: 2023-04-3
 
 ---
 - - -
@@ -46,5 +46,7 @@ public class NotateNumber
 
 
 <br><br>
+
+---
 
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
