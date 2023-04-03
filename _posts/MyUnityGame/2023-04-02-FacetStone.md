@@ -16,6 +16,9 @@ date: 2023-04-02
 - - -
 <br>
 
+좋아하는 게임의 기능을 만들어보고 싶어서 만들어 보았다.
+{: .notice--info}
+
 #   돌세공
 기본 화면  
 ![image](https://user-images.githubusercontent.com/96651722/229372515-89137c7e-5407-4a95-b2e5-8c4ad2e57ca7.png){:style="border:1px solid #eaeaea; border-radius: 7px; padding: 0px;"}  
