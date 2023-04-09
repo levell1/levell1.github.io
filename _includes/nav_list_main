@@ -8,21 +8,6 @@
             📂 <span style="font-family:'Dovemayo_gothic';">전체 글 수 {{sum}} 개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">C/C++/C#</span>          
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Cpp" %}
-                        <li><a href="/categories/cpp" class="nav_li">C ++ ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Csharp" %}
-                        <li><a href="/categories/csharp" class="">C # ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">Unity</span> 
             <ul>
                 {% for category in site.categories %}
@@ -53,7 +38,6 @@
                 {% endfor %}
             </ul>
             
-
         <span class="nav__sub-title">Etc</span>
             <ul>
                 {% for category in site.categories %}
