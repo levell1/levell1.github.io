@@ -5,7 +5,7 @@ excerpt: ""
 categories:
     - Retro Unity
 tags:
-    - [Unity, 고박사]
+    - [Unity, Retro]
 
 toc: true
 toc_sticky: true
