@@ -26,6 +26,13 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
+                        {% if category[0] == "Sparta Unity" %}
+                            <li><a href="/categories/sparta" class=""> Unity Sparta ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
                         {% if category[0] == "MeMo Unity" %}
                             <li><a href="/categories/memo-unity" class=""> Unity 메모장 ({{category[1].size}})</a></li>
                         {% endif %}
@@ -44,6 +51,13 @@
                     {% for category in site.categories %}
                         {% if category[0] == "Retro Game" %}
                             <li><a href="/categories/retro-game" class=""> Retro Game ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Sparta Game" %}
+                            <li><a href="/categories/sparta-game" class=""> Sparta Game ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
