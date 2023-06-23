@@ -17,25 +17,25 @@ date: 2023-06-06
 
 # 1. 배경, 캐릭터 구성
 
-> 배경, 캐릭터 생성후  
-> Order in Layer 확인하기  
+> - 배경, 캐릭터 생성후  
+> - Order in Layer 확인하기  
 {: .notice--info}
 
 <br>
 
 # 2. 애니메이션 입히기
 
->   Animation 생성  
->   Loop Time(반복)확인  
->   두개의 그림을 반복  
+>   - Animation 생성  
+>   - Loop Time(반복)확인  
+>   - 두개의 그림을 반복  
 {: .notice--info}
 
 <br>
 
 # 3. 캐릭터 움직이기
 
-> Edit → Preferences → External Tools → Vs Code 등록  
-> 코드 작성  
+> - Edit → Preferences → External Tools → Vs Code 등록  
+> - 코드 작성  
 {: .notice--info}
 
 <br>
@@ -168,8 +168,8 @@ public class rain : MonoBehaviour
 
 # 5. GameManager
 
-> GameManager란? 게임 전체를 조율하는 오브젝트!  
-> 점수 / 다시 시작 / 3번 째 다시 시작에 부스터 / 광고보기 등  
+> - GameManager란? 게임 전체를 조율하는 오브젝트!  
+> - 점수 / 다시 시작 / 3번 째 다시 시작에 부스터 / 광고보기 등  
 {: .notice--info}
 
 <br>
@@ -256,18 +256,18 @@ public class GameManager : MonoBehaviour
 
 # 6. 점수 시스템 
 
-> Canvas 생성, Text 생성(점수) 설정
-> GameManager - 싱글톤
-> 맞으면 점수 올라가고, 표시
+> - Canvas 생성, Text 생성(점수) 설정
+> - GameManager - 싱글톤
+> - 맞으면 점수 올라가고, 표시
 {: .notice--info}
 <br><br>
 
 # 7. 게임 끝내기
 
-> Retry 판넬 만들기(Canvas)
-> Active 로 종료시 보이게 하기
-> 판넬에 버튼추가 클릭시 retry 함수 다시시작(Main Scene을 새로고침 한다.)
-> onclick -> panel.retry
+> - Retry 판넬 만들기(Canvas)
+> - Active 로 종료시 보이게 하기
+> - 판넬에 버튼추가 클릭시 retry 함수 다시시작(Main Scene을 새로고침 한다.)
+> - onclick -> panel.retry
 {: .notice--info}
 <br><br>
 

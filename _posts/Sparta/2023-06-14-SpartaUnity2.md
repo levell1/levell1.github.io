@@ -19,22 +19,23 @@ date: 2023-06-14
 
 # 1. 배경, 캐릭터 구성
 
-> 배경, 풍선 생성후  
-> Order in Layer 확인하기  
+> - 배경, 풍선 생성후  
+> - Order in Layer 확인하기  
 {: .notice--info}
 
 <br>
 
 # 2. 애니메이션
 
->   Animation 생성  
->   Loop Time(반복)확인  
->   평상시 색 변화(Idle),  사망(DIE)
->   애니메이션 파라미터(isDie)를 이용하여 게임오버시 isDie =true 가 되면 Die애니메이션 재생
+>   - Animation 생성  
+>   - Loop Time(반복)확인  
+>   - 평상시 색 변화(Idle),  사망(DIE)
+>   - 애니메이션 파라미터(isDie)를 이용하여 게임오버시 isDie =true 가 되면 Die애니메이션 재생
 {: .notice--info}
 
->   녹화 버튼으로 색변화 애니메이션 생성
+>   - 녹화 버튼으로 색변화 애니메이션 생성
 >   -   ![image](https://github.com/levell1/levell1.github.io/assets/96651722/f63567a2-4c08-4343-8d41-6f6713e00301){:style="border:1px solid #eaeaea; border-radius: 7px;"}   
+{: .notice--info}
 
 <br>
 
@@ -121,8 +122,8 @@ public class square : MonoBehaviour
 
 # 5. GameManager
 
-> GameManager란? 게임 전체를 조율하는 오브젝트!  
-> 점수 / 다시 시작 / 3번 째 다시 시작에 부스터 / 광고보기 등  
+> - GameManager란? 게임 전체를 조율하는 오브젝트!  
+> - 점수 / 다시 시작 / 3번 째 다시 시작에 부스터 / 광고보기 등  
 {: .notice--info}
 
 <br>
@@ -218,12 +219,12 @@ public class GameManager : MonoBehaviour
  
 # 6. 게임 끝내기
 
-> Retry 판넬 만들기(Canvas)  
-> Active 로 종료시 보이게 하기  
-> 판넬에 버튼추가 클릭시 retry 함수 다시시작(Main Scene을 새로고침 한다.)  
-> onclick -> panel.retry  
-> Button target Graphic (클릭 가능한 느낌 주기)  
->   -   ![image](https://github.com/levell1/levell1.github.io/assets/96651722/7951d356-d182-4123-8bd7-1f889b47a9c0){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
+> - Retry 판넬 만들기(Canvas)  
+> - Active 로 종료시 보이게 하기  
+> - 판넬에 버튼추가 클릭시 retry 함수 다시시작(Main Scene을 새로고침 한다.)  
+> - onclick -> panel.retry  
+> - Button target Graphic (클릭 가능한 느낌 주기)  
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/7951d356-d182-4123-8bd7-1f889b47a9c0){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 {: .notice--info}
 <br><br>
 
