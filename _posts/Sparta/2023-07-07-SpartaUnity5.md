@@ -222,11 +222,72 @@ public class adsmanager : MonoBehaviour
 
 
 ```
--   광고
+-   gamemanager.I.retryGame();
+<div class="notice--primary" markdown="1"> 
+
+`endtxt.cs`
+```c# 
+   public void retryGame()
+{
+    SceneManager.LoadScene("MainScene");
+}
+```
+
+</div>
+
+
+</div>
+
+<br><BR>
+
+## `endtxt.cs`
+
+<div class="notice--primary" markdown="1"> 
+
+`endtxt.cs`
+```c# 
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class endtxt : MonoBehaviour
+{
+    public void Regame(){
+        adsmanager.I.ShowRewardAd();
+        // SceneManager.LoadScene("MainScene");
+    }
+}
+
+```
 
 </div>
 
 <br><br> 
+
+
+</div>
+
+## `endtxt.cs`
+
+<div class="notice--primary" markdown="1"> 
+
+`endtxt.cs`
+```c# 
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class endtxt : MonoBehaviour
+{
+    public void Regame(){
+        adsmanager.I.ShowRewardAd();
+        // SceneManager.LoadScene("MainScene");
+    }
+}
+
+```
+
+</div>
+
+<br><BR>
 
 # 6. 에셋 스토어
 
