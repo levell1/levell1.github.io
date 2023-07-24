@@ -33,11 +33,19 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
+                        {% if category[0] == "Clicker Unity" %}
+                            <li><a href="/categories/clicker" class=""> Unity Clicker ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
                         {% if category[0] == "MeMo Unity" %}
                             <li><a href="/categories/memo-unity" class=""> Unity 메모장 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
+                
 
             <span class="nav__sub-title">Unity Game</span>
                 <ul>
@@ -61,6 +69,7 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
+                
 
             <span class="nav__sub-title">Etc</span>
                 <ul>
