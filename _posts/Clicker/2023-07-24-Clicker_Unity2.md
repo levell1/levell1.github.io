@@ -1,6 +1,6 @@
 ---
-title:  "[2D Clicker-Unity] Clicker Unity 1 ⭐ "
-excerpt: " Spine Animation , TextMeshPro "
+title:  "[2D Clicker-Unity] Clicker Unity 2 ⭐⭐ "
+excerpt: " UI "
 
 categories:
     - Clicker Unity
@@ -15,7 +15,7 @@ date: 2023-08-22
 ---
 - - -
 
-Clicker Unity  Spine Animation , TextMeshPro
+Clicker Unity  UI
 <br><br>
 
 
@@ -45,6 +45,29 @@ TMP - 시각적 품질을 크게 개선할 뿐만 아니라 텍스트 스타일 
 
 기본폰트 설정 (TMP) TMP Settings -> default Font Asset 에 기본폰트 등록
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/262d2b0e-ea9d-42e7-aa20-7fb704760f62){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
+
+<br><br>
+
+## `endtxt.cs`
+
+<div class="notice--primary" markdown="1"> 
+
+`endtxt.cs`
+```c# 
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class endtxt : MonoBehaviour
+{
+    public void Regame(){
+        adsmanager.I.ShowRewardAd();
+        // SceneManager.LoadScene("MainScene");
+    }
+}
+
+```
+
+</div>
 
 <br><br> 
 
