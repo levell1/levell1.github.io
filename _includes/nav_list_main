@@ -19,13 +19,6 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "Retro Unity" %}
-                            <li><a href="/categories/retro-unity" class=""> Unity Retro ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
                         {% if category[0] == "Sparta Unity" %}
                             <li><a href="/categories/sparta" class=""> Unity Sparta ({{category[1].size}})</a></li>
                         {% endif %}

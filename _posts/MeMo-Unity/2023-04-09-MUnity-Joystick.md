@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 2. 조이스틱(JoyStick)"
+title:  "[Memo-Unity] 3. 조이스틱(JoyStick)"
 excerpt: "조이스틱"
 
 categories:
