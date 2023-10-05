@@ -62,7 +62,15 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
-                
+            
+            <span class="nav__sub-title">Sparta Bcamp</span>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Sparta C Sharp" %}
+                            <li><a href="/categories/sparta-csharp" class=""> C# ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>   
 
             <span class="nav__sub-title">Etc</span>
                 <ul>
