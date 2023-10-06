@@ -1,5 +1,5 @@
 ---
-title:  "[C#] 1.시작하기 "
+title:  "[C#] 1. 시작하기 "
 excerpt: "C Sharp"
 
 categories:
@@ -44,7 +44,7 @@ IDE ( Integrated Development Environment ) - 통합 개발 환경
 >   - 콘솔앱으로 프로젝트 생성
 >   - 프로젝트 이름 -> 영어사용 권장, 띄워쓰기대신 _(언더바) 사용
 >   - 최상위 문 사용 안함 체크해제
-{: .notice--info}
+{: .notice}
 
 최상위 문 
 
@@ -58,7 +58,7 @@ Console.WriteLine(); 을 제외한 {} 이 포함된 것이 최상위 문으로 �
 > - IDE구성
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1649dbc8-f785-40a3-b562-35c15a1ec162){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 >   -   실행 단축키 - F5
-{: .notice--info}
+{: .notice}
 
 <br>
 
