@@ -123,11 +123,11 @@ double lenght = 10.245d;
 ```c# 
 string codingClub = "팀스파르타";
 
-char team_1 = "팀";
-char team_2 = "스";
-char team_3 = "파";
-char team_4 = "르";
-char team_5 = "타";
+char team_1 = '팀';
+char team_2 = '스';
+char team_3 = '파';
+char team_4 = '르';
+char team_5 = '타';
 ```
 
 </div>
