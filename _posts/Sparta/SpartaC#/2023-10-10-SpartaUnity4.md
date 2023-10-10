@@ -144,6 +144,9 @@ else
 
 </div>
 
+<br><br><br><br><br><br>
+-   -   -
+
 # 5. Switch case
 
 <H3>IF문 구성</h3>
@@ -180,6 +183,7 @@ switch(x)
 
 # 5. 연습문제
 
+##  연습문제 3
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
@@ -230,10 +234,9 @@ else
 
 </div>
 
-<br><br><br><br><br><br>
--   -   -
+<br><br>
 
-# 6. 연습문제 2
+##  연습문제 4
 
 <div class="notice--primary" markdown="1"> 
 
@@ -282,10 +285,9 @@ else
 
 </div>
 
-<br><br><br><br><br><br>
--   -   -
+<br><br>
 
-# 7. 연습문제 3
+##  연습문제 5
 
 <div class="notice--primary" markdown="1"> 
 
