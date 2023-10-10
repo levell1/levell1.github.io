@@ -134,7 +134,28 @@ bool isKid = age < 19;      //   false
 <br><br><br><br><br><br>
 -   -   -
 
-# 4. 연습문제
+# 4. 조건부 논리 연산자
+&& (And 연산자) 와 || (Or 연산자) 
+
+
+## &nbsp;&nbsp;&nbsp; && (And 연산자)
+>   두가지 조건을 모두 만족하는가?  
+>   true    &&  true    -> true  
+>   true    &&  false   -> false  
+>   false   &&  false   -> flase  
+{: .notice}
+
+## &nbsp;&nbsp;&nbsp; || (Or 연산자) 
+>   두가지 조건 중 하나라도 만족하는가?  
+true    ||  true    -> true  
+true    ||  false   -> true  
+false   ||  false   -> flase  
+{: .notice}
+
+<br><br><br><br><br><br>
+-   -   -
+
+# 5. 연습문제
 
 <div class="notice--primary" markdown="1"> 
 
@@ -180,7 +201,7 @@ bool isKid = age < 19;      //   false
 </div>
 <br><br>
  
-..
+[C#] 연산자
 
 <br>
 
