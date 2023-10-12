@@ -181,7 +181,7 @@ switch(x)
 <br><br><br><br><br><br>
 -   -   -
 
-# 5. 연습문제
+# 6. 연습문제
 
 ##  연습문제 3
 <div class="notice--primary" markdown="1"> 
