@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-10-12
+date: 2023-10-13
 
 ---
 - - -
@@ -209,7 +209,7 @@ League of Legends
 
 <br><br>
 
-[C#] 제어문 - 조건 제어
+[C#] 배열
 
 <br>
 
