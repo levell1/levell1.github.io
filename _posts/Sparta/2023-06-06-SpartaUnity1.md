@@ -10,12 +10,17 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-06-06
+date: 2023-10-19
 
 ---
 - - -
+<BR><BR>
 
-1주차 빗방울게임 빗방울 먹고 점수 얻기
+<center><H1> 1주차 빗방울게임 </H1></center>
+빗방울 먹고 점수 얻기  
+
+<BR><BR>
+
 
 # 1. 배경, 캐릭터 구성
 
@@ -23,7 +28,8 @@ date: 2023-06-06
 > - Order in Layer 확인하기  
 {: .notice--info}
 
-<br>
+<br><br>
+- - - 
 
 # 2. 애니메이션 입히기
 
@@ -32,15 +38,14 @@ date: 2023-06-06
 >   - 두개의 그림을 반복  
 {: .notice--info}
 
-<br>
+<br><br>
+- - - 
 
 # 3. 캐릭터 움직이기
 
 > - Edit → Preferences → External Tools → Vs Code 등록  
 > - 코드 작성  
 {: .notice--info}
-
-<br>
 
 ## `rtan.cs`
 
@@ -52,9 +57,9 @@ using UnityEngine;
 
 public class rtan : MonoBehaviour
 {
+    [SerializeField]
     float direction = 0.05f;
     float toward = 1.0f;
-
 
     void Update()
     {
@@ -74,24 +79,25 @@ public class rtan : MonoBehaviour
             direction *= -1;
         }
 
-        transform.localScale = new Vector3(toward, 1, 1);
+        transform.localScale = new Vector3(toward, 1, 1);          // x값을 + - 로 좌우 반전하기
     }
-
     void FixedUpdate()
     {
-        transform.position += new Vector3(direction, 0, 0);        
+        transform.position += new Vector3(direction, 0, 0);        // direction =>스피드
     }
 }
+
 ```
 
+-   클릭시 방향이 바뀌는 움직임, 맵 끝으로가면 방향이 자동으로 바껴서 움직인다.
 </div>
 
-<br><br>
+<br><br><br><br>
+- - - 
 
 # 4. 빗방울 코딩
 
 ## `rain.cs`
-
 <div class="notice--primary" markdown="1"> 
 
 `rain.cs`
@@ -100,7 +106,6 @@ using UnityEngine;
 
 public class rain : MonoBehaviour
 {
-
     int type;
     float size;
     int score;
@@ -110,7 +115,7 @@ public class rain : MonoBehaviour
         float x = Random.Range(-2.7f, 2.7f);
         float y = Random.Range(3.0f, 5.0f);
         
-        type = Random.Range(1, 5);
+        type = Random.Range(1, 5);   // 1~4
         
         if (type == 1)
         {
@@ -145,7 +150,7 @@ public class rain : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D Coll) {
-        if (Coll.gameObject.tag =="ground")
+        if (Coll.gameObject.tag =="ground")     //충돌한 물체의 태그가 ground    ground에 태그 설정을 미리 해두어야된다.
         {
             Destroy(gameObject);
         }
@@ -156,17 +161,18 @@ public class rain : MonoBehaviour
         }
     }
 }
+
 ```
 
+-   일정 범위안에서 4타입중 랜덤빗방울을 생성, 플레이어 충돌시 스코어 보기(종료)
+-   GameManager 에서 makeRain() Instantiate(rain); 에서 rain 코드가 있는 prefeb를 생성하여 활용
 </div>
-
-
-<br><br>
 
 ## 랜덤 빗방울
 >   GameManager 오브젝트를 만들고 → 빗방울을 Prefabs로 틀을 만들고 → Instantiate 복제합니다!  
 
-<br><br>
+<br><br><br><br>
+- - - 
 
 # 5. GameManager
 
@@ -191,7 +197,7 @@ public class GameManager : MonoBehaviour
     
     public GameObject rain;
     public GameObject Panel;
-    public static GameManager I;
+    public static GameManager I;    //싱글톤 패턴 ()
     int totalScore = 0;
     public Text scoreText;
     public Text timeText;
@@ -249,12 +255,17 @@ public class GameManager : MonoBehaviour
 ```
 -   InvokeRepeating  ("메서드 이름", 시간 딜레이, 반복 시간 단위)메서드를 x초 후 실행하고, 매 y초마다 반복해서 실행하는 것을 의미
 -   Instantiate( 이미 만들어진 게임 오브젝트를 필요할 때마다 실시간으로 만든다는 의미)
-
+-   ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1602beb8-2ed2-4fff-a280-edc5704a5524){:style="border:1px solid #eaeaea; border-radius: 7px;" }  
+-   싱글톤 패턴 : 어떤 오브젝트가 프로그램에 단 하나만 존재하며 어느곳에서도 쉽게 접근 가능해야 할때 사용
+-   [싱글톤 패턴 정리](https://levell1.github.io/memo%20unity/MUnity-singleton/)
 </div>
 
 
 <br><br>
  
+
+<br><br><br><br>
+- - - 
 
 # 6. 점수 시스템 
 
@@ -262,7 +273,8 @@ public class GameManager : MonoBehaviour
 > - GameManager - 싱글톤
 > - 맞으면 점수 올라가고, 표시
 {: .notice--info}
-<br><br>
+<br><br><br><br>
+- - - 
 
 # 7. 게임 끝내기
 
@@ -271,7 +283,6 @@ public class GameManager : MonoBehaviour
 > - 판넬에 버튼추가 클릭시 retry 함수 다시시작(Main Scene을 새로고침 한다.)
 > - onclick -> panel.retry
 {: .notice--info}
-<br><br>
 
 ## `panel.cs`
 
@@ -288,15 +299,33 @@ public class panel : MonoBehaviour
         GameManager.I.retry();
     }
 }
+
+// gamemanager의 retry
+public void retry()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 ```
 
+-   클릭시 retry함수가 불린다.
+-   ![image](https://github.com/levell1/levell1.github.io/assets/96651722/255f49c3-65ff-4ce4-9081-20ba8233f2ef){:style="border:1px solid #eaeaea; border-radius: 7px;" }   
 </div>
 
-<br><br>
- 
+<br><br><br><br>
+- - - 
+
 # 8. 정리
 
+기본적인 게임의 구성, 만들기에 대해 알게되었다.  
+이동, gamemanager 활용방법, 재시작 등 기본적인 것에 대해 알게 되었다.
+{: .notice--info}
 
+<br><br><br><br>
+- - - 
+
+1회 23/06/06  
+2회 23/10/19 복습, 수정  
+[Unity] 빗방울 게임
 <br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
