@@ -14,10 +14,13 @@ date: 2023-07-07
 
 ---
 - - -
+<BR><BR>
 
-5주차 FindRtan 시작화면, 스플래시 이미지, 소리,광고, 에셋스토어
-<br><br>
-
+<center><H1> 5주차 FindRtan +  </H1></center>
+ 로직 중요, 게임메니저⭐  시작화면, 스플래시 이미지, 소리,광고, 에셋스토어
+{: .notice}
+<br><br><br><br><br><br>
+- - - 
 
 # 1. 시작화면
 
@@ -26,7 +29,8 @@ date: 2023-07-07
 > - UI 꾸미고 버튼 추가 -> MainScene으로 넘어가게 버튼컴포넌트 추가
 {: .notice--info}
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 2. 스플래시 이미지 
 
@@ -42,10 +46,8 @@ date: 2023-07-07
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/08708794-a81f-4021-bbf5-8a4fd5911302){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
-
-
-<br><br>
-
+<br><br><br><br><br><br>
+- - - 
  
 # 3. 소리 음악 넣기
 
@@ -83,13 +85,13 @@ public class audiomanager : MonoBehaviour
         audioSource.Play();
     }
 }
-
 ```
 -   배경음악 설정
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 4. 빌드
 
@@ -144,8 +146,8 @@ Switch Platform 을 하면 unity 제작화면이 그 platform 으로 변경된�
 
 [참고자료](https://file.notion.so/f/s/47d42cb9-97cc-426e-9472-694206f20d8d/-.pdf?id=1f655c20-2631-442c-90b3-ba0e862fd690&table=block&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&expirationTimestamp=1688803200000&signature=wtQLXq4UWTUPHsGG7DTkcEH-oM--mwUZ1VKyTCGYRR8&downloadName=%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9.pdf)
 
-<br><br>
-- - -
+<br><br><br><br><br><br>
+- - - 
 
 # 5. 광고 붙이기
 
@@ -219,26 +221,22 @@ public class adsmanager : MonoBehaviour
         }
     }
 }
-
-
 ```
 -   gamemanager.I.retryGame();
-<div class="notice--primary" markdown="1"> 
+    <div class="notice--primary" markdown="1"> 
 
-`Gamemansger.cs -> retryGame()`
-```c# 
-   public void retryGame()
-{
-    SceneManager.LoadScene("MainScene");
-}
-```
+    `Gamemansger.cs -> retryGame()`
+    ```c# 
+    public void retryGame()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+    ```
+
+    </div>
+
 
 </div>
-
-
-</div>
-
-<br><BR>
 
 ## `endtxt.cs`
 
@@ -261,7 +259,8 @@ public class endtxt : MonoBehaviour
 
 </div>
 
-<br><br> 
+<br><br><br><br><br><br>
+- - - 
 
 # 6. 에셋 스토어
 
@@ -274,14 +273,20 @@ Browse → 2D Art → CCO
 
 [무료 에셋 스토어2](https://assetstore.unity.com/2d?category=2d&free=true&orderBy=1&rows=264)  
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 7. 정리
 
 [5주차정리](https://teamsparta.notion.site/5-ed804e30554b49cb834ccae4d37f1375)
 
-
 <br><br>
+- - - 
+
+1회 23/06/14  
+2회 23 복습, 수정  
+[Unity] 
+<br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}

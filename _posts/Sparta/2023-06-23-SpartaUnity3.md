@@ -14,10 +14,15 @@ date: 2023-06-23
 
 ---
 - - -
+<BR><BR>
 
-3주차 Dog VS Cat 고양이에게 먹이주는 게임  
- 여러씬, 체력바, 난이도
-<br><br>
+<center><H1> 3주차 Dog VS Cat </H1></center>
+고양이에게 먹이주는 게임  여러씬, 체력바, 난이도
+{: .notice}
+
+[**3주차 Dog VS Cat**](https://levell1.github.io/sparta%20game/DogCat/)
+<br><br><br><br><br><br>
+- - - 
 
 # 1. 배경, 캐릭터 구성
 
@@ -27,7 +32,8 @@ date: 2023-06-23
 > - 이미지 다운받고 저장  
 {: .notice--info}
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 2. 두개 씬
 
@@ -62,7 +68,8 @@ public class startBtn : MonoBehaviour
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 3. food 코딩
 
@@ -95,7 +102,8 @@ public class food : MonoBehaviour
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 4. dog
 
@@ -133,7 +141,8 @@ public class dog : MonoBehaviour
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 5. cat
 
@@ -232,7 +241,8 @@ public class cat : MonoBehaviour
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 6. GameManager
 
@@ -336,7 +346,8 @@ public class GameManager : MonoBehaviour
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 7. 고양이 나타내기
 
@@ -353,7 +364,9 @@ public class GameManager : MonoBehaviour
 > 전 강의들과 같이 Retry 
 {: .notice--info}
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
+
  
 # 9. 정리
 
@@ -361,6 +374,12 @@ public class GameManager : MonoBehaviour
 {: .notice--info}
 
 <br><br>
+- - - 
+
+1회 23/06/14  
+2회 23 복습, 수정  
+[Unity] 
+<br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}

@@ -14,10 +14,15 @@ date: 2023-07-02
 
 ---
 - - -
+<BR><BR>
 
-4주차 FindRtan 같은그림 찾기. 로직 중요, 게임메니저⭐
-<br><br>
+<center><H1> 4주차 FindRtan 같은그림 찾기 </H1></center>
+ 로직 중요, 게임메니저⭐
+{: .notice}
 
+[**4주차 FindRtan**](https://levell1.github.io/sparta%20game/FindRtan/)
+<br><br><br><br><br><br>
+- - - 
 
 # 1. card
 
@@ -73,16 +78,13 @@ public class card : MonoBehaviour
         transform.Find("back").gameObject.SetActive(true);
         transform.Find("front").gameObject.SetActive(false);
     }
-
 }
-
-
-
 ```
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 2. GameManager
 
@@ -184,24 +186,18 @@ public class gamemanager : MonoBehaviour
         Time.timeScale = 0.0f;
     }
 }
-
-
-
-
 ```
 -   Instantiate( 이미 만들어진 게임 오브젝트를 필요할 때마다 실시간으로 만든다는 의미)
 
 </div>
 
-<br><br>
-
+<br><br><br><br><br><br>
+- - - 
  
 # 3. 게임 끝내기
 
 > 전 강의들과 같이
 {: .notice--info}
-
-<br>
 
 ## `endtxt.cs`
 
@@ -218,13 +214,13 @@ public class endtxt : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 }
-
 ```
 -   씬 로드
 
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
  
 # 4. 정리
 
@@ -232,6 +228,12 @@ public class endtxt : MonoBehaviour
 {: .notice--info}
 
 <br><br>
+- - - 
+
+1회 23/06/14  
+2회 복습, 수정  
+[Unity] 
+<br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}

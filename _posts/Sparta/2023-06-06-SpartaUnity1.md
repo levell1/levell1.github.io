@@ -18,9 +18,11 @@ date: 2023-10-19
 
 <center><H1> 1주차 빗방울게임 </H1></center>
 빗방울 먹고 점수 얻기  
+{: .notice}
 
-<BR><BR>
-
+[**1주차 빗방울게임**](https://levell1.github.io/sparta%20game/RainRtan/)
+<br><br><br><br><br><br>
+- - - 
 
 # 1. 배경, 캐릭터 구성
 
@@ -28,7 +30,7 @@ date: 2023-10-19
 > - Order in Layer 확인하기  
 {: .notice--info}
 
-<br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 2. 애니메이션 입히기
@@ -38,7 +40,7 @@ date: 2023-10-19
 >   - 두개의 그림을 반복  
 {: .notice--info}
 
-<br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 3. 캐릭터 움직이기
@@ -92,7 +94,7 @@ public class rtan : MonoBehaviour
 -   클릭시 방향이 바뀌는 움직임, 맵 끝으로가면 방향이 자동으로 바껴서 움직인다.
 </div>
 
-<br><br><br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 4. 빗방울 코딩
@@ -171,7 +173,7 @@ public class rain : MonoBehaviour
 ## 랜덤 빗방울
 >   GameManager 오브젝트를 만들고 → 빗방울을 Prefabs로 틀을 만들고 → Instantiate 복제합니다!  
 
-<br><br><br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 5. GameManager
@@ -261,10 +263,7 @@ public class GameManager : MonoBehaviour
 </div>
 
 
-<br><br>
- 
-
-<br><br><br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 6. 점수 시스템 
@@ -273,7 +272,7 @@ public class GameManager : MonoBehaviour
 > - GameManager - 싱글톤
 > - 맞으면 점수 올라가고, 표시
 {: .notice--info}
-<br><br><br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 7. 게임 끝내기
@@ -311,7 +310,7 @@ public void retry()
 -   ![image](https://github.com/levell1/levell1.github.io/assets/96651722/255f49c3-65ff-4ce4-9081-20ba8233f2ef){:style="border:1px solid #eaeaea; border-radius: 7px;" }   
 </div>
 
-<br><br><br><br>
+<br><br><br><br><br><br>
 - - - 
 
 # 8. 정리
@@ -320,7 +319,8 @@ public void retry()
 이동, gamemanager 활용방법, 재시작 등 기본적인 것에 대해 알게 되었다.
 {: .notice--info}
 
-<br><br><br><br>
+
+<br><br>
 - - - 
 
 1회 23/06/06  
