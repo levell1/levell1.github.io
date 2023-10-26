@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-06-23
+date: 2023-10-26
 
 ---
 - - -
@@ -28,7 +28,7 @@ date: 2023-06-23
 
 > - 여러 씬  
 > - 난이도  
-> - 카메라 사이즈 25로 평소보다 큼,  배경  
+> - 카메라 사이즈 25로 작업,  배경  
 > - 이미지 다운받고 저장  
 {: .notice--info}
 
@@ -73,8 +73,8 @@ public class startBtn : MonoBehaviour
 
 # 3. food 코딩
 
-> - 올라가는 rigidbody -> Kinematic 
-> - collider is trigger 확인
+> - 올라가는 rigidbody -> **Kinematic**
+> - collider **is trigger** 확인
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/66f3ed53-f9e2-4853-bb93-04ac1ecb561d){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 {: .notice--info}
 
@@ -146,6 +146,8 @@ public class dog : MonoBehaviour
 
 # 5. cat
 
+> - Back : 흰색, Front : 빨간색 -> 체력바 생성   front pivot 조절
+> - pivot : 변경될때 기준점 0 ~ 1
 > - find 사용하여 front 의 스케일 변경
 > - gameObject.transform.Find("hungry/Canvas/front").transform.localScale = new Vector3(energy / full, 1.0f, 1.0f);
 {: .notice--info}
@@ -163,7 +165,7 @@ public class cat : MonoBehaviour
     float full = 5.0f;
     float energy = 0.0f;
     bool isFull = false;
-    public int type = 0;
+    public int type = 0; // cat마다 type 확인
 
     void Start()
     {
@@ -221,6 +223,7 @@ public class cat : MonoBehaviour
             {
                 energy += 1.0f;
                 Destroy(coll.gameObject);
+                //체력바 빨간부분(front)의 localScale 을  ENERGY와 동일하게 조정
                 gameObject.transform.Find("hungry/Canvas/front").transform.localScale = new Vector3(energy / full, 1.0f, 1.0f);
                 //푸드를 총 6번 맞아야 실행이 되는 것 같아서 수정해 보았습니다.
                 if (energy == full && isFull == false)
@@ -298,22 +301,22 @@ public class GameManager : MonoBehaviour
             if (p < 2) Instantiate(normalCat);
         }
         else if (level == 2)
-        {
+        {   // 좀 더 많이
             float p = Random.Range(0, 10);
             if (p < 5) Instantiate(normalCat);
         }
         else if (level == 3)
-        {
+        {   // fatcat 등장
             float p = Random.Range(0, 10);
             if (p < 3) Instantiate(normalCat);
             Instantiate(fatCat);
         }
         else if (level >= 4)
-        {
+        {   // fat,pirate cat 등장
             float p = Random.Range(0, 10);
             if (p < 3) Instantiate(normalCat);
-            Instantiate(fatCat);
-            Instantiate(piratecat);
+            if (3 <= p && p < 7) Instantiate(fatCat);
+            if (7 <= p && p < 10) Instantiate(piratecat);
         }
     }
     void makeFood(){
@@ -370,15 +373,17 @@ public class GameManager : MonoBehaviour
  
 # 9. 정리
 
-> 3주차에선 난이도에 따라 다르게 설정하는 기능이 어떻게 만들어지는지 알게 되었다.
+> - 3주차에선 난이도에 따라 다르게 설정하는 기능이 어떻게 만들어지는지 알게 되었다.
+> - 프리팹 을 사용할때 unpack기능 활용
+> - 체력바 2개의 바로 표현
 {: .notice--info}
 
 <br><br>
 - - - 
 
 1회 23/06/14  
-2회 23 복습, 수정  
-[Unity] 
+2회 23/10/26 복습, 수정  
+[Unity] Dog VS Cat
 <br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)

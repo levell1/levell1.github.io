@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-07-07
+date: 2023-10-27
 
 ---
 - - -
@@ -45,6 +45,8 @@ date: 2023-07-07
 <h3> 스플래시 이미지로 추가하기</h3>
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/08708794-a81f-4021-bbf5-8a4fd5911302){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
+
+Preview로 미리보기 가능
 
 <br><br><br><br><br><br>
 - - - 
@@ -109,9 +111,15 @@ Conpany ,Product Name, Version
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/5223c314-5992-4538-8204-6559d43af974){:style="border:1px solid #eaeaea; border-radius: 7px;"} 
 
 <h3> Resolution and Presentation  </h3>
-Landscape Riget ,Left 가로모드 세로모드 
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/4ae4c352-2ca0-4468-bf66-c0454855eeae){:style="border:1px solid #eaeaea; border-radius: 7px;"} 
+>   -   Portrait - 디바이스 홈버튼이 아래에 있는 세로 모드로 고정   
+>   -   PortraitUpsideDown - 디바이스 홈 버튼이 위에 있는 세로 모드로 고정  
+>   -   LandscapeLeft - 디바이스 홈 버튼이 오른쪽에 있는 가로모드로 고정   
+>   -   LandscapeRight - 디바이스 홈버튼이 왼쪽에 있는 가로모드로 고정   
+>   -   AutoRotation - 휴대폰 방향에 따라 화면이 변경됩니다   -> 체크해제로 가로모드, 세로모드 만 설정 가능하다.
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/e0b1d580-baf8-4523-a8f5-2a8d81585302){:style="border:1px solid #eaeaea; border-radius: 7px;"} 
+{: .notice}
+
 
 <h3> ohter settings </h3>
 
@@ -144,7 +152,8 @@ Switch Platform 을 하면 unity 제작화면이 그 platform 으로 변경된�
 구글플레이에는 누구나 올릴 수 있다  
 참고: $25 (1회)의 개발자 등록 비를 내야 한다
 
-[참고자료](https://file.notion.so/f/s/47d42cb9-97cc-426e-9472-694206f20d8d/-.pdf?id=1f655c20-2631-442c-90b3-ba0e862fd690&table=block&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&expirationTimestamp=1688803200000&signature=wtQLXq4UWTUPHsGG7DTkcEH-oM--mwUZ1VKyTCGYRR8&downloadName=%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9.pdf)
+[참고자료](https://levell1.github.io/categories/memo-unity/googleapp.pdf)
+깃허브 pdf 파일 참고
 
 <br><br><br><br><br><br>
 - - - 
@@ -232,10 +241,7 @@ public class adsmanager : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
     ```
-
     </div>
-
-
 </div>
 
 ## `endtxt.cs`
@@ -258,6 +264,15 @@ public class endtxt : MonoBehaviour
 ```
 
 </div>
+
+
+## ID 확인
+### 1. 사이트 -> Dashboard 클릭  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/e9466fd0-38f2-40a9-847e-da1412532b03){:style="border:1px solid #eaeaea; border-radius: 7px;"}   
+
+### 2. Monetization (수익화)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/984009e8-8a14-4bd5-8d65-802801d9fd4d){:style="border:1px solid #eaeaea; border-radius: 7px;"}   
+ad units 에 Android, ios ID 를 스크립트에 확인  
 
 <br><br><br><br><br><br>
 - - - 
@@ -284,8 +299,8 @@ Browse → 2D Art → CCO
 - - - 
 
 1회 23/06/14  
-2회 23 복습, 수정  
-[Unity] 
+2회 23/10/27 복습, 수정  
+[Unity] 게임 런칭, 광고
 <br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)

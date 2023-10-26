@@ -10,14 +10,14 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-07-02
+date: 2023-10-26
 
 ---
 - - -
 <BR><BR>
 
 <center><H1> 4주차 FindRtan 같은그림 찾기 </H1></center>
- 로직 중요, 게임메니저⭐
+ 로직 중요, 게임매니저⭐
 {: .notice}
 
 [**4주차 FindRtan**](https://levell1.github.io/sparta%20game/FindRtan/)
@@ -26,7 +26,9 @@ date: 2023-07-02
 
 # 1. card
 
+> - 카메라 사이즈 조정
 > - 카드 뒤집기, 없애기 등등
+> - 이미지 pixels per unit 으로 사이즈 조정
 {: .notice--info} 
 
 ## `card.cs`
@@ -128,7 +130,7 @@ public class gamemanager : MonoBehaviour
         //랜덤정렬
         rtans = rtans.OrderBy(item => Random.Range(-1.0f, 1.0f)).ToArray();
             
-        for (int i = 0; i < 16; i++)
+        for (int i = 0; i < 16; i++) // for문으로 카드배치 
         {
             
             GameObject newCard = Instantiate(card);
@@ -163,7 +165,7 @@ public class gamemanager : MonoBehaviour
             firstCard.GetComponent<card>().destroyCard();
             secondCard.GetComponent<card>().destroyCard();
 
-             int cardsLeft = GameObject.Find("cards").transform.childCount;
+            int cardsLeft = GameObject.Find("cards").transform.childCount;
             if (cardsLeft == 2)
             {
                 endTxt.SetActive(true);
@@ -224,15 +226,19 @@ public class endtxt : MonoBehaviour
  
 # 4. 정리
 
-> 4주차에선 이전강의를 포함하고 for문을 활용한 게임.
+>   -   4주차에선 이전강의를 포함하고 for문을 활용한 게임.
+>   -   rtans = rtans.OrderBy(item => Random.Range(-1.0f, 1.0f)).ToArray();
+>   -   FIND, LOAD 잘 사용하기
+>   -   newCard.transform.Find("front").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(rtanName);
+>   -   애니메이션 양방향 트랜지션 확인 BOOL값으로 스크립트에서 조정
 {: .notice--info}
 
 <br><br>
 - - - 
 
 1회 23/06/14  
-2회 복습, 수정  
-[Unity] 
+2회 23/10/27 복습, 수정  
+[Unity] FindRtan
 <br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
