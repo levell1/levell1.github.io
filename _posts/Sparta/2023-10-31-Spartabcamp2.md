@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] 미니 프로젝트 2일차(깃 허브, 문자열 자르기) ⭐ "
+title:  "[Sparta-BCamp] 미니 프로젝트 2일차(깃 허브, Substring) ⭐ "
 excerpt: "2D / Sparta"
 
 categories:
@@ -19,14 +19,14 @@ date: 2023-10-31 08:00
 <center><H1> 미니 프로젝트 2일차  </H1></center>
 2일차  
 2:00 깃허브 강의  
-시도 : 카드 매칭 시 팀원 이름표시  
-고난이도 24장 카드 크기조절 -> 애니메이션 때문에 scale 1.3으로 고정 -> 부모의 크기를 줄인다??,  
+카드 매칭 시 팀원 이름 표시 --> 문자열 자르기 활용
+고난도 24장 카드 크기 조절 -> 애니메이션 때문에 scale 1.3으로 고정 -> 부모의 크기를 줄인다??,  
 {: .notice}
 <br><br><br><br><br><br>
 - - - 
 
 # 1. 깃(Git)에 관하여  
-깃 = VCS(Version Control System)중 하나
+깃 = VCS(Version Control System) 중 하나
 버전을 관리하기 위한 협업 플레이어
 {: .notice}
 
@@ -48,7 +48,7 @@ date: 2023-10-31 08:00
 {: .notice--info}
 
 >   <span style="color:#E66EAF">유니티 저장하기</span>  
->   - 유니티 **asset** -> show in exploler -> 유니티 폴더 열기
+>   - 유니티 asset -> show in exploler -> 유니티 폴더 열기
 >   - 깃허브 show in explolor           -> 깃허브 저장 폴더 열기
 >   - 1 -> 2로 파일 옮기기 (init)
 >   - Commit : 로컬(컴)에 저장하기
@@ -75,7 +75,7 @@ date: 2023-10-31 08:00
 >   <span style="color:#96C85A">Discard</span>  
 >   - 수정한 한 개의 파일 되돌리기
 {: .notice--info}
-
+<br><br>
 
 ## 로컬 -> 원격
 **Push**
@@ -84,9 +84,10 @@ date: 2023-10-31 08:00
 >   <span style="color:#96C85A">Push</span>  
 >   - 로컬에서 원격으로 Push 해준다.
 >   - github 프로젝트에 올라간다. -> 공유 가능
->   - Push 하기 전 체크 하고, 조심히 실행
+>   - Push 하기 전 체크하고, 조심히 실행
 >   - Push 하기 전 모두 undo 가능
 {: .notice--info}
+<br><br>
 
 ## 원격 -> 로컬
 **Pull**
@@ -94,8 +95,8 @@ date: 2023-10-31 08:00
 
 >   <span style="color:#E66EAF">Pull</span>  
 >   - 원격에서 수정된 내용을 로컬로 받아온다
->   - 
 {: .notice--info}
+<br><br>
 
 ## Branch
 **Branch, Merge**
@@ -120,14 +121,92 @@ date: 2023-10-31 08:00
 <br><br><br><br><br><br>
 - - - 
 
-# 4. 정리
->   -   깃 허브에 관하여 복습, 추가학습.
+# 3. 카드 매칭 시 팀원 표시
+>   -   매칭시 Active False 였던 오브젝트 true 로 바꾸어 표시 후 사라짐.
+>   -   ismatched 부분 수정
+>   -   처음에 if, for , swich case 문으로 고민하다 변경
+{: .notice}
+
+## `gamemanager.cs`
+
+<div class="notice--primary" markdown="1"> 
+
+`gamemanager.cs`
+```c# 
+
+string info = firstCard.GetComponentInChildren<SpriteRenderer>().sprite.name;   // sprite의 이름 rtanx info에 저장
+check = int.Parse(info.Substring(info.Length - 1)) -1;  // rtanx 의 x부분 자르기, int 로 변형
+// 배열은 0부터 시작하므로 -1
+
+//check = firstCard.GetComponent<Card>().spriteNum;
+
+namelist[check].SetActive(true);            // Active True
+Invoke("nActiveFalse", 1.0f);               // 1초 후 false
+
+```
+</div>
+
+>   -   처음에 if 문, switch case 문 등 많은 시도를 하였습니다.
+>   -   하는도중 spriterenderer 부분에 rtan1,2,3 rtanx 부분에서 x부분을 활용하여 해보았습니다.
+>   -   마지막 x부분만 자르고 list namelist[x] 로 오브젝트를 찾아 active true 를하여 나타냈습니다.
+>   -   Invoke("nActiveFalse", 1.0f);   1초 후 안보이게
+{: .notice}
+
+<br><br><br><br><br><br>
+- - - 
+
+# 4. 24장 배열
+처음에 스케일을 바꾸어 크기 조정을했지만 애니메이션 부분에 스케일이 1.3 으로 고정이라  
+모든카드가 들어있는 cards라는 부모의 스케일을 바꾸어 해결하였습니다.
+{: .notice}
+
+## `gamemanager.cs`
+
+<div class="notice--primary" markdown="1"> 
+
+`gamemanager.cs`
+```c# 
+
+int[] rtans = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11};
+//랜덤정렬
+rtans = rtans.OrderBy(item => UnityEngine.Random.Range(-1.0f, 1.0f)).ToArray();
+
+for (int i = 0; i < 24; i++)
+{
+    GameObject newCard = Instantiate(card);
+    newCard.transform.parent = GameObject.Find("cards").transform;
+    newCard.transform.parent.localScale = new Vector3(0.7f, 0.7f, 1f);  // 24장 -> 화면에 맞게 크기조절
+    float x = (i / 6) * 1.2f - 1.8f;
+    float y = (i % 6) * 1.0f - 4.1f;
+    newCard.transform.position = new Vector3(x, y, 0);
+    string rtanName = "rtan" + rtans[i].ToString();
+    newCard.transform.Find("front").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(rtanName);
+}
+```
+</div>
+
+>   -   Start부분 수정
+>   -   newCard.transform.parent.localScale = new Vector3(0.7f, 0.7f, 1f);  // 24장 -> 화면에 맞게 크기조절
+{: .notice--info}
+
+# 5. 정리
+
+>   9~14시까지 매칭 시 팀원 표시, 24장 카드 배열하기
+>   -   Substring 공부
+>   -   애니메이션이 포함된 오브젝트는 부모 오브젝트의 scale의 변화로 크기를 조절할 수 있다.
+{: .notice}
+
+>   14~21시 깃허브 시작 전
+>   -   팀원 중 문원정님이 6명의 작업들을 합쳐주시는 작업을 하셨다. 정말 힘드셨을 텐데 감사합니다!
+>   -   코드를 다 합쳐서 그런가 조금씩 오류가 생겼다. 완벽하게 해결이 되지 않았다..
+>   -   내 생각으로 해결해 보았을 때 완벽하게 오류가 1도 없는 해결 방법이 떠오르지 않아 너무 답답했다..
+>   -   오후 시간은 계속 좀 더 나은 방법을 찾아보다 끝이 났다. 못 찾았지만..
 {: .notice}
 
 <br><br>
 - - - 
 
-[Unity] 미니 프로젝트 1일차
+[Unity] 미니 프로젝트 2일차
 <br>
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
