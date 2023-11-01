@@ -20,7 +20,7 @@ date: 2023-10-31 08:00
 2일차  
 2:00 깃허브 강의  
 카드 매칭 시 팀원 이름 표시 --> 문자열 자르기 활용
-고난도 24장 카드 크기 조절 -> 애니메이션 때문에 scale 1.3으로 고정 -> 부모의 크기를 줄인다??,  
+고난도 24장 카드 크기 조절 -> 애니메이션 때문에 scale 1.3으로 고정 -> 부모의 크기를 줄인다??  
 {: .notice}
 <br><br><br><br><br><br>
 - - - 
@@ -201,7 +201,63 @@ for (int i = 0; i < 24; i++)
 >   -   코드를 다 합쳐서 그런가 조금씩 오류가 생겼다. 완벽하게 해결이 되지 않았다..
 >   -   내 생각으로 해결해 보았을 때 완벽하게 오류가 1도 없는 해결 방법이 떠오르지 않아 너무 답답했다..
 >   -   오후 시간은 계속 좀 더 나은 방법을 찾아보다 끝이 났다. 못 찾았지만..
+
+# 6. 씻은 후 
+노래가 여러 번 재생되는 코드를 생각해 보았다. debug.log로 maxtime이 50이라면 time은 50.0011~으로 조금 더 높아서 계속 실행된다?? 처음엔 이렇게 생각했다.  
+그래서 첫 방법으로 GameEnd() 부분에 time=0을 넣자. 라고 생각했다. gameend()가 한번 실행되면서 노래가 1번 실행됐다. 그렇지만 마지막 화면에 timetext가 0으로 나와 불편했다.  
+그 후 팀원분이 GameEnd(); 대신 Invoke("ActiveFalse", 0.5f);를 넣으니 여러 번은 아니지만 3~4번 실행되었다. (왜 전과 다르게 여러 번이 아닌 3~4번일까? 궁금했다.)  이 경우 플레이 타임보다 0.5초 +되었다.  
+그다음 bool을 써보았고 안됐다.  
+씻으면서 그냥 생각이 났다. gameEnd() 마지막에 if (time > maxTime) -> time=maxtime 을 넣어 기록이 maxtime을 넘기지 않으면서, 마지막 화면에도 time이maxtime으로 나오게 했다. 해결은 한 거 같지만 먼가 찝찝하다. 더 좋은 방법이 있지 않을까?
 {: .notice}
+
+<div class="notice--primary" markdown="1"> 
+
+`gamemanager.cs`
+```c# 
+Update
+if (time > maxTime)
+    GameEnd();
+
+void GameEnd()
+{
+    Time.timeScale = 0f;
+    isRunning = false;
+    endPanel.SetActive(true);
+    if (time > maxTime)
+        time = maxTime;
+    thisScoreText.text = time.ToString("N2");
+
+    //endTxt.SetActive(true);
+
+    if (PlayerPrefs.HasKey("bestscore") == false)
+    {
+        // 게임종료시 베스트 스코어면 나오는 노래
+        audioSource.PlayOneShot(bestscore);
+        PlayerPrefs.SetFloat("bestscore", time);
+
+    }
+    else if (time < PlayerPrefs.GetFloat("bestscore"))
+    {
+        // 게임종료시 베스트 스코어보다 낮으면 나오는 노래
+        audioSource.PlayOneShot(bestscore);
+        PlayerPrefs.SetFloat("bestscore", time);
+    }
+    else
+    {
+        // 게임종료시 베스트 스코어보다 낮으면 나오는 노래
+        audioSource.PlayOneShot(lowscore);
+    }
+
+    float maxScore = PlayerPrefs.GetFloat("bestscore");
+    maxScoreText.text = maxScore.ToString("N2");
+    EndGameBgmStop();
+}
+
+```
+</div>
+
+
+
 
 <br><br>
 - - - 
