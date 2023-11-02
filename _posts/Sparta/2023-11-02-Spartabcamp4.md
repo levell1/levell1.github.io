@@ -49,7 +49,7 @@ date: 2023-11-02 20:00
 https://github.com/uhbbang33/IDLE_CardMatchGame
 {: .notice}
 
-<iframe width="894" height="503" src="https://levell1.github.io/blog/Video-Link/"
+<iframe width="894" height="503" src="https://www.youtube.com/watch?v=OXB477_D4LE"
  title="Unity 2기_ IDLE Card Match" frameborder="0" 
  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
