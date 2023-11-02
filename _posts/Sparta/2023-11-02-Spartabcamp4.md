@@ -63,17 +63,6 @@ https://github.com/uhbbang33/IDLE_CardMatchGame
 
 `gamemanager.cs`
 ```c# 
-string info = firstCard.GetComponentInChildren<SpriteRenderer>().sprite.name;   // sprite의 이름 rtanx info에 저장
-check = int.Parse(info.Substring(info.Length - 1)) -1;  // rtanx 의 x부분 자르기, int 로 변형
-
-namelist[check].SetActive(true);            // Active True
-StartCoroutine(nActiveFalse(check));
-
-IEnumerator nActiveFalse(int check)
-{
-    yield return new WaitForSeconds(1.0f);      //1초 딜레이
-    namelist[check].SetActive(false);
-}
 
 ```
 </div>
@@ -81,25 +70,12 @@ IEnumerator nActiveFalse(int check)
 <br><br><br><br><br><br>
 - - - 
 
-# 2.난이도 나누기
-변수하나로 스타트에서 클릭시 LEVEL=X 사용  
-STARTSCENE에는 게임메니저가 없기때문에 (gamemanager.i.level)여러경우를 해보고 LEVEL은 STATIC사용  
-<span style="color:#E66EAF">해결법</span> LEVEL은 STATIC사용   
-{: .notice--info}
 
-이후 retry 게임을 변경할 일이 있었는데 if,switch를 사용했는대 팀원분의 코드가 한줄로 되었다.
-SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-{: .notice}
-
-# 5. 정리
-
->   내일 다시 써야지 피곤 ㅠ 9:25
-{: .notice}
 
 <br><br>
 - - - 
 
-[Unity] TIL 3
+[Unity] TIL 4
 
 <br>
 
