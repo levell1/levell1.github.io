@@ -17,17 +17,18 @@ date: 2023-11-02 20:00
 <BR><BR>
 
 <center><H1> 미니 프로젝트 3일차  </H1></center>
+내일 다시 쓰기.
 
 **4일차**  
-2. 노말 하드(24장) 카드 배치 = 종욱님
-3. 난이도 조정 = 회의
+2. 노말 하드(24장) 카드 배치 
+3. 난이도 조정 
 4. 최고 기록 3개 
-5. 카운트 표시 = 병웅님
-6. 일시정지  + UI = 원정님
+5. 카운트 표시 
+6. 일시정지  + UI 
 
 추가기능
   1. 카드 배치할때 효과 
-  2. 카드 뒤집히는거 = 김국민
+  2. 카드 뒤집히는거 
 
 11.02 해야할 거
 
@@ -45,13 +46,11 @@ date: 2023-11-02 20:00
 - [ ]  12. 카드 뒤집혔을 때 애니메이션
 - [x]  13.Scene이름 바꾸기 (EasyScene, NormalScene, HardScene),이름 Easy, normal, Hard 통일
 - [x]  카드 사이즈 조정
-너무 피곤하다 주말에 써야겠다..
+
 https://github.com/uhbbang33/IDLE_CardMatchGame
 {: .notice}
 
-<iframe width="894" height="503" src="https://www.youtube.com/watch?v=OXB477_D4LE"
- title="Unity 2기_ IDLE Card Match" frameborder="0" 
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+<iframe width="1100" height="619" src="https://www.youtube.com/embed/OXB477_D4LE" title="Unity 2기_ IDLE Card Match" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # 1. 연속매칭 시 팀원명
 
