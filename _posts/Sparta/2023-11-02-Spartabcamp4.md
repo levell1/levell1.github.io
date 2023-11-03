@@ -17,7 +17,7 @@ date: 2023-11-02 20:00
 <BR><BR>
 
 <center><H1> 미니 프로젝트 4일차  </H1></center>
-내일 다시 쓰기.1
+09:00 ~ 20:00 까지 해야할 작업 화면공유로 팀원들과 같이작업
 
 **4일차**  
 2. 노말 하드(24장) 카드 배치 
@@ -27,8 +27,8 @@ date: 2023-11-02 20:00
 6. 일시정지  + UI 
 
 추가기능
-  1. 카드 배치할때 효과 
-  2. 카드 뒤집히는거 
+1. 카드 배치할때 효과 
+2. 카드 뒤집히는거 
 
 11.02 해야할 거
 
@@ -43,9 +43,8 @@ date: 2023-11-02 20:00
 - [x]  9. first 카드 5초 후 null 오류 수정
 - [x]  10. easy 난이도 카드 섞기
 - [x]  11. hard 처음 시도횟수 확인
-- [ ]  12. 카드 뒤집혔을 때 애니메이션
-- [x]  13.Scene이름 바꾸기 (EasyScene, NormalScene, HardScene),이름 Easy, normal, Hard 통일
-- [x]  카드 사이즈 조정
+- [x]  12. Scene이름 바꾸기 (EasyScene, NormalScene, HardScene),이름 Easy, normal, Hard 통일
+- [x]  13. 카드 사이즈 조정
 
 https://github.com/uhbbang33/IDLE_CardMatchGame
 {: .notice}
