@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 5[피드백] ⭐ "
+title:  "[Sparta-BCamp] TIL 5 (피드백) ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -42,26 +42,17 @@ TEST에 대한 생각을 하면 좋을거같다.
 # 2. 발표 전체
 <span style="color:#E66EAF">튜터님들의 말씀.</span>
 기억에 남는 말을 기록해 보았다.  
-에러를 잡고 리서치하는 작업 익숙해지자
-개발자 = 문제를 해결하는 직업
-빈 공간 활용, UI -> 완성도 UP
-게임의 목적성 부여 -> 플레이어의 재미
+에러를 잡고 리서치하는 작업 익숙해지자  
+개발자 = 문제를 해결하는 직업  
+빈 공간 활용, UI -> 완성도 UP  
+게임의 목적성 부여 -> 플레이어의 재미  
 {: .notice--info}
-
-**와이어 프레임 원정님이 만드신 와이어 프레임 (감사합니다.)**  
-<br>
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/1fae3b60-7236-4286-9c20-e8a90c64d77c){:style="border:1px solid #eaeaea; border-radius: 7px;" }  
-
-**준형님이 만드신 프로젝트 설명 (감사합니다.)**  
-[프로젝트 READ.ME](https://github.com/uhbbang33/IDLE_CardMatchGame/blob/main/Readme.md)
-
 
 
 <br><br>
 - - - 
 
-[Unity] TIL 4
+[Unity] TIL 5
 
 <br>
 
