@@ -1,16 +1,16 @@
 ---
 title:  "[Sparta-BCamp] 미니 프로젝트 1일차(시간추가 기능) ⭐ "
-excerpt: "2D / Sparta"
+excerpt: "Sparta"
 
 categories:
     - Sparta Unity
 tags:
-    - [Unity, Sparta, 2D]
+    - [Unity, Sparta]
 
 toc: true
 toc_sticky: true
  
-date: 2023-10-30 08:00
+date: 2023-10-30 20:00
 
 ---
 - - -
@@ -359,6 +359,8 @@ public class gamemanager : MonoBehaviour
 
 ```
 </div>
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/c2d71d18-f4b5-4d7f-8daa-0f999cd9d125){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
 <br><br><br><br><br><br>
 - - - 

@@ -1,11 +1,11 @@
 ---
 title:  "[Sparta-BCamp] 미니 프로젝트 2일차(깃 허브, Substring) ⭐ "
-excerpt: "2D / Sparta"
+excerpt: "Sparta"
 
 categories:
     - Sparta Unity
 tags:
-    - [Unity, Sparta, 2D]
+    - [Unity, Sparta]
 
 toc: true
 toc_sticky: true
@@ -17,9 +17,10 @@ date: 2023-10-31 20:00
 <BR><BR>
 
 <center><H1> 미니 프로젝트 2일차  </H1></center>
-2일차  
+
+**2일차**  
 2:00 깃허브 강의  
-카드 매칭 시 팀원 이름 표시 --> 문자열 자르기 활용
+카드 매칭 시 팀원 이름 표시 --> 문자열 자르기 활용  
 고난도 24장 카드 크기 조절 -> 애니메이션 때문에 scale 1.3으로 고정 -> 부모의 크기를 줄인다??  
 {: .notice}
 <br><br><br><br><br><br>
@@ -152,6 +153,9 @@ Invoke("nActiveFalse", 1.0f);               // 1초 후 false
 >   -   Invoke("nActiveFalse", 1.0f);   1초 후 안보이게
 {: .notice}
 
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/c8a8a007-9be4-49cd-b44f-6ebd98c6a440){:style="border:1px solid #eaeaea; border-radius: 7px;" }  
+
+
 <br><br><br><br><br><br>
 - - - 
 
@@ -189,6 +193,10 @@ for (int i = 0; i < 24; i++)
 >   -   newCard.transform.parent.localScale = new Vector3(0.7f, 0.7f, 1f);  // 24장 -> 화면에 맞게 크기조절
 {: .notice--info}
 
+![GIFMaker_me](https://github.com/levell1/levell1.github.io/assets/96651722/f6c796af-1d38-414a-a586-9dca0f50ec44){:style="border:1px solid #eaeaea; border-radius: 7px;" }  
+<br><br><br><br><br><br>
+- - - 
+
 # 5. 정리
 
 >   9~14시까지 매칭 시 팀원 표시, 24장 카드 배열하기
@@ -203,12 +211,20 @@ for (int i = 0; i < 24; i++)
 >   -   오후 시간은 계속 좀 더 나은 방법을 찾아보다 끝이 났다. 못 찾았지만..
 {: .notice}
 
+<br><br><br><br><br><br>
+- - - 
+
 # 6. 씻은 후 
-노래가 여러 번 재생되는 코드를 생각해 보았다. debug.log로 maxtime이 50이라면 time은 50.0011~으로 조금 더 높아서 계속 실행된다?? 처음엔 이렇게 생각했다.  
+노래가 여러 번 재생되는 코드를 생각해 보았다.  
+debug.log로 maxtime이 50이라면 time은 50.0011~으로 조금 더 높아서 계속 실행된다?? 처음엔 이렇게 생각했다.  
 그래서 첫 방법으로 GameEnd() 부분에 time=0을 넣자. 라고 생각했다. gameend()가 한번 실행되면서 노래가 1번 실행됐다. 그렇지만 마지막 화면에 timetext가 0으로 나와 불편했다.  
 그 후 팀원분이 GameEnd(); 대신 Invoke("ActiveFalse", 0.5f);를 넣으니 여러 번은 아니지만 3~4번 실행되었다. (왜 전과 다르게 여러 번이 아닌 3~4번일까? 궁금했다.)  이 경우 플레이 타임보다 0.5초 +되었다.  
-그다음 bool을 써보았고 안됐다.  
-씻으면서 그냥 생각이 났다. gameEnd() 마지막에 if (time > maxTime) -> time=maxtime 을 넣어 기록이 maxtime을 넘기지 않으면서, 마지막 화면에도 time이maxtime으로 나오게 했다. 해결은 한 거 같지만 먼가 찝찝하다. 더 좋은 방법이 있지 않을까?
+{: .notice}
+
+**해결?**  
+그다음 bool을 써보았고 안됐다.  나의 방법이 잘못된 거 같다. bool에 대해 공부하기  
+gameEnd() 마지막에 if (time > maxTime) -> time=maxtime 을 넣어 기록이 maxtime을 넘기지 않으면서, 마지막 화면에도 time이maxtime으로 나오게 했다.  
+해결은 한 거 같지만 먼가 찝찝하다. 더 좋은 방법이 있지 않을까?
 {: .notice}
 
 <div class="notice--primary" markdown="1"> 
@@ -221,37 +237,38 @@ if (time > maxTime)
 
 void GameEnd()
 {
-    Time.timeScale = 0f;
+    string sceneName = scene.name;
     isRunning = false;
+    trialText.text = trialNum.ToString() + "회";      // trialText를 업데이트
+    warningBackground.gameObject.SetActive(false);
+    Time.timeScale = 0f;
+
     endPanel.SetActive(true);
-    if (time > maxTime)
-        time = maxTime;
+
     thisScoreText.text = time.ToString("N2");
 
-    //endTxt.SetActive(true);
-
-    if (PlayerPrefs.HasKey("bestscore") == false)
+    if (time > maxTime || trialNum == trialLeft)         // 실패
     {
-        // 게임종료시 베스트 스코어면 나오는 노래
-        audioSource.PlayOneShot(bestscore);
-        PlayerPrefs.SetFloat("bestscore", time);
-
+        thisScoreText.text = "Failed";
+        time = maxTime;
     }
-    else if (time < PlayerPrefs.GetFloat("bestscore"))
+   
+    /*하드 게임 플레이시 최고점수 및 현재점수 기록*/
+    if (sceneName == "NormalScene")
     {
-        // 게임종료시 베스트 스코어보다 낮으면 나오는 노래
-        audioSource.PlayOneShot(bestscore);
-        PlayerPrefs.SetFloat("bestscore", time);
+        GameNormalScore();
+    }
+    /*헬 게임 플레이시 최고점수 및 현재점수 기록*/
+    else if (sceneName == "HardScene")
+    {
+        GameHardScore();
     }
     else
     {
-        // 게임종료시 베스트 스코어보다 낮으면 나오는 노래
-        audioSource.PlayOneShot(lowscore);
+        GameEasyScore();
     }
+    //endTxt.SetActive(true);
 
-    float maxScore = PlayerPrefs.GetFloat("bestscore");
-    maxScoreText.text = maxScore.ToString("N2");
-    EndGameBgmStop();
 }
 
 ```
