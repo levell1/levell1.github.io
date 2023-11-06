@@ -39,6 +39,8 @@ date: 2023-11-06 14:00
 
 # 2. C# 강의 내용 정리
 Til에 모든 내용을 정리하면 내용도 길어지고,  
+
+
 배운 내용은 따로 정리하고 나중에 찾아보고 싶어서 글을 따로 적었습니다.
 {: .notice}
 
@@ -52,6 +54,8 @@ Til에 모든 내용을 정리하면 내용도 길어지고,
 - - - 
 
 # 3. 정리, 잡담
+기쁜일이 하나 있다. 첫주 우수Til에 선정되었다.🙌🙌
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/c3cfdaeb-2082-41d3-acae-a8ac7e05c378){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 오늘 3시에 일이 있어 내일 다시 정리할 예정이다.
 1-5 20분부터 다시듣기.
 1
