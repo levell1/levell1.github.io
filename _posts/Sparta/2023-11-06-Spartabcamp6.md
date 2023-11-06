@@ -45,6 +45,7 @@ Til에 모든 내용을 정리하면 내용도 길어지고,
 [C# 환경, 기본요소](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp1/)  
 [C# 변수와 자료형](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp2/)  
 [C# 연산자와 문자열 처리](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp2/)
+(추가내용)
 {: .notice--info}
 
 <br><br><br><br><br><br>
@@ -57,7 +58,7 @@ Til에 모든 내용을 정리하면 내용도 길어지고,
 <br><br>
 - - - 
 
-[Unity] TIL 5
+[Unity] TIL 6
 
 <br>
 
