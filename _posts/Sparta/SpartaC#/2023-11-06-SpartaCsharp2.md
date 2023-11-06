@@ -374,9 +374,14 @@ var pi = 3.141592;    // double 자료형으로 결정됨
 - - - 
 
 # 정리 잡답
-> 여러개 입력받기  1. readLine 입력받기 2. Split 을 이용해 배열에 문자열 나눠서 저장 3. 형변환하여 새로운 변수에 저장해서 사용
-> 단축키 주석 Ctrl K C 주석하기 , Ctrl K U 주석 풀기
-> 여러줄 주석 ctrl Sshift / 
+> 여러개 입력받기  
+>   -  1.readLine 입력받기  
+>   -  2.Split 을 이용해 배열에 문자열 나눠서 저장  
+>   -  3.형변환하여 새로운 변수에 저장해서 사용  
+{: .notice}
+
+> 단축키 주석 Ctrl K C 주석하기 , Ctrl K U 주석 풀기  
+> 여러줄 주석 ctrl Sshift /  
 {: .notice}
 
 <br><br>

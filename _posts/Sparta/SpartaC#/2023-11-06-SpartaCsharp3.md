@@ -263,7 +263,7 @@ string str2 = "Banana";
 int compare = string.Compare(str1, str2);
 ```
 
-- 이 코드는 str1 문자열과 str2 문자열을 대소 비교한 후, compare 변수에 그 결과를 저장합니다.  
+- 이 코드는 str1 문자열과 str2 문자열을 대소 비교한 후, compare 변수에 그 결과를 저장합니다.   
 - compare 변수는 0보다 작으면 str1이 str2보다 작고, 0이면 str1과 str2가 같으며, 0보다 크면 str1이 str2보다 큽니다.  
 </div>
 <br>
@@ -284,8 +284,8 @@ int age = 30;
 string message = $"My name is {name} and I'm {age} years old.";
 ```
 
-- {x} 부분을 , 뒤 순서대로 삽입
-- 보간기능 위보다 더 간단하게 사용
+- {x} 부분을 , 뒤 순서대로 삽입  
+- 보간기능 위보다 더 간단하게 사용  
 </div>
 
 
@@ -293,8 +293,8 @@ string message = $"My name is {name} and I'm {age} years old.";
 - - - 
 
 # 정리 잡답
-> - 연산자를 사용할 때에는 연산자 우선순위를 항상 고려하여 코드를 작성하는 것이 중요합니다,  괄호를 사용하여 우선순위를 변경할 수 있습니다.
-> - 분할(Split), 검색(indexOf), 대체(Replace), 변환(Parse), 비교(String.Compare), 포멧팅(String.Format, $)
+> - 연산자를 사용할 때에는 연산자 우선순위를 항상 고려하여 코드를 작성하는 것이 중요합니다,  괄호를 사용하여 우선순위를 변경할 수 있습니다.  
+> - 분할(Split), 검색(indexOf), 대체(Replace), 변환(Parse), 비교(String.Compare), 포멧팅(String.Format, $)  
 {: .notice}
 
 <br><br>
