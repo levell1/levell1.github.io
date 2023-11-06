@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] C# 변수와 자료형, Split ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta C#
+    - Sparta C Sharp
 tags:
     - [C#, Sparta]
 
@@ -105,7 +105,7 @@ long num3 = 100000000000000L;
 
 # 2. 변수 선언과 초기화 방법
 
-변수 : 데이터를 저장하고 사용하기 위한 할당받은 공간  
+변수 : 데이터를 저장하고 사용하기 위한 할당 받은 공간  
 필요에 따라 데이터를 저장하거나 수정 가능  
 예를 들면 게임에서의 HP, 공격력, 재화 같은 정보를 저장하기 위해 사용  
 {: .notice}

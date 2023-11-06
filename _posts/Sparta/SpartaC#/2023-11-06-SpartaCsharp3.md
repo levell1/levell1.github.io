@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] C# 연산자와 문자열 처리 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta C#
+    - Sparta C Sharp
 tags:
     - [C#, Sparta]
 

@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] C# 환경, 기본요소 ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta C#
+    - Sparta C Sharp
 tags:
     - [C#, Sparta]
 
@@ -24,7 +24,7 @@ C# 환경, 기본요소
 - - - 
 
 # 1. C#소개, 개발 환경 설정
->   -   1.무엇(What)일까 고민하는 것 보다 중요한 것은 **왜(Why)** 에 집중하는 것입니다.  의도  
+>   -   1.무엇(What)일까 고민하는 것보다 중요한 것은 **왜(Why)** 에 집중하는 것입니다.  의도  
 >   -   2.빠르게 실패하기. (많은 코드 접해보기.)  
 {: .notice--info}
 
@@ -71,7 +71,7 @@ namespace HelloWorld
 
 ## 출력
 Console.Write : 출력하고 줄 바꿈 (X)  
-Console.WriteLine : 출력 후 다음줄로 이동
+Console.WriteLine : 출력 후 다음 줄로 이동
 {: .notice}
 
 <br><br>
@@ -108,7 +108,7 @@ Console.WriteLine("C:\\MyDocuments\\Project\\");
 // 출력결과
 // C:\MyDocuments\Project\
 ```
--   \', \", \\, 작은, 큰따움표 , 역슬래시, 추가  
+-   \', \", \\, 작은, 큰따옴표, 역슬래시 추가  
 -   \n, \r, 줄바꿈, 현재 줄 맨 앞으로 이동  
 -   \t, \b  탭 삽입, 백스페이스 삽입  
 
@@ -117,7 +117,7 @@ Console.WriteLine("C:\\MyDocuments\\Project\\");
 <br><br>
 
 ## 주석
-코드설명, 개발자간 의사소통에 사용
+코드 설명, 개발자간 의사소통에 사용
 {: .notice}
 
 // : 한 줄 주석  
@@ -127,7 +127,7 @@ Console.WriteLine("C:\\MyDocuments\\Project\\");
 >   **주의할 점**
 >   -   주석은 코드를 대체하지 않는다.  
 >   -   주석의 내용은 정확하고 명확해야 한다.  
->   -   주석은 업데이트 되어야 한다.  
+>   -   주석은 업데이트되어야 한다.  
 >   -   주석은 필요한 경우에만 사용해야 한다.  
 {: .notice--info}
 
