@@ -185,7 +185,7 @@ void Bmi() // 4. BMI
 **잡담**  
 오늘 점심시간에 소소한 행복을 느꼈다. 30분 정도 였지만 기분이 좋았다.  
 월, 화요일 조퇴를 하여 12시간 공부를 하지 못했다. 주말에 시간 보고 따로 공부를 해야 할 것 같다.  
-내일은 2주차 강의 메서드와 구조체 강의 들으면서 정리할 계획이다.
+내일은 2주차 강의 메서드와 구조체 강의 들으면서 정리할 계획이다. 
 {: .notice--success}
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/2eb7bf00-c498-4083-8251-2b208e30cffa){:style="border:1px solid #eaeaea; border-radius: 7px;"}   
