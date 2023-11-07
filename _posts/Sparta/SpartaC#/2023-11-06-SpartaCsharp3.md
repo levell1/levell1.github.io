@@ -207,7 +207,7 @@ string str2 = new string('H', 5); // 문자 'H'를 5개로 구성된 문자열 �
 <br>
 
 ## 2).연결(+)
-이 코드는 str1 문자열과 str2 문자열을 공백으로 구분하여 연결한 새로운 문자열 str3을 생성합니다.
+이 코드는 str1 문자열과 str2 문자열을 공백으로 구분하여 연결한 새로운 문자열 str3을 생성합니다.  string.Format을 더 자주 이용한다.  
 {: .notice}
 
 <div class="notice--primary" markdown="1"> 
@@ -292,7 +292,11 @@ int compare = string.Compare(str1, str2);
 ```
 
 - 이 코드는 str1 문자열과 str2 문자열을 대소 비교한 후, compare 변수에 그 결과를 저장합니다.   
-- compare 변수는 0보다 작으면 str1이 str2보다 작고, 0이면 str1과 str2가 같으며, 0보다 크면 str1이 str2보다 큽니다.  
+
+- compare : ASCII 값 측면에서 값을 비교
+- 두 문자열이 동일하면 0을 반환합니다.
+- 첫 번째 문자열이 두 번째 문자열보다 크면 1 또는 0보다 큰 값을 반환합니다.
+- 첫 번째 문자열이 두 번째 문자열보다 작으면 -1 또는 0보다 작은 값을 반환합니다.
 </div>
 <br>
 
