@@ -97,8 +97,14 @@ string str = "Hello, World!";
 int num1 = 0x10;
 int num2 = 0b1010;
 long num3 = 100000000000000L;
+
+const a = 1;    //const = 상수 1 = 리터럴
+
 ```
+- 상수는 메모리 위치(공간)이며, 메모리 값을 변경할 수 없다.  
+- 리터럴은 메모리 위치(공간) 안에 저장되는 값이다.
 </div>
+
 
 <br><br><br><br><br><br>
 - - - 
@@ -365,7 +371,7 @@ var name = "kero";   // string 자료형으로 결정됨
 var pi = 3.141592;    // double 자료형으로 결정됨
 
 ```
-- string input = Console.ReadLine(); 로 입력을받고
+- **`string input = Console.ReadLine();`** 로 입력을받고
 - iput을 " " 로 나누어 배열에 저장한다.
 - 여러값을 입력받을 수 있다.
 </div>
@@ -375,8 +381,8 @@ var pi = 3.141592;    // double 자료형으로 결정됨
 
 # 정리 잡답
 > 여러개 입력받기  
->   -  1.readLine 입력받기  
->   -  2.Split 을 이용해 배열에 문자열 나눠서 저장  
+>   -  1.**`readLine`** 입력받기  
+>   -  2.**`Split`** 을 이용해 배열에 문자열 나눠서 저장  
 >   -  3.형변환하여 새로운 변수에 저장해서 사용  
 {: .notice}
 

@@ -42,21 +42,24 @@ Til에 모든 내용을 정리하면 내용도 길어지고,
 배운 내용은 따로 정리하고 나중에 찾아보고 싶어서 글을 따로 적었습니다.
 {: .notice}
 
-[C# 환경, 기본요소](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp1/)  
-[C# 변수와 자료형](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp2/)  
-[C# 연산자와 문자열 처리](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp2/)
-(추가내용)
+[C# 환경, 기본요소, Escape Sequence](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp1/)  
+이스케이프 시퀸스(Escape Sequence)  
+[C# 변수와 자료형, Split](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp2/)  
+여러개 입력받기 **`readLine`**, **`Split`**  
+[C# 연산자와 문자열 처리](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp2/)  
+분할(**`Split`**), 검색(**`indexOf`**), 대체(**`Replace`**), 변환(**`Parse`**), 비교(**`String.Compare`**), 포멧팅(**`String.Format`**, **`$`**) 
 {: .notice--info}
 
 <br><br><br><br><br><br>
 - - - 
 
 # 3. 정리, 잡담
-기쁜일이 하나 있다. 첫주 우수Til에 선정되었다.🙌🙌
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/c3cfdaeb-2082-41d3-acae-a8ac7e05c378){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
-오늘 3시에 일이 있어 내일 다시 정리할 예정이다.
-1-5 20분부터 다시듣기.
-1
+기쁜일이 하나 있다. 첫주 우수Til에 선정되었다.🙌🙌  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/c3cfdaeb-2082-41d3-acae-a8ac7e05c378){:style="border:1px solid #eaeaea; border-radius: 7px;"}   
+오늘 3시에 일이 있어 내일 다시 정리할 예정이다.  
+3시조퇴  
+1-5 20분부터 다시듣기.  
+{: .notice}
 <br><br>
 - - - 
 
