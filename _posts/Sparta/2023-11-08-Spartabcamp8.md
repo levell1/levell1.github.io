@@ -29,7 +29,7 @@ date: 2023-11-08 12:00
 
 # 1. 2주차 과제
 
-## 숫자 맞추기 게임
+## 1)숫자 맞추기 게임
 
 1~100까지 랜덤숫자중 하나를 맞추는게임  
 코드는 강의내용 보고 작성  
@@ -39,48 +39,298 @@ date: 2023-11-08 12:00
 
 <br><br>
 
-## 숫자 맞추기 게임
+## 2)틱택토 게임
 
-1~100까지 랜덤숫자중 하나를 맞추는게임  
-코드는 강의내용 보고 작성  
+![2023-11-08-16_24_54](https://github.com/levell1/levell1.github.io/assets/96651722/5fdf310e-1baf-4752-9373-bc6d3e8beb44){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
+
+**틱택토게임**  
+튜터님께 질문드렸던 클래스, 인스턴스 사용해 보려고 노력해 보았고, 어제 들었던 컨벤션강의 내용, Summary도 사용하려 노력해 보았습니다.  
+TicTacToc Class 에 2차 배열 map , DrawMap, DoOX 메서드가 있습니다.  
+PlayGame(), CheckWin(), CheckPostion(int position) 이 있습니다.  
+13X13 2차원배열로로 제작하였습니다.  
 {: .notice}
 
 <details>
-<summary>코드보기</summary>
+<summary>전체 코드 보기</summary>
 
 <!-- summary 아래 한칸 공백 두어야함 -->
-접은 내용
-</details>
-
-
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
-// BSD
-if(조건)
+using System.Numerics;
+
+namespace SecondWeek
 {
-    처리로직
-}
-
-// K&R
-if(조건){
-    처리로직
-}
-
-// 추가 GNU 코딩 스타일   : 블록 표시하여 구조가 잘 보인다
-//  수평으로 많은 코드를 작성할 수 없다.
-if(조건)
+    internal class Program
     {
-        처리로직
+        static void Main(string[] args)
+        {
+           
+            int position;       //1~9 위치
+            int user = 2;       // player 1, 2
+            int player = 50;    // 50 = O , 51 = X
+            bool checkPosition = true;
+            bool gameend = true;
+
+            TicTacToc tic = new TicTacToc();    // 인스턴스화 
+            tic.DrawMap();                      // 맵그리기   
+
+            // player1 = 50  
+            // player2 = 51  
+
+            while (gameend)
+            {
+                PlayGame();
+                CheckWin();
+            }
+            
+            void PlayGame()     // 게임 플레이.
+            {
+                if (user == 1) { user = 2; } else if (user == 2) { user = 1; }
+                if (user == 1) { player = 50; } else if (user == 2) { player = 51; }
+                Console.Write("자리를 정해주세요.(1 ~ 9) \nPlayer" + user + " : ");
+                position = int.Parse(Console.ReadLine());
+                CheckPosition(position);
+                tic.DoOX(position, player);
+                Console.Clear();
+                tic.DrawMap();
+            }
+
+            void CheckWin() {
+                int[] playercheck = { 50, 51 };
+                foreach (int ox in playercheck)
+                {
+                    if (((tic.map[2, 2] == ox) && (tic.map[2, 6] == ox)&&(tic.map[2, 10] == ox))
+                       || ((tic.map[6, 2] == ox) && (tic.map[6, 6] == ox) && (tic.map[6, 10] == ox))
+                       || ((tic.map[10, 2] == ox) && (tic.map[10, 6] == ox) && (tic.map[10, 10] == ox))
+                       || ((tic.map[10, 2] == ox) && (tic.map[6, 2] == ox) && (tic.map[2, 2] == ox))
+                       || ((tic.map[2, 6] == ox) && (tic.map[6, 6] == ox) && (tic.map[10, 6] == ox))
+                       || ((tic.map[2, 10] == ox) && (tic.map[6, 10] == ox) && (tic.map[10, 10] == ox))
+                       || ((tic.map[2, 2] == ox) && (tic.map[6, 6] == ox) && (tic.map[10, 10] == ox))
+                       || ((tic.map[2, 10] == ox) && (tic.map[6, 6] == ox) && (tic.map[10, 2] == ox)))
+                    {
+                        if (user == 1)
+                        {
+                            Console.WriteLine("Player 1가 승리하였습니다!");
+                            gameend = false;
+                        }
+                        else 
+                        {
+                            Console.WriteLine("Player 2가 승리하였습니다!");
+                            gameend = false;
+                        }
+                        break;
+                    }
+                }
+            }
+
+            void CheckPosition(int position){
+                if (0 < position && position > 10)
+                {
+                    Console.WriteLine("\n1~9 숫자를 입력해주세요\n");
+                    if (user == 1) { user = 2; } else if (user == 2) { user = 1; }
+                    PlayGame();
+                }
+                int[] playercheck = { 50, 51 };
+                foreach (int ox in playercheck)
+                {
+                    if ((position == 1 && tic.map[2, 2] == ox)
+                        || (position == 2 && tic.map[2, 6] == ox)
+                        || (position == 3 && tic.map[2, 10] == ox)
+                        || (position == 4 && tic.map[6, 2] == ox)
+                        || (position == 5 && tic.map[6, 6] == ox)
+                        || (position == 6 && tic.map[6, 10] == ox)
+                        || (position == 7 && tic.map[10, 2] == ox)
+                        || (position == 8 && tic.map[10, 6] == ox)
+                        || (position == 9 && tic.map[10, 10] == ox))
+                    {
+                        Console.WriteLine("\n잘못된 자리입니다 다시 입력해 주세요\n");
+                        if (user == 1) { user = 2; } else if (user == 2) { user = 1; }
+                        PlayGame();
+                    }
+                }
+            }
+            Console.WriteLine("게임이 종료되었습니다.");
+        }
     }
+
+    /// <summary>
+    /// 맵에 테두리, OX표시
+    /// </summary>
+    public class TicTacToc 
+    {
+        // 배치 자리
+        // map[2, 2],  map[2, 6],  map[2, 10]
+        // map[6, 2],  map[6, 6],  map[6, 10]
+        // map[10, 2], map[10, 6], map[10, 10]
+
+        // 1~9 배치 자리
+        // 21~31 맵 테두리
+        // 50,51 player, com 배치위치
+        public int[,] map = new int[13, 13]
+            {
+                    { 22, 28, 28, 28, 23, 28, 28, 28, 23, 28, 28, 28, 24 },
+                    { 21, 0, 0, 0, 21, 0, 0, 0, 21, 0, 0, 0, 21 },
+                    { 21, 0, 1, 0, 21, 0, 2, 0, 21, 0, 3, 0, 21 },
+                    { 21, 0, 0, 0, 21, 0, 0, 0, 21, 0, 0, 0, 21 },
+                    { 25, 28, 28, 28, 26, 28, 28, 28, 26, 28, 28, 28, 27 },
+                    { 21, 0, 0, 0, 21, 0, 0, 0, 21, 0, 0, 0, 21 },
+                    { 21, 0, 4, 0, 21, 0, 5, 0, 21, 0, 6, 0, 21 },
+                    { 21, 0, 0, 0, 21, 0, 0, 0, 21, 0, 0, 0, 21 },
+                    { 25, 28, 28, 28, 26, 28, 28, 28, 26, 28, 28, 28, 27 },
+                    { 21, 0, 0, 0, 21, 0, 0, 0, 21, 0, 0, 0, 21 },
+                    { 21, 0, 7, 0, 21, 0, 8, 0, 21, 0, 9, 0, 21 },
+                    { 21, 0, 0, 0, 21, 0, 0, 0, 21, 0, 0, 0, 21 },
+                    { 31, 28, 28, 28, 29, 28, 28, 28, 29, 28, 28, 28, 30 },
+            };
+
+
+        /// <summary>
+        /// 맵 그리기 
+        /// </summary>
+        public void DrawMap()
+        {
+            for (int i = 0; i < 13; i++)
+            {
+
+                for (int j = 0; j < 13; j++)
+                {
+                    if (map[i, j] == 21)
+                    {
+                        Console.Write("│ ");
+                    }
+                    else if (map[i, j] == 22)
+                    {
+                        Console.Write("┌ ");
+                    }
+                    else if (map[i, j] == 23)
+                    {
+                        Console.Write("┬ ");
+                    }
+                    else if (map[i, j] == 24)
+                    {
+                        Console.Write("┐ ");
+                    }
+                    else if (map[i, j] == 25)
+                    {
+                        Console.Write("├ ");
+                    }
+                    else if (map[i, j] == 26)
+                    {
+                        Console.Write("┼ ");
+                    }
+                    else if (map[i, j] == 27)
+                    {
+                        Console.Write("┤ ");
+                    }
+                    else if (map[i, j] == 28)
+                    {
+                        Console.Write("─");
+                    }
+                    else if (map[i, j] == 29)
+                    {
+                        Console.Write("┴ ");
+                    }
+                    else if (map[i, j] == 30)
+                    {
+                        Console.Write("┘ ");
+                    }
+                    else if (map[i, j] == 31)
+                    {
+                        Console.Write("└ ");
+                    }
+                    else if (0 < map[i, j] && map[i, j] < 10)
+                    {
+                        Console.Write(map[i, j]);
+                    }
+                    else if (map[i, j] == 50)       //Player 1
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write("O");
+                        Console.ResetColor();
+                    }
+                    else if (map[i, j] == 51)       //Player 2
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("X");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// 자리에 OX 표시하기
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="player"></param>
+        public void DoOX(int position,int player) 
+        {
+
+            // 배치 자리
+            // map[2, 2],  map[2, 6],  map[2, 10]
+            // map[6, 2],  map[6, 6],  map[6, 10]
+            // map[10, 2], map[10, 6], map[10, 10]
+
+            switch (position) 
+            {
+                case 1:
+                    map[2, 2] = player;
+                    break;
+                case 2:
+                    map[2, 6] = player;
+                    break;
+                case 3:
+                    map[2, 10] = player;
+                    break;
+                case 4:
+                    map[6, 2] = player;
+                    break;
+                case 5:
+                    map[6, 6] = player;
+                    break;
+                case 6:
+                    map[6, 10] = player;
+                    break;
+                case 7:
+                    map[10, 2] = player;
+                    break;
+                case 8:
+                    map[10, 6] = player;
+                    break;
+                case 9:
+                    map[10, 10] = player;
+                    break;
+            }
+        }
+    }
+}
 ```
 </div>
+</details>
 
-<br><br>
+**하고나서 느낀점**  
+클래스, 메서드, 변수 사용에 많이 미숙했고, 맵 크기를 좀 더 작게 했으면 좋았을까.. 라는 후회를 조금 했었습니다. 또 1~9 의 배열의 위치가 1~9와 연관이 있는 무언가 였으면 하기 쉬웠겠다고 생각했습니다.  
+{: .notice}
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/f5b51239-7639-4aed-90df-52da93ac43b5){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
+DrawMap, DoOX, 코드가 너무 길어지는대 단축할 방법이 없을까 고민하고 만들고 나서 후회했다..   
+13X13한 이유는 빈공간이 있으면 보기 좋을 거 같아서 했지만 잘못된 선택이었다.
+{: .notice--warning}
 
-<br><br>
+**풀이를 보고나서**  
+Player 를 나타낼 때 나는 if문으로 1,2을 바꿨고 풀이는 %2로 하고 ++하는 방법이 좋은것 같다.  
+1~9부분에 새로운 배열을 사용하였고 그렇게하면 유저가 입력한 값이랑 배열의 위치 값이랑 숫자가 같아져서 더 효율적이고 간단하게 코딩이 가능하다고 생각한다.  map[2,2]~map[10,10] 부분이 필요가 없다. 
+{: .notice--success}
+
+
+항상 하나의 숙제, 프로젝트 등을 하고 나면 느끼는 거지만 지금 잘 하고 있는건지,  어느 부분이 어떻게 수정되면 좋은지 궁금하고 답답하다.. 하나씩 할때마다 얻어 가는 건 조금씩 있지만 놓치는 부분도 있을 거라 생각한다. 항상 아쉽지만 생각한 대로 나오면 기분이 좋다.
+{: .notice}
+
 
 <br><br><br><br><br><br>
 - - - 
@@ -90,13 +340,8 @@ if(조건)
 {: .notice}
 
 [⭐C# 메서드와 구조체⭐](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp6/)  
-메서드, 매개변수, 반환값, 오버로딩, 재귀호출, 구조체 **`struct`**
+ **`struct`**
 {: .notice--info}
-
-c# 인스턴스, class, static에 대하여 공부
-{: .notice--info}
-
-
 
 <br><br><br><br><br><br>
 - - - 
@@ -172,7 +417,7 @@ if(조건)
 <br><br>
 
 ## 협업 꿀팁 
-### 1)주석과 Summary
+### 1) 주석과 Summary
 협업 시 다른 개발자분들이 한눈에 보기 쉽게 주석, Summary를 활용하자.  
 Summary를 써보며 튜터님에게 질문하며 Class, Static, Public, 인스턴스화 등 추가로 공부하게 되었다.  
 {: .notice}
@@ -180,7 +425,7 @@ Summary를 써보며 튜터님에게 질문하며 Class, Static, Public, 인스�
 
 <br>
 
-### 2)한글이 깨지는 현상
+### 2) 한글이 깨지는 현상
 인코딩방식 확인법  .sc 메모장으로 열어 우측하단 에서 확인  , 한글을 지원하는 인코딩방식 -> UTF-8 로 설정
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/485457a5-25d0-42b5-99db-3a2ee85a57fa){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 {: .notice} 
@@ -244,22 +489,32 @@ Capacity가 Length보다 작으면 Capacity가 2배로 증가
 # 4. 정리, 잡담
 
 > **코드컨벤션 강의 내용**
-> - 어제 코드컨벤션 강의 내용
- 정리 List, Capacity에 대하여 더 알게 되었다.
+> - 어제 코드컨벤션 강의 내용, 협업 꿀팁
+> - 정리 List, Capacity에 대하여 더 알게 되었다.
 {: .notice}
 
+
+> **콘솔 커서 위치**  
+> - Console.SetCursorPosition: 이 함수는 콘솔 창에서 커서의 위치를 설정합니다. 
+> - 출력의 정확한 위치를 제어하고 싶을 때 사용됩니다.   
+> - exConsole.SetCursorPosition(10, 5);
+{: .notice}
+
+
+> - 오버로딩 : 매개변수의 **개수, 타입, 순서가 다른** 동일한이름의 여러 메서드 
+> - 구조체 : **`struct`** 키워드
+{: .notice--info}
 
 <br><br>
 
 **잡담**  
-오늘 점심시간에 소소한 행복을 느꼈다. 30분 정도 였지만 기분이 좋았다.  
-월, 화요일 조퇴를 하여 12시간 공부를 하지 못했다. 주말에 시간 보고 따로 공부를 해야 할 것 같다.  
-내일은 2주차 강의 메서드와 구조체 강의 들으면서 정리할 계획이다. 
+오늘 1시쯤 컴터가 꺼졋다... 저장은되어있어서 다행이었다.  
+항상 하나의 숙제, 프로젝트 등을 하고 나면 느끼는 거지만 지금 잘 하고 있는건지,  어느 부분이 어떻게 수정되면 좋은지 궁금하고 답답하다.. 하나씩 할때마다 얻어 가는 건 조금씩 있지만 놓치는 부분도 있을 거라 생각한다. 항상 아쉽지만 생각한 대로 나오면 기분이 좋다.
 {: .notice--success}
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/2eb7bf00-c498-4083-8251-2b208e30cffa){:style="border:1px solid #eaeaea; border-radius: 7px;"}   
-👑금주Til 왕관👑  
-오늘 zep에 접속했는데👑이 있었다.. 🙌  
+
+
+
 
 
 <br><br>
