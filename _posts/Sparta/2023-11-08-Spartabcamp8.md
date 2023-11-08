@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 7 ( 숙제, 조건문, 반복문, 배열, 컬렉션 ) ⭐ "
+title:  "[Sparta-BCamp] TIL 8 ( 숙제, 메서드, 구조체 ) ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -16,16 +16,17 @@ date: 2023-11-07 13:00
 - - -
 <BR><BR>
 
-<center><H1> 개인 공부 C# 2일차   </H1></center>
-강의 1주차 과제 후 2주차 강의 듣기.   
-15:00 코드 컨벤션 강의  
-16:00 ~ 조퇴  
+<center><H1> 개인 공부 C# 3일차   </H1></center>
+2주차 강의 남은 거 듣기.   
+어제 코드 컨벤션 정리하기.  
+14:00 학습법 강의.  
+3주차 듣고 숙제, 시간 남으면 개인과제  
 {: .notice}
 
 <br><br><br><br><br><br>
 - - - 
 
-# 1. 1주차 과제
+# 1. 2주차 과제
 
 ## 사용자로부터 입력 받기
 
@@ -53,89 +54,19 @@ void UserInfo() // 1. 입력받기
 
 <br><br>
 
-## 간단한 사칙연산 계산기
-두 수 입력받고 사칙연산 결과 나타내기.  
-{: .notice}
-
-<div class="notice--primary" markdown="1"> 
-
-```c# 
-void Calculator() // 2. 사칙연산 계산기
-{
-    Console.Write("두 수를 입력해주세요(\" \") : ");
-    string nums = Console.ReadLine();
-    string[] num = nums.Split(' ');
-    int num1 = int.Parse(num[0]);
-    int num2 = int.Parse(num[1]);
-
-    Console.WriteLine($"덧셈(+)\t\t{num1} + {num2} = {num1 + num2}");
-    Console.WriteLine($"뺄셈(-)\t\t{num1} - {num2} = {num1 - num2}");
-    Console.WriteLine($"곱셈(x)\t\t{num1} * {num2} = {num1 * num2}");
-    Console.WriteLine($"나눗셈(/)\t{num1} / {num2} = 몫{num1 / num2} 나머지{num1 % num2}");
-}
-```
-</div>
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/97f83ed8-c64d-420b-b6db-1e7b1fd33805){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
-
-<br><br>
-
-## 온도 변환기 만들기
-섭씨온도를 화씨온도로 변환하는 프로그램  
-{: .notice}
-
-<div class="notice--primary" markdown="1"> 
-
-```c# 
-void Temperature() // 3. 온도 변환기
-{
-    Console.Write("섭씨온도(°C) 를 입력해 주세요 : ");
-    float Celsius = float.Parse(Console.ReadLine());
-    float Fahrenheit = (Celsius * 9 / 5) + 32;
-    Console.WriteLine($"섭씨온도 : {Celsius}°C\n화씨온도 : {Fahrenheit}°F");
-}
-```
-</div>
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/98de0182-ebda-41a6-9133-a9ffdd2547f2){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
-
-<br><br>
-
-## BMI 계산기
-BMI 지수를 계산하는 프로그램
-{: .notice}
-
-<div class="notice--primary" markdown="1"> 
-
-```c# 
-void Bmi() // 4. BMI
-{
-    Console.Write("몸무게(Kg) 를 입력해 주세요 : ");
-    float kg= float.Parse(Console.ReadLine());
-    Console.Write("키(Cm) 를 입력해 주세요 : ");
-    float cm = float.Parse(Console.ReadLine());
-    float bmi= kg/((cm/100) * (cm/100));
-    Console.WriteLine("BMI : {0:N2}",bmi);
-}
-```
-</div>
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/7192a3cc-638e-4579-8e5b-bc1eb7ffe6a9){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
 <br><br><br><br><br><br>
 - - - 
 
 # 2. C# 강의 내용 정리
-강의 2일차 내용 정리
+강의 3일차 내용 정리
 {: .notice}
 
-[C# 조건문(if, switch, 3항 연산자), 반복문](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp4/)  
-조건문 **`if`**, **`switch`**, 3항 연산자  
-반복문 **`for`**, **`while`**, **`foreach`**, **`break`**, **`continue`**    (foreach 자주쓸 거)
+[⭐C# 메서드와 구조체⭐](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp6/)  
+메서드, 매개변수, 반환값, 오버로딩, 재귀호출, 구조체 **`struct`**
 {: .notice--info}
 
-[C# 배열, 컬렉션](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp5/)  
-컬렉션 **`list`**, **`Dictionary`**, **`Stack`**, **`Queue`**, **`Hashset`**    
+
 {: .notice--info}
 
 
@@ -143,7 +74,68 @@ void Bmi() // 4. BMI
 <br><br><br><br><br><br>
 - - - 
 
-# 3. 정리, 잡담
+# 3. 코드 컨벤션 강의
+어제 코드 컨벤션강의 내용 정리.  
+{: .notice}
+
+## 코드 컨벤션
+
+> **코드 컨벤션 스타일** 
+>   -   BSD,K&R이 있다.  가장큰 차이는 중괄호{}의 위치.  
+>   -   BSD스타일 : 줄간격이 한눈에 들어오지만 코드가 길어진다는 단점.
+>   -   K&R스타일 : 블록을 조건에 한 줄로 같은 행에 배치 코드 줄 수 절약, 한눈에 많은 코드를 작성 할 수 있다.
+>   -   유니티 C# 은 BSD 스타일로 사용한다.
+{: .notice}
+
+>   -   클래스명, 변수명, 함수 모두 의미있는 이름을 지어주어야 한다.
+>   -   내 코드를 다른 사람이 쉽게 이해할 수 있도록.
+>   -   오랜 시간 뒤에 내가 내 코드를 알아보기 위해서
+>   -   가독성. 취직.
+{: .notice--success}
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+// BSD
+if(조건)
+{
+    처리로직
+}
+
+// K&R
+if(조건){
+    처리로직
+}
+
+// 추가 GNU 코딩 스타일   : 블록 표시하여 구조가 잘 보인다
+//  수평으로 많은 코드를 작성할 수 없다.
+if(조건)
+    {
+        처리로직
+    }
+```
+</div>
+
+## 표기법, 네이밍 규칙
+
+
+> - PascalCase  : 모든 단어에서 첫 글자를 대문자로 쓰는 방식
+> - camelCase&nbsp;   : 첫 단어를 제외하고 나머지 첫 글자를 대문자로 쓰는 방식
+> - snake_case  : 단어가 합쳐진 부분마다 중간에 언더바(_)을 사용 
+> - kebab-case  : 단어가 합쳐진 부분마다 중간에 하이픈(-)을 사용 
+{: .notice}
+
+
+> - 유니티에서는 
+{: .notice--info}
+
+
+습관처럼 만들자
+
+<br><br><br><br><br><br>
+- - - 
+
+# 4. 정리, 잡담
 
 > **조건문**
 > - 조건문 **`if`**, **`switch`**, 3항 연산자  
