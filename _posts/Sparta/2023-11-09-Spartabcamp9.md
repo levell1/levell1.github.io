@@ -55,10 +55,6 @@ void UserInfo() // 1. 입력받기
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/71417b69-2b8c-4465-842b-c16d610c8218){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
-<br><br>
-
-
-
 <br><br><br><br><br><br>
 - - - 
 
@@ -66,7 +62,6 @@ void UserInfo() // 1. 입력받기
 강의 4일차 내용 정리  
 3주차강의
 {: .notice}
-
 
 
 [C# 클래스와 객체 상속과 다형성](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp7/)  
