@@ -24,18 +24,18 @@ C# 객체 지향 (클래스와 객체)
 - - - 
 
 # 1. 객체지향 프로그래밍
-캡슐화 **`Encapsulation`** &nbsp;&nbsp;&nbsp;상속 **`Inheritance`**) &nbsp;&nbsp;&nbsp;다형성 **`Polymorphism`**  
+캡슐화 **`Encapsulation`** &nbsp;&nbsp;&nbsp;상속 **`Inheritance`** &nbsp;&nbsp;&nbsp;다형성 **`Polymorphism`**  
 객체 **`Object`** &nbsp;&nbsp;&nbsp;추상화 **`Abstraction`**
 
 > **특징**
 > - 1.&nbsp;캡슐화 : 관련 데이터, 기능을 하나로 묶는 것, 정보은닉, 안정성 유지보수성
 > - 2.&nbsp;상속 &nbsp;&nbsp;&nbsp;&nbsp;: 기존 클래스를 확장해 새 클래스를 만든다, 코드의 중복을 줄이고,구조화, 유지보수
-> - 3.&nbsp;다형성 : 하나의 기능,인터페이스를 다양한 방식으로 구현, 사용하는 능력,
-> - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;하나의 메서드 이름이 다양한 객체에 다르게 동작, 
-> - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;유연하고 확장가능, 가독성, 재사용성
-> - 4.&nbsp;추상화 : 복잡한 시스템,개념을 단순화, 실제 세계의 개념 모델링, 필요부분 정의
-> - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;필요한 기능에 집중, 핵심 개념에 집중함으로써 코드의 이해와 유지보슈
-> - 5.&nbsp;객체 : 클래스로부터 생성된 실체, 데이터를 조작
+> - 3.&nbsp;다형성 : 하나의 기능,인터페이스를 다양한 방식으로 구현, 사용하는 능력,  
+>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;하나의 메서드 이름이 다양한 객체에 다르게 동작,  
+>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;유연하고 확장가능, 가독성, 재사용성  
+> - 4.&nbsp;추상화 : 복잡한 시스템,개념을 단순화, 실제 세계의 개념 모델링, 필요부분 정의  
+>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;필요한 기능에 집중, 핵심 개념에 집중함으로써 코드의 이해와 유지보슈  
+> - 5.&nbsp;객체 : 클래스로부터 생성된 실체, 데이터를 조작  
 {: .notice}
 
 <br><br><br><br><br><br>
@@ -171,6 +171,7 @@ class Person
 ```
 </div>
 
+<br><br>
 
 ## 프로퍼티(Property)
 객체의 필드에 직접 접근하지 않고, 간접적으로 값을 설정하거나 읽을 수 있도록 합니다.
@@ -277,6 +278,7 @@ Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");  // 값을 읽어 
 
 필드를 public으로 하면 어떻게 안써도 되지 않나? 라는 생각을 했었고, 필드를 private로 사용하는 이유 정보은닉, 데이터 보호, 내부적으로만 사용등 많은 이유가 있다.
 {: .notice}
+
 <br><br>
 
 ## 구조체 vs 클래스
@@ -285,18 +287,22 @@ Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");  // 값을 읽어 
 > - 구조체는 값 형식이며, 스택에 할당되고 복사될 때 값이 복사
 > - 상속을 받을 수 없다
 > - 작은 크기의 데이터 저장이나 단순한 데이터 구조에 적합
+{: .notice}
 
 
 > **클래스**  
 > - 클래스는 참조 형식이며, 힙에 할당되고 참조로 전달
 > - 클래스는 단일 상속 및 다중 상속이 가능
 > - 더 복잡한 객체를 표현하고 다양한 기능을 제공
+{: .notice}
 
 <br><br><br><br><br><br>
 - - - 
 
 # 3. 접근 제한자
 클래스의 캡슐화를 제어하는 역할  
+{: .notice}
+
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
@@ -312,7 +318,9 @@ class Person
 
 
 # 정리 잡답
-> - 내일 정리
+> - 객체지향, 클래스(필드, 메서드, 생성자, 소멸자, 프로퍼티)
+> - 구조체,클래스 차이
+> - 접근 제한자 Public Private Protected
 {: .notice}
 
 

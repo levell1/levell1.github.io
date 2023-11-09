@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 배열, 컬렉션 ⭐⭐ "
+title:  "[Sparta-BCamp] C# 배열, 컬렉션(list, Dictionary, Stack, Queue, Hashset) ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
