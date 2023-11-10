@@ -266,7 +266,7 @@ foreach (int element in set1)
 <br><br>
 - - - 
 
-[Unity] C# 배열, 컬렉션
+[Unity] C# 배열, 컬렉션(list, Dictionary, Stack, Queue, Hashset)
 
 <br>
 

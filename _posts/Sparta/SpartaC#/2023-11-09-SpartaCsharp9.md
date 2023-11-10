@@ -177,7 +177,7 @@ Console.WriteLine($"{x}, {y}"); // 출력 결과: 2, 1
 <br><br>
 - - - 
 
-[Unity] C# 메서드와 구조체
+[Unity] C# 문법 제너릭, out, ref
 
 <br>
 

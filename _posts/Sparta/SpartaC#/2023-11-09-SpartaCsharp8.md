@@ -256,7 +256,7 @@ foreach (Shape shape in list )
 <br><br>
 - - - 
 
-[Unity] C# 메서드와 구조체
+[Unity] C# 객체 지향 (상속과 다형성)
 
 <br>
 

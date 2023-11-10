@@ -232,7 +232,7 @@ person1.PrintInfo();
 <br><br>
 - - - 
 
-[Unity] C# 배열, 컬렉션
+[Unity] C# 메서드와 구조체
 
 <br>
 
