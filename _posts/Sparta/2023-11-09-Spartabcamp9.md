@@ -28,7 +28,7 @@ date: 2023-11-09 09:00
 - - - 
 
 # 1. C# 강의 내용 정리
-강의 4일차 내용 정리  
+4일차 내용 정리  
 3주차강의
 {: .notice}
 
@@ -63,9 +63,6 @@ date: 2023-11-09 09:00
 ```c# 
 using System;
 using System.Drawing;
-using System.Security.Cryptography.X509Certificates;
-
-
 
 namespace Snake
 {
@@ -120,6 +117,7 @@ namespace Snake
                             snake.Direction = Direction.LEFT;
                             break;
                     }
+                    food.Draw();
                 }
                 // 뱀이 이동하고, 음식을 먹었는지, 벽이나 자신의 몸에 부딪혔는지 등을 확인하고 처리하는 로직을 작성하세요.
                 if (snake.Eat(food))
@@ -127,6 +125,7 @@ namespace Snake
                     score++;
                     food.Draw();
                     food = foodCreator.CreateFood(map_X, map_Y);
+
                     food.Draw();
                 }
                 else
@@ -355,10 +354,14 @@ namespace Snake
 **게임화면**
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/cd13cb8b-9c1c-47a5-a126-864444aced6b){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
-
 **종료화면**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/fa15444a-b91f-4ca3-a8d9-b5e0c42eaa93){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
+**느낀점**  
+이번 과제는 생각대로 구현 해보고, 풀이를 보며 코드의 부분을 공부하고 이해 후 사용하는 방식으로 하였다.  
+뱀의 몸에서 food가 나타날 경우 푸드위치에 몸이 겹쳐 빈칸으로 나오는 버그가 있다.  
+기능을 추가하지 못하고 넘어갔다. 다른 중요한 과제를 먼저 할 생각이다.
+{: .notice}
 <br><br><br><br><br><br>
 - - - 
 

@@ -126,7 +126,7 @@ void Bmi() // 4. BMI
 - - - 
 
 # 2. C# 강의 내용 정리
-강의 2일차 내용 정리
+2일차 내용 정리
 {: .notice}
 
 [C# 조건문(if, switch, 3항 연산자), 반복문](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp4/)  
