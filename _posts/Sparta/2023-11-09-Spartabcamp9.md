@@ -351,7 +351,7 @@ namespace Snake
 
 </details>
 
-**게임화면**
+**게임화면**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/cd13cb8b-9c1c-47a5-a126-864444aced6b){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
 **종료화면**  
