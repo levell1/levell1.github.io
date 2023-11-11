@@ -18,9 +18,10 @@ date: 2023-11-10 20:00
 
 <center><H1> 개인 공부 C# 5일차   </H1></center>
 
-- [x] 블랙잭
-- [x] 개인과제(TextGame)
-- [] 사이트 신청하기
+&nbsp;&nbsp; [o] 블랙잭  
+&nbsp;&nbsp; [o] 개인과제(TextGame)  
+&nbsp;&nbsp; [ ] 사이트 신청하기  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
 <br><br><br><br><br><br>
@@ -301,7 +302,7 @@ namespace BlackJack1
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/b031110a-65be-4202-82d7-d15722b9b489){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
-**블랙잭**  
+**<u>블랙잭</u>**  
 이번 과제는 처음에 생각대로 구현 해보다가 풀이를 보며 만들어져있는 클래스의 기능을 이해, deck, drawcard 등을 이용하여  Main과 Blackjack 부분 (게임 play) 작성  
 {: .notice}
 
@@ -637,7 +638,8 @@ namespace TextGame
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/f52168d5-9b27-4219-a2be-2f7fc2f219b1){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
 **느낀점**  
-생각해던걸 만드는건 어려웠지만 잘 진행되었던거 같다. 만들면서 클래스 이름, 이 메서드는 어떤 클래스에 배치되어야 될까, 만약 메서드를 옮긴다면 사용된 변수들은 어떻게 그곳에서 사용하는지 또 main에서 게임진행 while, if 조건은 어떻게 더 간단하고 보기쉽게 만들 수 있을까 에 대한 고민을 많이 했습니다.
+과제 개요, 요구사항을 보고 나의 생각을 코드로 적었다. 어려웠지만 잘 진행되었던거 같다.  
+만들면서 클래스 이름, 이 메서드는 어떤 클래스에 배치되어야 될까, 만약 메서드를 옮긴다면 사용된 변수들은 어떻게 그곳에서 사용하는지 또 main에서 게임진행 while, if 조건은 어떻게 더 간단하고 보기쉽게 만들 수 있을까 에 대한 고민을 많이 했다. 다음 주는 선택 요구사항 기능들을 추가해 예정이다.
 {: .notice}
 
 <br><br><br><br><br><br>
