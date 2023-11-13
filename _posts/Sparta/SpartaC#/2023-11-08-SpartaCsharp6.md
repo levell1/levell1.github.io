@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 메서드와 구조체  ⭐⭐⭐ "
+title:  "[C#] 메서드와 구조체  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 인터페이스(Interface), 열거형(Enum) ⭐⭐ "
+title:  "[C#] 인터페이스(Interface), 열거형(Enum) ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

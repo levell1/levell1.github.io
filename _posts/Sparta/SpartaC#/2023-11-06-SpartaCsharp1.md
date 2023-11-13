@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 환경, 기본요소, Escape Sequence ⭐ "
+title:  "[C#] 환경, 기본요소, Escape Sequence ⭐ "
 excerpt: "Sparta"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 조건문(if, switch, 3항 연산자), 반복문 ⭐⭐ "
+title:  "[C#] 조건문(if, switch, 3항 연산자), 반복문 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

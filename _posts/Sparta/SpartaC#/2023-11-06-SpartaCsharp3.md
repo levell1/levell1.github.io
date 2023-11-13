@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 연산자와 문자열 처리 ⭐⭐ "
+title:  "[C#] 연산자와 문자열 처리 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

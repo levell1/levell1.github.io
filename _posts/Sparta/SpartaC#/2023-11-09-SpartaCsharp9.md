@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 문법 제너릭, out, ref ⭐⭐ "
+title:  "[C#] 문법 제너릭, out, ref ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

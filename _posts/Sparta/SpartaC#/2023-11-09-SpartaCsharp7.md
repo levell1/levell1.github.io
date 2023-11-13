@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 객체 지향 (클래스와 객체)  ⭐⭐⭐ "
+title:  "[C#] 객체 지향 (클래스와 객체)  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:

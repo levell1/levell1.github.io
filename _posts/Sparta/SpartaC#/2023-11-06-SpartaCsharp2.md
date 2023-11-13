@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 변수와 자료형, Split ⭐⭐ "
+title:  "[C#] 변수와 자료형, Split ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 객체 지향 (상속과 다형성)  ⭐⭐⭐ "
+title:  "[C#] 객체 지향 (상속과 다형성)  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:

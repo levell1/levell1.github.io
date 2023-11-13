@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] C# 예외처리, 값형과 참조형 ⭐⭐ "
+title:  "[C#] 예외처리, 값형과 참조형 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -17,7 +17,7 @@ date: 2023-11-13 13:00
 <BR><BR>
 
 <center><H1> C# 예외처리, 값형과 참조형(class)   </H1></center>
-C# 예외처리, 값형과 참조형(class)
+C# 예외처리, 값형과 참조형
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
