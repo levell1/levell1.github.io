@@ -14,6 +14,7 @@ date: 2023-10-31 20:00
 
 ---
 - - -
+깃 허브, Substring
 <BR><BR>
 
 <center><H1> 미니 프로젝트 2일차  </H1></center>

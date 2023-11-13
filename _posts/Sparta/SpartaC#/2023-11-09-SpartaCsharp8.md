@@ -14,6 +14,7 @@ date: 2023-11-09 09:30
 
 ---
 - - -
+추상(Abstract) 가상 메서드 (virtual)
 <BR><BR>
 
 <center><H1> C# 객체 지향 (클래스와 객체 상속과 다형성)  </H1></center>

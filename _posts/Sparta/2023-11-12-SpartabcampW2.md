@@ -18,8 +18,8 @@ date: 2023-11-11 08:00
 
 <center><H1> 스파르타 부트캠프 2주차  </H1></center>
 
-둘째 주 11일 117시간  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/6a1869a8-c0ab-4540-98e9-8d606508a5b3){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
+둘째 주 120시간  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/3af94d91-971a-4495-b0e5-912167209dcd){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 {: .notice}
 
 
@@ -47,17 +47,6 @@ c#에 관하여 공부, 좋은 코드란 뭘까? 보기 좋은 코드? 짧은 �
 {: .notice--info}
 
 <br><br><br><br><br><br>
-- - - 
-
-# 3. 잡담(일기)
-
-{: .notice}
-
-{: .notice--info}
-
-{: .notice--warning}
-
-<br><br>
 - - - 
 
 [C#] WIL 2

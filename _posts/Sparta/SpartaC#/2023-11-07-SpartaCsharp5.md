@@ -14,9 +14,10 @@ date: 2023-11-07 11:50
 
 ---
 - - -
+조건문, 반복문, 배열, 컬렉션(list, Dictionary, Stack, Queue, Hashset)
 <BR><BR>
 
-<center><H1> C# 배열, 컬렉션 </H1></center>
+<center><H1> C# 배열, 컬렉션(list, Dictionary, Stack, Queue, Hashset) </H1></center>
 C# 배열, 컬렉션
 {: .notice}
 
