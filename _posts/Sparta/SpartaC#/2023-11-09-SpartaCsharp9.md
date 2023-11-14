@@ -171,6 +171,9 @@ Console.WriteLine($"{x}, {y}"); // 출력 결과: 2, 1
 # 정리 잡답
 > - 제너릭 사용법 익히기, 
 > - ref, out 많이 써보기
+> - return대신 ref out을 쓰는이유  
+return은 1개의 값만 반환가능  
+ref out은 여러개 값을 상황에 따라 반환가능
 {: .notice}
 
 

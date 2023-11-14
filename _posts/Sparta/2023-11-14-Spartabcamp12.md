@@ -100,9 +100,10 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 **4.&nbsp;switch enum 사용하기**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/39da54db-0cf6-4d83-bfbf-ca9cc827a6f5){:style="border:1px solid #EAEAEA; border-radius: 7px;"} &nbsp;&nbsp;
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/9cfb272a-78c5-41dc-ab32-da4ef4cba574){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/83038e83-14c9-4c7b-be49-abbf46343c25){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/83038e83-14c9-4c7b-be49-abbf46343c25){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice--info}
 
+<br>
 
 > **느낀점**  
 **<u>파일을 나누니까</u>** 개발 도중 원하는 내용을 보고 싶을 때 기존 방식에 비해 너무 편하고 쉬웠습니다.  
@@ -137,6 +138,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
+<br><br>
 
 체크리스트 강의 1-3주차  
 [o] C#에서 사용되는 기본 자료형에 대해 이해합니다.  
@@ -147,8 +149,42 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 [o] 생성자와 소멸자, 접근 제한자, Properties 등 클래스의 주요 요소를 이해합니다.  
 [o] C#에서 상속과 다형성의 개념을 이해하고 활용할 수 있습니다.  
 [o] 추상 클래스의 개념과 사용법을 이해하고 활용할 수 있습니다.  
-[o] C#의 제너릭과 out, ref 키워드의 개념을 이해하고 활용할 수 있습니다.  
+[△] C#의 제너릭과 out, ref 키워드의 개념을 이해하고 활용할 수 있습니다.  
+제너릭 out, ref 확실하게 이해하기. 
 {: .notice--success}  
+
+> - 제너릭 : 기능중 다양한 형이 들어갈 경우.  
+> - return을 쓰면 되지않나? -> return대신 ref out을 쓰는 이유  
+> - return은 1개의 값만 반환가능  
+> - ref out은 여러개 값을 상황에 따라 반환가능
+> - return대신 ref out 많이 써보기  
+{: .notice}  
+<details>
+<summary>out, ref 연습</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c#
+    void swap(ref int a, ref int b)
+    {
+        int mid;
+        mid = a;
+        a = b;
+        b = mid;
+    }
+    void add(int a , int b , out int c) {
+        c = a + b;
+    }
+    int num1 = 10;
+    int num2 = 20;
+    int num3;
+    swap(ref num1, ref num2);
+    Console.WriteLine(num1 + " " + num2);
+    add(num1, num2, out num3);
+    Console.WriteLine(num1 + " " + num2 + " " + num3);
+```
+</div>
+
+</details>
 
 <br><br>
 - - - 
