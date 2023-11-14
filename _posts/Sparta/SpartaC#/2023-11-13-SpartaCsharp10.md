@@ -282,6 +282,59 @@ static void Main()
 </div>
 </details>
 
+## Enum호기심
+Enum에 없는 int값 을 넣으면? 어떻게될까? 오류가 뜨나? ->  
+튜터님에게 물어봤다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+enum MyEnum
+{
+    Value1 = 10,
+    Value2, //11 +1
+    Value3 = 20
+}
+
+// 게임 실행
+static void Main()
+{
+    int intValue = (int)MyEnum.Value1;  // 열거형 값을 정수로 변환
+    intValue = int.Parse(Console.ReadLine());
+    //MyEnum enumValue = (MyEnum)intValue;  // 정수를 열거형으로 변환
+    MyEnum enumValue = (MyEnum)100;  // 정수를 열거형으로 변환
+    switch (enumValue)
+    {
+        case MyEnum.Value1:
+            Console.WriteLine("10"+MyEnum.Value1);
+            break;
+        case MyEnum.Value2:
+            Console.WriteLine("11"+MyEnum.Value2);
+            break;
+        case MyEnum.Value3:
+            Console.WriteLine("20"+MyEnum.Value3);
+            break;
+        default:
+            // 기본 처리
+            break;
+    }
+    Console.WriteLine(intValue);
+    Console.WriteLine("enumvalue : " + enumValue);      //Value1~3출력  enumValue=100 일때는 100이 출력된다.
+    Console.WriteLine(MyEnum.Value1);
+    Console.WriteLine(MyEnum.Value2);
+    Console.WriteLine(MyEnum.Value3);
+}
+```
+</div>
+
+> - enumValue 에  10 -> Value1, 11 -> Value2, 20 -> Value3
+> - 100을 넣으면? -> 100이 출력됌   
+MyEnum enumValue = (MyEnum)100; 에서 오류가 안 뜨고 출력 부분에서  100이 출력됨   
+> - 매칭이 안되는 값을 저장하려고 할 때 어떤 주소값에 <int>값으로 저장이 되긴 한다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}
 
 <br><br>
 - - - 
