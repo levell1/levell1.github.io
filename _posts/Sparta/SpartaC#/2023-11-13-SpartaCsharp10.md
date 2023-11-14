@@ -193,7 +193,7 @@ Player 클래스에 매개변수 가 왜 인터페이스일까, 클래스Item으
 - - - 
 
 # 2. 열거형 Enum
-서로 관련된 상수들의 집합을 정의할 때 사용  
+서로 관련된 상수들의 집합을 정의할 때 사용 ENUM=자료형  
 각 상수는 정숫값으로 지정
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}

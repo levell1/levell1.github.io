@@ -63,7 +63,8 @@ date: 2023-11-13 18:00
 
 > **정리**  
 인터페이스(**`Interface`**), 열거형(**`Enum`**)   
- **`try-catch`**, **`finally`**, 값형**`(Value Type)`**, 참조형**`(Reference Type)`**, **`박싱과 언박싱`**   
+ **`try-catch`**, **`finally`**, 값형 **`(Value Type)`**, 참조형 **`(Reference Type)`**, **`박싱과 언박싱`**   
+인터페이스는 제약조건(제시). 구현은 클래스가 | 열거형- 코드의 가독성, ENUM = 자료형  
 값형과 참조형, 박싱과 언박싱의 개념을 확실히 이해하자!  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  

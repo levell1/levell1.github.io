@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-11-14 10:44
+date: 2023-11-14 12:10
 
 ---
 - - -
@@ -23,7 +23,7 @@ date: 2023-11-14 10:44
 
 &nbsp;&nbsp; [o] 4주차 강의 복습, 정리   
 &nbsp;&nbsp; [o] 개인과제(TextGame) 피드백보고 개선  
-&nbsp;&nbsp; [ ] 시간남으면 4주차 과제 시도해보기.
+&nbsp;&nbsp; [ ] 시간남으면 4주차 과제 시도해보기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -34,11 +34,11 @@ date: 2023-11-14 10:44
 7일차 내용 정리  
 4주차강의
 
-[C# 인터페이스(Interface), 열거형(Enum)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp12/)  
+[C# 델리게이트(Delegata), 람다(Lambda), Func,Action, LINQ](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp12/)  
 델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**   
 {: .notice--info}
 
-[C# 예외처리, 값형과 참조형(class)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp13/)  
+[C# Nullable, 문자열 빌더(StringBuilder)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp13/)  
  **`Nullable`**, 문자열 빌더(**`StringBuilder`**) 
 {: .notice--info}
 
@@ -79,7 +79,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 &nbsp;&nbsp; [o] **1.&nbsp;Class 파일 나누기**  
 &nbsp;&nbsp; [o] **2.&nbsp;EquipMent 경우 상속 재설계**  
 &nbsp;&nbsp; [o] **3.&nbsp;깃 커밋 설명 잘 적기**  
-&nbsp;&nbsp; [x] **4.&nbsp;switch enum 사용하기(다음 프로젝트 때 반영)**   
+&nbsp;&nbsp; [o] **4.&nbsp;switch enum 사용하기**   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice}
 
@@ -97,6 +97,12 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/0668936c-cbfb-4554-bed3-3cd5cfd8f1f9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice--info}
 
+**4.&nbsp;switch enum 사용하기**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/39da54db-0cf6-4d83-bfbf-ca9cc827a6f5){:style="border:1px solid #EAEAEA; border-radius: 7px;"} &nbsp;&nbsp;
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/9cfb272a-78c5-41dc-ab32-da4ef4cba574){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/f2564269-2671-4c22-89df-5acdcfbb6e6d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
+
 
 > **느낀점**  
 **<u>파일을 나누니까</u>** 개발 도중 원하는 내용을 보고 싶을 때 기존 방식에 비해 너무 편하고 쉬웠습니다.  
@@ -106,7 +112,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 enum은 현제 코드에 적용하려니 저의 생각으로는 뭔가 바꿀 게 많은 거 같아서 다음 프로젝트부터 Enum, Switch를 사용해 볼 예정입니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice--info}
-과제에 대한 피드백을 받고 잘 하고있는지, 부족한부분, 수정하면 좋은부분을 알게되어 좋았습니다.  [README](https://github.com/levell1/Practice_Csharp#readme)
+과제에 대한 피드백을 받고 잘 하고있는지, 부족한부분, 수정하면 좋은부분을 알게되어 좋았습니다.  [README](https://github.com/levell1/Practice_Csharp#readme)  
 튜터님 감사합니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice--success}
