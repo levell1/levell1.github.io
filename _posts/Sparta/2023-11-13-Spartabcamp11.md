@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 11 (TextGame, Interface, Enum) ⭐⭐ "
+title:  "[Sparta-BCamp] TIL 11 (TextGame, Interface, Enum, try-catch, finally) ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -23,7 +23,7 @@ date: 2023-11-13 18:00
 
 &nbsp;&nbsp; [o] 개인과제(TextGame) 진행  
 &nbsp;&nbsp; [o] 4주차 강의 듣기    
-&nbsp;&nbsp; [ ] 사이트 신청하기  
+&nbsp;&nbsp; [o] 사이트 신청하기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -48,9 +48,8 @@ date: 2023-11-13 18:00
 4주차강의
 
 [C# 인터페이스(Interface), 열거형(Enum)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp10/)  
-인터페이스(**`Interface`**), 열거형(**`Enum`**)
+인터페이스(**`Interface`**), 열거형(**`Enum`**)  
 {: .notice--info}
-
 [C# 예외처리, 값형과 참조형(class)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp11/)  
  **`try-catch`**, **`finally`**, 값형**`(Value Type)`**, 참조형**`(Reference Type)`**, **`박싱과 언박싱`**    
 {: .notice--info}
@@ -71,7 +70,7 @@ date: 2023-11-13 18:00
 > **잡담**  
 4주차 내용 정리 못한 거 내일 정리(람다,linq,Nullable 형,자열 빌더 (StringBuilder))  
 오늘은 집중이 안 되는 하루였다. 오전에 집중이 안 됐고 밥을 먹고 난 후 잠이 너무 와서 조금 잤다.  
-4주차 내용 2번 정도 들었고, 내일 또 들어야겠다. 
+4주차 내용 2번 들었고, 내일 또 들어야겠다. 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

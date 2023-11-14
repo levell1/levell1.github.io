@@ -1,5 +1,5 @@
 ---
-title:  "[C#] 문법 제너릭, out, ref ⭐⭐ "
+title:  "[C#] 문법 제너릭, out, ref ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -181,7 +181,7 @@ Console.WriteLine($"{x}, {y}"); // 출력 결과: 2, 1
 
 <br>
 
-참고 : [유니티](https://docs.unity3d.com/kr/)
+참고 : [유니티](https://docs.unity3d.com/kr/) [C#](https://learn.microsoft.com/ko-kr/dotnet/csharp/)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

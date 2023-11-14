@@ -1,5 +1,5 @@
 ---
-title:  "[C#] 예외처리, 값형과 참조형 ⭐⭐ "
+title:  "[C#] 예외처리, 값형과 참조형 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -16,7 +16,7 @@ date: 2023-11-13 13:00
 - - -
 <BR><BR>
 
-<center><H1> C# 예외처리, 값형과 참조형(class)   </H1></center>
+<center><H1> C# 예외처리, 값형과 참조형  </H1></center>
 C# 예외처리, 값형과 참조형
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
@@ -336,11 +336,11 @@ object는 .NET Common Type System (CTS)의 일부이며, 모든 클래스의 직
 <br><br>
 - - - 
 
-[Unity] C# 예외처리, 값형과 참조형(class)
+[Unity] C# 예외처리, 값형과 참조형
 
 <br>
 
-참고 : [유니티](https://docs.unity3d.com/kr/)
+참고 : [유니티](https://docs.unity3d.com/kr/) [C#](https://learn.microsoft.com/ko-kr/dotnet/csharp/)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

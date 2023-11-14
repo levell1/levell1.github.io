@@ -261,7 +261,7 @@ foreach (Shape shape in list )
 
 <br>
 
-참고 : [유니티](https://docs.unity3d.com/kr/)
+참고 : [유니티](https://docs.unity3d.com/kr/) [C#](https://learn.microsoft.com/ko-kr/dotnet/csharp/)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

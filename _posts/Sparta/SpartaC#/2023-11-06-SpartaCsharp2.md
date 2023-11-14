@@ -397,7 +397,7 @@ var pi = 3.141592;    // double 자료형으로 결정됨
 
 <br>
 
-참고 : [유니티](https://docs.unity3d.com/kr/)
+참고 : [유니티](https://docs.unity3d.com/kr/) [C#](https://learn.microsoft.com/ko-kr/dotnet/csharp/)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

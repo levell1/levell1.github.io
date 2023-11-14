@@ -140,8 +140,7 @@ Console.WriteLine("C:\\MyDocuments\\Project\\");
 
 <br>
 
-참고 : [유니티 문서](https://docs.unity3d.com/kr/)   
-[C# 문서](https://learn.microsoft.com/ko-kr/dotnet/csharp/)
+참고 : [유니티 문서](https://docs.unity3d.com/kr/)   [C#](https://learn.microsoft.com/ko-kr/dotnet/csharp/)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
