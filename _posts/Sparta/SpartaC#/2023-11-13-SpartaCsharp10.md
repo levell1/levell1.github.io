@@ -282,6 +282,8 @@ static void Main()
 </div>
 </details>
 
+<br><br>
+
 ## Enum호기심
 Enum에 없는 int값 을 넣으면? 어떻게될까? 오류가 뜨나? ->  
 튜터님에게 물어봤다.  

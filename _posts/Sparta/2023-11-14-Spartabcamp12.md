@@ -125,10 +125,11 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 # 3. 정리, 잡담
 
 > **정리**  
-델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**   
+델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**, 
  **`Nullable`**, 문자열 빌더(**`StringBuilder`**)  
 델리게이트 개념 복습, 설명이 가능할 정도로 개념 확인.  
-람다, func, Action, LINQ 많이 사용해보기 LINQ
+람다, func, Action, LINQ 많이 사용해보기 LINQ  
+4주차강의 복습
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 

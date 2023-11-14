@@ -38,7 +38,39 @@ C# 예외처리, 값형과 참조형
 > - **`try`** 내에 예외가 발생할 수 있는 코드 작성  
 > - **`catch`** 에서 예외 처리.
 {: .notice--info}
+
+<br><BR>
+
+## 예외 종류
+
+|**예외 종류**|설명|
+|:---|:---|
+|Exception|모든 종류의 예외를 처리할 수 있다.|
+|ArgumentNullException|메서드에 전달 되는 인수가 null이다.|
+|ArgumentException|메서드에 전달 되는 null이 아닌 인수가 잘못되었다.|
+|ArgumentOutOfRangeException|인수가 유효한 값 범위를 벗어났다.|
+|DirectoryNotFoundException|디렉터리 경로 일부가 잘못되었다.|
+|DivideByZeroException|0으로 나누었다.|
+|DriveNotFoundException|드라이브가 없거나 사용할 수 없다.|
+|FileNotFoundException|파일이 없다.|
+|FormatException|문자열에서 변환할 수 있는 적절 한 형식이 아니다.|
+|IndexOutOfRangeException|인덱스가 배열 또는 컬렉션의 범위를 벗어났다.|
+|InvalidOperationException|개체의 현재 상태에서 메서드 호출을 사용할 수 없다.|
+|KeyNotFoundException|컬렉션의 멤버에 액세스 하는 데 지정 된 키를 찾을 수 없다.|
+|NotImplementedException|메서드 또는 작업이 구현 되지 않았다.|
+|NotSupportedException|메서드 또는 작업이 지원 되지 않는다.|
+|ObjectDisposedException|삭제 된 개체에 대한 작업을 수행했다.|
+|OverflowException|산술, 캐스팅 또는 변환 작업을 수행 하면 오버플로가 발생한다.|
+|PathTooLongException|경로 또는 파일 이름이 시스템에서 정의한 최대 길이를 초과한다.|
+|PlatformNotSupportedException|현재 플랫폼에서 작업이 지원 되지 않는다.|
+|RankException|차원 수가 잘못되었다.|
+|TimeoutException|작업에 할당 된 시간 간격이 만료 되었다.|
+|UriFormatException|잘못 된 URI (Uniform Resource Identifier)가 사용 되었다.|
+
+
 <br>
+
+## Try-catch 코드
 
 <details>
 <summary>try-catch</summary>
@@ -83,7 +115,7 @@ finally
 <br><BR>
 
 ## 사용자 정의 예외
-자신만의 예외 클래스를 작성  
+자신만의 예외 클래스를 작성  try부분에 추가한다.  
 Exception 클래스를 상속받아 작성하며, 추가적인 기능이나 정보를 제공할 수 있습니다.  
 [Exception](https://learn.microsoft.com/ko-kr/dotnet/api/system.exception?view=net-7.0)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -142,24 +174,8 @@ catch (Exception ex)
 </div>
 </details>
 
-> - 인터페이스 IItemPickabel, IDroppable 을 상속받은 클래스 Item
-> - Item은 Pickup, Drop 을 구현해야 한다.
-> - Main에서 아이템을 줍고 버리는 기능 수행  
-{: .notice}
-
-> - **궁금한 점**  
-Player 클래스에 매개변수 가 왜 인터페이스일까, 클래스Item으로 해도 되지 않을까?
-> - **이유**  
-클래스로 해도 가능하다, 하지만 나중에 InterFace가 많아지면서 그 메서드가 무슨 기능을 하는지 한눈에 보기 쉽게 Ineterface로 하면 좋다.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}
-
-<BR><BR>
-
-## 추상 클래스의 장단점
-> - 인터페이스와 비슷하지만 다른.
-> - 단점 : 단일상속만 가능, 유연성 제한
-> - 장점 : 하위 클래스에 재정의 X, 코드 중복방지, 확장성 제공
+> - throw new NegativeNumberException("1")
+> - NegativeNumberException의 예외처리를 던진다.
 {: .notice}
 
 <br><br><br><br><br><br>
@@ -167,6 +183,7 @@ Player 클래스에 매개변수 가 왜 인터페이스일까, 클래스Item으
 
 # 2. 값형과 참조형
 <U>C#에서 변수가 데이터를 저장하는 방식을 나타냅니다.  </U>
+{: .notice}
 
 ## 값형(Value Type)
 
@@ -329,9 +346,16 @@ object는 .NET Common Type System (CTS)의 일부이며, 모든 클래스의 직
 모든 클래스는 object에서 상속되며, object는 모든 형식을 참조할 수 있는 포괄적인 타입입니다.  
 {: .notice}
 
-값형과 참조형, 박싱과 언박싱의 개념을 확실히 이해하자.
+
+# 4. 정리
+> - 예외처리 : **`try`** **`catch`** **`finally`**  
+> - 값형 : **`int`**, **`float`**, **`double`**, **`bool`**  
+> - 참조형 : **`클래스`**, **`배열`**, **`인터페이스`**  
+> - 박싱 -> Object 사용 int num1 = 10; **`object`** `obj` = num1;  
+> - 언박싱 -> int num2 = (int)`obj`;
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
+
 
 <br><br>
 - - - 
