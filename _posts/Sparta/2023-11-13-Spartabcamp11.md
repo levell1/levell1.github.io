@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 11 (TextGame, Interface, Enum, try-catch, finally) ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 11 (TextGame, Interface, Enum, try-catch, finally) ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -50,6 +50,7 @@ date: 2023-11-13 18:00
 [C# 인터페이스(Interface), 열거형(Enum)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp10/)  
 인터페이스(**`Interface`**), 열거형(**`Enum`**)  
 {: .notice--info}
+
 [C# 예외처리, 값형과 참조형(class)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp11/)  
  **`try-catch`**, **`finally`**, 값형**`(Value Type)`**, 참조형**`(Reference Type)`**, **`박싱과 언박싱`**    
 {: .notice--info}
