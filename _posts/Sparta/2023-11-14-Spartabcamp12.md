@@ -49,9 +49,65 @@ date: 2023-11-14 10:44
 # 2. 개인과제(TextGame) 피드백, 개선
 [깃허브 Readme](https://github.com/levell1/Practice_Csharp/blob/main/README.md)
 
-  
-**느낀점**  
+## 피드백
+<details>
+<summary>피드백 내용</summary>
+<div class="notice--primary" markdown="1"> 
+
+```
+필수기능과 추가기능에 대한 요청사항을 잘 이해하고 적절히 구현하였습니다.  
+기능을 최대한 스스로 해결하려 한 모습이 느껴져서 좋습니다. 또한 기능개발에 따른 자료구조에 대한 고민까지 나아간 점이 좋습니다.  
+Class에 필요한 정보(Data)와 기능(Function)을 적절하게 사용하셨습니다.  
+코드에 필요한 클래스를 잘 생성하였지만 별도의 파일로 만들고 분리해보시길 추천드립니다.  
+Items 클래스의 경우 상속을 이용해 부모-자식 클래스 관계로 재설계 해보세요. 해당 내용은 개인과제 설명의 예시 코드를 참고해보세요.  
+swith문은 Enum을 활용해서 작성하면 가독성 측면에서 더 나은 코드가 됩니다.  
+깃 커밋의 내용을 직관적이고 명확하게 적는 연습을 해보세요. Git commit message 규칙 이라는 키워드를 통해 학습하고 적용시켜보세요.  
+ex)  
+[ADD] 인벤토리 기능 추가  
+[FIX] 정보출력 기능 버그 수정  
+Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하게 잘 작성하셨습니다.  
+```
+</div>
+
+
+
+</details>
+
+<br>
+
+**개선점, 느낀점**  
+
+> **개선점**
+&nbsp;&nbsp; [o] **Class 파일 나누기**  
+&nbsp;&nbsp; [o] **item 경우 상속 재설계**  
+&nbsp;&nbsp; [x] **switch enum 사용하기(다음 프로젝트 때 반영)**   
+&nbsp;&nbsp; [o] **깃 커밋 설명 잘 적기**  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice}
+
+> **개선**  
+**Class 파일 나누기**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/683eb753-04e1-435c-8aa1-06579ba12052){:style="border:1px solid #EAEAEA; border-radius: 7px;"} &nbsp;&nbsp;
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/db76d506-d5fe-4fe5-9240-4cde375f62d6){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{: .notice--info}
+
+**item 경우 상속 재설계**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/a92c4bfd-23db-46fe-841f-48db4d8f3cda){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{: .notice--info}
+
+**깃 커밋 설명 잘 적기**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/0668936c-cbfb-4554-bed3-3cd5cfd8f1f9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{: .notice--info}
+
+
+> **느낀점**
+파일을 나누니까 개발 도중 원하는 내용을 보고 싶을 때 기존 방식에 비해 너무 편하고 쉬웠습니다. (저희조 팀장님이 이해하기 쉽게 설명해주셨습니다. 감사합니다.)  
+상속의 경우 코드 기획? 설계부분이 미숙해 아직 완벽하게 이해하지 못하고 사용해 보았습니다, 많이 사용해 보며 확실하게 알 수 있게 하는 게 목표입니다.  
+깃 커밋 설명을 적고 협업 시 원활한 소통이 가능할 거 같다고 느꼈습니다.
+enum은 현제 코드에 적용하려니 저의 생각으로는 뭔가 바꿀 게 많은 거 같아서 다음 프로젝트부터 Enum, Switch를 사용해 볼 예정입니다.  
+{: .notice--info}
+과제에 대한 피드백을 받고 잘 하고있는지, 부족한부분, 수정하면 좋은부분을 알게되어 좋았습니다. 튜터님 감사합니다.
+{: .notice--success}
 
 <br><br><br><br><br><br>
 - - - 
