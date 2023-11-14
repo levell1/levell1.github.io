@@ -100,7 +100,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 **4.&nbsp;switch enum 사용하기**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/39da54db-0cf6-4d83-bfbf-ca9cc827a6f5){:style="border:1px solid #EAEAEA; border-radius: 7px;"} &nbsp;&nbsp;
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/9cfb272a-78c5-41dc-ab32-da4ef4cba574){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/f2564269-2671-4c22-89df-5acdcfbb6e6d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/83038e83-14c9-4c7b-be49-abbf46343c25){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}
 
 
@@ -108,10 +108,11 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 **<u>파일을 나누니까</u>** 개발 도중 원하는 내용을 보고 싶을 때 기존 방식에 비해 너무 편하고 쉬웠습니다.  
 (저희조 팀장님이 이해하기 쉽게 설명해 주셨습니다. 감사합니다.🙇)  
 **<u>상속</u>**의 경우 코드 기획? 설계부분이 미숙해 아직 완벽하게 이해하지 못하고 사용해 보았습니다, 많이 사용해 보며 확실하게 알 수 있게 하는 게 목표입니다.  
-**<u>깃 커밋</u>** 설명을 적고 협업 시 원활한 소통이 가능할 거 같다고 느꼈습니다.
-enum은 현제 코드에 적용하려니 저의 생각으로는 뭔가 바꿀 게 많은 거 같아서 다음 프로젝트부터 Enum, Switch를 사용해 볼 예정입니다.  
+**<u>깃 커밋</u>** 설명을 적고 협업 시 원활한 소통이 가능할 거 같다고 느꼈습니다.  
+**<u>switch enum 사용</u>** 후 가독성이 좋아진 거 같다, case 1~4보단 무슨 기능을 하는지 보기 좋았다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {: .notice--info}
+
 과제에 대한 피드백을 받고 잘 하고있는지, 부족한부분, 수정하면 좋은부분을 알게되어 좋았습니다.  [README](https://github.com/levell1/Practice_Csharp#readme)  
 튜터님 감사합니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
@@ -134,6 +135,19 @@ enum은 현제 코드에 적용하려니 저의 생각으로는 뭔가 바꿀 �
 처음으로 개인적인 과제에 대한 피드백을 받았다. 잘 하고 있는지, 부족한 게 뭔지, 많은 부분에서 무언가 해소된 느낌이 들었다.  🙇
 아직 4주차 강의 내용을 완벽하게 이해하지 못했다. 조금 더 하고 배운 내용들을 생각하며 4주차 과제를 진행해 볼 생각이다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
+
+
+체크리스트 강의 1-3주차  
+[o] C#에서 사용되는 기본 자료형에 대해 이해합니다.  
+[o] 변수를 선언하고 초기화하는 방법을 이해합니다.  
+[o] 산술, 관계, 논리 연산자의 사용법을 이해합니다.  
+[o] 문자열 처리 기능과 문자열 메서드의 사용법을 이해합니다.  
+[o] C#에서 클래스와 객체를 이해하고 사용하는 방법을 활용할 수 있습니다.  
+[o] 생성자와 소멸자, 접근 제한자, Properties 등 클래스의 주요 요소를 이해합니다.  
+[o] C#에서 상속과 다형성의 개념을 이해하고 활용할 수 있습니다.  
+[o] 추상 클래스의 개념과 사용법을 이해하고 활용할 수 있습니다.  
+[o] C#의 제너릭과 out, ref 키워드의 개념을 이해하고 활용할 수 있습니다.  
 {: .notice--success}  
 
 <br><br>

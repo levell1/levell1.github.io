@@ -193,7 +193,7 @@ Player 클래스에 매개변수 가 왜 인터페이스일까, 클래스Item으
 - - - 
 
 # 2. 열거형 Enum
-서로 관련된 상수들의 집합을 정의할 때 사용 ENUM=자료형  
+서로 관련된 상수들의 집합을 정의할 때 사용 ENUM = 자료형  
 각 상수는 정숫값으로 지정
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
@@ -204,7 +204,7 @@ Player 클래스에 매개변수 가 왜 인터페이스일까, 클래스Item으
 > - 스위치 문과의 호환성 : 스위치 문에서 다양한 상숫값에 대한 분기를 쉽게 작성
 {: .notice--info}
 <details>
-<summary>열거형 사용</summary>
+<summary>열거형 사용 switch</summary>
 
 <div class="notice--primary" markdown="1"> 
 
