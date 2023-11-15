@@ -40,7 +40,7 @@ date: 2023-11-15 02:00
 - - - 
 
 # 2. 팀 과제 회의
-[팀노션]https://www.notion.so/7-be1b6c78efb24cf59fd06bcbe1c35027#6a28c4f0417e4403b206e3bcf9800ded
+[팀노션](https://www.notion.so/7-be1b6c78efb24cf59fd06bcbe1c35027#6a28c4f0417e4403b206e3bcf9800ded)
 클래스 , 변수 함수명 정하기, 역할 회의
 
 <br><br><br><br><br><br>
