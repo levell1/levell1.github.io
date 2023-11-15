@@ -47,7 +47,7 @@ Algorithm
 <br><br>
 - - - 
 
-[Unity] TIL 12
+[Algorithm] Algorithm
 
 <br>
 
