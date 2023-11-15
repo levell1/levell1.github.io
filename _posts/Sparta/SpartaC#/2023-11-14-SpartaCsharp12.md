@@ -1,5 +1,5 @@
 ---
-title:  "[C#] 델리게이트(Delegata), 람다(Lambda), Func,Action, LINQ ⭐⭐⭐ "
+title:  "[C#] 델리게이트(Delegate), 람다(Lambda), Func,Action, LINQ ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -16,21 +16,21 @@ date: 2023-11-14 01:00
 - - -
 <BR><BR>
 
-<center><H1> C# 델리게이트(Delegata), 람다(Lambda), Func,Action, LINQ   </H1></center>
+<center><H1> C# 델리게이트(Delegate), 람다(Lambda), Func,Action, LINQ   </H1></center>
 
-델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**,**`Action`**, **`LINQ`**
+델리게이트(**`Delegate`**), 람다(**`Lambda`**), **`Func`**,**`Action`**, **`LINQ`**
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
 <br><br><br><br><br><br>
 - - - 
 
-# 1. 델리게이트(Delegata)
+# 1. 델리게이트(Delegate)
 <U>메서드를 참조하는 타입, 다른 언어에서는 함수포인터와 비슷, 차이점있다.</U>  
 메서드를 매개변수로 전달하거나 변수에 할당할 수 있습니다.  
 접근이 불편한 상황, 여러개 메소드 사용할 때 유용하다  
-delegata = 메서드1  
-delegata += 메서드2  
+Delegate = 메서드1  
+Delegate += 메서드2  
 두 메서드 실행  
 어떤 처리를 할 때 순서대로 += 기능 으로 모두 실행하게 한다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -149,7 +149,8 @@ enemy.onattack델리게이트에 메서드 추가
 
 # 2. 람다(Lambda)
 <U>익명 메서드를 만드는 방법입니다, 메서드의 이름 없이 메서드 생성</U>  
-람다는 델리게이트를 사용하여 변수에 할당하거나, 메서드의 매개변수로 전달할 수 있습니다.
+람다는 델리게이트를 사용하여 변수에 할당하거나, 메서드의 매개변수로 전달할 수 있습니다.  
+재사용X 메서드거나, 간단하게 사용할 때 사용.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -424,10 +425,55 @@ foreach (var num in evenNumbers)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}
 
+
+<details>
+<summary>람다 연습 </summary>
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+delegate void MyDelegate();
+
+class Program
+{
+    static void Method1(string message)
+    {
+        Console.WriteLine("Method1: " + message);
+    }
+
+    static void Method2(string message)
+    {
+        Console.WriteLine("Method2: " + message);
+    }
+    static void Main()
+    {
+        string a = "1";
+        string b = "2";
+        // 델리게이트 인스턴스 생성 및 메서드 등록
+        MyDelegate myDelegate;
+        myDelegate = () => Method1(a);
+        myDelegate += () => Method2(b);
+
+        myDelegate += () => Method1(b);
+        myDelegate += () => Method2(a);
+        myDelegate += () =>
+        {
+            Console.WriteLine("테스트");
+        };
+        myDelegate();
+        Console.ReadKey();
+    }
+}
+```
+
+</div>
+</details>
+
+
 <br><br>
 - - - 
 
-[Unity] C# 델리게이트(Delegata), 람다(Lambda), Func,Action, LINQ
+[Unity] C# 델리게이트(Delegate), 람다(Lambda), Func,Action, LINQ
 
 <br>
 

@@ -38,6 +38,7 @@ date: 2023-11-14 01:00
 주로 값형 변수가 null인지 아닌지를 확인하고 처리해야 할 때 유용합니다.
 > - 형식은 `?` 연산자를 사용하여 선언됩니다.  
 `int?`는 int 형식에 null을 할당할 수 있는 Nullable<int> 형식을 나타냅니다.
+> - 병합 연산자 ?? 0 -> 널이면 0을 반환
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -74,9 +75,16 @@ else
 int nonNullableInt = nullableInt ?? 0;
 Console.WriteLine("nonNullableInt 값: " + nonNullableInt);
 ```
+
 - 병합 연산자 ?? 0 -> 널이면 0을 반환
+
 </div>
 </details>
+
+**조심**  
+int? 와 int는 다르다.  
+int? 의 형태의 변수는 .value, .hasvalue 등으로 사용 가능하다.  
+{: .notice}
 
 <br><br><br><br><br><br>
 - - - 
