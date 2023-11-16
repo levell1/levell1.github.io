@@ -5,7 +5,7 @@ excerpt: "Sparta"
 categories:
     - Sparta Unity
 tags:
-    - [C#, Sparta]
+    - [C#, Sparta, TIL]
 
 toc: true
 toc_sticky: true

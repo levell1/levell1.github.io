@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-11-15 02:00
+date: 2023-11-16 02:00
 
 ---
 - - -
@@ -18,14 +18,13 @@ date: 2023-11-15 02:00
 
 <BR><BR>
 
-<center><H1> 개인 공부 C# 8일차   </H1></center>
+<center><H1> 개인 공부 C# 9일차   </H1></center>
 
-&nbsp;&nbsp; [o] 9시 알고리즘 강의    
-&nbsp;&nbsp; [o] 4주차 강의 복습, 정리   
-&nbsp;&nbsp; [X] 4주차 과제 .  
-&nbsp;&nbsp; [O] 2시 발제 듣고 정하기 .  
+&nbsp;&nbsp; [o] 9시 알고리즘 강의  
+&nbsp;&nbsp; [O] (주) 팀 과제 
+&nbsp;&nbsp; [O] 4주차과제  
 &nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .  
-&nbsp;&nbsp; [O] 팀 회의
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -33,8 +32,10 @@ date: 2023-11-15 02:00
 - - - 
 
 # 1. C# 강의 내용 정리
-8일차 내용 정리  
-4주차강의복습
+9일차 내용 정리  
+알고리즘 강의 
+[정리](https://levell1.github.io/algorithm/Algorithm1/)
+[강의내용]()
 {: .notice--info}
 
 <br><br><br><br><br><br>

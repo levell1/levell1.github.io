@@ -1,11 +1,11 @@
 ---
-title:  "[Sparta-BCamp] TIL 12 TextGame 피드백, (델리게이트(Delegata), 람다(Lambda), Func, Action, LINQ, Nullable, 문자열 빌더(StringBuilder)) ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 12 TextGame 피드백, (델리게이트(Delegate), 람다(Lambda), Func, Action, LINQ, Nullable, 문자열 빌더(StringBuilder)) ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
     - Sparta Unity
 tags:
-    - [C#, Sparta]
+    - [C#, Sparta, TIL]
 
 toc: true
 toc_sticky: true
@@ -15,7 +15,7 @@ date: 2023-11-14 02:00
 ---
 - - -
 
-델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**, 
+델리게이트(**`Delegate`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**, 
  **`Nullable`**, 문자열 빌더(**`StringBuilder`**)
 <BR><BR>
 
@@ -34,8 +34,8 @@ date: 2023-11-14 02:00
 7일차 내용 정리  
 4주차강의
 
-[C# 델리게이트(Delegata), 람다(Lambda), Func,Action, LINQ](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp12/)  
-델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**   
+[C# 델리게이트(Delegate), 람다(Lambda), Func,Action, LINQ](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp12/)  
+델리게이트(**`Delegate`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**   
 {: .notice--info}
 
 [C# Nullable, 문자열 빌더(StringBuilder)](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp13/)  
@@ -125,7 +125,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 # 3. 정리, 잡담
 
 > **정리**  
-델리게이트(**`Delegata`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**, 
+델리게이트(**`Delegate`**), 람다(**`Lambda`**), **`Func`**, **`Action`**, **`LINQ`**, 
  **`Nullable`**, 문자열 빌더(**`StringBuilder`**)  
 델리게이트 개념 복습, 설명이 가능할 정도로 개념 확인.  
 람다, func, Action, LINQ 많이 사용해보기 LINQ  
