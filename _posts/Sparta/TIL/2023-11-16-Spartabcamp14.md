@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 13 4주차 복습, 팀과제 회의 ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 14 팀 과제진행, 알고리즘 강의 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -15,16 +15,14 @@ date: 2023-11-16 02:00
 ---
 - - -
 
-
 <BR><BR>
 
 <center><H1> 개인 공부 C# 9일차   </H1></center>
 
 &nbsp;&nbsp; [o] 9시 알고리즘 강의  
 &nbsp;&nbsp; [O] (주) 팀 과제 
-&nbsp;&nbsp; [O] 4주차과제  
+&nbsp;&nbsp; [O] 4주차과제 ->팀과제 
 &nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .  
-
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -33,9 +31,9 @@ date: 2023-11-16 02:00
 
 # 1. C# 강의 내용 정리
 9일차 내용 정리  
-알고리즘 강의 
+알고리즘 2일차 강의 
 [정리](https://levell1.github.io/algorithm/Algorithm1/)
-[강의내용]()
+[강의내용](https://teamsparta.notion.site/231116-2-8d5e5bb8756442309604d490021ecd51)
 {: .notice--info}
 
 <br><br><br><br><br><br>
@@ -51,14 +49,14 @@ date: 2023-11-16 02:00
 # 3. 정리, 잡담
 
 > **잡담**  
-팀과제 발제 들은 후 계속 회의를 한 거 같다. 파이팅!
+팀 회의에 많은 시간을 보냈다. 나는 던전부분 몬스터 랜덤스폰, 결과화면(보상)을 위주로 진행해였다. 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
 <br><br>
 - - - 
 
-[Unity] TIL 13
+[Unity] TIL 14
 
 <br>
 
