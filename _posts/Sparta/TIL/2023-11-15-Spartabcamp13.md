@@ -34,7 +34,8 @@ date: 2023-11-15 02:00
 
 # 1. C# 강의 내용 정리
 8일차 내용 정리  
-4주차강의복습
+4주차강의복습, 알고리즘 1일차
+[알고리즘](https://levell1.github.io/algorithm/Algorithm/)
 {: .notice--info}
 
 <br><br><br><br><br><br>
