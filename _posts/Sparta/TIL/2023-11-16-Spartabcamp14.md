@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 14 팀 과제진행, 알고리즘 강의 ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 14 팀 과제진행, 알고리즘 강의 ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -17,12 +17,12 @@ date: 2023-11-16 02:00
 
 <BR><BR>
 
-<center><H1> 개인 공부 C# 9일차   </H1></center>
+<center><H1> 개인 공부 C# 9일차 | 팀과제 2일차   </H1></center>
 
 &nbsp;&nbsp; [o] 9시 알고리즘 강의  
-&nbsp;&nbsp; [O] (주) 팀 과제 
-&nbsp;&nbsp; [O] 4주차과제 ->팀과제 
-&nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .  
+&nbsp;&nbsp; [O] (주) 팀 과제   
+&nbsp;&nbsp; [O] 4주차과제 ->팀과제   
+&nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -41,7 +41,7 @@ date: 2023-11-16 02:00
 
 # 2. 팀 과제 회의
 [팀노션](https://www.notion.so/7-be1b6c78efb24cf59fd06bcbe1c35027#6a28c4f0417e4403b206e3bcf9800ded)
-클래스 , 변수 함수명 정하기, 역할 회의
+회의하며 의견 맞추고 각자 맡은일 작업
 
 <br><br><br><br><br><br>
 - - - 
@@ -49,7 +49,8 @@ date: 2023-11-16 02:00
 # 3. 정리, 잡담
 
 > **잡담**  
-팀 회의에 많은 시간을 보냈다. 나는 던전부분 몬스터 랜덤스폰, 결과화면(보상)을 위주로 진행해였다. 
+팀 회의에 많은 시간을 보냈다. 나는 던전부분 몬스터 랜덤스폰, 결과화면(보상)을 위주로 진행해였다.  
+알고리즘 문제 풀어봤는데 무슨소린지 모르겠다. 흠..😭
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

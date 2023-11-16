@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 13 4주차 복습, 팀과제 회의 ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 13 4주차 복습, 팀과제 회의 ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -18,14 +18,14 @@ date: 2023-11-15 02:00
 
 <BR><BR>
 
-<center><H1> 개인 공부 C# 8일차   </H1></center>
+<center><H1> 개인 공부 C# 8일차 | 팀과제 2일차  </H1></center>
 
 &nbsp;&nbsp; [o] 9시 알고리즘 강의    
 &nbsp;&nbsp; [o] 4주차 강의 복습, 정리   
-&nbsp;&nbsp; [X] 4주차 과제 .  
-&nbsp;&nbsp; [O] 2시 발제 듣고 정하기 .  
-&nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .  
-&nbsp;&nbsp; [O] 팀 회의
+&nbsp;&nbsp; [X] 4주차 과제 .   
+&nbsp;&nbsp; [O] 2시 발제 듣고 정하기 .   
+&nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .   
+&nbsp;&nbsp; [O] 팀 회의  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
