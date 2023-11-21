@@ -32,7 +32,7 @@ date: 2023-11-21 02:00
 
 # 1. 알고리즘 정리
 
-[알고리즘 문제풀이 2일차](https://levell1.github.io/algorithm/Algorithm4/)  
+[알고리즘 문제풀이 3일차](https://levell1.github.io/algorithm/Algorithm4/)  
 문제 17 
 {: .notice--info}
 
@@ -70,7 +70,6 @@ date: 2023-11-21 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
  {: .notice--info}
 ![2023-11-21-20_38_36](https://github.com/levell1/levell1.github.io/assets/96651722/68e80b02-fb9a-44b9-83aa-4bf65887d642)
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 ### 승리
 승리 시 골드,EXP 보상획득, 레벨업 계산, 정보표시   
