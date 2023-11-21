@@ -30,10 +30,8 @@ date: 2023-11-21 02:00
 <br><br><br><br><br><br>
 - - - 
 
-# 1. 알고리즘 정리
-
-[알고리즘 문제풀이 3일차](https://levell1.github.io/algorithm/Algorithm4/)  
-문제 17 
+# 1. 알고리즘 문제풀이
+문제 17  
 {: .notice--info}
 
 <br><br><br><br><br>
