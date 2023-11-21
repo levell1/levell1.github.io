@@ -24,7 +24,9 @@ date: 2023-11-17 02:00
 &nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘) .   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
-사진!
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/5d2fdc53-7252-45ad-93c7-c8b20f285b50){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
 
 <br><br><br><br><br><br>
 - - - 
@@ -32,7 +34,9 @@ date: 2023-11-17 02:00
 # 1. 알고리즘 정리
 알고리즘 문제풀이 1일차  
 [깃허브-프로그래머스](https://github.com/levell1/Algorithm-Programmers/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4)   
-[알고리즘 문제풀이 1일차](https://levell1.github.io/algorithm/Algorithm2/)문제 1~13  
+
+[알고리즘 문제풀이 1일차](https://levell1.github.io/algorithm/Algorithm2/)  
+문제 1~13  
 {: .notice--info}
 
 <br><br><br><br><br><br>
@@ -45,7 +49,7 @@ date: 2023-11-17 02:00
 1일차 -> 전체적인 구성에 대한 이야기, 깃허브 사용해보기.  
 2일차 -> 팀장님의 의견으로  MVC 패턴로 Model, View, Controller 나눈 후 작업
 -> 1.Main 2.Item,Inven 3.Dungeon 크게 3가지로 인원 나누어서 작업 진행  
-3일차 -> 새로 시작
+3일차 -> ...
 {: .notice}
 
 <BR><BR>
