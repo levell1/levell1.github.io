@@ -31,8 +31,37 @@ date: 2023-11-21 02:00
 - - - 
 
 # 1. 알고리즘 문제풀이
-문제 17  
-{: .notice--info}
+문제 17 자연수 뒤집어 배열로 만들기  
+문자열관련 정리  
+
+<br>
+
+## 문제 17 자연수 뒤집어 배열로 만들기  
+문자열관련 정리  
+3개의 차이점이 뭘까 알아보기  
+answer[str.Length-i-1]= int.Parse(str[i]-'0').ToString();  
+answer[str.Length-i-1]= str[i]-'0';  
+answer[str.Length-i-1]= str[i];  
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+public int[] solution(long n) {
+        string str = n.ToString();
+        int len = str.Length;
+        int[] answer = new int[len];
+        int num = 0;
+        for(int i = str.Length-1; i>=0 ;i--)
+        {
+            //answer[str.Length-i-1]= int.Parse(str[i]-'0').ToString();
+            answer[str.Length-i-1]= str[i]-'0';
+            answer[str.Length-i-1]= str[i];
+            //차이점??
+        }
+        return answer;
+    }
+```
+</div>
 
 <br><br><br><br><br>
 - - - 
@@ -757,7 +786,7 @@ namespace TeamProject07.Controller
 <br><br>
 - - - 
 
-[Unity] TIL 16
+[Unity] TIL 17
 
 <br>
 
