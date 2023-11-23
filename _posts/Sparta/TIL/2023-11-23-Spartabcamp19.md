@@ -36,6 +36,8 @@ TextRpg
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/JDerPl45IVQ" title="7조 Sparta TEXT RPG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 {: .notice--info}
 
+<br><br><br><br><br><br><br><br><br>
+- - - 
 
 
 # 3. 정리, 잡담
@@ -46,7 +48,7 @@ TextRpg
 {:style="border:1px solid #000000; border-radius: 7px;"}
 {: .notice--success}  
 
-튜터님의 우리 프로젝트 피드백으로 칭찬을 받았다 객체지향을 잘 활용했다는 이야기 였다. 기분이 좋았다.  
+튜터님이 우리 프로젝트 피드백에서 객체지향을 잘 활용했다는 이야기를 들었다. 기분이 좋았다.  
 {:style="border:1px solid #000000; border-radius: 7px;"}
 {: .notice--success}  
 
