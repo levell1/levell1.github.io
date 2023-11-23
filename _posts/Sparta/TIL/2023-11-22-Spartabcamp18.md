@@ -10,16 +10,16 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-11-21 02:00
+date: 2023-11-22 02:00
 
 ---
 - - -
 
 <BR><BR>
 
-<center><H1> 팀과제 6일차   </H1></center>
+<center><H1> 팀과제 7일차   </H1></center>
 
-&nbsp;&nbsp; [o] 9시 ~ 10시 알고리즘 문제  
+&nbsp;&nbsp; [o] 9시 ~ 10시 알고리즘 문제    18~20
 &nbsp;&nbsp; [O] (주) 팀 과제   
 &nbsp;&nbsp; [O] 상담받고 오기.       
 &nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘).   
@@ -27,97 +27,22 @@ date: 2023-11-21 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-
-<br><br><br><br><br><br>
-- - - 
-
-# 1. 알고리즘
-18~20   
-
-## 문제 20 정수 내림차순으로 배치하기  
-
-<details>
-<summary>전체코드</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-
-public long solution(long n) 
-    {
-        long answer = 0;
-        string s = n.ToString();
-        long len = s.Length;
-        int[] arr = new int[len];
-        int temp;
-        long x = 1;
-        
-        for(int i =0; i<len; i++)   
-        {
-            arr[i] = s[i]-'0';
-        }
-        
-        //Array.Sort(arr);
-        for(long i = 0; i<len; i++)
-        {
-            for(long j= i+1; j<len;j++)
-            {
-                if(arr[i] < arr[j])
-                {
-                    temp = arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
-                }
-            }
-        }
-        for(long i= len-1; i>=0; i--)
-        {
-            answer += arr[i] * x;
-            x=x*10;
-        }
-        
-        return answer;
-    }
-```
-</div>
-</details>
-
-<br>
-
-**정렬**
-Sort 코드로 짜보기  
-<div class="notice--primary" markdown="1"> 
-
-```c#
-//Array.Sort(arr);
-for(int i = 0; i<len; i++)
-{
-    for(int j= i+1; j<len;j++)
-    {
-        if(arr[i] > arr[j])
-        {
-            temp = arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
-        }
-    }
-}
-```
-</div>
-
-
 <br><br><br><br><br>
 - - - 
 
 # 2. 팀 과제 
-마무리 작업
+오늘 8 ~ 8:30 팀과제 마무리.  
+발표준비 ~ 1:00 발표를 잘하고 싶어서 늦게까지 준비한 거 같다.  
 {: .notice--info}
 
-# 3. 정리, 잡담
+<br><br><br><br><br>
+- - - 
 
+# 3. 정리, 잡담
 > **잡담**  
-내일 쓰자.
-{:style="border:1px solid #000000; border-radius: 7px;"}
+오늘 팀 프로젝트 마무리되었고 발표 준비를 했다.
+발표를 한 번쯤 해보고 싶었는데 좋은 기회인 거 같다. 많은 글들을 보고 준비 중.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
 
