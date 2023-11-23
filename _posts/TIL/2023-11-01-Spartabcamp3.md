@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 3 (Coroutine) ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [Unity, Sparta, TIL]
 toc: true

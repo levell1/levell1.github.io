@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] WIL 2 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [Unity, Sparta, TIL]
 

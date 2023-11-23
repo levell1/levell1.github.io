@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 12 TextGame 피드백, (델리게이트(Delegate), �
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

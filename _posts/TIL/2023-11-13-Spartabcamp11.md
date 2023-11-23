@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 11 (TextGame, Interface, Enum, try-catch, finally) â
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

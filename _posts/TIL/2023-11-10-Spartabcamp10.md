@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 10 (블랙잭, 개인과제(TextGame) ) ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

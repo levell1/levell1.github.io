@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 13 4주차 복습, 팀과제 회의 ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

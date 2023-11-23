@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 14 팀 과제진행, 알고리즘 강의 ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

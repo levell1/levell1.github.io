@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 6 ( C# 기본요소, 변수, 자료형 ) ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

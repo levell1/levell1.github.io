@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 5 (피드백) ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [Unity, Sparta, TIL]
 

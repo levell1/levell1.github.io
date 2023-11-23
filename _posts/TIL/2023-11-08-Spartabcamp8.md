@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 8 ( 틱택토, 메서드, 구조체 ) ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

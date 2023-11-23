@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 4 (또Invoke?) ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [Unity, Sparta, TIL]
 

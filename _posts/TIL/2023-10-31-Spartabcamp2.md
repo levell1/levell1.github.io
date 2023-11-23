@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] 미니 프로젝트 2일차(깃 허브, Substring) ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [Unity, Sparta, TIL]
 

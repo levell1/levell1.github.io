@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 7 ( 숙제, 조건문, 반복문, 배열, 컬렉션 
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

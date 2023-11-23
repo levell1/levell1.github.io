@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] 미니 프로젝트 1일차(시간추가 기능) ⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [Unity, Sparta, TIL]
 

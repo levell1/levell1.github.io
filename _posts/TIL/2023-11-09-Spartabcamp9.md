@@ -3,7 +3,7 @@ title:  "[Sparta-BCamp] TIL 9 (뱀, 객체지향, 제너릭, ref out ) ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
-    - Sparta Unity
+    - Til
 tags:
     - [C#, Sparta, TIL]
 

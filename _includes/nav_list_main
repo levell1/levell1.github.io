@@ -63,6 +63,15 @@
                     {% endfor %}
                 </ul>
             
+            <span class="nav__sub-title">TIL</span>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Til" %}
+                            <li><a href="/categories/til" class=""> TIL ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>   
+
             <span class="nav__sub-title">Sparta Bcamp</span>
                 <ul>
                     {% for category in site.categories %}
