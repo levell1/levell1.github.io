@@ -33,10 +33,9 @@ date: 2023-11-24 02:00
 <br><br><br><br><br>
 - - - 
 
-# 2. 강의
+# 1. C# 강의 정렬
 
-## C# 5주차 알고리즘 강의
-### 선택정렬
+## 선택정렬
 배열에서 최소값(또는 최대값)을 찾아 맨 앞(또는 맨 뒤)와 교환하는 방법   
 {: .notice}
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/55aae071-8846-4c58-9a6d-9a02be49f68f){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
@@ -71,7 +70,7 @@ I  &nbsp;J
 3  &nbsp;4  
 {: .notice--info}
 
-### 삽입정렬
+## 삽입정렬
 삽입 정렬은 정렬되지 않은 부분에서 요소를 가져와 정렬된 부분에 적절한 위치에 삽입   
 {: .notice}  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/dff1d112-1c9d-4615-8003-8055af318730){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
@@ -102,7 +101,7 @@ I  &nbsp;J
 4  &nbsp;3210
 {: .notice--info}
 
-### 퀵 정렬
+## 퀵 정렬
 피벗을 기준으로 작은 요소들은 왼쪽, 큰 요소들은 오른쪽으로 분할하고 이를 재귀적으로 정렬하는 방법  
 정렬 후 정렬된 다음번째에 기준값 배치 -> 왼쪽, 오른쪽 나눠서(2회) 정렬 시작, 반복  
 {: .notice}  
@@ -166,7 +165,7 @@ foreach (int num in arr)
 </div>
 </details>
 
-### 병합정렬
+## 병합정렬
 병합 정렬은 배열을 반으로 나누고, 각 부분을 재귀적으로 정렬한 후, 병합하는 방법  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/bfbed8da-2eba-4b1e-80a5-dc80e1fa9050){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 
@@ -236,7 +235,7 @@ foreach (int num in arr)
 </div>
 </details>
 
-### SORT
+## SORT
 - `Sort` 메서드는 배열이나 리스트의 요소들을 정렬하는 메서드입니다.
 - 정렬은 오름차순으로 수행되며, 요소들의 자료형에 따라 다양한 정렬 기준을 사용할 수 있습니다.
 
@@ -260,17 +259,9 @@ Console.WriteLine(string.Join(", ", names));
 <br><br><br><br><br>
 - - - 
 
-# 3. 정리, 잡담
+# 3. 유니티 강의 메모
 
-**밀린강의듣기**  
-C# 종합반 5-3 듣다가 너무 잠이와서 다른걸 유니티 강의를 들었다.  
-C# 5주차, 특강 2개 더 들어야된다.   
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}  
-
-<br>
-
-**유니티 강의 메모** 내일정리  
+**유니티 강의 메모** 내일정리   
 > - 유니티 씬뷰 단축키 Q W E R T   
 > - 오브젝트 생성 시 리셋하기   
 > - rigidbody의 재질은 실질적인 재질 (보여지는 재질 x)  
@@ -297,8 +288,18 @@ C# 5주차, 특강 2개 더 들어야된다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 
-<br>
+<br><br><br><br><br>
+- - - 
 
+# 3. 정리, 잡담
+
+**밀린강의듣기**  
+C# 종합반 5-3 듣다가 너무 잠이와서 다른걸 유니티 강의를 들었다.  
+C# 5주차, 특강 2개 더 들어야된다.   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<br>
 **모기**  
 어제 자기 전 모기를 잡지 못하고 잠에 들었다.  
 2시간 간격으로 귀 옆에서 파닥거려서 잠에 깼다.  
