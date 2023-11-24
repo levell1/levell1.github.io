@@ -233,7 +233,7 @@ person1.PrintInfo();
 <br><br>
 - - - 
 
-[Unity] C# 메서드와 구조체
+[C#] C# 메서드와 구조체
 
 <br>
 

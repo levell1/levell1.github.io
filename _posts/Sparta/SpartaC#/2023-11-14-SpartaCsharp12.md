@@ -473,7 +473,7 @@ class Program
 <br><br>
 - - - 
 
-[Unity] C# 델리게이트(Delegate), 람다(Lambda), Func,Action, LINQ
+[C#] C# 델리게이트(Delegate), 람다(Lambda), Func,Action, LINQ
 
 <br>
 

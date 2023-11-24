@@ -257,7 +257,7 @@ foreach (Shape shape in list )
 <br><br>
 - - - 
 
-[Unity] C# 객체 지향 (상속과 다형성)
+[C#] C# 객체 지향 (상속과 다형성)
 
 <br>
 

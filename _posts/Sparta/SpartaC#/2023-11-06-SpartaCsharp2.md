@@ -393,7 +393,7 @@ var pi = 3.141592;    // double 자료형으로 결정됨
 <br><br>
 - - - 
 
-[Unity] C# 변수와 자료형, Split
+[C#] C# 변수와 자료형, Split
 
 <br>
 

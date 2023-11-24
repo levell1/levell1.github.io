@@ -332,7 +332,7 @@ string message = $"My name is {name} and I'm {age} years old.";
 <br><br>
 - - - 
 
-[Unity] C# 연산자와 문자열 처리
+[C#] C# 연산자와 문자열 처리
 
 <br>
 

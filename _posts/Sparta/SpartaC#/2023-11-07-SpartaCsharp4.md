@@ -193,7 +193,7 @@ for (int i = 1; i <= 10; i++)
 <br><br>
 - - - 
 
-[Unity] C# 조건문(if, switch, 3항 연산자), 반복문
+[C#] C# 조건문(if, switch, 3항 연산자), 반복문
 
 <br>
 

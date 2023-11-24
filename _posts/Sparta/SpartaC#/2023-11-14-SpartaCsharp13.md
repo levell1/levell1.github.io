@@ -142,7 +142,7 @@ Console.WriteLine(result);
 <br><br>
 - - - 
 
-[Unity] C# Nullable, 문자열 빌더(StringBuilder)
+[C#] C# Nullable, 문자열 빌더(StringBuilder)
 
 <br>
 
