@@ -1,11 +1,11 @@
 ---
-title:  "[Sparta-BCamp] TIL 19 팀 프로젝트 끝. ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 20 유니티 1일차. ⭐ "
 excerpt: "Sparta"
 
 categories:
     - Til
 tags:
-    - [C#, Sparta, TIL]
+    - [Unity, Sparta, TIL]
 
 toc: true
 toc_sticky: true
@@ -17,12 +17,12 @@ date: 2023-11-23 02:00
 
 <BR><BR>
 
-<center><H1>  팀과제 8일차 마무리  </H1></center>
+<center><H1>  유니티 1일차  </H1></center>
 
 &nbsp;&nbsp; [o] 9시 ~ 10시 알고리즘 문제   21~22   
-&nbsp;&nbsp; [O] (주) 팀 과제   (발표)   
 &nbsp;&nbsp; [X] 5주차 강의듣기(알고리즘).   
-&nbsp;&nbsp; [X] 강의 못들은거 1 정리, 1개 다시듣기.   
+&nbsp;&nbsp; [X] 강의 못들은거 1 정리, 1개 다시듣기.  
+&nbsp;&nbsp; [X] 유니티 강의 듣기
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -63,11 +63,6 @@ TextRpg
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
-> - **C# 4-5주차**
-> - [o]  C#에서 인터페이스와 열거형의 개념을 이해합니다.
-> - [o]  예외와 예외 처리의 개념을 이해합니다.
-> - [o]  값형과 참조형의 개념을 이해하고, 박싱과 언박싱의 동작 원리를 이해합니다.
-> - [o]  알고리즘이 무엇인지, 그리고 왜 필요한지에 대해 이해합니다.
 
 <br><br>
 - - - 
