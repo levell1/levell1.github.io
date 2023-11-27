@@ -33,7 +33,7 @@ date: 2023-11-27 02:00
 <br><br><br><br><br>
 - - - 
 
-# 1.탐색 알고리즘
+# 1. 탐색 알고리즘
 **주어진 데이터 집합에서 특정 항목을 찾는 방법을 제공**
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 

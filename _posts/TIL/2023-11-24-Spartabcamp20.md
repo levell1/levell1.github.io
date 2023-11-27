@@ -260,39 +260,7 @@ Console.WriteLine(string.Join(", ", names));
 <br><br><br><br><br>
 - - - 
 
-# 2. 유니티 강의 메모
-
-**유니티 강의 메모** 내일정리   
-> - 유니티 씬뷰 단축키 Q W E R T   
-> - 오브젝트 생성 시 리셋하기   
-> - rigidbody의 재질은 실질적인 재질 (보여지는 재질 x)  
-> - 텍스트 생성 시 text canvas scaler - screen size  확인   
-> - [유니티 함수 실행 순서](https://docs.unity3d.com/kr/2021.3/Manual/ExecutionOrder.html) awake, start,  
-> - 월드 좌표 .Position  
-> - 로컬 좌표 .LocalPosition   
-> - Vector2.normalized 크기 1로 반환
-> - update는 프레임 단위 * Time.deltaTime = 1/프레임
-> - 비쥬얼 스튜디오 단축키 ctrl k c : 주석, ctrl k u : 주석해제
-> - - game manager  `유니티동기화`
-> - - [Header("1")]
-> - - player1 paddle
-> - - player1 goal
-> - - [serialize] -> private일 때 동기화시킬 때 사용
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}   
-
-**이동 INPUT 패키지**
-> - input 패키지 사용해서 캐릭터 이동 코드 event Action 구독 호출 패턴 캡처  
-> - ONmove ON--- 입력 받을때마다 실행
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ff3cea7b-fe65-4f1f-9b8d-3559c9eff865)  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/b0e45892-1abf-46e3-804c-9a008d965014)  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}   
-
-<br><br><br><br><br>
-- - - 
-
-# 3. 정리, 잡담
+# 2. 정리, 잡담
 
 **밀린강의듣기**  
 C# 종합반 5-3 듣다가 너무 잠이와서 다른걸 유니티 강의를 들었다.  

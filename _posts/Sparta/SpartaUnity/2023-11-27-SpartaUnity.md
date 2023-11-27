@@ -1,5 +1,5 @@
 ---
-title:  "[Unity] 유니티 강의 정리 ⭐⭐ "
+title:  "[Unity] 유니티 강의 정리 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
