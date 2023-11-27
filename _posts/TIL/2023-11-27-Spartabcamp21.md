@@ -25,7 +25,9 @@ date: 2023-11-27 02:00
 &nbsp;&nbsp; [o] 9시 ~ 10시 알고리즘 문제   25~27   
 &nbsp;&nbsp; [o] c# 5강듣기  
 &nbsp;&nbsp; [o] 유니티 강의 듣기   1-6부터 다시 듣기  
-&nbsp;&nbsp; [X] 강의 못들은거 1 정리, 1개 다시듣기.  
+&nbsp;&nbsp; [o] 2시 객체지향 강의  
+&nbsp;&nbsp; [o] 4시 반 OT    
+&nbsp;&nbsp; [o] 강의 못들은거 1 정리, 1개 다시듣기.  
 &nbsp;&nbsp; 주말에 알고리즘 과제 풀어보기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -294,7 +296,7 @@ A*알고리즘  등 많은 알고리즘이 존재한다.
 <br><br><br><br><br><br><br><br><br><br>
 - - - 
 
-# 1. 유니티 강의 메모
+# 6. 유니티 강의 메모
 
 <br>
 
@@ -476,18 +478,56 @@ Instantiate(prefab, Vector Position, rotation)  부모x 생성
 <br><br><br><br><br>
 - - - 
 
+# 7. 객체지향
+
+**객체지향 강의 정리**
+추상화 - 객체의 공통적인 속성과 기능을 추출하여 정의하는것.  
+상속 - 기존 클래스를 재활용 해 새로운 클래스 만듬, 반복코드 최소화.  
+다형성 - 메서드 오버라이딩과 메서드 오버로딩.  
+캡슐화 - private, public 등을 이용해 정보보호.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
+
+## SOLID원칙
+
+SRP(단일책임의 원칙) 한 클래스는 최소한의 기능만 갖는다.  
+OCP(개방폐쇄의 원칙) 확장에 대해 개방, 수정 폐쇄적.  
+LSP(리스코프 치환 원칙) 하위클래스는 인터페이스의 규약을 지켜야한다. 설계 많이해보기.  
+ISP(인터페이스 분리 원칙) 병용 인터페이스 하나 보다는 여러개의 인터페이스 분리가 더 좋다, 다중상속으로 사용.  
+DIP(의존관계 역전 원칙) 특정 클래스를 할당 X -> 부모,인터페이스를 사용하라 (편집됨)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
+
+<br><br><br><br><br>
+- - - 
+
+
 # 정리, 잡담
 
-**C# 강의**  
-알고리즘 관련 느낌은 알 거 같지만 생각하고 코드에 활용하기 힘들 거 같다.  
-지금 이해하기 힘든 내용들은 이런 게 있구나 하고 넘어가야겠다. 다음에 또 보면 다시 이해 할려고 노력 해봐야겠다. 주말에 알고리즘 과제 풀어보기.
+**C# 알고리즘 강의**  
+생각하고 코드에 활용은 못할 거 같다.   
+이런 게 있구나 하고 넘어가야겠다.   
+다음에 또 보면 다시 이해 해보자.  
+주말에 알고리즘 과제 풀어보기.   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+**객체지향**  
+클래스 사이에서 값 주고받고, 클래스의 중심으로 생각하기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-<br>
-
-**유니티**  
-강의정리 
+**1120강의**  
+메타인지  
+악에 받친 사람  
+오늘 할 일은 오늘 하자.   
+메타인지 -> 질문  
+업무의 전문성을 키우자.  
+기능이 아닌 서비스를 개발하는 사람.  
+커뮤니케이션 - 겸손   
+코드 : SOLID, 코드컨벤션, 예측가능코드, 변수명 (좋은코드를 짜자)  
+나의 무기를 단련해 나가야 한다.  
+책 타이탄의 도구들  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

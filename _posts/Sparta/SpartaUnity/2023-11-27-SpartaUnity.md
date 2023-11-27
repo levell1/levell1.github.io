@@ -16,7 +16,8 @@ date: 2023-11-27 02:00
 - - -
 <BR><BR>
 
-`physic Material`, `Update`, `Methf`, `Input`, `Instantiate`,  `TileMap`타일맵
+`physic Material`, `Update`, `Methf`, `Input`, `Instantiate`  
+타일맵  `TileMap` 
 
 <center><H1> 유니티 강의 정리  </H1></center>
 유니티 강의 정리
@@ -195,7 +196,8 @@ Mathf.SmoothStep(float from, float to, float t)
 ```
 </div>
 
-<br><br>
+<br><br><br><br><br><br>
+- - - 
 
 # 10. Instantiate
 
