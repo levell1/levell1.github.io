@@ -180,7 +180,7 @@ ref out은 여러개 값을 상황에 따라 반환가능
 <br><br>
 - - - 
 
-[Unity] C# 문법 제너릭, out, ref
+[C#] C# 문법 제너릭, out, ref
 
 <br>
 

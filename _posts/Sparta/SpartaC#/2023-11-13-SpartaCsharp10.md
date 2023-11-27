@@ -341,7 +341,7 @@ MyEnum enumValue = (MyEnum)100; 에서 오류가 안 뜨고 출력 부분에서 
 <br><br>
 - - - 
 
-[Unity] C# 인터페이스(Interface), 열거형(Enum)
+[C#] C# 인터페이스(Interface), 열거형(Enum)
 
 <br>
 

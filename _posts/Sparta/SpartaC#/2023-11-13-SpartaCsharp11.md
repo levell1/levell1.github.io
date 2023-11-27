@@ -360,7 +360,7 @@ object는 .NET Common Type System (CTS)의 일부이며, 모든 클래스의 직
 <br><br>
 - - - 
 
-[Unity] C# 예외처리, 값형과 참조형
+[C#] C# 예외처리, 값형과 참조형
 
 <br>
 

@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 20 정렬, 유니티 시작.  ⭐ "
+title:  "[TIL] 20 정렬, 유니티 시작.  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -19,6 +19,7 @@ date: 2023-11-24 02:00
 퀵 정렬 ( `Quick Sort` ), 병합 정렬 ( `Merge Sort` )
 <BR><BR>
 
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/fc36cabd-1c1c-47c9-a933-48ec66b132cb){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 
 
 <center><H1>  개인공부, 유니티 1일차  </H1></center>
@@ -259,7 +260,7 @@ Console.WriteLine(string.Join(", ", names));
 <br><br><br><br><br>
 - - - 
 
-# 3. 유니티 강의 메모
+# 2. 유니티 강의 메모
 
 **유니티 강의 메모** 내일정리   
 > - 유니티 씬뷰 단축키 Q W E R T   
@@ -300,6 +301,7 @@ C# 5주차, 특강 2개 더 들어야된다.
 {: .notice--info}  
 
 <br>
+
 **모기**  
 어제 자기 전 모기를 잡지 못하고 잠에 들었다.  
 2시간 간격으로 귀 옆에서 파닥거려서 잠에 깼다.  
@@ -311,7 +313,7 @@ C# 5주차, 특강 2개 더 들어야된다.
 <br><br>
 - - - 
 
-[Unity] TIL 19
+[Unity] TIL 20
 
 <br>
 
