@@ -387,6 +387,91 @@ public void OnMove(InputValue value) //
 
 ![input](https://github.com/levell1/levell1.github.io/assets/96651722/e0adebd0-ee00-4445-8521-7c65009fe3ce)
 
+<br><br>
+
+## 타일맵 
+> - 이미지 팔레트에 드래그
+> - tilemap 종류별로 생성 후 그리기
+> - tilemap Collider 컴포넌트 확인
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}   
+[타일맵](https://levell1.github.io/go%20unity/GoUnity11/)    
+[docs](https://docs.unity3d.com/kr/2022.1/Manual/Tilemap-CreatingTiles.html)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/2da4e65c-bec4-44ae-9b32-b5e1f4a6b2de)
+
+<br><br>
+
+## 각도, mathf
+
+<div class="notice--primary" markdown="1"> 
+
+`RotaeArm`
+```c# 
+private void RotaeArm(Vector2 direction)
+{
+    float rotZ = Mathf.Atan2(direction.y,direction.x) * Mathf.Rad2Deg;
+
+    armRenderer.flipY = Mathf.Abs(rotZ) > 90f;
+    characterRenderer.flipX = armRenderer.flipY;
+    armPivot.rotation = Quaternion.Euler(0,0,rotZ);
+}
+```
+</div>
+
+Atan2(y,x) -> y,x tan 를 이용하여 각도 값 구하기(0~3.14)    
+mathf.Rad2Deg 를 곱해주면 우리가아는 0 ~ 180도 로 변환된다.    
+mathf.abs -> 절대값  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+flipx => x뒤집기  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ec509a1f-e269-482b-9691-a990b7ebb712){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<br>
+
+### mathf
+
+<div class="notice--primary" markdown="1"> 
+
+`mathf`
+```c# 
+// 절댓값
+Mathf.Abs(float num) 
+
+// min(최소값)과 max(최대값) 범위 안에서 value값을 반환해준다.
+Mathf.Clamp(float num, float min, float max)    
+
+// value값이 Max(최대값)에 도달하게 되면 -값이 되고 0이 되면 다시 Max(최대값)까지 +
+Mathf.PingPong(float value, float Max)
+
+// 올림 버림 반올림
+Mathf.Cell(float num)
+Mathf.Floor(float num)
+Mathf.Round(float num)
+
+//시작점(from)과 종료점(to) 사이의 보간값(0과 1사이의 실수값)(t)에 해당하는 값을 반환
+// 값을 부드럽게 변환
+Mathf.Lerp(float from, float to, float t)
+
+//lerp와 비슷하지만 가속도가 있다.
+Mathf.SmoothStep(float from, float to, float t)
+
+```
+</div>
+
+<br><br>
+
+## Instantiate
+
+Instantiate(prefab, transform 부모) 부모 아래에 생성  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/37fb0d34-5dd7-40a2-aaed-d3ee2d7a2f2d)    
+
+<br>
+
+Instantiate(prefab, Vector Position, rotation)  부모x 생성
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/8c53aa89-9211-446c-9469-6472909aea29)  
 
 <br><br><br><br><br>
 - - - 
@@ -402,7 +487,7 @@ public void OnMove(InputValue value) //
 <br>
 
 **유니티**  
-
+강의정리 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
