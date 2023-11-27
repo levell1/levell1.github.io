@@ -353,7 +353,7 @@ A*알고리즘  등 많은 알고리즘이 존재한다.
 
 > - [Header("제목")]  `제목정하기`  
 > - [SerializeField] -> private일 때 인스펙터 뷰에 보이게  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/83fca96d-923e-4232-bda8-e30c2bfb36bc){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/5f7769cb-06b2-4602-8390-e494d7ef5b28){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 <div class="notice--primary" markdown="1"> 
@@ -364,6 +364,8 @@ public int a = 0;
 public int b = 0;
 [Header("seriallizefield, private")]
 [SerializeField] private int c = 0;
+[Range (0.5f, 1.5f)] //슬라이더 형식
+public float d = 0;
 ```
 </div>
 
