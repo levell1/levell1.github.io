@@ -39,22 +39,22 @@ Unity 를 이용해 게더를 모방해 만드는 과제입니다.
 {: .notice} 
 
 **개인 과제**  
-1. 캐릭터 만들기  
-2. 캐릭터 이동  
-3. 맵 만들기 튜터님   
-4. 카메라 따라가기  
+&nbsp;1. 캐릭터 만들기  
+&nbsp;2. 캐릭터 이동  
+&nbsp;3. 맵 만들기 튜터님   
+&nbsp;4. 카메라 따라가기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
 **추가 과제**  
-1. 캐릭터 애니메이션 추가  
-2. 이름 입력 시스템  
-3. 캐릭터 선택 시스템  
-4. 참석 인원 UI  
-5. 인게임 캐릭터 선택  
-6. 인게임 이름 바꾸기  
-7. 시간 표시  
-8. NPC 대화  
+&nbsp;1. 캐릭터 애니메이션 추가  
+&nbsp;2. 이름 입력 시스템  
+&nbsp;3. 캐릭터 선택 시스템  
+&nbsp;4. 참석 인원 UI  
+&nbsp;5. 인게임 캐릭터 선택  
+&nbsp;6. 인게임 이름 바꾸기  
+&nbsp;7. 시간 표시  
+&nbsp;8. NPC 대화  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
@@ -165,13 +165,13 @@ CircleCollider로 ontrigger enger, exit 로 대화 활성화 , 비활성화.
 
 # 정리, 잡담
 
-**씬옮기면서 데이터 이동은 싱글톤으로**  
-1씬에서 2씬으로 넘어갈 때 데이터 옮기는 방법에 대해 많은 고민을 했다.
+**씬옮기면서 데이터 관리는 싱글톤으로**  
+1씬에서 2씬으로 넘어갈 때 데이터 옮기는 방법에 대해 많은 고민을 했다.  
 지금 코드는 playerprefs로 데이터를 저장하고 불러오는 방식인데 다음엔 싱글톤을 사용해 봐야겠다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-**getcomponent? [SerializeField]**  
+**getcomponent? &nbsp;&nbsp; [SerializeField]?**  
 serializefield, public이 내 입장에서 너무 편해서 이걸썻고, getcomponent를 왜 쓰는가에 대해 생각해 봤다.  
 이름이 바뀌거나 수정이 있을때 유니티에서 오류가 생긴다, 유니티 로딩이 오래 걸린다.
 오늘 수정하면서 많은 오류를 겪었고, 최대한 getcomponent를 사용해 보도록 해야겠다.
@@ -183,7 +183,7 @@ serializefield, public이 내 입장에서 너무 편해서 이걸썻고, getcom
 <br><br>
 - - - 
 
-[Unity] TIL 21
+[Unity] TIL 22
 
 <br>
 
