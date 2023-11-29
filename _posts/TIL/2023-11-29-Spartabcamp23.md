@@ -97,7 +97,7 @@ player 을만들고 maincamera를 player마다 배치해서 많은 문제가 있
 
 # GameManager 
 1번째 씬에서 GameManager를 생성하고  
-2번째 씬에서 gamemanager에 필요한 오브젝트를 넣어주는 방식을 사용하였다.
+2번째 씬에서 gamemanager에 필요한 오브젝트를 넣어주는 방식을 사용하였다.  
 SceneSetting이라는 오브젝트,스크립트를 만들고 awake에서 gamemanager에 접근
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/f769c403-1106-4678-9fcb-890aae481220)
 <div class="notice--primary" markdown="1"> 
