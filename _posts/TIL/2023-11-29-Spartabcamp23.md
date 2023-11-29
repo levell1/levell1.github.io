@@ -130,21 +130,6 @@ players에 부모를 생성해서 player들을 관리
 <br><br><br><br><br>
 - - - 
 
-# 6. Scripts
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ff2dc79a-85b3-49cd-a37f-50eddf37c895)  
-
-> Animator -> 애니메이션  
-> Change -> 아이디, 캐릭터 모습변경  
-> FirstSceneScrips -> nameScene 에 필요한 코드들 ()  
-> MenuController.cs -> 아이디 변경, 캐릭 모습변경 메뉴 컨트롤  
-> TimeView -> 시간 표시   
-> SceneSetting -> 씬 이동시 GameObject에 필요한 값 전달
-
-<br><br><br><br><br>
-- - - 
-
-
-
 ![TopDown1](https://github.com/levell1/levell1.github.io/assets/96651722/1fc33cba-8373-4509-a8bf-7ad31907ffaf)
 
 
