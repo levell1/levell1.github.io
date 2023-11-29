@@ -87,7 +87,7 @@ player 을만들고 maincamera를 player마다 배치해서 많은 문제가 있
 
 # 애니메이터 컨트롤러 
 
-**GameManager 개선**  
+# GameManager 
 1번째 씬에서 GameManager를 생성하고  
 2번째 씬에서 gamemanager에 필요한 오브젝트를 넣어주는 방식을 사용하였다.
 SceneSetting이라는 오브젝트,스크립트를 만들고 awake에서 gamemanager에 접근
@@ -110,25 +110,28 @@ public class SceneSetting : MonoBehaviour
 ```
 </div>
 
+![TopDown1](https://github.com/levell1/levell1.github.io/assets/96651722/1fc33cba-8373-4509-a8bf-7ad31907ffaf)
+
+
 # 정리, 잡담
 
 **느낀점**  
 유니티 첫 개인과제로 하나의 게임? 을 만들면서 많은 생각이 들었다.  
-스크립트관리는 잘 된건지.  
-이 메서드가 이 스크립트에 들어있는게 맞는지.  
-게임매니저의 주 역할은 무었인지  
-싱글톤? 디자인패턴?  
-막히는 게 있을때 내가 선택한 방법이 좋은방법인지  
-public private, [SerializeField] 에 대한 정확한 사용하는이유.  
-가장 큰 걱정은 내가 잘 하고있는지 에 대한 의심? 인 거 같다.
-제출 후 개선시간에 조금씩 확인해 볼 생각이다.
+스크립트 관리는 잘 된 건지.  
+이 메서드가 이 스크립트에 들어있는 게 맞는지.  
+게임매니저의 주 역할은 무엇인지  
+싱글톤? 디자인 패턴?  
+막히는 게 있을 때 내가 선택한 방법이 좋은 방법인지  
+public private, [SerializeField] 에 대한 정확한 사용하는 이유.  
+가장 큰 걱정은 내가 잘 하고 있는지에 대한 의심? 인 거 같다.  
+제출 후 개선시간에 조금씩 확인해 볼 생각이다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
 
 **느낀점**  
 하나씩 하면서 중간에 다른 방법으로 하면 좋았을 거 같다고 생각이 들때
-수정한다면, 깔끔하게 해결할 능력이 있나?, 지금은 없다고 생각해서 바꾸지 못했다.  
-다음 프로젝트에서 이번에 새로운 방법들을 시도해 볼 생각이다.
+수정한다면, 깔끔하고 빠르게 해결할 능력이 있나?, 지금은 없다고 생각해서 바꾸지 못했다.   
+다음 프로젝트에서 이번에 새로운 방법들을 시도해 볼 생각이다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
 
@@ -136,7 +139,7 @@ public private, [SerializeField] 에 대한 정확한 사용하는이유.
 <br><br>
 - - - 
 
-[Unity] TIL 22
+[Unity] TIL 23
 
 <br>
 
