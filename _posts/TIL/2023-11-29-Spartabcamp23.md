@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 22 Unity 개인과제(TopDown) ⭐⭐⭐ "
+title:  "[TIL] 23 Unity 개인과제(TopDown)끝 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -20,9 +20,9 @@ date: 2023-11-28 02:00
 
 
 
-<center><H1>  개인공부, 유니티 5일차 </H1></center>
+<center><H1>  개인공부, 유니티 5일차 개인과제 끝 </H1></center>
 
-&nbsp;&nbsp; [o] 9시 ~ 10시 알고리즘 문제   28   
+&nbsp;&nbsp; [o] 9시 ~ 10시 알고리즘 문제      
 &nbsp;&nbsp; [o] 개인과제   
 &nbsp;&nbsp; 주말에 알고리즘 과제 풀어보기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -80,12 +80,20 @@ private static GameManager instance = null;
 {: .notice}
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/b7503f09-2582-4842-9210-223f98f89b38)
 
+<br><br><br><br><br>
+- - - 
     
 # 여러개의 player
 player 을만들고 maincamera를 player마다 배치해서 많은 문제가 있었다.
 하나의 player안에서 스프라이트, 애니메이션 변경으로 개선해보기.
 
+<br><br><br><br><br>
+- - - 
+
 # 애니메이터 컨트롤러 
+
+<br><br><br><br><br>
+- - - 
 
 # GameManager 
 1번째 씬에서 GameManager를 생성하고  
@@ -109,9 +117,16 @@ public class SceneSetting : MonoBehaviour
 }
 ```
 </div>
+지금상황의 개선이고 처음부터 더 좋은 방법이 있다고 하였다. 좀 더 생각해보기.
+
+<br><br><br><br><br>
+- - - 
 
 ![TopDown1](https://github.com/levell1/levell1.github.io/assets/96651722/1fc33cba-8373-4509-a8bf-7ad31907ffaf)
 
+
+<br><br><br><br><br>
+- - - 
 
 # 정리, 잡담
 
@@ -128,7 +143,7 @@ public private, [SerializeField] 에 대한 정확한 사용하는 이유.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
 
-**느낀점**  
+**잡담**  
 하나씩 하면서 중간에 다른 방법으로 하면 좋았을 거 같다고 생각이 들때
 수정한다면, 깔끔하고 빠르게 해결할 능력이 있나?, 지금은 없다고 생각해서 바꾸지 못했다.   
 다음 프로젝트에서 이번에 새로운 방법들을 시도해 볼 생각이다.  

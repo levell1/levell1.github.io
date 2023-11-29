@@ -138,7 +138,7 @@ public class zepAnimator : MonoBehaviour
 
 ## 3. 캐릭터 선택 시스템  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ee0f198c-ae48-4d35-831c-505af0be8897)  
-선택시 값을 저장 후 다음씬에서 선택된 player setactive true
+선택시 값을 저장 후 다음씬에서 선택된 player setactive true  
 지금 저장은 PlayerPrefebs로 사용중 -> 싱글톤,GameManager을 이용해서 개선해보기.  
 <br><br>
 
@@ -151,7 +151,7 @@ Manager 오브젝트에 npc들 생성후 추가해보기
 
 ## 5. 인게임 캐릭터 선택  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/f32607d5-3a98-4a10-af1a-24c1328cb101)  
-캐릭터 선택시 라벨 활성화, 라벨에 버튼으로된 캐릭터 클릭시 PLAYER 1,2 활성화
+캐릭터 선택시 라벨 활성화, 라벨에 버튼으로된 캐릭터 클릭시 PLAYER 1,2 활성화  
 -> PLAYER을 두개를 만들지말고 하나의 플레이어안에 두 스프라이트로 조건만족시 1의 스프라이트, 애니메이션 적용 하는 방식으로 개선해보기.
 
 <br><br>
@@ -172,6 +172,7 @@ public void OnMove(InputValue value) // w  a  s d
 }
 ```
 </div>
+<br><br>
 
 ## 7. 시간 표시  
 시간표시
@@ -205,31 +206,6 @@ CircleCollider로 ontrigger enger, exit 로 대화 활성화 , 비활성화.
 지금 코드는 playerprefs로 데이터를 저장하고 불러오는 방식인데 다음엔 싱글톤을 사용해 봐야겠다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
-
-**GameManager 개선**  
-1번째 씬에서 GameManager를 생성하고  
-2번째 씬에서 gamemanager에 필요한 오브젝트를 넣어주는 방식을 사용하였다.
-SceneSetting이라는 오브젝트,스크립트를 만들고 awake에서 gamemanager에 접근
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/f769c403-1106-4678-9fcb-890aae481220)
-<div class="notice--primary" markdown="1"> 
-
-```c#
-public class SceneSetting : MonoBehaviour
-{
-    [SerializeField] private GameObject zep;
-    [SerializeField] private GameObject postit;
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        GameManager.Instance.zep = zep;
-        GameManager.Instance.postit = postit;
-    }
-
-}
-```
-</div>
-
-지금상황의 개선이고 처음부터 더 좋은 방법이 있다고 하였다. 좀 더 생각해보기.
 
 **getcomponent? &nbsp;&nbsp; [SerializeField]?**  
 serializefield, public이 내 입장에서 너무 편해서 이걸썻고, getcomponent를 왜 쓰는가에 대해 생각해 봤다.  
