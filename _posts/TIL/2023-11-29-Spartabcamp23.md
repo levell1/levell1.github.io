@@ -31,7 +31,7 @@ date: 2023-11-28 02:00
 <br><br><br><br><br>
 - - - 
 
-# 싱글톤 패턴
+# 1. 싱글톤 패턴
 게임의 전범위에서 동작하는 중요한기능들을 싱글톤 패턴으로 만들곤한다.  
 접근성. 유일성.   
 씬전환시 모두 파괴 -> 싱글톤 dondestroy로 파괴 x  
@@ -73,7 +73,7 @@ private static GameManager instance = null;
 <br><br><br><br><br>
 - - - 
 
-# 스크립트적용 오브젝트 찾기
+# 2. 스크립트적용 오브젝트 찾기
 스크립트 적용된 오브젝트 쉽게찾기
 스크립트 우클릭 -> Find References In Scene
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -82,20 +82,8 @@ private static GameManager instance = null;
 
 <br><br><br><br><br>
 - - - 
-    
-# 여러개의 player
-player 을만들고 maincamera를 player마다 배치해서 많은 문제가 있었다.
-하나의 player안에서 스프라이트, 애니메이션 변경으로 개선해보기.
 
-<br><br><br><br><br>
-- - - 
-
-# 애니메이터 컨트롤러 
-
-<br><br><br><br><br>
-- - - 
-
-# GameManager 
+# 3. GameManager 
 1번째 씬에서 GameManager를 생성하고  
 2번째 씬에서 gamemanager에 필요한 오브젝트를 넣어주는 방식을 사용하였다.  
 SceneSetting이라는 오브젝트,스크립트를 만들고 awake에서 gamemanager에 접근
@@ -122,6 +110,41 @@ public class SceneSetting : MonoBehaviour
 <br><br><br><br><br>
 - - - 
 
+# 4. Scripts
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ff2dc79a-85b3-49cd-a37f-50eddf37c895)  
+
+> Animator -> 애니메이션  
+> Change -> 아이디, 캐릭터 모습변경  
+> FirstSceneScrips -> nameScene 에 필요한 코드들 ()  
+> MenuController.cs -> 아이디 변경, 캐릭 모습변경 메뉴 컨트롤  
+> TimeView -> 시간 표시   
+> SceneSetting -> 씬 이동시 GameObject에 필요한 값 전달
+
+<br><br><br><br><br>
+- - - 
+
+## 5. players
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/3c4f3add-9eab-4378-b110-72e00795c78d)
+players에 부모를 생성해서 player들을 관리
+
+<br><br><br><br><br>
+- - - 
+
+# 6. Scripts
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ff2dc79a-85b3-49cd-a37f-50eddf37c895)  
+
+> Animator -> 애니메이션  
+> Change -> 아이디, 캐릭터 모습변경  
+> FirstSceneScrips -> nameScene 에 필요한 코드들 ()  
+> MenuController.cs -> 아이디 변경, 캐릭 모습변경 메뉴 컨트롤  
+> TimeView -> 시간 표시   
+> SceneSetting -> 씬 이동시 GameObject에 필요한 값 전달
+
+<br><br><br><br><br>
+- - - 
+
+
+
 ![TopDown1](https://github.com/levell1/levell1.github.io/assets/96651722/1fc33cba-8373-4509-a8bf-7ad31907ffaf)
 
 
@@ -144,8 +167,8 @@ public private, [SerializeField] 에 대한 정확한 사용하는 이유.
 {: .notice--success}
 
 **잡담**  
-하나씩 하면서 중간에 다른 방법으로 하면 좋았을 거 같다고 생각이 들때
-수정한다면, 깔끔하고 빠르게 해결할 능력이 있나?, 지금은 없다고 생각해서 바꾸지 못했다.   
+하나씩 하면서 중간에 다른 방법으로 하면 좋았을 거 같다고 생각이 들때  
+수정했다면, 깔끔하고 빠르게 해결했을까?, 지금은 없다고 생각해서 바꾸지 못했다.   
 다음 프로젝트에서 이번에 새로운 방법들을 시도해 볼 생각이다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
