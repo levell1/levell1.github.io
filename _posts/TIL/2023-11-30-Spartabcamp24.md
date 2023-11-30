@@ -64,7 +64,7 @@ zep에서 캡쳐를하고 다 배경제거하는 작업을 했다.
 <br><br><br><br><br>
 - - - 
 
-# 3. Unity 푸쉬 Scene 충돌
+# 3. Unity Merge Scene 충돌
 유니티로 main에 푸쉬할때 충돌이 났다 MainScene 에서 충돌이 났다.  
 이유는 씬에 Object를 추가해서 푸쉬하면 이게 발생한다고 한다.  
 2가지 방법이 있다.  
