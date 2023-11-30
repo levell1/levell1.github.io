@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 23 Unity 개인과제(TopDown)끝 ⭐⭐⭐ "
+title:  "[TIL] 24 Unity 팀과제 시작 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-11-29 02:00
+date: 2023-11-30 02:00
 
 ---
 - - -
@@ -99,7 +99,7 @@ prefebs나 새로운 Scene에서 작업, Merge 후 해결하기.
 <br><br>
 - - - 
 
-[Unity] TIL 23
+[Unity] TIL 24
 
 <br>
 
