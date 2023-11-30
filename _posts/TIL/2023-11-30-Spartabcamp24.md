@@ -46,9 +46,9 @@ date: 2023-11-30 02:00
 
 # 2. zep 이미지 작업
 zep 캐릭터가 움직이는 게임을 만들기로 했다.  
-zep에서 캡쳐를하고 다 배경제거하는 작업을 했다.  
+zep에서 캡cj를 하고 다 배경 제거하는 작업을 했다.  
 처음에는 [배경제거](https://www.remove.bg/ko/upload) 사이트를 사용하였다.  
-하다가 더 디테일하게 한픽셀 씩 작업 해보고싶어서 [포토피아](https://www.photopea.com/) 를 사용하였다.  
+하다가 더 디테일하게 작업해 보고 싶어서 [포토피아](https://www.photopea.com/) 를 사용하였다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -60,16 +60,17 @@ zep에서 캡쳐를하고 다 배경제거하는 작업을 했다.
  
 ![2023-11-30-20_12_51](https://github.com/levell1/levell1.github.io/assets/96651722/2919e436-64e8-41b1-b689-6585ab697352)  
 
+[어도비 배경제거](https://www.adobe.com/kr/express/feature/image/remove-background) 그냥 이거 쓰면 좋고 빠르다. ㅠ
 
 <br><br><br><br><br>
 - - - 
 
 # 3. Unity Merge Scene 충돌
-유니티로 main에 푸쉬할때 충돌이 났다 MainScene 에서 충돌이 났다.  
-이유는 씬에 Object를 추가해서 푸쉬하면 이게 발생한다고 한다.  
+유니티로 main에 merge할때 충돌이 났다 MainScene 에서 충돌이 났다.  
+이유는 씬에 Object를 추가해서 Merge하면 이게 발생한다고 한다.  
 2가지 방법이 있다.  
 1.GameObject를 프리팹으로 만들어서 merge한다. merge후 풀거나 사용  
-2.Scene을 하나 만들어서 거기서 작업 후 merge한다.  
+2.Scene을 하나 만들어서 merge 후 작업 한다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
