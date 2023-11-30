@@ -70,9 +70,8 @@ zep에서 캡쳐를하고 다 배경제거하는 작업을 했다.
 2가지 방법이 있다.  
 1.GameObject를 프리팹으로 만들어서 merge한다. merge후 풀거나 사용  
 2.Scene을 하나 만들어서 거기서 작업 후 merge한다.  
-
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
+{: .notice--info}  
 
 
 
