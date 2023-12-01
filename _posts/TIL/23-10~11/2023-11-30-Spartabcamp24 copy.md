@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 24 Unity 팀과제 시작 ⭐⭐⭐ "
+title:  "[TIL] 24 Unity 팀과제 시작 ⭐ "
 excerpt: "Sparta"
 
 categories:
