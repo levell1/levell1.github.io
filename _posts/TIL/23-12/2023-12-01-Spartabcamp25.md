@@ -58,7 +58,6 @@ public string solution(string s) {
 - - - 
 
 # 2. 강의 - 유니티  
-오브젝트에 메소드 실행 메시지 전달
 
 ## 1. 게임오브젝트 찾기
 **gameobject.Find 시리즈**  
@@ -67,7 +66,9 @@ GameObject.FindGameObjectWithType("컴포넌트명") -> 별로 안빠름
 GameObject.FindGameObjectWithTag("태그") -> 그나마 빠름  
 Transform.Find("이름" 혹은 경로)  -> ~의 자식 안에서 찾을때  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}   
+{: .notice--info} 
+<br>
+
 ## 2. 카메라
 **3D 는 원근감이 있다**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/d6d8f31a-e618-4302-83fd-4c74001c9629)
@@ -88,13 +89,13 @@ Clipping Planes : 카메라 범위 0.3 ~ 1000
 
 # 3 C# 강의
 
-
 ## 배열
 
 배열 리사이즈  
 Array.Resize(ref x, 5);  
 //추가 하기
 
+<br>
 
 ## 컬렉션
 자료구조, 같은 성격을 띠는 자려들을 담는 자료구조  
@@ -108,6 +109,8 @@ Dictionary -> 데이터를 많이 쓴다.
 더 찾아보고 공부  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
+<br>
 
 ## Delegate - 대리자
 숫자 객체들은 데이터처럼 쓰는데 메서드는 왜 ? -> Delegate   
@@ -138,7 +141,8 @@ MyList.Select(x=>)
 ```
 </div>
 
-
+<br><br><br><br><br>
+- - - 
 
 # 정리, 잡담
 
