@@ -30,18 +30,18 @@ date: 2023-10-24
 
 ```c# 
 // 데이터 저장하기 Set~~~~
-Playerprefs.SetFloat("bestScore", 어떤숫자값);
-Playerprefs.SetString("bestScore", 어떤문자열);
+PlayerPrefs.SetFloat("bestScore", 어떤숫자값);
+PlayerPrefs.SetString("bestScore", 어떤문자열);
 
 // 데이터 불러오기 get~~~~
-Playerprefs.getFloat("bestScore");
-Playerprefs.getString("bestScore");
+PlayerPrefs.GetFloat("bestScore");
+PlayerPrefs.GetString("bestScore");
 
 // 저장하고 있는지 확인
-Playerprefs.HasKey("bestScore") //"bestScore" 라는 이름으로 저장하고 있는지 확인
+PlayerPrefs.HasKey("bestScore") //"bestScore" 라는 이름으로 저장하고 있는지 확인
 
 // 모두 지우기
-Playerprefs.DeleteAll();
+PlayerPrefs.DeleteAll();
 ```
 </div>
 
