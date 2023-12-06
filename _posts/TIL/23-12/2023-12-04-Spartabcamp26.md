@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-01 02:00
+date: 2023-12-04 02:00
 
 ---
 - - -
@@ -100,6 +100,9 @@ public void SelectPlayer()
 ```
 </div>
 
+<br><br><br><br><br>
+- - - 
+
 # 3. 유니티 자식오브젝트 가져오기
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/3aa5944d-577a-4ced-b6d2-955146c84db5)
@@ -119,12 +122,23 @@ for (int i = 0; i < _playerPrefebs.transform.childCount; i++)
 ```
 </div>
 
+<br><br><br><br><br>
+- - - 
+
 # 4. 강의정리
 
+`virtual`   -> 재정의(override) 가능, 필수 x  
+`abstract`  -> 반드시 재정의(override) 해야한다. (기능을 강제적으로 재정의함)  
+`Interface` -> 가장 높은 추상성, 다중 상속  
+
+<br><br><br><br><br>
+- - - 
 
 # 정리, 잡담
 
-**느낀점**  
+**개인과제 피드백**  
+스크립트 관리와 기능 배분은 끊임없이 고민하는 부분입니다. 다양한 시도를 통해 나만의 기준점을 명확하게 갖는 것이 중요합니다.  
+게임매니저는 프로젝트 진행과 프로젝트에서 전반적으로 공유되어야 하는 정보가 모여있는 곳이라고 생각하면 좋을 것 같습니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
 
