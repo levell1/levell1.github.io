@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 28 Unity 팀과제  ⭐ "
+title:  "[TIL] 28 Unity 팀과제  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -72,7 +72,10 @@ void LateUpdate()
 - - - 
 
 # 4. 컴터 바꾸기
-cpu i5-4690, gpu 750ti? 로 하고있는데 zep과 Unity, 화면공유를 하니까 렉이 너무걸려서 진행이 어려웠다. 컴을 바꾸기로 했다.
+cpu i5-4690, gpu 750ti? 로 하고있는데 zep과 Unity,  
+화면공유를 하니까 렉이 너무걸려서 진행이 어려웠다. 컴을 바꾸기로 했다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}
 
 <br><br><br><br><br>
 - - - 

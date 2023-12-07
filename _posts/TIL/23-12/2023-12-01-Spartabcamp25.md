@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 25 Unity 팀과제  ⭐ "
+title:  "[TIL] 25 Unity 팀과제 강의  ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -17,6 +17,8 @@ date: 2023-12-01 02:00
 
 
 <BR><BR>
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/6f04644c-c600-44a3-8ba1-a4abf3d03761)
 
 
 <center><H1>  유니티 팀과제 2일차 </H1></center>
@@ -89,13 +91,6 @@ Clipping Planes : 카메라 범위 0.3 ~ 1000
 
 # 3 C# 강의
 
-## 배열
-
-배열 리사이즈  
-Array.Resize(ref x, 5);  
-//추가 하기
-
-<br>
 
 ## 컬렉션
 자료구조, 같은 성격을 띠는 자려들을 담는 자료구조  

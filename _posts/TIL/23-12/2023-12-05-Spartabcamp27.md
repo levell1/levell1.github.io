@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 27 Unity 팀과제  ⭐ "
+title:  "[TIL] 27 Unity 팀과제 진행  ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -46,7 +46,7 @@ date: 2023-12-05 02:00
 - - - 
 
 # 오디오 작업
-Audio 작업시 편하게 하기위해 관련된 오브젝트에 audiosouce컴포넌트를 추가했고 사용했지만 Scene이동 시 노래가 없어지는 경우가 있어서 AudioManager 오브젝트를 만들어서 Don't Destroy 를 사용해 씬이동시 없어지지 않게 하였습니다.  
+Audio 작업시 편하게 하기위해 관련된 오브젝트에 audiosouce컴포넌트를 추가했고 사용했지만 Scene이동 시 노래가 없어지는 경우가 있어서 `AudioManager` 오브젝트를 만들어서 `Don't Destroy` 를 사용해 씬이동시 없어지지 않게 하였습니다.  
 다음에는 설정을 열어 소리 조절기능도 해봐야 겠다고 생각했습니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  

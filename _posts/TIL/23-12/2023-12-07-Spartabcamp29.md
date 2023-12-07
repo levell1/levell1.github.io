@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 29 Unity 팀과제  ⭐ "
+title:  "[TIL] 29 Unity 팀과제 마무리, 문자열 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -35,10 +35,14 @@ date: 2023-12-07 02:00
 
 **설명**  
 문자열 s는 한 개 이상의 단어로 구성되어 있습니다. 각 단어는 하나 이상의 공백문자로 구분되어 있습니다. 각 단어의 짝수번째 알파벳은 대문자로, 홀수번째 알파벳은 소문자로 바꾼 문자열을 리턴하는 함수, solution을 완성하세요.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 **제한 사항**  
 문자열 전체의 짝/홀수 인덱스가 아니라, 단어(공백을 기준)별로 짝/홀수 인덱스를 판단해야합니다.
 첫 번째 글자는 0번째 인덱스로 보아 짝수번째 알파벳으로 처리해야 합니다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 <div class="notice--primary" markdown="1"> 
 
@@ -115,7 +119,15 @@ public string solution(string s) {
 - - - 
 
 
-# 프로젝트 영상
+# 2. 프로젝트 
+
+[깃허브](https://github.com/levell1/TripleIdolLady)
+<br>
+
+**자료**  
+팀원분이 만들어주신 자료  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/fe3768c3-320b-4da0-bc34-3a52ec6cbf78)
+
 
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/CMd0qiAZ0e0" title="팀과제 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

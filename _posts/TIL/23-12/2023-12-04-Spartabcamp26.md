@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 26 Unity 팀과제  ⭐ "
+title:  "[TIL] 26 Unity 팀과제 강의  ⭐ "
 excerpt: "Sparta"
 
 categories:
