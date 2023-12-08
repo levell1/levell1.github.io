@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 26 Unity 팀과제 강의  ⭐ "
+title:  "[TIL] 26 Unity 팀과제 강의 `virtual` `abstract` `Interface` ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -15,7 +15,7 @@ date: 2023-12-04 02:00
 ---
 - - -
 
-
+`virtual` `abstract` `Interface`
 <BR><BR>
 
 

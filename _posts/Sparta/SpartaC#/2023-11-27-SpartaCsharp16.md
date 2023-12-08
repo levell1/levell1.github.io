@@ -1,5 +1,5 @@
 ---
-title:  "[C#] 객체지향 강의 ⭐⭐⭐ "
+title:  "[C#] 객체지향 SOLID 강의  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:

@@ -1,0 +1,40 @@
+---
+title:  "[Memo-Unity] 10. 오버로딩, 오버라이딩"
+excerpt: ""
+
+categories:
+    - MeMo Unity
+tags:
+    - [C#, MeMo Unity]
+
+toc: true
+toc_sticky: true
+ 
+date: 2023-12-08
+
+---
+- - -
+<BR><BR>
+
+오버로딩 오버라이딩
+
+<center><H1> 오버로딩 오버라이딩 </H1></center>
+
+<br><br><br><br><br><br>
+- - - 
+
+# 1. 오버로딩 오버라이딩
+오버로딩 : 파라미터에 따라 함수의 기능이 달라진다.  
+같은이름 다른기능   
+
+오버라이딩 : 부모에 정의된 메서드를 새롭게 정의한다.  
+재정의  
+
+<br><br>
+- - - 
+
+[C#] 오버로딩 오버라이딩
+[참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
+[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
+<br>
+- - -
