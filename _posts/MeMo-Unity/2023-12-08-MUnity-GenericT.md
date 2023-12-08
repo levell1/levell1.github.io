@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 9. 제네릭 (<T>)"
+title:  "[Memo-Unity] 9. 제네릭 <T>"
 excerpt: ""
 
 categories:
@@ -10,15 +10,17 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-08
+date: 2023-12-08 02:00
 
 ---
 - - -
 <BR><BR>
 
-제네릭 (<T>)
 
-<center><H1> 제네릭 (<T>) </H1></center>
+제네릭 T
+
+
+<center><H1> 제네릭 T </H1></center>
 
 <br><br><br><br><br><br>
 - - - 
@@ -28,7 +30,7 @@ date: 2023-12-08
 > - 다양한 타입을 담을 수 있음
 > - 코드의 재사용성과 유연성, 유지보수에 효율적
 > - list에 int, string / GetComponent <T(ype)>
-> - return을 t로 하거나 <T> 로도 퉁치기 가능
+> - return을 t로 하거나 T 로도 퉁치기 가능
 > - 여러 데이터를 동일한 로직에 사용할 떄
 > - where - 제약조건 추가
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/6ccd44e7-7759-4c45-9719-a5ee84463913)
@@ -69,7 +71,7 @@ int sum3 = calculator.Add(2, 3, 4); // int Add(int a, int b, int c) 메소드 �
 <br><br>
 - - - 
 
-[C#] 제네릭 (<T>)
+[C#] 제네릭 T  
 [참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>

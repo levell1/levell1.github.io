@@ -196,7 +196,7 @@ int sum3 = calculator.Add(2, 3, 4); // int Add(int a, int b, int c) 메소드 �
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-### 미리 생성하는 방식 
+### 1) 미리 생성하는 방식 
 문제점 오브젝트 생성할때 너무 많으면 로딩이 오래걸릴 수 있다.    
 <div class="notice--primary" markdown="1"> 
 
@@ -244,7 +244,7 @@ dequeue(오래된거 뺴기) -> enqueue(다시 pool)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-### 동적 오브젝트 풀 
+### 2) 동적 오브젝트 풀 
 
 <div class="notice--primary" markdown="1"> 
 
@@ -299,7 +299,7 @@ public class ObjectPool : MonoBehaviour
 
 </div>
 
-### 유니티 내장 함수 
+### 3) 유니티 내장 함수 
 Objectpool()  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1ccfec3e-1679-477d-9c19-43006778c5bd)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
