@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 9. Design Pattern : `singleton`, `state`, `observer`, `command` `component`, `builder`, `flyweight`  "
+title:  "[Memo-Unity] 12. Design Pattern : `singleton`, `state`, `observer`, `command` `component`, `builder`, `flyweight`  "
 excerpt: ""
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-08
+date: 2023-12-09
 
 ---
 - - -
@@ -58,7 +58,9 @@ Design Pattern
 
 # 7. flyweight
 
-<br><br><br><br><br><br>
+
+
+<br><br>
 - - - 
 
 [C#] 디자인 패턴 (Design Pattern)
