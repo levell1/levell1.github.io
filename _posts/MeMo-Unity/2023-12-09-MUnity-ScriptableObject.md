@@ -198,7 +198,7 @@ ScriptableObject : 데이터를 저장 관리하기 위해 사용하는 데이�
 <br><br>
 - - - 
 
-[C#] SO (ScriptableObject) 
+[Unity] SO (ScriptableObject) 
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
