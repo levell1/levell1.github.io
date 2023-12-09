@@ -18,7 +18,7 @@ date: 2023-12-09
 
 `ScriptableObject` - `CreateAssetMenu`  
 
-<center><H1> Design Pattern </H1></center>
+<center><H1>ScriptableObject - CreateAssetMenu  </H1></center>
 
 <br><br><br><br><br><br>
 - - - 
@@ -31,10 +31,12 @@ date: 2023-12-09
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-무기 데이터  
+`AttackSO` 무기 데이터  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 <div class="notice--primary" markdown="1"> 
+
+`AttackSO`
 
 ```c#
 
@@ -57,10 +59,12 @@ public class AttackSO : ScriptableObject
 </div>
 
 ## RangedAttackData
-원거리 무기 데이터    
+`RangedAttackData` 원거리 무기 데이터    
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}   
 <div class="notice--primary" markdown="1"> 
+
+`RangedAttackData`
 
 ```c#
 [CreateAssetMenu(fileName = "RangedAttackData", menuName = "TopDownController/Attacks/Ranged", order = 1)]
@@ -81,7 +85,7 @@ public class RangedAttackData : AttackSO
 - - - 
 
 # 2. CreateAssetMenu
-Asset 에서 생성시 메뉴에 표시  
+`CreateAssetMenu` Asset 에서 생성시 메뉴에 표시  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -97,21 +101,25 @@ RangedAttackData
 ```
 </div>
   
-fileName : 이 유형의 새로 생성된 인스턴스에서 사용되는 기본 파일 이름입니다.  
-menuName : 유니티 메뉴에 표기되는 이름  
-order    : 메뉴 항목의 위치입니다.  
+> - `fileName` : 이 유형의 새로 생성된 인스턴스에서 사용되는 기본 파일 이름입니다.  
+> - `menuName` : 유니티 메뉴에 표기되는 이름  
+> - `order`    : 메뉴 항목의 위치입니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/0d3f80c8-fb29-47d9-9c8c-7a2a58aca14f)
 
+<br><br><br><br><br><br>
+- - - 
 
 # 3. CharacterStatsHandler
-Player 캐릭터 정보, 무기SO 정보  
+`CharacterStatsHandler` Player 캐릭터 정보, 무기SO 정보  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 <div class="notice--primary" markdown="1"> 
+
+`CharacterStatsHandler`
 
 ```c#
 public class CharacterStatsHandler : MonoBehaviour
@@ -145,7 +153,7 @@ public class CharacterStatsHandler : MonoBehaviour
 </div>
 
 ## CharacterStat
-플레이어의 정보  
+`CharacterStats` 플레이어의 정보  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
