@@ -25,8 +25,11 @@ date: 2023-12-09
 
 
 # 1. ScriptableObject
-데이터를 저장하는 데이터 컨테이너. 
-스크립트 생성 시 상속된 Monobehaviour 를 지우고 ScriptableObject를 상속받는다
+# 1. ScriptableObject
+> - 스크립터블 오브젝트는 Unity에서 데이터를 저장하고 관리하는 유연한 데이터 컨테이너입니다.  
+> - 게임에서 재사용 가능한 데이터 또는 설정을 저장하는 데 사용
+> - 코드와 데이터를 분리  
+> - 스크립트 생성 시 상속된 Monobehaviour 를 지우고 ScriptableObject를 상속받는다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 <div class="notice--primary" markdown="1"> 

@@ -33,41 +33,83 @@ date: 2023-12-08 02:00
 
 # 1. 스탯 만들기
 
-**스크립터블 오브젝트(Scriptable Object)**
+# 1. ScriptableObject
 > - 스크립터블 오브젝트는 Unity에서 데이터를 저장하고 관리하는 유연한 데이터 컨테이너입니다.  
 > - 게임에서 재사용 가능한 데이터 또는 설정을 저장하는 데 사용
-> - 코드와 데이터를 분리
+> - 코드와 데이터를 분리  
+> - 스크립트 생성 시 상속된 Monobehaviour 를 지우고 ScriptableObject를 상속받는다 . 
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
 <div class="notice--primary" markdown="1"> 
 
-```c# 
-public int solution(string t, string p) {
-        int answer = 0;
-        for(int i = 0; i < t.Length-p.Length+1; i++)
-        {
-            string strA = t.Substring(i, p.Length);
-            int compare = strA.CompareTo(p);
-            if (compare<=0) answer++;
-        }
-        return answer;
-    }
+```c#
+
+[CreateAssetMenu(fileName = "DefaultAttackData", menuName = "TopDownController/Attacks/Default", order = 0)]
+public class AttackSO : ScriptableObject
+{
+    [Header("Attack Info")]
+    public float size;
+    public float delay;
+    public float power;
+    public float speed;
+    public LayerMask target;
+
+    [Header("Knock Back Info")]
+    public bool isOnKnockback;
+    public float knockbackPower;
+    public float knockbackTime;
+}
 ```
-> - **예) t = "123", p="2"**
-
-**`t.Substring(i, p.Length)`**  
-> - t의 i번째부터 p.Length(1) 개만큼 가져와서 strA에 저장.
-
-<br>
-
-**`strA.CompareTo(p)`**  
-> - strA와 P를 비교한다 
-> - strA가 크면 +1 
-> - 같으면 0 
-> - 작으면 -1
-
 </div>
 
-<br><br><br><br><br>
+## RangedAttackData
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+[CreateAssetMenu(fileName = "RangedAttackData", menuName = "TopDownController/Attacks/Ranged", order = 1)]
+public class RangedAttackData : AttackSO
+{
+    [Header("Ranged Attack Data")]
+    public string bulletNameTag;
+    public float duration;
+    public float spread;
+    public int numberofProjectilesPerShot;
+    public float multipleProjectilesAngel;
+    public Color projectileColor;
+}
+```
+</div>
+
+<br><br><br><br><br><br>
 - - - 
+
+# 2. CreateAssetMenu
+Asset 에서 생성시 메뉴에 표시
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+AttackSO
+[CreateAssetMenu(fileName = "DefaultAttackData", menuName = "TopDownController/Attacks/Default", order = 0)]
+
+RangedAttackData
+[CreateAssetMenu(fileName = "RangedAttackData", menuName = "TopDownController/Attacks/Ranged", order = 1)]
+
+```
+</div>
+  
+fileName : 이 유형의 새로 생성된 인스턴스에서 사용되는 기본 파일 이름입니다.  
+menuName : 유니티 메뉴에 표기되는 이름  
+order    : 메뉴 항목의 위치입니다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/0d3f80c8-fb29-47d9-9c8c-7a2a58aca14f)
+
 
 <br><br><br><br><br>
 - - -
