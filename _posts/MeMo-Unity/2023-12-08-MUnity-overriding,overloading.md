@@ -36,8 +36,7 @@ date: 2023-12-08 02:22
 <br><br>
 - - - 
 
-[C#] 오버로딩 오버라이딩
-[참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
+[C#] 오버로딩 오버라이딩   
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

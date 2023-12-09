@@ -97,8 +97,7 @@ Design Pattern
 <br><br>
 - - - 
 
-[C#] 디자인 패턴 (Design Pattern)
-[참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
+[C#] 디자인 패턴 (Design Pattern)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

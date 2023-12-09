@@ -71,8 +71,7 @@ int sum3 = calculator.Add(2, 3, 4); // int Add(int a, int b, int c) 메소드 �
 <br><br>
 - - - 
 
-[C#] 제네릭 T  
-[참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
+[C#] 제네릭 T   
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

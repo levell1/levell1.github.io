@@ -182,7 +182,7 @@ public class BulletPoolExample : MonoBehaviour
 
 </div>
 
-**언제사용?**
+**언제사용?**  
 오브젝트의 생성과 파괴가 계속 일어난다.  
 오브젝트를 많이 생성해야된다. (30개 이상)  
 생성관리를 체계적으로 하고 싶다.  
@@ -192,8 +192,7 @@ public class BulletPoolExample : MonoBehaviour
 <br><br>
 - - - 
 
-[Unity] 오브젝트 풀(ObjectPool)
-[참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
+[Unity] 오브젝트 풀(ObjectPool)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

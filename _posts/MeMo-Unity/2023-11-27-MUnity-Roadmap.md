@@ -35,8 +35,7 @@ date: 2023-11-27
 <br><br><br><br><br><br>
 - - - 
 
-[C#] 코루틴 (Coroutine)
-[참조](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)  
+[C#] 게임 개발자 로드맵 (Game Developer Roadmap)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
