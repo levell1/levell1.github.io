@@ -147,52 +147,37 @@ Objectpool()
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
-public class ObjectPool : MonoBehaviour
-{
-    public GameObject prefab;
-    public int initialPoolSize; // 100
-    public int maxPoolSize; // 10000
+using UnityEngine;
+using UnityEngine.Pool;
 
-    private List<GameObject> objectPool;
+public class BulletPoolExample : MonoBehaviour
+{
+    public GameObject bulletPrefab;
+
+    private ObjectPool<GameObject> bulletPool;
 
     private void Start()
     {
-        objectPool = new List<GameObject>();
-
-        for (int i = 0; i < initialPoolSize; i++)
-        {
-            GameObject obj = Instantiate(prefab, transform);
-            obj.SetActive(false);
-            objectPool.Add(obj);
-        }
+        bulletPool = new ObjectPool<GameObject>(
+            createFunc: () => Instantiate(bulletPrefab), // 오브젝트 생성 방법
+            actionOnGet: (obj) => obj.SetActive(true),   // 오브젝트를 풀에서 가져올 때 실행할 액션
+            actionOnRelease: (obj) => obj.SetActive(false), // 오브젝트를 풀에 반환할 때 실행할 액션
+            actionOnDestroy: (obj) => Destroy(obj),     // 오브젝트를 파괴할 때 실행할 액션
+            defaultCapacity: 10,                        // 초기 용량
+            maxSize: 20                                 // 최대 용량
+        );
     }
 
-    public GameObject GetObjectFromPool()
+    public GameObject GetBullet()
     {
-        foreach (GameObject obj in objectPool)
-        {
-            if (!obj.activeInHierarchy)
-            {
-                obj.SetActive(true);
-                return obj;
-            }
-        }
+        return bulletPool.Get();
+    }
 
-        if (objectPool.Count < maxPoolSize)
-        {
-            GameObject obj = Instantiate(prefab, transform);
-            objectPool.Add(obj); 
-            obj.SetActive(true);
-            return obj;
-        }
-        else
-        {
-            // 풀에 더 이상 생성할 수 없음
-            return null;
-        }
+    public void ReturnBullet(GameObject bullet)
+    {
+        bulletPool.Release(bullet);
     }
 }
-
 ```
 
 </div>
