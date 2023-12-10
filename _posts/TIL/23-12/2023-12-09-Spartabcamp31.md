@@ -22,7 +22,7 @@ date: 2023-12-09 02:00
 
 <center><H1>  유니티 숙련주차 2일차 </H1></center>
 
-&nbsp;&nbsp; [o] 알고리즘 문제  - 43
+&nbsp;&nbsp; [o] 알고리즘 문제  - 43  
 &nbsp;&nbsp; [o] 강의 듣기 - 1강 스탯 만들기  
 &nbsp;&nbsp; [X] 다른반 발표 보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}

@@ -45,12 +45,12 @@ if (levelCollisionLayer.value == (levelCollisionLayer.value | (1 << collision.ga
 </div>
 
 ## 잘못된 생각 수정
-(1 << collision.gameObject.layer)  
-levelCollisionLayer.value = 128 = 10000000
-collision.gameObject.layer = 7
+
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
+(1 << collision.gameObject.layer)  
 이 코드가 collision.gameObject.layer 를 1만큼 << 한다고 잘못 생각하고 있었다.   
 비트연산자에 관하여 잘 모르고 있었고, debug 를 찍어보니 알게되었다.    
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -58,6 +58,8 @@ collision.gameObject.layer = 7
 
 1을 collision.gameObject.layer(7) 만큼 << 하는 거 였다.   
 = 10000000 = levelCollisionLayer.value  
+levelCollisionLayer.value = 128 = 10000000
+collision.gameObject.layer = 7
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}   
 
@@ -75,6 +77,8 @@ width, color, Materials
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8f203ed1-53d5-4bf3-b21d-3769f35c1b05)  
 
+<br><br><br><br><br><br>
+- - - 
 
 # 정리  
 
@@ -83,7 +87,7 @@ width, color, Materials
 <br><br>
 - - - 
 
-[Unity] SO (ScriptableObject) 
+[Unity] MaskLayer
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

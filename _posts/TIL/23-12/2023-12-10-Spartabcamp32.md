@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 31 투사체 구현하기   ⭐ "
+title:  "[TIL] 32 투사체 구현하기   ⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-09 02:00
+date: 2023-12-10 02:00
 
 ---
 - - -
@@ -22,8 +22,8 @@ date: 2023-12-09 02:00
 
 <center><H1>  유니티 숙련주차 3일차 </H1></center>
 
-&nbsp;&nbsp; [o] 알고리즘 문제  - 43
-&nbsp;&nbsp; [o] 강의 듣기 - 2강~ 
+&nbsp;&nbsp; [o] 알고리즘 문제  - 43  
+&nbsp;&nbsp; [o] 강의 듣기 - 2강~  
 &nbsp;&nbsp; [X] 다른반 발표 보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -148,8 +148,12 @@ public void ShootBullet(Vector2 startPostiion, Vector2 direction, RangedAttackDa
 ```
 </div>
 
+<br><br><br><br><br>
+- - -
+
+
 # 2. MaskLayerm, TrailRenderer
-[MaskLayer,TrailRenderer](https://levell1.github.io/memo%20unity/MaskLayer/)  
+[MaskLayer,TrailRenderer](https://levell1.github.io/memo%20unity/MUnity-MaskLayer/)  
 
 <br><br><br><br><br>
 - - -
