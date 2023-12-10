@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 9. 제네릭 <T>"
+title:  "[Memo-Unity] 9. 제네릭"
 excerpt: ""
 
 categories:

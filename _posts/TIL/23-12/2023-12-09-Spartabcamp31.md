@@ -37,7 +37,7 @@ date: 2023-12-09 02:00
 ScriptableObject : 데이터를 저장 관리하기 위해 사용하는 데이터 컨테이너  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
-[ScriptableObject-CreateAssetMenu](https://levell1.github.io/memo%20unity/MUnity-ScriptableObject/)  
+[ScriptableObject-CreateAssetMenu 정리](https://levell1.github.io/memo%20unity/MUnity-ScriptableObject/)  
 
 <br><br><br><br><br>
 - - -
