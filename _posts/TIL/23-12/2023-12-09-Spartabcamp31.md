@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 31 스탯만들기 (ScriptableObject)  ⭐ "
+title:  "[TIL] 31 스탯만들기 (ScriptableObject)  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

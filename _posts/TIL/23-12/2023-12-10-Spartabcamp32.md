@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 32 투사체 구현하기   ⭐ "
+title:  "[TIL] 32 투사체 구현하기   ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
