@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 32 투사체 구현하기   ⭐⭐ "
+title:  "[TIL] 32 투사체 구현하기, Objectpool, AnimationController   ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -15,8 +15,8 @@ date: 2023-12-10 02:00
 ---
 - - -
 
-`MaskLayer`, `TrailRenderer` 
-
+`MaskLayer`, `TrailRenderer` `Objectpool`,`AnimationController`
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/95166e39-3981-4648-8d07-04f026f1a83b)
 <BR><BR>
 
 
@@ -158,11 +158,115 @@ public void ShootBullet(Vector2 startPostiion, Vector2 direction, RangedAttackDa
 <br><br><br><br><br>
 - - -
 
-# 정리  
+# 3. Object Pool
+Tag 를 이용해 사용  
+size만큼 생성 후  
+size개수 Dequeue, Enqueue 로 사용  
+한번에 size이상 setactive 되면문제가 생김  
+size늘리거나 , 다른방법  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
+{: .notice}  
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ObjectPool : MonoBehaviour
+{
+    [System.Serializable]
+    public struct Pool
+    {
+        public string tag;
+        public GameObject prefab;
+        public int size;
+    }
+
+    public List<Pool> pools;
+    public Dictionary<string, Queue<GameObject>> poolDictionary;
+
+    private void Awake()
+    {
+        poolDictionary = new Dictionary<string, Queue<GameObject>>();
+        foreach (var pool in pools)
+        {
+            Queue<GameObject> objectPool = new Queue<GameObject> ();
+            for (int i = 0; i < pool.size; i++)
+            {
+                GameObject obj = Instantiate(pool.prefab);
+                obj.SetActive(false);
+                objectPool.Enqueue (obj);
+            }
+            poolDictionary.Add (pool.tag, objectPool);
+        }
+    }
+
+    public GameObject SpawnFromPool(string tag)
+    {
+        if (!poolDictionary.ContainsKey(tag))
+            return null;
+
+        GameObject obj = poolDictionary[tag].Dequeue();
+        poolDictionary[tag].Enqueue(obj);
+
+        return obj;
+    }
+}
+
+//ProjectileManager.cs 태그를 이용해 실행
+GameObject obj = objectPool.SpawnFromPool(attackData.bulletNameTag);
+```
+</div>
+
+RangedAttackData Bullet Name Tag
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ebc59f41-5a7e-43c1-b9b6-e3505eb72b2c)  
+
+ProjectileManager.cs Tag  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/36a504a9-d6a5-4015-abb5-86baf5e2141a)
+
+현재 list는 1개 , dictionary도 1개  
+queue 에 GameObject(Arrow)를 저장해두고  Dequeue 로 뺴고 리턴  
+리턴하기전 Queue 에 다음에 Dequeue 할 Arrow 저장 해두기.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+<br><br><br><br><br>
+- - -
+
+# 4. Animations
+
+상수 readonly  
+StringToHash  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+// TopDownAnimatorController.cs : TopDownAnimations
+private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+private static readonly int Attack = Animator.StringToHash("Attack");
+private static readonly int IsHit = Animator.StringToHash("IsHit");
+```
+
+- StringToHash 스트링값을 hash 숫자값으로 변환 - 스트링비교연산 비용높기떄문에 숫자값으로 비교
+- const는 컴파일 타임의 상수 선언과 동시에 초기화 변경 X
+- readonly 런타임 상수 프로그램이 실행중에 초기화 하는것도 가능, 선언과동시에 초기화도 가능
+</div>
 
 
+**BaseLayer**
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/66fa9c7b-9817-45f6-b129-ac5fa13fe129)
+
+**AttackLayer**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/9b45ea50-3b04-42a8-8219-5e21e0a2a446)
+
+<br><br><br><br><br>
+- - -
+
+# 정리  
+ 
 
 <br><br>
 - - -
