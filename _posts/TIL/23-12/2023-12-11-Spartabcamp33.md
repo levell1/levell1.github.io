@@ -93,7 +93,7 @@ Debug.DrawRay(transform.position, direction, Color.green);
             direction += _knockback;
         }
         _rigidbody.velocity = direction;
-        //knockbackDuration -= Time.fixedDeltaTime;
+        knockbackDuration -= Time.fixedDeltaTime;
     }
     public void ApplyKnockback(Transform other, float power, float duration)
     {
@@ -191,8 +191,16 @@ private void DestroyProjectile(Vector3 position, bool createFx)
 <br><br><br><br><br>
 - - -
 
+# 4. 사운드
+[Sound](https://levell1.github.io/memo%20unity/MUnity-Sound/)  
+
+# collider 2D 2개
+
+trigger충돌도 추가로 가능  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/fe847b2e-69e4-4ad8-9f2f-ef3f5e6a6b84)
+
 # 정리  
- 
+[setACtive, enabled 차이](https://levell1.github.io/memo%20unity/MUnity-enabled/))
 
 <br><br>
 - - -
