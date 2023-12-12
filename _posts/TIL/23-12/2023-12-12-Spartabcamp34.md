@@ -86,6 +86,8 @@ public class Armor : Item
 # 2. 장착
 장비 클릭시 팝업창 뜨기.  
 팝업창에서 장착/해제 누르면 장착OR해제  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 equip, popup  
 
 ## Equip
@@ -259,7 +261,7 @@ public class Popup : MonoBehaviour
 
 지금 한 유니티 inven 의 UI 가 코드의 item 과 연관이 없다. 상점을 생각하지 못한 설계였고, 다음을 생각하지않는 설계였다. 고 생각한다.  
 볼륨이 작으니까 편하게하자. 라는 마인드였을까 생각을 하지 못한걸까.  {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
+{: .notice--info}  
 
 <br><br>
 - - -
