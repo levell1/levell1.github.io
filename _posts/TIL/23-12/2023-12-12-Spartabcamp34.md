@@ -80,6 +80,8 @@ public class Armor : Item
 ```
 </div>
 
+<br><br><br><br><br>
+- - - 
 
 # 2. 장착
 장비 클릭시 팝업창 뜨기.  
@@ -243,7 +245,8 @@ public class Popup : MonoBehaviour
 ```
 </div>
 
-
+<br><br><br><br><br>
+- - - 
 
 # 잡답
 오늘은 코드 리펙토링?? 을 하였다 PLAYER코드에 있던 UI부분의 코드를 UIMANAGER을 만들어서 따로 분리했고 EQUIP에 있던 popup에 분리해서 넣었다.  
@@ -254,8 +257,8 @@ public class Popup : MonoBehaviour
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-지금 한 유니티 inven 의 UI 가 코드의 item 과 연관이 없다. 
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+지금 한 유니티 inven 의 UI 가 코드의 item 과 연관이 없다. 상점을 생각하지 못한 설계였고, 다음을 생각하지않는 설계였다. 고 생각한다.  
+볼륨이 작으니까 편하게하자. 라는 마인드였을까 생각을 하지 못한걸까.  {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
 <br><br>
