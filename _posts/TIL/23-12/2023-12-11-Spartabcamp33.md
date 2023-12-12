@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 33    ⭐⭐ "
+title:  "[TIL] 33  파티클, 사운드  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,13 +10,11 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-10 02:00
+date: 2023-12-11 02:00
 
 ---
 - - -
 
-`MaskLayer`, `TrailRenderer` `Objectpool`,`AnimationController`
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/95166e39-3981-4648-8d07-04f026f1a83b)
 <BR><BR>
 
 
