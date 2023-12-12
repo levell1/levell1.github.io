@@ -255,14 +255,18 @@ public class Popup : MonoBehaviour
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+
 그리고 오늘은 조립식 컴퓨터 시킨게 왔고, ssd만 부착하면 될 줄 알았는데 메인보드가 달라서 윈도우를 다시 깔고 해서 3시간 정도 걸렸다. 공부를 많이 못했지만 기분이 좋다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-지금 한 유니티 inven 의 UI 가 코드의 item 과 연관이 없다. 상점을 생각하지 못한 설계였고, 다음을 생각하지않는 설계였다. 고 생각한다.  
-볼륨이 작으니까 편하게하자. 라는 마인드였을까 생각을 하지 못한걸까.
 
+지금 한 유니티 inven 의 UI 가 코드의 item 과 연관이 없다. 상점을 생각하지 못한 설계였고, 다음을 생각하지않는 설계였다. 고 생각한다.  볼륨이 작으니까 편하게하자. 라는 마인드였을까 생각을 하지 못한걸까.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
+
+
 
 <br><br>
 - - -
