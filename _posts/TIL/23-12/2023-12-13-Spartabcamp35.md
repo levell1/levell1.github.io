@@ -51,7 +51,7 @@ date: 2023-12-13 02:00
 {: .notice}  
 
 
-<br><br>
+<br><br><br><br><br>
 
 # 1. 필수요구사항
 
@@ -408,7 +408,7 @@ public class Equip : MonoBehaviour
 </div>
 </details>
 
-<br><br>
+<br><br><br><br><br>
 
 # 3. manager, item
 
@@ -624,7 +624,7 @@ public class ButtonClickManager : MonoBehaviour
 {: .notice}  
 
 <details>
-<summary>ButtonClickManager</summary>
+<summary>GoldManager</summary>
 
 <div class="notice--primary" markdown="1"> 
 
@@ -655,6 +655,13 @@ public class GoldManager
 </details>
 
 <br><br><br><br><br>
+
+
+# Play
+
+![20231213_182652](https://github.com/levell1/levell1.github.io/assets/96651722/ef27966d-01fe-428f-bfb3-8328af3f1a1b)  
+
+<br><br>
 
 
 
