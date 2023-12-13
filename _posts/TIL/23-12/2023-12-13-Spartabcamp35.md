@@ -27,15 +27,10 @@ date: 2023-12-13 02:00
 {: .notice}  
 
 <br><br><br><br><br>
-- - - 
-- 필수요구사항
-
-
 # 계획
 발제를 보고 상점까지를 목표로 대략적인 스크립트와 UI를 만들며 진행 하였습니다.  
 객체지향, JSON, 강의에서 배운 내용(ScriptableObject등)을 사용하는 목표로  개인과제를 시작하였습니다.
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
+
 
 <br>
 
@@ -59,8 +54,6 @@ date: 2023-12-13 02:00
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/49d4bc5b-5d1c-45a6-bdcb-56d3f490f38b)   
 > - 좌측 : 이름, 직업, 레벨, exp / maxexp  
 > - 우측 : 스텟, 인벤 버튼
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
 
 
 **플레이어 정보.JSON**  
@@ -75,7 +68,9 @@ date: 2023-12-13 02:00
 
 <div class="notice--primary" markdown="1"> 
 
+
 ```c#
+
 [System.Serializable]
 public class CharacterStat
 {
@@ -134,12 +129,10 @@ public class JsonLoad
 
 ## 2. Stat 보기 -> UImanager
 status 클릭시 스텟 보기, 내용수정  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8da9245b-49f1-4ca4-b54a-88193ddc16c0)  
 
-[UImanager]()
+[UImanager](https://github.com/levell1/Inven_Shop?tab=readme-ov-file#managersuimoneybuttonclick)
 
 <br><br>
 
@@ -148,8 +141,6 @@ status 클릭시 스텟 보기, 내용수정
 
 **PlayerInven**  
 인벤 에 아이템 추가, 제거
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
 
 <details>
 <summary>PlayerInven.cs</summary>
@@ -223,20 +214,17 @@ public class InvenAddItem : MonoBehaviour
 </div>
 </details>
 
-****
+
 
 <br><br><br><br><br>
-- - - 
+
 
 # 2. 선택요구사항
 
 ## 1. 아이템 장착 팝업
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/78810541-a570-49a9-a661-483154d6e646)  
-
 클릭한 아이템에 따라 팝업 내용 변경  
 장착 시 이미지 색 변경  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
 
 <details>
 <summary>Popup.cs</summary>
@@ -470,9 +458,6 @@ public class Weapon : Item
 첫화면 초기화
 스텟화면 VIEW  
 인벤아이템 개수체크  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
-
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/51b5327e-b09a-4ba8-9b39-3ed7b6c1d064)  
 
 <details>
@@ -549,8 +534,6 @@ public class UiManager : MonoBehaviour
 **ButtonClickManager**  
 스텟, 인벤, 뒤로가기버튼 클릭 시  
 보이고 안보일 오브젝트 관리  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
 
 <details>
 <summary>ButtonClickManager</summary>
@@ -650,16 +633,22 @@ public class GoldManager
 </details>
 
 <br><br><br><br><br>
-- - - 
+
 
 
 # 느낀점
 
 **문제점**  
-상점까지 계획은 했지만 INVEN에 장비를 표시하는 게 코드, 데이터로 정보를 추가한 게 아닌 유니티 쪽에서 하는 방식. shop을 시작할 때 문제를 느꼈고, 그래서 Shop은 구현x, Inven 부분의 UI 도 다 만들고나서 Scoll View 가 있다는 것을 알게 되어서 다음에 사용. 수정을 하고 싶었지만, 밀린강의가 너무 많아서..
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--warning} 
+상점까지 계획은 했지만 INVEN에 장비를 표시하는 게 코드, 데이터로 정보를 추가한 게 아닌 유니티 쪽에서 하는 방식이라고 느꼈습니다. shop을 시작할 때 문제를 느꼈고, Shop은 구현을 못하였습니다.  
+Inven 부분의 UI 도 다 만들고나서 Scoll View 가 있다는 것을 알게 되어서 다음에 사용해 봐야겠습니다. 수정을 하고 싶었지만, 밀린강의가..
 
+**궁금한 점**
+> - Script를 나누는게 잘 되고 있는건지?
+> - json, SO 의 데이터구조, 방식이 잘 되고 있는건지?
+> - 이번과제에 대한 부족한점 에 대하여 알고싶습니다.
+
+
+**봐주셔서 감사합니다.**
 
 
 <br><br>
