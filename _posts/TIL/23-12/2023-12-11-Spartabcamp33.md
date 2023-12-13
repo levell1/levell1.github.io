@@ -18,7 +18,7 @@ date: 2023-12-11 02:00
 <BR><BR>
 
 
-<center><H1>  유니티 숙련주차 4일차 </H1></center>
+<center><H1>  유니티 숙련주차 4일차  + 개인과제 </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 43  
 &nbsp;&nbsp; [o] 강의 듣기 - 15강~  

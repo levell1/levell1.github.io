@@ -18,7 +18,7 @@ date: 2023-12-12 02:00
 <BR><BR>
 
 
-<center><H1>  유니티 숙련주차 5일차 </H1></center>
+<center><H1>  유니티 숙련주차 5일차 + 개인과제 </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 43  
 &nbsp;&nbsp; [o] 강의 듣기 - 15강~  
@@ -255,13 +255,13 @@ public class Popup : MonoBehaviour
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-
+**컴퓨터⭐⭐**
 그리고 오늘은 조립식 컴퓨터 시킨게 왔고, ssd만 부착하면 될 줄 알았는데 메인보드가 달라서 윈도우를 다시 깔고 해서 3시간 정도 걸렸다. 공부를 많이 못했지만 기분이 좋다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-
-지금 한 유니티 inven 의 UI 가 코드의 item 과 연관이 없다. 상점을 생각하지 못한 설계였고, 다음을 생각하지않는 설계였다. 고 생각한다.  볼륨이 작으니까 편하게하자. 라는 마인드였을까 생각을 하지 못한걸까.
+**느낀점**
+지금 한 유니티 inven 의 UI 가 코드로 생성하는 게 아니다. 유니티UI로 아이템을 만들었고 LIST의 ITEM 을 이용하여 생성하지 못하였다. 아쉽고 상점을 만들 때 생각이 났다. 상점에서 구매 후 인벤에 넣을 때? 다음부터 처음에 계획을 잘 새우고 코드, UI 부분을 다음을 생각하면서 해야겠다고 생각했다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
