@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 36 개인과제 끝, 강의  ⭐⭐ "
+title:  "[TIL] 36 3D 강의  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-13 02:00
+date: 2023-12-14 02:00
 
 ---
 - - -
