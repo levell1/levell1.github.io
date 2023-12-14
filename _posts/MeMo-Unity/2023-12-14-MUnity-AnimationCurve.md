@@ -107,7 +107,7 @@ public class DayNightCycle : MonoBehaviour
 
 <br><Br>
 
-**UpdateLighting**
+**UpdateLighting**  
 UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensityCurve)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  

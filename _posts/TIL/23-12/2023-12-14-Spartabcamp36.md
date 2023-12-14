@@ -116,7 +116,7 @@ public class DayNightCycle : MonoBehaviour
 
 <br><Br>
 
-**UpdateLighting**
+**UpdateLighting**  
 UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensityCurve)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -149,13 +149,13 @@ UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensi
 - - - 
 
 
-# 개인과제 풀이영상
+# 개인과제 풀이영상 정리
 
 [UI](https://levell1.github.io/memo%20unity/MUnity-UiCanvas/)
 
 # for문속 lambda
 
-[rambda](https://levell1.github.io/memo%20unity/MUnity-lambda/)
+[Lambda](https://levell1.github.io/memo%20unity/MUnity-lambda/)
 
 
 <br><br><br><br><br>
