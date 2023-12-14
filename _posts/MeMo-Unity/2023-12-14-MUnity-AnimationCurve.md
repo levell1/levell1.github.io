@@ -23,8 +23,6 @@ AnimationCurve
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success} 
 <br><br><br><br><br><br>
 - - - 
 
@@ -140,7 +138,7 @@ UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensi
 <br><br>
 - - - 
 
-[Unity] StatHandler
+[Unity] AnimationCurve
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

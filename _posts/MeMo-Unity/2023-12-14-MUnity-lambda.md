@@ -32,12 +32,13 @@ onClick.AddListener 람다식으로 for문안에서 할당?
 <div class="notice--primary" markdown="1"> 
 
 ```c#
+// 오류
 for (int i = 0; i < Btns.Length; i++)
 {
     Btns[i].onClick.AddListener(() => PressBtnSelectGame(i));
 }
 
-
+// 수정
 for (int i = 0; i < Btns.Length; i++)
 {
     int temp = i; 
@@ -55,7 +56,7 @@ PressBtnSelectGame(i) 에서 i값이 0,1,2 ---라고 예상된다.
 <br><br>
 - - - 
 
-[Unity] StatHandler
+[Unity] lambda
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
