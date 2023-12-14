@@ -250,6 +250,8 @@ project view 에 폴더 정렬 해서 깔끔하게 보기
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ddf61c14-d050-4e3d-bb2c-d67547f47b14)  
+
 <br><br>
 - - -
 
