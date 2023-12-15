@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 36 3D 강의  ⭐⭐ "
+title:  "[TIL] 36 3D 강의  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -123,7 +123,7 @@ UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensi
 
 > **float intensity = intensityCurve.Evaluate(time);** 
 > - 애니메이션 커브에서 시간별(x축) y의 값을 intensity 에 저장
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/63594cf4-5059-4366-a834-b5a09778504f)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/63594cf4-5059-4366-a834-b5a09778504f){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -139,9 +139,9 @@ UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensi
 
 > - if, else if 문
 > - `sun` 의 intensity 가 0 일때  time 이 0 ~ 0.2, 0.8 ~ 1.0 일때 sun setActive(False)
-> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8aded1d6-9bcb-4693-a08d-cbcc239ba029)
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8aded1d6-9bcb-4693-a08d-cbcc239ba029){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 > - `Moon` 의 intensity 가 0 일때  time 이 0.3 ~ 0.7 일때 setActive(False)
-> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/19dbdbc3-14bd-4ac6-95d7-b930b8fcf450)
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/19dbdbc3-14bd-4ac6-95d7-b930b8fcf450){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -154,7 +154,7 @@ UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensi
 [UI](https://levell1.github.io/memo%20unity/MUnity-UiCanvas/)
 
 **Scale Mode**
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/32913432-1d08-4a76-923f-062930378d5e)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/32913432-1d08-4a76-923f-062930378d5e){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
 
@@ -172,9 +172,9 @@ UpdateLighting(Light lightSource, Gradient colorGradiant, AnimationCurve intensi
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/f33fe7b4-6ab4-424a-85aa-38906a26ab4e)   
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/f33fe7b4-6ab4-424a-85aa-38906a26ab4e){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/12c660e9-705f-46df-9830-f3f171e30c7a)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/12c660e9-705f-46df-9830-f3f171e30c7a){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 
 <br><br><br>
 
@@ -184,13 +184,13 @@ button 클릭시 보이고 나타나는 (setactive) 코드로도 가능하지만
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/e1ba03e8-541f-432c-a94b-4af8a033153d)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/e1ba03e8-541f-432c-a94b-4af8a033153d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
 <br><br><br>
 
 ## 4. inpufield
 content Type 으로 입력값 무었으로 할 지 가능  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/42c25211-3e33-4957-9e79-c75adde53743)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/42c25211-3e33-4957-9e79-c75adde53743){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
@@ -202,8 +202,8 @@ Content Size Filter -> perferred size 부모 크기 안의 내용에 맞게 조�
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/b6fe5f47-dfc3-4ac1-8efe-ef5c9fc88ee0)  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/8df88b61-9609-43f5-9e0a-af3625210b43)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/b6fe5f47-dfc3-4ac1-8efe-ef5c9fc88ee0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/8df88b61-9609-43f5-9e0a-af3625210b43){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <br><br><br><br><br>
 - - - 
@@ -332,7 +332,7 @@ project view 에 폴더 정렬 해서 깔끔하게 보기
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ddf61c14-d050-4e3d-bb2c-d67547f47b14)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ddf61c14-d050-4e3d-bb2c-d67547f47b14){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
 <br><br>
 - - -
