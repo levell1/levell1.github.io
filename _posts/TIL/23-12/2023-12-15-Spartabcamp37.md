@@ -175,7 +175,7 @@ public class myCharacterData{
 ```
 
 </div>
-
+<br><br>
 
 ### 1)Playerprefs
 문자열 실수 정수 값을 플랫폼 레지스트리에 저장할 수 있다.  
@@ -215,6 +215,7 @@ else {
 ```
 
 </div>
+<br><br>
 
 ### 2)CSV
 CSV(Comma-Separated Values) 
@@ -299,6 +300,7 @@ public class CSVReader : MonoBehaviour
 ```
 
 </div>
+<br><br>
 
 ### 3)JSON
 JSON(JavaScript Object Notation) 경량 데이터 교환 형식.  
@@ -392,6 +394,7 @@ public class Player : MonoBehaviour
 ```
 
 </div>
+<br><br>
 
 ### 4)ScriptableObject
 유니티 엔진에서 사용되는 데이터 컨테이너.  
@@ -470,7 +473,7 @@ public class Spawner : MonoBehaviour
 ```
 
 </div>
-
+<br><br>
 
 ### 5)Binary Formatter
 
@@ -535,6 +538,8 @@ public class SaveLoadManager : MonoBehaviour
 
 </div>
 
+<br><br>
+
 ### 메소드/ 프로퍼티
 데이터 저장에 많이 쓰이는 메소드/프로퍼티
 Application.persistentDataPath
@@ -551,6 +556,7 @@ csv, son - 읽고 쓰기 가능 한 데이터들
 Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
+
 
 
 **로컬(디바이스)** 에 저장하는 방식  
