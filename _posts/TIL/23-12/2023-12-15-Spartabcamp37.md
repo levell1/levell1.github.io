@@ -577,8 +577,6 @@ Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ddf61c14-d050-4e3d-bb2c-d67547f47b14){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
-
 <br><br>
 - - -
 
