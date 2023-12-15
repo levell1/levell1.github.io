@@ -61,6 +61,7 @@ AnimationCurve
 {: .notice--info} 
 
 ## UI 체크사항  
+
 > - 게임을 이해할 수 있도록 디자인
 > - 적절한 방법, 명확한 안내  
 > - 가이드, 튜토리얼 이해쉽게, 건너뛰기
@@ -68,7 +69,7 @@ AnimationCurve
 > - UI는 단순하게 복잡X 
 > - 계층구조, 중요부분 표시 명확한 안내  
 > - 사이드바 제공, 공간 확장  
-> - 반응형 UI  
+> - 반응형 UI
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
@@ -77,6 +78,7 @@ AnimationCurve
 ## Mesh
 작동원리  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc56588f-ed68-4fc0-80ab-42d6b065ad20){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
+
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/3f99e633-ed9f-4d15-9daf-10cc6119f115){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 
 <br><br>
