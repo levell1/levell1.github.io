@@ -150,9 +150,14 @@ world : 오브젝트처럼 배치
 #### Canvas Scaler(반응형으로) 
 Scale Mode : Scale With Screen Size  
 Reference Resolution 1920 1080  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
 #### Screen Math Mode
 Match Width Or Height : 해상도 변화 시 넓이 또는 높이를 변경x
 Expand : Reference Resolution 보다 작게 안만든다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 
 
@@ -165,10 +170,14 @@ Expand : Reference Resolution 보다 작게 안만든다.
 ## 데이터 저장
 Serializable 직렬화 -> byte 배열로 만들 수 있는 형태?  
 Serializable을 달면 직렬화 가능해진다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 ### 1)Playerprefs
 문자열 실수 정수 값을 플랫폼 레지스트리에 저장할 수 있다.  
 암호화x 민감한 데이터를 저장하는데 적합하지 않다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 <div class="notice--primary" markdown="1"> 
 
@@ -181,9 +190,13 @@ Serializable을 달면 직렬화 가능해진다.
 ### 2)CSV
 CSV(Comma-Separated Values) 
 각줄이 하나의 데이터 레코드를 나타낸다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 **예제**  
 필요 정보를 ,를 구분하여 묶고 불러올때 같이 불러 오는 방법  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 <div class="notice--primary" markdown="1"> 
 
@@ -204,6 +217,8 @@ CSV(Comma-Separated Values)
 JSON(JavaScript Object Notation) 경량 데이터 교환 형식.  
 json에는 csv와 달리 하나의 속성에 여러개의 값이 들어갈 수 있다.  
 사람 기계 모두에게 읽기 쉽고 쓰기 쉬운 형식  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 <div class="notice--primary" markdown="1"> 
 
@@ -218,12 +233,17 @@ json에는 csv와 달리 하나의 속성에 여러개의 값이 들어갈 수 �
 게임 오브젝트나 씬에 종속되지 않고 데이터를 저장, 공유 가능.  
 리소스, 설정, 상태 등을 관리하는 데 사용   
 유니티에 사용하는 요소(sprite, prefabs)등 을 저장 할 수 있다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 
 **사용 시 주의점**  
 에디터 사용 시 so 에 저장하는 작업는 편집, 런타임에 가능    
 베포된 빌드에서는 so를 사용해 저장x, 개발 시 설정한 so 에셋의 저장된 데이터를 사용o  
 -> 수정은 에디터에서만 가능 -> 플레이 중 수정되는 정보는 so로 사용하면 안된다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
 <div class="notice--primary" markdown="1"> 
 
 ```c#
@@ -236,6 +256,8 @@ json에는 csv와 달리 하나의 속성에 여러개의 값이 들어갈 수 �
 ### 5)Binary Formatter
 데이터를 효율적으로 관리 공유  
 데이터의 구조수정 x ex) 능력치 추가x  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 
 ### 메소드/ 프로퍼티
@@ -244,24 +266,29 @@ Application.persistentDataPath
 File.Exists
 File.ReadAllTEXT
 File.WriteAllTEXT
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 **각각의 용도**
 so - 값을 읽기만하는 데이터들   
 csv, son - 읽고 쓰기 가능 한 데이터들  
 Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
-**정리표**
-img
 
-**로컬(디바이스)**에 저장하는 방식  
+**로컬(디바이스)** 에 저장하는 방식  
 개인이 수정이 가능해진다. -> 버그판이 나온다.  
 서버에 저장하는것이 정답.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
+ui에 관하여.
 so - 값을 읽기만하는 데이터들   
 csv, son - 읽고 쓰기 가능 한 데이터들  
 Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x  
