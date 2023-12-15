@@ -69,15 +69,24 @@ AnimationCurve
 > - 계층구조, 중요부분 표시 명확한 안내  
 > - 사이드바 제공, 공간 확장  
 > - 반응형 UI  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+<br><br>
 
 ## Mesh
 작동원리  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc56588f-ed68-4fc0-80ab-42d6b065ad20){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/3f99e633-ed9f-4d15-9daf-10cc6119f115){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 
+<br><br>
+
 ## DrawCall
 계속 변하는 UI는 매번 CPU에서 연산 후 GPU로 넘기는 구조  
 DRAWCALL = 화면에 그려줘~  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8e4a34f2-968c-4d03-9b2c-a41200e34908){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 ## UGUI
@@ -87,33 +96,59 @@ Canvas 하위에 UI요소가 갱신되면 전체 Canvas를 갱신해야 함
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+<br><br><br>
+
 ## Canvas  
 ui 생성시 Canvas 자동생성  
 Canvas(도화지)  3D좌표상의 위치가 아닌 유저에게 보여지는 스크린에 대응하는  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/13442448-dd4f-4cf1-a1de-c1f156e43bfd){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-### `Rect TransForm` : TransForm을 상속받은(불변)  (RENDER MODE - WORLD 면 수정가능)  
 
-**Anchors**
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/489d44fa-b791-40e1-a8e5-d19ad8a9afb7){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ad27f01e-a9cf-43b4-8a50-f73b92c06762){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-앵커값 기준으로 pos x ,y 가 정해진다.  
+<br>
+
+### `Rect TransForm` 
+TransForm을 상속받은(불변)  (RENDER MODE - WORLD 면 수정가능)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+#### Anchors  
 UI Elemnet 원점을 세팅하는 기준  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
-**Pivot**
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/489d44fa-b791-40e1-a8e5-d19ad8a9afb7){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+**앵커값 기준으로 pos x ,y 가 정해진다.**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ad27f01e-a9cf-43b4-8a50-f73b92c06762){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+**앵커 min,max 다를 때**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/61f1675e-6095-4db3-afe8-2ace4d7d38a3){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+
+#### Pivot
 UI Elemnet 내부 기준점을 세팅하는 기준
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/a245baa1-23ac-4a3d-9fa4-c0713cac0a4e){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/5e206030-dd0f-4e8c-8daa-088df6a7d663){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
+<br><br>
 
-`Render Mode` : 
+### CanvasScale
+####  Render Mode 
 overlay -> 캔버스가 모든 오브젝트보다 앞에 그려진다
 Cmara : 카메라 시점으로 캔버스가 보일 수 있다.
 world : 오브젝트처럼 배치
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
-**Canvas Scaler(반응형으로)**  
+
+#### Canvas Scaler(반응형으로) 
 Scale Mode : Scale With Screen Size  
 Reference Resolution 1920 1080  
-**Screen Math Mode** 
+#### Screen Math Mode
 Match Width Or Height : 해상도 변화 시 넓이 또는 높이를 변경x
 Expand : Reference Resolution 보다 작게 안만든다.
 
