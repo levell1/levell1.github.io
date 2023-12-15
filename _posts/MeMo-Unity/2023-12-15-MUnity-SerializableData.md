@@ -423,10 +423,10 @@ public class SaveLoadManager : MonoBehaviour
 
 ### 메소드/ 프로퍼티
 데이터 저장에 많이 쓰이는 메소드/프로퍼티
-Application.persistentDataPath
-[File.Exists](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.exists?view=net-8.0)
-[File.ReadAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.readalltext?view=netframework-4.7.2)
-[File.WriteAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.writealltext?view=net-8.0)
+Application.persistentDataPath  
+[File.Exists](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.exists?view=net-8.0)  
+[File.ReadAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.readalltext?view=netframework-4.7.2)  
+[File.WriteAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.writealltext?view=net-8.0)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 

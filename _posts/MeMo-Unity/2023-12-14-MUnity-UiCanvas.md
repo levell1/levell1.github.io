@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 23. Ui  "
+title:  "[Memo-Unity] 20. Ui  "
 excerpt: ""
 
 categories:
@@ -86,6 +86,8 @@ Content Size Filter -> perferred size 부모 크기 안의 내용에 맞게 조�
 project view 에 폴더 정렬 해서 깔끔하게 보기  
 01.Scene  
 02.Scripts  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
 <br><br>
 - - - 
 

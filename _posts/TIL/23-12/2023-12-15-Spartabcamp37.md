@@ -541,11 +541,11 @@ public class SaveLoadManager : MonoBehaviour
 <br><br>
 
 ### 메소드/ 프로퍼티
-데이터 저장에 많이 쓰이는 메소드/프로퍼티
-Application.persistentDataPath
-[File.Exists](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.exists?view=net-8.0)
-[File.ReadAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.readalltext?view=netframework-4.7.2)
-[File.WriteAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.writealltext?view=net-8.0)
+데이터 저장에 많이 쓰이는 메소드/프로퍼티  
+Application.persistentDataPath  
+[File.Exists](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.exists?view=net-8.0)  
+[File.ReadAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.readalltext?view=netframework-4.7.2)  
+[File.WriteAllTEXT](https://learn.microsoft.com/ko-kr/dotnet/api/system.io.file.writealltext?view=net-8.0)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
@@ -561,7 +561,7 @@ Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x
 
 **로컬(디바이스)** 에 저장하는 방식  
 개인이 수정이 가능해진다. -> 버그판이 나온다.  
-서버에 저장하는것이 정답.
+서버에 저장하는것이 정답.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
@@ -570,7 +570,7 @@ Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x
 - - - 
 
 # 잡담,정리
-ui에 관하여.
+ui에 관하여.  
 so - 값을 읽기만하는 데이터들   
 csv, son - 읽고 쓰기 가능 한 데이터들  
 Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x  
