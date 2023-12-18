@@ -571,7 +571,7 @@ Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x
 
 # 잡담,정리
 ui에 관하여.  
-so - 값을 읽기만하는 데이터들   
+so - 값을 읽기만하는 데이터들 빌드 후 고려    
 csv, son - 읽고 쓰기 가능 한 데이터들  
 Binary Formatter - 성능이 가장좋다. but 데이터 구조수정x  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
