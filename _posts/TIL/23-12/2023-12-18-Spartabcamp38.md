@@ -33,13 +33,13 @@ date: 2023-12-18 02:00
 
 
 # 1. 팀과제
-강의 코드를 베이스로 하였고, 
-1. 원거리 적 추가
-2. 적 체력 낮으면 도망가기 
-3. 원거리는 도망가다가 사거리 안에 들어오면 다시 공격  
-4. 몹젠 5마리  
-5. 시간 지나면 기지로 어그로  
-6. (추가하기) 죽이면 나눠져서 생성
+강의 코드를 베이스로 하였고  
+> - 원거리 적 추가  
+> - 적 체력 낮으면 도망가기  
+> - 원거리는 도망가다가 사거리 안에 들어오면 다시 공격  
+> - 몹젠 5마리  
+> - 시간 지나면 기지로 어그로  
+> - (추가하기) 죽이면 나눠져서 생성  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -95,7 +95,7 @@ Enumerator는 IEnumerator 라는 인터페이스를 구현해야 합니다. IEnu
 > - yield return new WaitForEndOfFrame() : 모든 `랜더링 작업이 끝날 때`까지 대기
 > - yield return startCoroutiune(string) : 입력한 `다른 코루틴이 끝날 때`까지 대기
 > - yield return new www(string) : 입력한 `웹 통신 작업이 끝날 때`까지 대기
-> - yield break : 코루틴 종료
+> - yield break : 코루틴 종료  
 코루틴은 StopCoroutine과 StopAllCoroutines를 이용하여 코루틴을 정지가능하며  
 코루틴을 소유하고 있는 게임오브젝트를 정지하거나 파괴하는 경우에도 종료됩니다. 단, 컴포넌트를 .enabled를 false로 하는 경우 꺼지지 않습니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}

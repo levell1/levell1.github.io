@@ -19,7 +19,7 @@ date: 2023-12-18 01:11
 <BR><BR>
 
 <center><H1>  CameraView  </H1></center>
-CameraView   
+CameraView  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--succ} 
 <br><br><br><br><br><br>
