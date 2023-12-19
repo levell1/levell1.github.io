@@ -78,9 +78,7 @@ CameraView
 - - - 
 
 # 잡담
-project view 에 폴더 정렬 해서 깔끔하게 보기  
-01.Scene  
-02.Scripts  
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 <br><br>

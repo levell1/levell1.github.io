@@ -21,7 +21,7 @@ date: 2023-12-14 02:00
 <center><H1>  유니티 숙련주차 7일차 </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 44  
-&nbsp;&nbsp; [o] 강의 듣기 - 15강~  
+&nbsp;&nbsp; [o] 강의 듣기 - 15강~ 22  
 &nbsp;&nbsp; [X] 다른반 강의 듣기    
 &nbsp;&nbsp; [X] 다른반 발표 보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -35,7 +35,7 @@ date: 2023-12-14 02:00
 Meterial - SKYbox  - 하늘을 표현.
 
 ## InputSystem  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/adf5517f-6d89-4c77-b4f1-7883313f61d0)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/adf5517f-6d89-4c77-b4f1-7883313f61d0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
 ## 밤낮 구현
 AnimationCurve  

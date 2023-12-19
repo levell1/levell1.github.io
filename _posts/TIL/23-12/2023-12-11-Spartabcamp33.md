@@ -31,12 +31,12 @@ date: 2023-12-11 02:00
 
 # 1. 투사체 raycast 
 
-- Unity에서는 **`Physics.Raycast`** 또는 **`Physics2D.Raycast`**를 사용하여 Raycast를 수행할 수 있습니다. 이들 메서드는 시작점, 방향, 최대 거리, 그리고 선택적으로 레이어 마스크를 매개변수로 받습니다.
-- Raycast는 비주얼 디버깅을 위해 **`Debug.DrawRay`**와 함께 사용할 수 있습니다. 이를 통해 Scene 뷰에서 Raycast의 경로를 시각적으로 확인할 수 있습니다.
+> - Unity에서는 **`Physics.Raycast`** 또는 **`Physics2D.Raycast`**를 사용하여 Raycast를 수행할 수 있습니다. 이들 메서드는 시작점, 방향, 최대 거리, 그리고 선택적으로 레이어 마스크를 매개변수로 받습니다.
+> - Raycast는 비주얼 디버깅을 위해 **`Debug.DrawRay`**와 함께 사용할 수 있습니다. 이를 통해 Scene 뷰에서 Raycast의 경로를 시각적으로 확인할 수 있습니다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-**`Debug.DrawRay`**
+**`Debug.DrawRay`**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/5ef37f9c-30fc-4a5d-bac9-d40c2e22c6f8)  
 
 
@@ -116,8 +116,8 @@ Debug.DrawRay(transform.position, direction, Color.green);
 {: .notice}  
 
 
-**파티클**
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/2373fd9c-55f5-4ffc-9950-e4750af92ce5)
+**파티클**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/2373fd9c-55f5-4ffc-9950-e4750af92ce5){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 
 <div class="notice--primary" markdown="1"> 
 
@@ -144,8 +144,8 @@ public class DustParticleControl : MonoBehaviour
 </div>
 
 **애니메이션 이벤트 추가**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/b7450b18-c90b-4f26-85d7-d08d537f5bb7)  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/af86edff-c1e3-4315-bb97-d5b3ba97b3da)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/b7450b18-c90b-4f26-85d7-d08d537f5bb7){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/af86edff-c1e3-4315-bb97-d5b3ba97b3da){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 ## 타격 시 파티클
 
@@ -176,13 +176,13 @@ private void DestroyProjectile(Vector3 position, bool createFx)
 </div>
 
 **Particle System-Emission**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ce78e50c-3b39-418b-8523-d5c3abc90624)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/ce78e50c-3b39-418b-8523-d5c3abc90624){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
-**SetBurst**
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/4b1cac4f-1e24-4d70-99cf-85d7b659d991)  
+**SetBurst**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/4b1cac4f-1e24-4d70-99cf-85d7b659d991){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
-**new PaticleSystem.Burst**
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/6571ab2f-f8eb-4e89-bf34-7c3514e9ba40)  
+**new PaticleSystem.Burst**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/6571ab2f-f8eb-4e89-bf34-7c3514e9ba40){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
 
 
@@ -195,10 +195,10 @@ private void DestroyProjectile(Vector3 position, bool createFx)
 # collider 2D 2개
 
 trigger충돌도 추가로 가능  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/fe847b2e-69e4-4ad8-9f2f-ef3f5e6a6b84)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/fe847b2e-69e4-4ad8-9f2f-ef3f5e6a6b84){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 # 정리  
-[setACtive, enabled 차이](https://levell1.github.io/memo%20unity/MUnity-enabled/))
+[setACtive, enabled 차이](https://levell1.github.io/memo%20unity/MUnity-enabled/)  
 
 <br><br>
 - - -
