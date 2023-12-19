@@ -29,7 +29,7 @@ date: 2023-12-11 02:00
 <br><br><br><br><br>
 - - - 
 
-# 1. 투사체 raycast 
+# 1. raycast 
 
 > - Unity에서는 **`Physics.Raycast`** 또는 **`Physics2D.Raycast`**를 사용하여 Raycast를 수행할 수 있습니다. 이들 메서드는 시작점, 방향, 최대 거리, 그리고 선택적으로 레이어 마스크를 매개변수로 받습니다.
 > - Raycast는 비주얼 디버깅을 위해 **`Debug.DrawRay`**와 함께 사용할 수 있습니다. 이를 통해 Scene 뷰에서 Raycast의 경로를 시각적으로 확인할 수 있습니다.
