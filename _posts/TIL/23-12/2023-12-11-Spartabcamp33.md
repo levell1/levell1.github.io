@@ -51,6 +51,7 @@ Debug.DrawRay(transform.position, direction, Color.green);
 
 </div>
 
+[raycast1](https://levell1.github.io/go%20unity/3DGoUnity4/#raycast)  
 
 <br><br><br><br><br>
 - - -
@@ -203,7 +204,7 @@ trigger충돌도 추가로 가능
 <br><br><br><br><br>
 - - -
 
-# 6.setACtive, enabled  
+# 6. setACtive, enabled  
 [setACtive, enabled 차이](https://levell1.github.io/memo%20unity/MUnity-enabled/)  
 
 <br><br>
