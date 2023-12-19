@@ -192,12 +192,18 @@ private void DestroyProjectile(Vector3 position, bool createFx)
 # 4. 사운드
 [Sound](https://levell1.github.io/memo%20unity/MUnity-Sound/)  
 
+<br><br><br><br><br>
+- - -
+
 # collider 2D 2개
 
 trigger충돌도 추가로 가능  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/fe847b2e-69e4-4ad8-9f2f-ef3f5e6a6b84){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
-# 정리  
+<br><br><br><br><br>
+- - -
+
+# 추가  
 [setACtive, enabled 차이](https://levell1.github.io/memo%20unity/MUnity-enabled/)  
 
 <br><br>
