@@ -106,6 +106,8 @@ private void DestroyProjectile(Vector3 position, bool createFx)
 
 # 정리  
 
+[참고](https://sshoreng.tistory.com/78)
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}
 <br><br>
