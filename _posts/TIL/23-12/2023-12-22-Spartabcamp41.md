@@ -24,8 +24,8 @@ date: 2023-12-22 02:00
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 47   
 &nbsp;&nbsp; [o] 다른반 강의 듣기  
-&nbsp;&nbsp; [o] ui 2회차 듣기  
-&nbsp;&nbsp; [o] 전 강의 복습.      
+&nbsp;&nbsp; [x] ui 2회차 듣기  
+&nbsp;&nbsp; [x] 전 강의 복습.      
 &nbsp;&nbsp; [x] 심화주차 강의 듣기.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -294,9 +294,13 @@ void StageClear()
 
 ### SO(Sctiptable Object)
 **LOAD(SO)**  
+
 `Resources.Load`  
+
 data = Resources.Load<CharacterSO>("SO/DefaultCharacterData");  
+
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/e1e3cffe-0ff5-4317-b40e-c7490c003906){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
 <div class="notice--primary" markdown="1"> 
 
 ```c#
