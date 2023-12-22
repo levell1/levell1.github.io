@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 22. Data 데이터 관리  "
+title:  "[Memo-Unity] 22. Data 데이터 관리 CSV, SO, JSON"
 excerpt: ""
 
 categories:
@@ -15,7 +15,7 @@ date: 2023-12-15 01:10
 ---
 - - -
 
-`Data` 
+`Data` `Playerprefs`,`CSV`,`JSON`,`ScriptableObject`, `Binary Formatter`
 <BR><BR>
 
 <center><H1>  Data  </H1></center>

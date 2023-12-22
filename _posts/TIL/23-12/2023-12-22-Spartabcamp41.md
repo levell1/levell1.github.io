@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 41 강의, 심화주차 시작  ⭐ "
+title:  "[TIL] 41 반별강의(Singleton,Delegate,action), 심화주차 시작  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,12 +10,12 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-21 02:00
+date: 2023-12-22 02:00
 
 ---
 - - -
 
-`Approximately`, `Delegate`
+`Approximately`, `Delegate`, `action`
 
 <BR><BR>
 
@@ -27,13 +27,11 @@ date: 2023-12-21 02:00
 &nbsp;&nbsp; [o] ui 2회차 듣기  
 &nbsp;&nbsp; [o] 전 강의 복습.      
 &nbsp;&nbsp; [x] 심화주차 강의 듣기.
-
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 <br><br><br><br><br>
 - - - 
-
 
 # 1. Approximately(근사치)
 Approximately  
@@ -49,6 +47,10 @@ if (Mathf.Approximately(1.0f, 10.0f / 10.0f))
 ```
 - 실수형의 경우 1.0f == 10.0f / 10.0f 가 항상 true가 아닐 수 있다. -> Approximately  
 </div>
+
+<br><br><br><br><br>
+- - - 
+
 
 # 2. 반별강의
 
@@ -111,9 +113,9 @@ public class GameManager : MonoBehaviour
 > - `Delegate` 메서드를 참조하는 객체로, 메서드의 시그니처(입력 매개변수와 반환 타입)에 대한 정보를 포함  
 > - `Func` 반환 타입이 void가 아닌 0~n개의 매개변수를 가진 함수를 나타내는 제네릭 델리게이트  
 > - `Action` 반환 타입이 void인 메소드를 위해 특별히 설계된 제네릭 델리게이트  
-> - public Action action , public event Action action
-> - event 키워드를 붙이지 않고 Action을 선언할 경우 다른 클래스에서 Action을 실행할 수 있게 됩니다.
-> - button.onClick.AddListener도 Delegate
+> - public Action action , public event Action action  
+> - event 키워드를 붙이지 않고 Action을 선언할 경우 다른 클래스에서 Action을 실행할 수 있게 됩니다.  
+> - button.onClick.AddListener, inputField.onValueChanged(인풋필드에 값이 변결될 때 마다) 도 Delegate  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
@@ -257,7 +259,7 @@ public class UIManager : MonoBehaviour
 
 <br><br>
 
-**Delegate_Action<int>**  
+**Delegate_Action_int**  
 
 <div class="notice--primary" markdown="1"> 
 
@@ -275,7 +277,10 @@ public class Player : MonoBehaviour
     }
 }
 
+
 // GameManager
+
+ public Action<int> actionint;
 void StageClear()
 {
     actionint?.Invoke(1);
@@ -290,6 +295,7 @@ void StageClear()
 ### SO(Sctiptable Object)
 **LOAD(SO)**  
 `Resources.Load`  
+data = Resources.Load<CharacterSO>("SO/DefaultCharacterData");  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/e1e3cffe-0ff5-4317-b40e-c7490c003906){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 <div class="notice--primary" markdown="1"> 
 
