@@ -34,6 +34,7 @@ date: 2023-12-21 02:00
 [피그마](https://www.figma.com/file/JtZ5fogrFyykLoIp1S7SrX/5%EC%A1%B0?type=whiteboard&node-id=0-1&t=wmQbr5l2QQ2HEhRT-0)  
 [깃허브](https://github.com/levell1/05Anti_Freeze)  
 [영상](https://www.youtube.com/watch?v=nn0iaOlcNOk)  
+[PPT](https://gamma.app/docs/Anti-Freeze--43pwpo5rajctipl?mode=doc#card-3luht4hrrfgglge)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
