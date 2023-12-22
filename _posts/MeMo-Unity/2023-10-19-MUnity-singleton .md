@@ -11,6 +11,7 @@ toc: true
 toc_sticky: true
  
 date: 2023-10-19
+update: 2023-12-22
 
 ---
 - - -
@@ -81,6 +82,59 @@ public class GameManager : MonoBehaviour
 >   -   전역변수가 가지는 모든 단점을 그대로 갖게 된다.
 >   -   전역변수는 가장 마지막에 검색되게 때문에 조금 느릴 수 있으며, 유지보수가 조금 힘들어질 수 있다.
 {: .notice}
+
+<br><br><br><br><br><br>
+- - - 
+
+# 4. 12/22 추가
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+public class GameManager : MonoBehaviour
+{
+    private static GameManager _instance;
+    public static GameManager Instance
+    {
+        get
+        {   // 다른 곳에서 GaneManager.Instance~~ 를 실행 했을때 NULL 이면(게임메니저가 없으면) GameManager을 생성, DondestroyOnload
+            // Instance = 새로 생성된 게임 오브젝트의 GameManager.cs 의 PRIVATE _instance
+            if(_instance == null)
+            {
+                GameObject go = new GameObject("GameManager");
+                go.AddComponent<GameManager>();
+                _instance = go.GetComponent<GameManager>();
+                DontDestroyOnLoad(go);
+            }
+            return _instance;
+        }
+        set
+        {
+            if (_instance == null) _instance = value;
+        }
+    }
+    private void Awake()
+    {
+        if(_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            if (_instance != this) Destroy(this);
+        }
+    }   
+}
+```
+
+- **Instance - get, set**
+- 다른 곳에서 GaneManager.Instance~~ 를 실행 했을때 NULL 이면(게임메니저가 없으면) GameManager을 생성, DondestroyOnload
+- **Awake**
+- 싱글톤화, DondestroyOnLoad, 새로 생긴 GameObject 가 있으면 삭제(Destroy).
+
+</div>
+
 
 <br><br>
 

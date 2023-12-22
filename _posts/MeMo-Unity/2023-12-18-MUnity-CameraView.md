@@ -25,7 +25,7 @@ CameraView
 <br><br><br><br><br><br>
 - - - 
 
-# 3. 카메라 뷰
+# 1. 카메라 뷰
 카메라 Projection = Orthographic -> 원근감 X  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/af632df7-4ffa-4735-a6e1-bfd1178d148b){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
