@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 25. Delegate  "
+title:  "[Memo-Unity] 25. Delegate LOAD(SO) "
 excerpt: ""
 
 categories:
@@ -15,7 +15,7 @@ date: 2023-12-22 01:11
 ---
 - - -
 
-`Delegate` 
+`Delegate` ,`LOAD(SO)`
 <BR><BR>
 
 <center><H1>  Delegate  </H1></center>
@@ -294,7 +294,7 @@ void CharacterUpdate()
 <br><br>
 - - - 
 
-[Unity] CameraView
+[Unity] Delegate
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
