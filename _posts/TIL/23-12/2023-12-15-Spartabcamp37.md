@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 37 3D 강의, UI  ⭐⭐⭐ "
+title:  "[TIL] 37 3D 강의, UI  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 39 3D 강의, 팀과제  ⭐⭐⭐ "
+title:  "[TIL] 39 3D 강의, 팀과제  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -14,6 +14,9 @@ date: 2023-12-19 02:00
 
 ---
 - - -
+
+
+`MaterialPropertyBlock`
 
 <BR><BR>
 
@@ -31,12 +34,11 @@ date: 2023-12-19 02:00
 - - - 
 
 
-# 1. 팀과제
-강의 코드를 베이스로 하였고  
-> - 죽으면 3마리로 리스폰  
+# 1. 팀과제 
+> - 원거리 죽으면 3마리로 리스폰  
 > - 체력바  
 > - 버그수정   
-> - 추가 hp바 커서 시 
+> - 추가) hp바 커서 시 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
