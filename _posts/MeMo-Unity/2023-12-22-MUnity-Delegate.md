@@ -218,7 +218,6 @@ private CharacterSO data;
 private void Awake()
 {
     data = Resources.Load<CharacterSO>("SO/DefaultCharacterData");
-    test a = Resources.Load<test>("scripts/test");
 }
 ```
 
@@ -233,7 +232,6 @@ private void Awake()
 private void Awake()
 {
     data = Resources.Load<CharacterSO>("SO/DefaultCharacterData");
-    test a = Resources.Load<test>("scripts/test");
 }
 
 private void Start()
