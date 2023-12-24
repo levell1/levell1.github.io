@@ -100,7 +100,8 @@ else {
 
 ### 2)CSV
 CSV(Comma-Separated Values) 
-각줄이 하나의 데이터 레코드를 나타낸다.
+각줄이 하나의 데이터 레코드를 나타낸다.  
+맵생성, 대화형식의 데이터들에 사용  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
