@@ -24,6 +24,7 @@ Delegate
 {: .notice--succ} 
 <br><br><br><br><br><br>
 - - - 
+
 # 델리게이트(Delegate)
 
 > - `Delegate` 메서드를 참조하는 객체로, 메서드의 시그니처(입력 매개변수와 반환 타입)에 대한 정보를 포함  

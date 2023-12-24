@@ -1,40 +1,30 @@
 ---
-title:  "[TIL] 42 반별강의(Memory), 심화주차  ⭐⭐ "
-excerpt: "Sparta"
+title:  "[Memo-Unity] 26. MemoryStructure 메모리 구조 "
+excerpt: ""
 
 categories:
-    - Til
+    - MeMo Unity
 tags:
-    - [Unity, Sparta, TIL]
+    - [C#, MeMo Unity]
 
 toc: true
 toc_sticky: true
  
-date: 2023-12-24 02:00
+date: 2023-12-22 01:11
 
 ---
 - - -
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/be5b3949-04ed-4081-8cc8-3609a99d7a18)
-`Memory`
-
+`MemoryStructure` 
 <BR><BR>
 
-
-<center><H1>  유니티 심화주차 2일 , 개인공부 </H1></center>
-
-&nbsp;&nbsp; [o] 알고리즘 문제  - 47   
-&nbsp;&nbsp; [o] 다른반 강의 듣기  
-&nbsp;&nbsp; [x] ui 2회차 듣기  
-&nbsp;&nbsp; [x] 전 강의 복습.      
-&nbsp;&nbsp; [x] 심화주차 강의 듣기.
+<center><H1>  MemoryStructure  </H1></center>
+MemoryStructure  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
-
-<br><br><br><br><br>
+{: .notice--succ} 
+<br><br><br><br><br><br>
 - - - 
 
-# 반별강의
 
 ## 메모리
 > - **코드 영역** : 실행할 프로그램의 코드  
@@ -117,32 +107,14 @@ float j = (float)o; // unboxing
 <br><br><br><br><br>
 - - - 
 
-## Ref, Out
-ref : 선언된 변수를 매개변수로 함수내에서 값을 변경  
-out : 초기화 되지 않은 변수도 out은 정상 작동 한다.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
-
-[out,ref](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp9/#2-ref-out)  
- 
-
-<br><br><br><br><br>
-- - - 
-
-
-# 잡담,정리
-csv - 맵생성, 대화형식 데이터
-**알고리즘**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/9d876df3-e807-480c-8415-aed69164264d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+# 잡담
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
 <br><br>
-- - -
+- - - 
 
-<br>
-
-참고 : [유니티](https://docs.unity3d.com/kr/)
+[Unity] MemoryStructure
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
