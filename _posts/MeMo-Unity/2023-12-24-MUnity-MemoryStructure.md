@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-22 01:11
+date: 2023-12-24 01:11
 
 ---
 - - -
@@ -21,7 +21,7 @@ date: 2023-12-22 01:11
 <center><H1>  MemoryStructure  </H1></center>
 MemoryStructure  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--succ} 
+{: .notice} 
 <br><br><br><br><br><br>
 - - - 
 

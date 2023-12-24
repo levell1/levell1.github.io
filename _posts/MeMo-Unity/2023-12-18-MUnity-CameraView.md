@@ -21,7 +21,7 @@ date: 2023-12-18 01:11
 <center><H1>  CameraView  </H1></center>
 CameraView  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--succ} 
+{: .notice} 
 <br><br><br><br><br><br>
 - - - 
 

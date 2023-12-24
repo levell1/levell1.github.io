@@ -21,7 +21,7 @@ date: 2023-12-22 01:11
 <center><H1>  Delegate  </H1></center>
 Delegate  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--succ} 
+{: .notice} 
 <br><br><br><br><br><br>
 - - - 
 
@@ -117,7 +117,7 @@ public class UIManager : MonoBehaviour
 
 <br><br>
 
-**Delegate_Action**  
+**Delegate Action**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/bcfa4b7f-b927-45fe-9a1c-a3c82968e682){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <div class="notice--primary" markdown="1"> 
