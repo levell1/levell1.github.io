@@ -42,19 +42,25 @@ date: 2023-12-24 02:00
 > - **스택 영역**  : 지역 변수, 매개 변수  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/bf15370d-bef1-4f96-acf7-10bb3507d4ce){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+<br><br>
 
 ### 스택 메모리
 > - 지역변수, 매개변수  
 > - 값형식(value)  
 > - c#에서 스택 영역 용량이 작다(1mb?)  
 > - 0으로 초기화 되는 자료형  
-
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
 **메모리의 할당, 해제 : 지역(클래스,함수)가 끝나면 해제된다.**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/c82130dc-4468-4f69-b695-8aaa2409a90d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}
+
+<br><br>
 
 ### 힙 데이터  
 > - 동적으로 관리
@@ -66,8 +72,11 @@ date: 2023-12-24 02:00
 
 **스택에는 주소가 힙메모리에는 실제값이**  
 스택 영역 용량이 작다 -> 주소값만(int) -> 실제 데이터(long,~~)는 힙에  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/c21c692c-7dcb-4e10-908d-70464a56c0fc){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
+<br>
 
 #### GC(Garbage Col)
 > - 힙 메모리를 관리해줌  
@@ -75,6 +84,8 @@ date: 2023-12-24 02:00
 > - new로 만드는 자료구조 Dispose()필요  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success} 
+
+<br>
 
 #### boxing , unboxing
 > - 성능에 좋은 역할을 하지 않는다.  
@@ -93,6 +104,11 @@ date: 2023-12-24 02:00
 int i =123;     // a value type  
 object o = i;   // boxing  
 int j = (int)o; // unboxing  
+
+// X 박싱할 때 INT값도 같이 저장된다.
+int i =123;     // a value type  
+object o = i;   // boxing  
+float j = (float)o; // unboxing  
 ```
 </div>
 
@@ -100,14 +116,22 @@ int j = (int)o; // unboxing
 <br><br><br><br><br>
 - - - 
 
-## 값형식, 참조형식
+## Ref, Out
+ref : 선언된 변수를 매개변수로 함수내에서 값을 변경  
+out : 초기화 되지 않은 변수도 out은 정상 작동 한다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
+
+[out,ref](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp9/#2-ref-out)  
+ 
 
 <br><br><br><br><br>
 - - - 
 
 
 # 잡담,정리
-csv - 맵생성, 대화형식 데이터,  
+csv - 맵생성, 대화형식 데이터
+**알고리즘**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/9d876df3-e807-480c-8415-aed69164264d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
