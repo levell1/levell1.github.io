@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 42 반별강의(Memory), 심화주차  ⭐⭐ "
+title:  "[TIL] 44 반별강의(Design_Pattern), 심화주차  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,12 +10,10 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-25 02:00
+date: 2023-12-26 02:00
 
 ---
 - - -
-
-
 
 <BR><BR>
 
@@ -35,31 +33,26 @@ date: 2023-12-25 02:00
 
 <h2> 반별강의 </h2>
 
-# 꿀팁
-Simulator gameView 에서 simulator 로 변경하면 폰화면 미리보기 가능.  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/c7e5165a-ab9a-44a8-999a-126468b80cc0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+# 디자인 패턴
+[디자인 패턴](https://levell1.github.io/memo%20unity/MUnity-Design_Pattern/)  
+
+
+# 델리게이트, 이벤트
+개발자가 정의한 특정조건이나 행동에 반응하는 사용자 정의 이벤트  
+
+> - 델리게이트  
+>  c#  에서 메소드를 참조하는 타입  
+>  메소드의 참조를 변수에 저장하고, 다른 메소드로 전달, 호출을 동적으로 결정할 수 있음.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-Window -> Analysis -> Profiler (ctrl+7) : 프레임,cpu, gpu, 메모리 등 사용량을 체크할 수 있다.  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/4847a5a5-671b-4f6a-987e-062faa562e9e){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-그래픽 관련 최적화 Frame Debugger  
+<br>
+
+> - 이벤트  
+> 이벤트는 델리게이트를 기반으로 함  
+> 특정 상황이 발생했을 때 이벤트를 구독하는 모든 메소드를 호출하는데 사용됨.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
-
-인스펙터창 2개로 편하게 값 옮기기  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/c8c69f9e-6914-408b-9e1e-70d44834cef1){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
-
-Context Menu : 테스트용도로 특정함수 수동으로 호출할 때  
-에셋 사용할 때 샘플을 보고 사용하자.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
-
-# AI
-StateMachine StateMachineBehaviour
-유니티에서는 StateMachine을 직접 구현할 수도 있고, 유니티에서 애니메이터에 확장하여 사용할 수 있는 StateMachineBehaviour를 제공합니다.  
 
 <details>
 <summary>StateMachine.cs</summary>

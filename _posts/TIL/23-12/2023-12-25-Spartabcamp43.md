@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 42 반별강의(Memory), 심화주차  ⭐⭐ "
+title:  "[TIL] 43 반별강의(AI,NAV), 심화주차  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -20,7 +20,7 @@ date: 2023-12-25 02:00
 <BR><BR>
 
 
-<center><H1>  유니티 심화주차 2일 , 개인공부 </H1></center>
+<center><H1>  유니티 심화주차 3일 , 개인공부 </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 48   
 &nbsp;&nbsp; [o] 다른반 강의 듣기  

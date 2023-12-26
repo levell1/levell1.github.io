@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 13. Design Pattern : `singleton`, `state`, `observer`, `command` `component`, `builder`, `flyweight`  "
+title:  "[Memo-Unity] 27. Design Pattern : `singleton`, `state`, `observer`, `command` `component`, `builder`, `flyweight`  "
 excerpt: ""
 
 categories:

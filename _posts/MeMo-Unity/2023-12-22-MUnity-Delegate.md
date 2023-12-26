@@ -286,6 +286,36 @@ void CharacterUpdate()
 <br><br><br><br><br>
 - - - 
 
+**12.26추가**
+# 델리게이트, 이벤트
+개발자가 정의한 특정조건이나 행동에 반응하는 사용자 정의 이벤트  
+
+> - **델리게이트**  
+>  c#  에서 메소드를 참조하는 타입  
+>  메소드의 참조를 변수에 저장하고, 다른 메소드로 전달, 호출을 동적으로 결정할 수 있음.  
+> - **장점**   
+> 유연성, 코드 재사용, 분리  
+> - **단점**  
+> 복잡성, 메모리 누수 위험
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br>
+
+> - 이벤트  
+> 이벤트는 델리게이트를 기반으로 함  
+> 특정 상황이 발생했을 때 이벤트를 구독하는 모든 메소드를 호출하는데 사용됨.  
+> - **장점**   
+> 캡슐화, 의사소통 강화  
+> - **단점**  
+> 이해도 요구, 오버헤드
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br><br><br><br><br>
+- - - 
+
+
 # 잡담
 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
