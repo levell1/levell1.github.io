@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 28. StateMachine  "
+title:  "[Memo-Unity] 29. StateMachine  "
 excerpt: ""
 
 categories:
@@ -27,7 +27,7 @@ StateMachine
 
 
 # StateMachine
-StateMachine StateMachineBehaviour
+StateMachine StateMachineBehaviour  
 유니티에서는 StateMachine을 직접 구현할 수도 있고, 유니티에서 애니메이터에 확장하여 사용할 수 있는 StateMachineBehaviour를 제공합니다.  
 
 <details>
@@ -87,6 +87,7 @@ public class AttackBehaviour : StateMachineBehaviour
 - - - 
 
 # 잡담
+애니메이션에 스크립트 사용 StateMachineBehaviour
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

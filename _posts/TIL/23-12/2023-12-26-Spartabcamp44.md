@@ -35,6 +35,8 @@ date: 2023-12-26 02:00
 
 list = list.Distinct().ToList();  
 list 에 있는 중복된 요소 지우기  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br><br><br><br>
 - - - 

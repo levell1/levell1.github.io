@@ -46,8 +46,12 @@ github Commit Convention
 |Move    | 코드의 이동이 있는경우|
 |Updated | 계정이나 버전 업데이트가 있을 때 사용. 주로 코드보다는 문서나, 리소스, 라이브러리등에 사용합니다.|
 
+<br><br><br>
+
 **많이 사용할 거 같은 태그**   
+
 |**Type**|설명|
+|:---:|---|
 |Init    |	프로젝트 초기 생성|
 |Add     | 코드나 테스트, 예제, 문서등의 추가 생성이 있는경우 |
 |Feat    |	새로운 기능 추가 |
@@ -61,6 +65,7 @@ github Commit Convention
 - - - 
 
 # 잡담
+깃허브 커밋 컨벤션!
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
