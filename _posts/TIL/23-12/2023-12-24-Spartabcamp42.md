@@ -26,7 +26,6 @@ date: 2023-12-24 02:00
 &nbsp;&nbsp; [o] 알고리즘 문제  - 47   
 &nbsp;&nbsp; [o] 다른반 강의 듣기  
 &nbsp;&nbsp; [x] ui 2회차 듣기  
-&nbsp;&nbsp; [x] 전 강의 복습.      
 &nbsp;&nbsp; [x] 심화주차 강의 듣기.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -129,26 +128,17 @@ out : 초기화 되지 않은 변수도 out은 정상 작동 한다.
 <br><br><br><br><br>
 - - - 
 
-# 3. Ref, Out
-ref : 선언된 변수를 매개변수로 함수내에서 값을 변경  
-out : 초기화 되지 않은 변수도 out은 정상 작동 한다.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
-
-[out,ref](https://levell1.github.io/sparta%20c%20sharp/SpartaCsharp9/#2-ref-out)  
-
-
 # 잡담,정리
 csv - 맵생성, 대화형식 데이터
-**알고리즘**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/9d876df3-e807-480c-8415-aed69164264d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-Simulator gameView 에서 simulator 로 변경하면 폰화면 미리보기 가능.  
-Window -> Analysis -> Profiler : 프레임,cpu, gpu, 메모리 등 사용량을 체크할 수 있다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
+**알고리즘**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/9d876df3-e807-480c-8415-aed69164264d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+
 **리더**  
-좋은 리더란 무었인가? 
+좋은 리더란 무엇인가?  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
