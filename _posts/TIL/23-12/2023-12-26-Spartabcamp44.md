@@ -24,7 +24,7 @@ date: 2023-12-26 02:00
 &nbsp;&nbsp; [o] 다른반 강의 듣기  
 &nbsp;&nbsp; [o] 디자인 패턴 복습하기  
 &nbsp;&nbsp; [x] ui 2회차 듣기      
-&nbsp;&nbsp; [x] 심화주차 강의 듣기.
+&nbsp;&nbsp; [x] 심화주차 강의 듣기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
