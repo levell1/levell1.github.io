@@ -31,6 +31,14 @@ date: 2023-12-26 02:00
 <br><br><br><br><br>
 - - - 
 
+# 알고리즘
+
+list = list.Distinct().ToList();  
+list 에 있는 중복된 요소 지우기  
+
+<br><br><br><br><br>
+- - - 
+
 <h2> 반별강의 </h2>
 
 # 디자인 패턴

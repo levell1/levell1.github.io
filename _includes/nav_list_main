@@ -127,7 +127,7 @@
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Info" %}
-                            <li><a href="/categories/info" class=""> 궁금(Info) ({{category[1].size}})</a></li>
+                            <li><a href="/categories/info" class=""> 궁금(Info), 생각정리 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>

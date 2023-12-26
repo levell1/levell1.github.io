@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-24 01:12
+date: 2023-12-26 01:12
 
 ---
 - - -
@@ -93,7 +93,7 @@ public class AttackBehaviour : StateMachineBehaviour
 <br><br>
 - - - 
 
-[Unity] MemoryStructure
+[Unity] StateMachine
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
