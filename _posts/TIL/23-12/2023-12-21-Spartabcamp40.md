@@ -38,6 +38,28 @@ date: 2023-12-21 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
+# 트러블 슈팅?
+눈사람이 3개로 나뉠 때 효과를 주고 싶었고, 그 상황에서 navmeshagent 와 snowmonster.cs 가 문제가 되는 상황이 있었습니다.  
+그래서 3초간 rigidbody로 자연스럽게 죽는 장면을 보여주고, 필요한 컴포넌트를 활성화 시켜서 다시 몬스터의 역할을 하게 해 주는 과정이 있었습니다.  
+<div class="notice--primary" markdown="1"> 
+
+```c#
+IEnumerator InitObject(GameObject gameObject)
+    {
+        
+        yield return new WaitForSeconds(3f);
+        Debug.Log(gameObject);
+        _spawnQueue.Enqueue(gameObject);
+        gameObject.GetComponent<SnowMonster>().enabled = true;
+        gameObject.GetComponent<NavMeshAgent>().enabled = true;
+        gameObject.GetComponent<SnowMonster>().player = Player;
+        //Destroy(gameObject.GetComponent<Rigidbody>());
+    }
+
+```
+</div>
+
+
 <br><br>
 - - -
 

@@ -15,7 +15,7 @@ date: 2023-12-25 02:00
 ---
 - - -
 
-
+`NavMesh`
 
 <BR><BR>
 
@@ -57,6 +57,8 @@ Context Menu : 테스트용도로 특정함수 수동으로 호출할 때
 {: .notice}  
 
 # AI
+
+## StateMachine
 StateMachine StateMachineBehaviour
 유니티에서는 StateMachine을 직접 구현할 수도 있고, 유니티에서 애니메이터에 확장하여 사용할 수 있는 StateMachineBehaviour를 제공합니다.  
 
@@ -78,12 +80,14 @@ public class AttackBehaviour : StateMachineBehaviour
 	
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
+        Debug.Log("OnStateEnter ");
 		clone = Instantiate(particle, animator.rootPosition, Quaternion.identity) as GameObject;
 		Rigidbody rb = clone.GetComponent<Rigidbody>();
 		rb.AddExplosionForce(power, animator.rootPosition, radius, 3.0f);
 	}
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
+        Debug.Log("OnStateExit ");
 		Destroy(clone);
 	}
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -101,19 +105,26 @@ public class AttackBehaviour : StateMachineBehaviour
 }
 ```
 
+- OnStateEnter 애니메이션 실행 시
+- OnStateExit  애니메이션 종료 시
+- OnStateUpdate 매 프레임마다 실행
+- OnAnimatorMove: 업데이트 프레임마다 루트 모션을 수정할 수 있도록 각 Animator 컴포넌트에 대해 한 번 호출됩니다.
+- OnAnimatorIK: 애니메이션 IK를 설정합니다. IK pass가 활성화된 각 애니메이터 컨트롤러 레이어에 대해 한 번 호출됩니다.
+	
 </div>
 </details>
 
+<br><br><br><br>
+
 ## behaviour tree
 
-**루트(root) 노드** CS에서의 트리의 뿌리는 항상 제일 아래에 있지 않고 제일 위에 있습니다.
-**흐름 제어** 노드 (flow-control node)
-- **Sequence node** : AND 역할을 하는 노드
-- **Selector node** : OR 역할을 하는 
+> - **루트(root) 노드** CS에서의 트리의 뿌리는 항상 제일 아래에 있지 않고 제일 위에 있습니다.
+> - **흐름 제어** 노드 (flow-control node)
+> - **Sequence node** : AND 역할을 하는 노드 (탐색하는 노드 모든노드를 본다, 중간에 실패하면 종료)
+> - **Selector node** : OR 역할을 하는  (왼쪽 부터 하나라도 체크하면 리턴)
+> - **리프(leaf) 노드** : 실제 행동이 들어가 있는 노드
 
-**리프(leaf) 노드** : 실제 행동이 들어가 있는 노드
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/361936dd-c77a-4ab0-b15e-351a606e36d0)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/361936dd-c77a-4ab0-b15e-351a606e36d0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 
 <details>
 <summary>node</summary>
@@ -217,7 +228,20 @@ public class SelectorNode : Node
 </div>
 </details>
 
+<br><br><br><br><br>
+- - - 
 
+## NavMesh 
+구역간에 가중치를 설정하여 더 빠른 길을 선택해서 길찾기를 해준다.
+
+**NavMesh Surface**  
+최신 navmesh :surface  
+agent type : 각각 agent 의 특징을 정할 수 있다.  
+
+동적 베이킹 
+object collection : volume 
+일정 거리안에서 baking 을해 좀 더 효율적으로, 최적화하여 돌릴 수 있다.  
+다음에 surface 다시 정리하기  
 
 # 잡담,정리
 Simulator gameView 에서 simulator 로 변경하면 폰화면 미리보기 가능.  
@@ -225,10 +249,6 @@ Window -> Analysis -> Profiler : 프레임,cpu, gpu, 메모리 등 사용량을 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
-**리더**  
-좋은 리더란 무엇인가?  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
 
 <br><br>
 - - -

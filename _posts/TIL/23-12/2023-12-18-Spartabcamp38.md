@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 38 3D 강의, 팀과제  ⭐⭐ "
+title:  "[TIL] 38 3D 강의, 팀과제  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
