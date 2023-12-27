@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 45 반별강의(Design_Pattern), 심화주차  ⭐⭐ "
+title:  "[TIL] 45 반별강의(ui), 심화주차  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -20,10 +20,10 @@ date: 2023-12-27 02:00
 
 <center><H1>  유니티 심화주차 5일 , 개인공부 </H1></center>
 
-&nbsp;&nbsp; [o] 알고리즘 문제  - 49   
+&nbsp;&nbsp; [o] 알고리즘 문제  - 50   
 &nbsp;&nbsp; [o] 다른반 강의 듣기  
 &nbsp;&nbsp; [o] 디자인 패턴 복습하기  
-&nbsp;&nbsp; [x] ui 2회차 듣기      
+&nbsp;&nbsp; [o] ui 2회차 듣기      
 &nbsp;&nbsp; [x] 심화주차 강의 듣기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -31,602 +31,126 @@ date: 2023-12-27 02:00
 <br><br><br><br><br>
 - - - 
 
-# 알고리즘
+<H2> UI강의 2회차 12/26 </H2> 
 
-list = list.Distinct().ToList();  
-list 에 있는 중복된 요소 지우기  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
-
-<br><br><br><br><br>
-- - - 
-<h2> 반별강의 </h2>
-
-# 1. 싱글톤 패턴 (singleton)
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/357ef27b-e877-445f-b3a5-a8c679541e91){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
-
-> - 특정 클래스의 인스턴스가 단 하나만 존재하도록 보장하는 디자인 패턴
-> - 클래스의 인스턴스를 전역적으로 접근 가능
-> - 게임의 설정, 오디오 매니저, UI 매니저 같이 전역적으로 하나만 존재
+# UGUI - Event System
+canvas의 Graphic Raycaster 컴포넌트가 UI 요소에서 광선으로 터치 등의 이벤트를 알림  
+EventSystem은 어떤 이벤트인지를 UI 요소에게 광선으로 알려주어서 반응하게 함  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/231f07bd-af4f-4cf5-9887-52b288b5f5e1){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
-<details>
-<summary>singleton 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-public class AudioManager
-{
-    // 이 인스턴스는 프로그램의 실행 동안 단 한 번만 생성됨
-    private static AudioManager _instance;
-
-    // 싱글톤 인스턴스에 대한 접근자
-    public static AudioManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new AudioManager();
-            }
-            return _instance;
-        }
-    }
-
-    // 생성자를 private으로 설정하여 외부에서 인스턴스를 생성하는 것을 방지
-    private AudioManager() 
-    {
-        // 초기화 코드
-    }
-
-    // 오디오 관련 메소드
-    public void PlaySound(string soundName)
-    {
-        // 소리 재생
-    }
-
-    public void StopSound(string soundName)
-    {
-        // 소리 중지
-    }
-}
-
-// 메모리 사용을 최적화하고 코드를 깔끔하게 사용할 수 있게 해주는 싱글톤 패턴!
-AudioManager.Instance.PlaySound("backgroundMusic");
-
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
-- - - 
-
-# 2. 상태패턴 (state)
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/8ef94cd9-ef44-4cae-911f-1ba64cdbc912){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
-
-> - 객체의 상태에 따라 객체의 행동을 변경 해주는 디자인 패턴
-> - 조건문으로 나누는 것이 아니라 **객체의 상태를 별도의 클래스로 캡슐화**
-> - 게임 캐릭터의 상태(대기, 이동, 공격)에 따라 행동이 달라지게 구현
+사용할 UI들 프리팹으로 만들어서 사용  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/2850566c-2816-452a-b036-cc289de64adf){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}  
-
-<details>
-<summary>state 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-// 상태 인터페이스
-public interface IState
-{
-    void HandleInput(Player player, string input);
-    void Update(Player player);
-}
-
-// 상태에 따른 클래스들, 대기 상태 클래스
-public class StandingState : IState
-{
-    public void HandleInput(Player player, string input)
-    {
-        if (input == "SPACE") 
-        {
-            player.SetState(new JumpingState());
-        }
-    }
-
-    public void Update(Player player)
-    {
-        // 대기 상태에서 할 행동
-    }
-}
-
-// 점프 상태 클래스
-public class JumpingState : IState
-{
-    public void HandleInput(Player player, string input)
-    {
-        // 점프 상태에서의 입력 처리
-    }
-
-    public void Update(Player player)
-    {
-        // 점프 상태에서 할 행동
-    }
-}
-
-// 플레이어 클래스
-public class Player
-{
-    private IState currentState;
-
-    public Player()
-    {
-        currentState = new StandingState();
-    }
-
-    public void SetState(IState newState)
-    {
-        currentState = newState;
-    }
-
-    public void HandleInput(string input)
-    {
-        currentState.HandleInput(this, input);
-    }
-
-    public void Update()
-    {
-        currentState.Update(this);
-    }
-}
-
-// 상태 패턴 사용 예시
-Player player = new Player();
-player.HandleInput("SPACE"); // 점프 상태로 변경
-player.Update(); // 현재 상태(점프)에 맞는 행동 실행
-
-
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
-- - - 
-
-# 3. 관찰자 패턴 (observer)
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/1a971805-1f06-4989-a18e-3cccc5c6223d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
-
-> - 한 객체의 상태 변화를 관찰하는 다수의 객체(관찰자들)
-> - 주인공 객체가 변하면 관찰자들에게도 자동으로 이를 알려줌
-> - 상태 변화에 따른 자동 업데이트 (**`구동 시스템과 유사`**)
-> - 의존성 줄이고 중요한 정보를 적절히 공유하는 형태
-> - ex) 플레이어 체력변화에 따른 이벤트를 구현할 때 유용
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}   
-
-<details>
-<summary>observer 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-// 관찰자 인터페이스
-public interface IObserver
-{
-    void Update(int health);
-}
-
-// 주인공 인터페이스
-public interface ISubject
-{
-    void Attach(IObserver observer);
-    void Detach(IObserver observer);
-    void Notify();
-}
-
-// 플레이어 클래스 (주인공)
-public class Player : ISubject
-{
-    private int health;
-    private List<IObserver> observers = new List<IObserver>();
-
-    public int Health
-    {
-        get { return health; }
-        set 
-        { 
-            health = value;
-            Notify();
-        }
-    }
-
-    public void Attach(IObserver observer)
-    {
-        observers.Add(observer);
-    }
-
-    public void Detach(IObserver observer)
-    {
-        observers.Remove(observer);
-    }
-
-    public void Notify()
-    {
-        foreach (var observer in observers)
-        {
-            observer.Update(health);
-        }
-    }
-}
-
-// UI 클래스 (관찰자)
-public class HealthDisplay : IObserver
-{
-    public void Update(int health)
-    {
-        Console.WriteLine("Health updated to: " + health);
-        // UI 업데이트 로직
-    }
-}
-
-// 옵저버 패ㄴ 사용 예시
-Player player = new Player();
-HealthDisplay display = new HealthDisplay();
-
-player.Attach(display);
-player.Health = 90; // 플레이어의 체력 변경. 자동으로 관찰자들에게 알림이 감. //set부분에 notify()
-
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
-- - - 
-
-# 4. 커맨드 패턴 (command)
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/1371e2fd-0f79-40d6-b145-98031ff04923){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-
-> - 버튼을 누르는 행위랑 발생하는 행동을 분리하는 패턴
-> - 입력을 다룰 때 많이 사용하는 패턴  
-> - 사용자의 요청을 발생시킨 코드와 요청을 수행하는 코드 사이의 의존성을 줄이는 것
-> - 입력 처리를 깔끔, 유연하게 관리, 명령을 추가, 재사용 쉬워짐
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}  
-
-<details>
-<summary>command 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-// 커맨드 인터페이스
-public interface ICommand
-{
-    void Execute();
-}
-
-// 구체적인 커맨드 클래스들. 이동 요청 클래스
-public class MoveCommand : ICommand
-{
-    private Player player;
-    private float x, y;
-
-    public MoveCommand(Player player, float x, float y)
-    {
-        this.player = player;
-        this.x = x;
-        this.y = y;
-    }
-
-    public void Execute()
-    {
-        player.Move(x, y);
-    }
-}
-
-// 점프 요청 클래스
-public class JumpCommand : ICommand
-{
-    private Player player;
-
-    public JumpCommand(Player player)
-    {
-        this.player = player;
-    }
-
-    public void Execute()
-    {
-        player.Jump();
-    }
-}
-
-// 플레이어 클래스
-public class Player
-{
-    public void Move(float x, float y)
-    {
-        // 이동 로직
-    }
-
-    public void Jump()
-    {
-        // 점프 로직
-    }
-}
-
-// 커맨드 사용
-Player player = new Player();
-ICommand moveCommand = new MoveCommand(player, 1.0f, 0.0f);
-ICommand jumpCommand = new JumpCommand(player);
-
-moveCommand.Execute(); // 플레이어 이동
-jumpCommand.Execute(); // 플레이어 점프
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
-- - - 
-
-# 5. 컴포넌트 패턴 (component)
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/a3a13fc7-deb3-4c97-861d-06b092bea969){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
-
-> - 객체의 행동을 작은 부품(Componenet) 으로 분리
-> - 부품을 조합하여 복잡한 동장을 구현하는 방식
 {: .notice--info} 
 
-<details>
-<summary>component 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-// 컴포넌트 인터페이스
-public interface IComponent
-{
-    void Update();
-}
-
-// 구체적인 컴포넌트 클래스들
-public class MovementComponent : IComponent
-{
-    public void Update()
-    {
-        // 이동 관련 로직
-    }
-}
-
-public class JumpComponent : IComponent
-{
-    public void Update()
-    {
-        // 점프 관련 로직
-    }
-}
-
-// 게임 오브젝트 클래스
-public class GameObject
-{
-    private List<IComponent> components = new List<IComponent>();
-
-    public void AddComponent(IComponent component)
-    {
-        components.Add(component);
-    }
-
-    public void Update()
-    {
-        foreach (var component in components)
-        {
-            component.Update();
-        }
-    }
-}
-
-// 사용 예시
-GameObject player = new GameObject();
-player.AddComponent(new MovementComponent());
-player.AddComponent(new JumpComponent());
-
-player.Update();
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
+<br><br><br><br>
 - - - 
 
-# 6. 빌더 패턴 (builder)
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/7517e86f-622e-40a6-af6b-18da5053334d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-
-**샌드위치**
-> - 복잡한 객체의 생성 과정을 단계별 분리
-> - 객체의 생성과 표현을 분리
-> - 생성하는 과정에서 서로 다른 표현을 가진 객체를 만드는 것
-> - 복잡한 게임오브젝트, 난이도조절할 때 사용(맵형태, 몹수)
+# TMP
+**TMP설정**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/70b04e23-3a5c-43b5-bf97-3aad20cafa50){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
-<details>
-<summary>builder 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-// 빌더 인터페이스
-public interface IBuilder
-{
-    void BuildPartA();
-    void BuildPartB();
-    void BuildPartC();
-    GameObject GetResult();
-}
-
-// 빌더 클래스
-public class ConcreteBuilder : IBuilder
-{
-    private GameObject gameObject = new GameObject();
-
-    public void BuildPartA()
-    {
-        // 객체의 일부분 A를 구축 (예: 캐릭터 모델 추가)
-    }
-
-    public void BuildPartB()
-    {
-        // 객체의 일부분 B를 구축 (예: 캐릭터 애니메이션 설정)
-    }
-
-    public void BuildPartC()
-    {
-        // 객체의 일부분 C를 구축 (예: 캐릭터 능력치 설정)
-    }
-
-    public GameObject GetResult()
-    {
-        return gameObject;
-    }
-}
-
-// 게임 오브젝트 클래스
-public class GameObject
-{
-    // 게임 오브젝트 관련 속성 및 메소드
-}
-
-// 빌더 사용
-IBuilder builder = new ConcreteBuilder();
-builder.BuildPartA();
-builder.BuildPartB();
-builder.BuildPartC();
-GameObject player = builder.GetResult();
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
-- - - 
-
-# 7. 플라이웨이트 패턴(flyweight)
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/d428dfa5-e929-4c5e-b27c-ac770f8eaed4){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-
-**도서관**
-> - **메모리 사용을 최적화** 하기 위한 패턴
-> - **객체의 공유를 촉진하는 형태**  
-> - 플라이 웨이트 패턴의 상태 종류
-> 객체마다 다를 수 있는 개별상태
-> 변경 불가능한 공유 상태
-> - 공유 상태는 객체 내부에 저장, 개별 상태는 클라이언트에 의해 관리
-> - 대규모 게임 환경에서 반복되는 아이템 같은 것을 관리할 때 유용함.  
+**material 만들고 적용하기 Material preset -> outline Red**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/506ab4d4-8566-4179-a9e0-0739d666e722){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
-<details>
-<summary>flyweight 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-// 플라이웨이트 클래스, 모든 나무가 공유하는 정보.
-public class TreeModel
-{
-    // 공유되는 상태 (예: 모델, 텍스처)
-    public string Model { get; set; }
-    public string Texture { get; set; }
-}
-
-// 공유되지 않는 상태를 관리하는 클래스, 각 나무의 고유한 정보를 저장. 위치를 관리함.
-public class Tree
-{
-    private TreeModel model;
-    private float x, y; // 나무의 위치, 고유 상태
-
-    public Tree(TreeModel model, float x, float y)
-    {
-        this.model = model;
-        this.x = x;
-        this.y = y;
-    }
-
-    public void Draw()
-    {
-        // 나무를 그리는 로직, model의 정보와 위치 정보를 사용
-    }
-}
-
-// 플라이웨이트 팩토리, TreeModel 클래스 인스턴스를 생성하고 관리함. 
-// 같은 종류의 나무가 여러번 필요할 때 매번 TreeModel 클래스가 생성하지 않도록 하는게 핵심
-public class TreeFactory
-{
-    private Dictionary<string, TreeModel> models = new Dictionary<string, TreeModel>();
-
-    public TreeModel GetTreeModel(string model, string texture)
-    {
-        if (!models.ContainsKey(model))
-        {
-            models[model] = new TreeModel { Model = model, Texture = texture };
-        }
-        return models[model];
-    }
-}
-
-// 사용 예시
-TreeFactory factory = new TreeFactory();
-
-var oakModel = factory.GetTreeModel("oak", "oakTexture");
-var pineModel = factory.GetTreeModel("pine", "pineTexture");
-
-List<Tree> trees = new List<Tree>();
-trees.Add(new Tree(oakModel, 10, 20));
-trees.Add(new Tree(pineModel, 50, 60));
-
-foreach (var tree in trees)
-{
-    tree.Draw();
-}
-```
-</div>
-</details>
-
-<br><br><br><br><br><br>
+<br><br><br><br>
 - - - 
 
-# 8.델리게이트, 이벤트
-개발자가 정의한 특정조건이나 행동에 반응하는 사용자 정의 이벤트  
+# DynamicUI
 
-> - 델리게이트  
->  c#  에서 메소드를 참조하는 타입  
->  메소드의 참조를 변수에 저장하고, 다른 메소드로 전달, 호출을 동적으로 결정할 수 있음.  
+## Layout
+
+**Vertical Layout Group**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/cccd2da1-feb3-4ac6-b78b-2d7ba573f822){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
+{: .notice--info}
 
-> - 이벤트  
-> 이벤트는 델리게이트를 기반으로 함  
-> 특정 상황이 발생했을 때 이벤트를 구독하는 모든 메소드를 호출하는데 사용됨.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
-
-<br><br><br><br><br>
-- - - 
-
-<h2> UI강의 </h2>
-
-[UI](https://levell1.github.io/memo%20unity/MUnity-Ui1/)
-
-<br><br><br><br><br>
-- - - 
-
-# 잡담,정리
-Simulator gameView 에서 simulator 로 변경하면 폰화면 미리보기 가능.  
-Window -> Analysis -> Profiler : 프레임,cpu, gpu, 메모리 등 사용량을 체크할 수 있다.
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
- 
+|프로퍼티|기능|
+|:---:|---|
+|Padding|	레이아웃 그룹 에지의 패딩입니다.|
+|Spacing|	레이아웃 요소 간의 간격입니다.|
+|Child Alignment|	사용 가능한 공간을 모두 채우지 않을 경우 자식 레이아웃 요소에 사용할 얼라인먼트입니다.|
+|Child Controls Size|	레이아웃 그룹이 자식의 너비와 높이를 제어할지 여부입니다.|
+|Child Force Expand|	추가로 사용할 수 있는 공간을 채우기 위해 자식 레이아웃을 강제로 확장할지 여부입니다.|
 
 <br><br>
-- - -
+
+**Horizomtal Layout Group**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/13e45ba5-70d5-4ea8-8773-e1a364430e90){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
+
+|프로퍼티|기능|
+|:---:|---|
+|Padding|	레이아웃 그룹 에지의 패딩입니다.|
+|Spacing|	레이아웃 요소 간의 간격입니다.|
+|Child Alignment|	사용 가능한 공간을 모두 채우지 않을 경우 자식 레이아웃 요소에 사용할 얼라인먼트입니다.|
+|Control Child Size|	레이아웃 그룹이 자식 레이아웃 요소의 너비와 높이를 제어할지 여부를 결정합니다.|
+|Use Child Scale|	요소의 크기를 지정하거나 요소를 배치할 때 레이아웃 그룹이 해당 자식 레이아웃 요소의 스케일을 고려할지 여부를 결정합니다. Width 및 Height는 각 자식 레이아웃 요소의 Rect Transform 컴포넌트에 있는 Scale > X 및 Scale > Y 값에 해당합니다.|
+|Child Force Expand|	추가로 사용할 수 있는 공간을 채우기 위해 자식 레이아웃 요소를 강제로 확장할지 여부를 결정합니다.|
+
+<br><br>
+
+**Grid Layout Group**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/1ca57c17-8e77-499f-b35f-63700e6fd04a){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
+
+|프로퍼티|기능|
+|:---:|---|
+|Padding|	레이아웃 그룹 에지의 패딩입니다.|
+|Cell Size|	그룹의 각 레이아웃 요소가 사용할 크기입니다.|
+|Spacing|	레이아웃 요소 간의 간격입니다.|
+|Start Corner|	첫 요소가 위치하는 코너입니다.|
+|Start Axis|	요소를 따라 배치할 주축을 지정합니다. 수평축으로 하면 새 행을 시작하기 이전 행을 전부 채웁니다. 수직축으로 하면 새 열을 시작하기 이전 열을 전부 채웁니다.|
+|Child Alignment|	레이아웃 요소가 사용 가능한 공간을 전부 사용하지 않는 경우, 사용할 얼라인먼 방식입니다.|
+|Constraint|	자동 레이아웃 시스템을 지원하기 위해 격자 무늬의 행렬 수를 제한합니다.|
+
+<br><br>
+
+## Size Fillter
+**Content Size Fillter**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/6bd53850-362d-4668-8eb3-f311266b959a){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+**Horizontal Fit	너비 제어 방법입니다.**  
+**Vertical Fit	높이 제어 방법입니다.**  
+
+|프로퍼티|기능|
+|:---:|---|
+|Unconstrained|	레이아웃 요소에 기반하여 너비를 조정하지 않습니다.|
+|Min Size|	레이아웃 요소의 최소 너비에 기반하여 너비를 조정합니다.|
+|Preferred Size	|레이아웃 요소의 기본 너비에 기반하여 너비를 조정합니다.|
+
+<br><br>
+
+**Layout Element**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/0bf79f0b-fb74-4c11-88d4-36d70c528663){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+Layout Element 체크 -> transform 다시지정
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
+
+|프로퍼티|기능|
+|:---:|---|
+|Ignore Layout|	활성화하면 레이아웃 시스템이 이 레이아웃 요소를 무시합니다.|
+|Min Width|	이 레이아웃 요소의 최소 너비입니다.|
+|Min Height|	이 레이아웃 요소의 최소 높이입니다.|
+|Preferred Width|	추가 가용 너비가 할당되기 전에 이 레이아웃 요소의 선호 너비입니다.|
+|Preferred Height|	추가 가용 높이가 할당되기 전에 이 레이아웃 요소의 선호 높이입니다.|
+|Flexible Width|	레이아웃 요소가 형제 레이아웃에 상대적으로 채워야 하는 (추가 사용 가능한)너비의 상대적 크기입니다.|
+|Flexible Height	|레이아웃 요소가 형제 레이아웃에 상대적으로 채워야 하는 (추가 사용 가능한)높이의 상대적 크기입니다.|
+|Layout Priority|	이 컴포넌트에 대한 레이아웃 우선 순위입니다.
+
+<br><br>
+
+**Layout Priority**  
+게임 오브젝트에 레이아웃 프로퍼티가 있는 컴포넌트가 두 개 이상(예: Image 컴포넌트와 LayoutElement| 컴포넌트) 있으면 레이아웃 시스템은 Layout Priority가 가장 높은 컴포넌트의 프로퍼티 값을 사용합니다.  
+컴포넌트에 동일한 Layout Priority가 있으면 레이아웃 시스템은 어느 컴포넌트에서 왔든 상관없이 각 프로퍼티에 대한 가장 높은 값을 사용합니다.
 
 <br>
 

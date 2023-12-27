@@ -611,9 +611,7 @@ foreach (var tree in trees)
 <br><br><br><br><br>
 - - - 
 
-<h2> UI강의 </h2>
 
-[UI](https://levell1.github.io/memo%20unity/MUnity-Ui1/)
 
 <br><br><br><br><br>
 - - - 
