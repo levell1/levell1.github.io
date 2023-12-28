@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 46 반별강의(ui), 심화주차  ⭐⭐ "
+title:  "[TIL] 46 개인과제, 심화주차  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
