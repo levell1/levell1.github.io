@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 45 반별강의(ui), 심화주차  ⭐⭐ "
+title:  "[TIL] 46 반별강의(ui), 심화주차  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2023-12-27 02:00
+date: 2023-12-28 02:00
 
 ---
 - - -
