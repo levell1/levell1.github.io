@@ -33,10 +33,10 @@ date: 2023-12-29 02:00
 
 # 최종 프로젝트 
 ## 어떻게 시작해야 되는가?
-1. 장르선정 - 타이쿤 rpg ( 디테일하게) ex) 목표. 데이브더 다이브 클론이다.  
-2. 레퍼런스 확보 장르별 랭킹  공통점 확보  
-3. 기본적인 시스템 로직 ( 어떤게임이든 쓰는 것들 ui, manager, interface 등)  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/1c539c7a-fe4e-4420-a0d5-a3b305b9666c){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+> 1. 장르선정 - 타이쿤 rpg ( 디테일하게) ex) 목표. 데이브더 다이브 클론이다.  
+> 2. 레퍼런스 확보 장르별 랭킹  공통점 확보  
+> 3. 기본적인 시스템 로직 ( 어떤게임이든 쓰는 것들 ui, manager, interface 등)  
+> ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1c539c7a-fe4e-4420-a0d5-a3b305b9666c){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -72,10 +72,25 @@ date: 2023-12-29 02:00
 # 공부를 어떻게 해야하나.
 유니티 공식 자료가 정답.  
 [유니티 블로그](https://blog.unity.com/kr/front)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}
 
+<br><br><br><br><br>
+- - - 
+
+# 해보기
+제네릭 싱글톤 monosingleton<T> 만들어보기  
+GAMEMANAGER 상속
+인터페이스 만들어보기.
+UIMANAGER?
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}
+
+<br><br><br><br><br>
+- - - 
 
 # 잡담,정리
-오늘은 개인과제를 진행 하였고, 배운것들을 처음부터 구현 할려고 하니 많이 힘들었고, 좀 더 공부가 필요하다고 느끼는 시간이였다.  
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
  
