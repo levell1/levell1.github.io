@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 48 강의 - 코루틴(coroutine), 디자인패턴  ⭐⭐ "
+title:  "[TIL] 48 강의 - 코루틴(coroutine), FSM, Abstract,Interface  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -15,7 +15,7 @@ date: 2024-01-01 02:00
 ---
 - - -
 
-`coroutine`
+`coroutine` `FSM` `Abstract` `Interface`
 
 <BR><BR>
 
@@ -93,14 +93,14 @@ UnityMainThreadDispatcher등을 이용, 구현(Queue사용)
 > FSM은 유한 상태 기계를 나타내는 디자인 패턴입니다.  
 > 상태와 상태 간의 전환을 기반으로 동작하는 동작 기반 시스템입니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice-success}  
+{: .notice--success}  
 
 > - **FSM의 구성 요소**  
 > 상태 (State): 시스템이 취할 수 있는 다양한 상태를 나타냅니다.  
 > 전환 조건 (Transition Condition): 상태 간 전환을 결정하는 조건입니다.  
 > 동작 (Action): 상태에 따라 수행되는 동작 또는 로직을 나타냅니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice-success}  
+{: .notice--success}  
 
 > - **FSM의 예시** : 플레이어 상태 관리  
 > 상태: 정지 상태, 이동 상태, 점프 상태  
@@ -114,8 +114,8 @@ UnityMainThreadDispatcher등을 이용, 구현(Queue사용)
 
 # 추상클래스, 인터페이스 차이
 
- 
-**추상클래스(Abstract)** - 메서드 : **설계목적** 구현x -> 상속받은 자식이 새로 구현(반드시 오버라이딩) 반드시 구현해야 할 건 추상클래스로 선언하자.  
+**추상클래스(Abstract)** - **설계목적** 구현x  
+상속받은 자식이 새로 구현(반드시 오버라이딩) 반드시 구현해야 할 건 추상클래스로 선언하자.  
 부모 public abstract void 함수();  
 자식 public override void 함수();  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
