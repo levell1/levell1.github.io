@@ -32,7 +32,7 @@ void Update()
 {
     // 마우스 왼쪽 버튼을 클릭했을때
     if (Input.GetMouseButtonDown(0)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 클릭 ");
     }
 }
 ```
@@ -48,7 +48,7 @@ void Update()
 {
     //  마우스 버튼을 클릭하고 있는 동안
     if (Input.GetMouseButton(0)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 클릭 중 ");
     }
 }
 ```
@@ -93,25 +93,25 @@ void Update()
 {
     // 마우스 왼쪽 버튼을 클릭했을때
     if (Input.GetMouseButtonDown(0)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 좌클릭 ");
     }
     // 마우스 가운데 버튼을 클릭했을때
     if (Input.GetMouseButtonDown(1)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 중간클릭 ");
     }
     // 마우스 오른쪽 버튼을 클릭했을때
     if (Input.GetMouseButtonDown(2)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 우클릭 ");
     }
 
     //  마우스 버튼을 클릭하고 있는 동안
     if (Input.GetMouseButton(0)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 클릭 중 ");
     }
 
     // 마우스 버튼을 클릭을 뗐을 때
     if (Input.GetMouseButtonUp(0)){
-        Debug.Log("마우스 뗄 때 ");
+        Debug.Log("마우스 땔 때 ");
     }
 }
 ```

@@ -23,7 +23,7 @@ date: 2023-12-29 02:00
 &nbsp;&nbsp; [o] 알고리즘 문제  - 51  
 &nbsp;&nbsp; [o] 다른반 강의 듣기  
 &nbsp;&nbsp; [o] 디자인 패턴 복습하기   
-&nbsp;&nbsp; [x] 프로젝트 강의 듣기.  
+&nbsp;&nbsp; [o] 프로젝트 강의 듣기.  
 &nbsp;&nbsp; [x] 심화주차 강의 듣기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -79,18 +79,19 @@ date: 2023-12-29 02:00
 - - - 
 
 # 해보기
-제네릭 싱글톤 monosingleton<T> 만들어보기  
-GAMEMANAGER 상속
-인터페이스 만들어보기.
-UIMANAGER?
+> - 제네릭 싱글톤 monosingleton<T> 만들어보기  
+> - GAMEMANAGER 상속  
+> - 인터페이스 만들어보기.  
+> - UIMANAGER?  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
 
 <br><br><br><br><br>
 - - - 
 
-# 잡담,정리
 
+# 잡담,정리
+최종프로젝트에대한 생각.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
  

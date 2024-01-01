@@ -38,7 +38,7 @@ date: 2023-12-08 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-<div class="notice--primary" markdown="1"> 
+<!-- <div class="notice--primary" markdown="1"> 
 
 ```c# 
 public class Calculator
@@ -66,7 +66,7 @@ double sum2 = calculator.Add(2.5, 3.7); // double Add(double a, double b) 메소
 int sum3 = calculator.Add(2, 3, 4); // int Add(int a, int b, int c) 메소드 호출
 ```
 
-</div>
+</div> -->
 
 <br><br>
 - - - 
