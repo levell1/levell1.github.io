@@ -90,22 +90,22 @@ UnityMainThreadDispatcher등을 이용, 구현(Queue사용)
 유한 상태 기계(Finite State Machine, FSM)  
 
 > - **FSM의 개념**  
-> FSM은 유한 상태 기계를 나타내는 디자인 패턴입니다.
-> 상태와 상태 간의 전환을 기반으로 동작하는 동작 기반 시스템입니다.
+> FSM은 유한 상태 기계를 나타내는 디자인 패턴입니다.  
+> 상태와 상태 간의 전환을 기반으로 동작하는 동작 기반 시스템입니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice-success}  
 
-> - **FSM의 구성 요소**
-> 상태 (State): 시스템이 취할 수 있는 다양한 상태를 나타냅니다.
-> 전환 조건 (Transition Condition): 상태 간 전환을 결정하는 조건입니다.
-> 동작 (Action): 상태에 따라 수행되는 동작 또는 로직을 나타냅니다.
+> - **FSM의 구성 요소**  
+> 상태 (State): 시스템이 취할 수 있는 다양한 상태를 나타냅니다.  
+> 전환 조건 (Transition Condition): 상태 간 전환을 결정하는 조건입니다.  
+> 동작 (Action): 상태에 따라 수행되는 동작 또는 로직을 나타냅니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice-success}  
 
-> - **FSM의 예시**: 플레이어 상태 관리
-> 상태: 정지 상태, 이동 상태, 점프 상태
-> 전환 조건: 이동 입력, 점프 입력, 충돌 등의 조건
-> 동작: 이동 애니메이션 재생, 점프 처리, 이동 속도 조정 등
+> - **FSM의 예시** : 플레이어 상태 관리  
+> 상태: 정지 상태, 이동 상태, 점프 상태  
+> 전환 조건: 이동 입력, 점프 입력, 충돌 등의 조건  
+> 동작: 이동 애니메이션 재생, 점프 처리, 이동 속도 조정 등  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
@@ -141,6 +141,7 @@ inputAction.CallbackContext 를 통해 input value를 받아올 수 있다.
 
 move.stared += onmovement;   
 move.canceled -= onmovement;  
+
 
 <br><br><br><br><br>
 - - - 
