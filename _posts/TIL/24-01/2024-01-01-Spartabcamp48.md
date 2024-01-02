@@ -32,9 +32,9 @@ date: 2024-01-01 02:00
 - - - 
 
 # 코루틴(coroutine)
-다수의 프레임에 분산시켜서 실행할 수 있는 문법  
-일반 메서드는 1프레임에 실행  
-코루틴은 동시적이다, 비동기 X  
+> - 다수의 프레임에 분산시켜서 실행할 수 있는 문법  
+> - 일반 메서드는 1프레임에 실행  
+> - 코루틴은 동시적이다, 비동기 X  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -54,18 +54,19 @@ void Update()
 }
 
 ```
-- StopCoroutine(함수명()) 은 원하는 때에 멈추지 않을 수 도 있다.  
+- StopCoroutine(함수명()) 은 원하는 때에 멈추지 않을 수도 있다.  
 - StopCoroutine("함수명"), stopAllCoroutine  
 - StopCoroutine("함수명")은 추적이안된다.  
 - 위 방법으로 변수를 이용해서 사용하자.  
 
 </div>
 
-Waitforsecont 보다   
-게임의 프레임을 맞추고 waitforendofframe을 쓰면 모든컴퓨터의 기준을 똑같이 가능.  
-yield return WWW 서버관련  
+> - Waitforsecont 보다 게임의 프레임을 맞추고 waitforendofframe을 쓰면 모든컴퓨터의 기준을 똑같이 가능.  
+> - yield return WWW 서버관련  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
+
+</div>
 
 
 <br><br><br><br><br>
@@ -115,19 +116,19 @@ UnityMainThreadDispatcher등을 이용, 구현(Queue사용)
 # 추상클래스, 인터페이스 차이
 
 **추상클래스(Abstract)** - **설계목적** 구현x  
-상속받은 자식이 새로 구현(반드시 오버라이딩) 반드시 구현해야 할 건 추상클래스로 선언하자.  
+상속받은 자식이 새로 구현(반드시 오버라이딩)  
+반드시 구현해야 할 건 추상클래스로 선언하자.  
 부모 public abstract void 함수();  
 자식 public override void 함수();  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
 추상클래스 **문제점**  -> 다중상속 x -> Interface 사용  
-다중상속 안되는 이유 -> 추상클래스에는 **일반함수도 포함** 되어 있다.  
+다중상속 안되는 이유 -> 추상클래스에는 **일반함수도 포함**되어 있다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--warning} 
 
 **인터페이스(Interface)** -> 일반함수, 일반변수 선언 X -> **다중상속 O**  
-추상함수인데 일반함수,변수가 없는 추상함수라고 생각  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success} 
 
