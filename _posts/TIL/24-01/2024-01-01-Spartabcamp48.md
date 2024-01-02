@@ -132,6 +132,8 @@ UnityMainThreadDispatcher등을 이용, 구현(Queue사용)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success} 
 
+<br><br><br><br><br>
+- - - 
 
 # Input system 
 inputAction.CallbackContext 를 통해 input value를 받아올 수 있다.  
@@ -140,7 +142,7 @@ inputAction.CallbackContext 를 통해 input value를 받아올 수 있다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}
 
-move.stared += onmovement;   
+move.started += onmovement;   
 move.canceled -= onmovement;  
 
 

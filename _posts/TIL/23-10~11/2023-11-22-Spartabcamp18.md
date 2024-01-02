@@ -1,5 +1,5 @@
 ---
-title:  "[Sparta-BCamp] TIL 18 팀 과제진행, 알고리즘 문제 ⭐⭐⭐ "
+title:  "[Sparta-BCamp] TIL 18 팀 과제진행, 알고리즘 문제 ⭐ "
 excerpt: "Sparta"
 
 categories:
