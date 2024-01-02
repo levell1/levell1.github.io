@@ -131,18 +131,18 @@ public class RotationJump : MonoBehaviour
 <div class="notice--primary" markdown="1"> 
 
 ```c#
-
-transform.Rotate(Vector2.left);
-yield return new WaitForSeconds(0.5f);
-Debug.Log(transform.eulerAngles.x);
-if (Mathf.Approximately(transform.eulerAngles.x, _startRotate.x))
+while (!_checkRotate)
 {
-    _checkRotate = true;
+    transform.Rotate(Vector2.left);
+    yield return new WaitForSeconds(0.5f);
+    Debug.Log(transform.eulerAngles.x);
+    if (Mathf.Approximately(transform.eulerAngles.x, _startRotate.x))
+    {
+        _checkRotate = true;
+    }
+
+    //-> if (transform.eulerAngles.x - _startRotate.x <= 1.1f)
 }
-
-
--> if (transform.eulerAngles.x - _startRotate.x <= 1.1f)
-
 ```
 </div>
 
