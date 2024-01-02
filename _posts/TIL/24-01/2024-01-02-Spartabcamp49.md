@@ -147,7 +147,7 @@ if (Mathf.Approximately(transform.eulerAngles.x, _startRotate.x))
 </div>
 
 > - rotation 이 1-> 0으로 될 때 0이 아닌 360이 되어서  
-> - Mathf.Approximately(transform.eulerAngles.x,startRotate.x)로 원하는대로 멈출 수 없었다.
+> - Mathf.Approximately(transform.eulerAngles.x,startRotate.x)로 원하는대로 멈출 수 없었다.  
 > - if (transform.eulerAngles.x - _startRotate.x <= 1.1f) 로 바꿔서 작동.   
 > - 1 -> 1.333971E-05 -> 359  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/5ab7fb31-8391-4ca8-b031-5524fcf96e11){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
