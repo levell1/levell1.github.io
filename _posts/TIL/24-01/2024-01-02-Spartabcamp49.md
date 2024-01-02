@@ -160,6 +160,10 @@ public class RotationJump : MonoBehaviour
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
+[Dictionary](https://iden351.tistory.com/55)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
 <br><br>
 - - -
 
