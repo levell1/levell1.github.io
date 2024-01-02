@@ -121,15 +121,25 @@ public class RotationJump : MonoBehaviour
     }
 }
 
- transform.Rotate(Vector2.left);
- yield return new WaitForSeconds(0.5f);
- Debug.Log(transform.eulerAngles.x);
- if (Mathf.Approximately(transform.eulerAngles.x, _startRotate.x))
- {
-     
-     //transform.rotation = Quaternion.Euler(_startRotate);
-     _checkRotate = true;
- }
+
+
+```
+</div>
+
+<br><br>
+
+<div class="notice--primary" markdown="1"> 
+
+```c#
+
+transform.Rotate(Vector2.left);
+yield return new WaitForSeconds(0.5f);
+Debug.Log(transform.eulerAngles.x);
+if (Mathf.Approximately(transform.eulerAngles.x, _startRotate.x))
+{
+    _checkRotate = true;
+}
+
 
 -> if (transform.eulerAngles.x - _startRotate.x <= 1.1f)
 
