@@ -151,6 +151,8 @@ while (!_checkRotate)
 > - if (transform.eulerAngles.x - _startRotate.x <= 1.1f) 로 바꿔서 작동.   
 > - 1 -> 1.333971E-05 -> 359  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/5ab7fb31-8391-4ca8-b031-5524fcf96e11){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
 
 
 <br><br><br><br><br>
@@ -159,6 +161,8 @@ while (!_checkRotate)
 # 공중 그네에서 이동
 > - 팀원 장애물 중 공중 그네에착지 후 그네를 따라 플레이어가 움직여야 됐다.  
 > - 그네에 착지 시 그네를 플레이어 부모로 만들고 그네에서 떨어지면 따로 분리 하는 방법이 있는 거 같았다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
 
 <br><br><br><br><br>
 - - - 
