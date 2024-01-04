@@ -33,7 +33,6 @@ Dictionary
 - - - 
 
 # 잡담
-추상클래스, 인터페이스 차이 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

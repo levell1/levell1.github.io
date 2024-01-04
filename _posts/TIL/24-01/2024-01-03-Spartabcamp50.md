@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-02 02:00
+date: 2024-01-03 02:00
 
 ---
 - - -
@@ -149,9 +149,6 @@ private void OnCollisionExit(Collision collision)
 
 ```
 </div>
-
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
 
 <br><br><br><br><br>
 - - - 
