@@ -20,7 +20,7 @@ date: 2024-01-03 02:00
 
 <BR><BR>
 
-<center><H1>  Addforce, player.SetParent  </H1></center>
+<center><H1>  2일차  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 51  
 &nbsp;&nbsp; [o] 다른반 강의 듣기   
@@ -127,28 +127,118 @@ addforce 가 y축은 되는데 z축이 이상하게 된다. 내일 생각해보�
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+# SavePoint
+
 <div class="notice--primary" markdown="1"> 
 
 ```c#
 
-private void OnCollisionEnter(Collision collision)
+using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SavePoint : MonoBehaviour
 {
-    if(collision.collider.CompareTag("Player"))
+    private Vector3 _startPoint; // 시작위치 설정.
+    private Vector3 _firstStartPoint = new Vector3(0,50,50); // 1스테이지 시작위치 설정.
+    private Vector3 _SecondStartPoint = new Vector3(94, 0, 15); // 2스테이지 시작위치 설정.
+
+    private Vector3 _savePoint = Vector3.zero;  // 저장위치 설정.
+
+    private HealthSystem HealthSystem;
+    private PlayerRagdollController _playerRagdollController;
+
+    private void Awake()
     {
-        collision.gameObject.transform.SetParent(transform);
+        _playerRagdollController = GetComponent<PlayerRagdollController>();
+        HealthSystem = GetComponent<HealthSystem>();
+    }
+    private void Start()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        sceneCheck(scene);
+        _savePoint = _startPoint;
+        HealthSystem.OnDied += revive;
+        //SceneManager.sceneLoaded += LoadedsceneEvent;
+    }
+
+    public void revive() 
+    {
+        StartCoroutine(ReStartCo());
+    }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.R)) 
+        {
+            StartCoroutine(ReStartCo());
+        }
+        checkSaveBoard();
+        Debug.DrawRay(transform.position, Vector3.down, Color.red, 0.3f);
+    }
+
+    /*private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        sceneCheck(scene);
+        _savePoint = _startPoint;
+    }*/
+
+    private void checkSaveBoard() 
+    {
+        RaycastHit _hit;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out _hit, 1,4))
+        {
+            if (_hit.transform.CompareTag("SaveBoard"))
+            {
+                Debug.Log("세이브보드");
+                _savePoint = _hit.transform.position + Vector3.up;
+                //세이브 이펙트
+                Destroy(_hit.collider.gameObject, 1f);
+            }
+        }
+    }
+    
+    public IEnumerator ReStartCo()
+    {
+        _playerRagdollController.SetRagdollState(true);
+        yield return new WaitForSeconds(5.1f);
+        gameObject.transform.position = _savePoint;
+        _savePoint = _startPoint;
+    }
+
+    private void sceneCheck(Scene scene) 
+    {
+        if (scene.name == "KDH_Obstacle")
+        {
+            _startPoint = _firstStartPoint;
+        }
+        else if (scene.name == "99.BJH")
+        {
+            _startPoint = _SecondStartPoint;
+        }
+        else
+        {
+            _startPoint = Vector3.zero;
+        }
     }
 }
 
-private void OnCollisionExit(Collision collision)
-{
-    if (collision.collider.CompareTag("Player"))
-    {
-        collision.gameObject.transform.SetParent(null);
-    }
-}
 
 ```
 </div>
+SceneManager.sceneLoaded += LoadedsceneEvent;
+
+    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        sceneCheck(scene);
+        _savePoint = _startPoint;
+    }
+
+씬 이동시 startpoint가 바뀌게 할려고 했다, 플레이어에 스크립트를 달았는데 그럼
+씬을 이동할 때 이 스크립트는 파괴되면 안된다고 생각이 됐고, 다른 방법으로 씬별 스타트 포지션을 바꾸기로 했다.
+
 
 <br><br><br><br><br>
 - - - 
@@ -159,36 +249,104 @@ private void OnCollisionExit(Collision collision)
 
 ```c#
 
-public AudioSource BgSound;
-public AudioClip[] Bglist;
-//배경음 바꿀 때 GMTest.Instance.audioManager.
+using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-private void Start()
+public class AudioManager : MonoBehaviour
 {
-    BgSoundPlay(Bglist[0]);
-}
-public void SFXPlay(string sfxName, AudioClip clip) 
-{
-    GameObject AudioGo = new GameObject( sfxName+"Sound" );
-    AudioSource audiosource = AudioGo.AddComponent<AudioSource>();
-    audiosource.clip = clip;
-    audiosource.Play();
+    private AudioClip _audioClip;
+    public AudioSource BgSound;
+    public AudioSource[] SFXSound;
+    public AudioMixer Mixer;
+    private string _bgFilename;
 
-    Destroy(audiosource, clip.length );
-}
-//GMTest.Instance.audioManager.SFXPlay("die", AudioClip);
+    public Slider _bgmSlider;
+    public Slider _sfxSlider;
+    public Slider _masterSlider;
 
-public void BgSoundPlay(AudioClip clip) 
-{
-    BgSound.clip = clip;
-    BgSound.loop = true;
-    BgSound.volume = 0.1f;
-    BgSound.Play();
+
+    private void Awake()
+    {
+        _audioClip = GetComponent<AudioClip>();
+        DontDestroyOnLoad(this);
+    }
+    private void Start()
+    {
+        SceneManager.sceneLoaded += LoadedsceneEvent;
+        
+        BgSoundPlay("BG1", 0.05f);
+    }
+
+    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
+    {
+        if (scene.name == "KDH_Obstacle")
+        {
+            _bgFilename = "BG1";
+        }
+        else if (scene.name == "99.BJH")
+        {
+            _bgFilename = "BG3";
+        }
+        BgSoundPlay(_bgFilename, 0.05f);
+    }
+
+    public void SFXPlay(string sfxName, Vector3 audioPosition, float audioVolume)
+    {
+        GameObject AudioGo = new GameObject(sfxName + "Sound");
+        AudioSource audiosource = AudioGo.AddComponent<AudioSource>();
+
+        audiosource.outputAudioMixerGroup = Mixer.FindMatchingGroups("SFX")[0];
+        _audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName);
+        if (_audioClip!=null) 
+        {
+            audiosource.clip = _audioClip;
+            audiosource.volume = audioVolume;
+            audiosource.Play();
+
+            Destroy(audiosource.gameObject, audiosource.clip.length);
+        }
+        
+    }
+
+
+    public void BgSoundPlay(string BgName, float audioVolume)
+    {
+        _audioClip = Resources.Load<AudioClip>("Audios/BGM/"+ BgName);
+        BgSound.clip = _audioClip;
+        BgSound.outputAudioMixerGroup = Mixer.FindMatchingGroups("BGSound")[0];
+        BgSound.loop = true;
+        BgSound.volume = audioVolume;
+        BgSound.Play();
+    }
+
+
+    
+    //볼륨조절
+    public void BGSoundVolume() 
+    {
+        float bgmsound = _bgmSlider.value;
+        Mixer.SetFloat("BGVolume", bgmsound);
+    }
+    public void SFXSoundVolume()
+    {
+        float sfxsound = _sfxSlider.value;
+        Mixer.SetFloat("SFXVolume", sfxsound);
+    }
+    public void MasterVolume()
+    {
+        float mastersound = _masterSlider.value;
+        Mixer.SetFloat("Master", mastersound);
+    }
 }
-//GMTest.Instance.audioManager.BgSoundPlay(AudioClip);
 
 ```
 </div>
+
+오디오소스  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/6aff610f-48b1-4354-886c-b0613dc0e9c5)  
+
 
 
 # 잡담,정리

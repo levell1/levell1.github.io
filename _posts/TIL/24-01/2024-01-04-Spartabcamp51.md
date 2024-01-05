@@ -31,13 +31,12 @@ date: 2024-01-04 02:00
 <br><br><br><br><br>
 - - - 
 
-# Restart 
-Restart 위치 지정 
-SavePosition
+# SavePoint
 
 <div class="notice--primary" markdown="1"> 
 
 ```c#
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -45,68 +44,86 @@ using UnityEngine.SceneManagement;
 public class SavePoint : MonoBehaviour
 {
     private Vector3 _startPoint; // 시작위치 설정.
-    private Vector3 _firstStartPoint = new Vector3(10,10,10); // 1스테이지 시작위치 설정.
+    private Vector3 _firstStartPoint = new Vector3(0,50,50); // 1스테이지 시작위치 설정.
     private Vector3 _SecondStartPoint = new Vector3(94, 0, 15); // 2스테이지 시작위치 설정.
 
     private Vector3 _savePoint = Vector3.zero;  // 저장위치 설정.
 
-    private GameObject _player;
+    private HealthSystem HealthSystem;
+    private PlayerRagdollController _playerRagdollController;
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
-        _player = GameObject.FindGameObjectWithTag("Player");
+        _playerRagdollController = GetComponent<PlayerRagdollController>();
+        HealthSystem = GetComponent<HealthSystem>();
     }
     private void Start()
     {
-        //Scene scene = SceneManager.GetActiveScene();
-        
-        SceneManager.sceneLoaded += LoadedsceneEvent;
+        Scene scene = SceneManager.GetActiveScene();
+        sceneCheck(scene);
+        _savePoint = _startPoint;
+        HealthSystem.OnDied += revive;
+        //SceneManager.sceneLoaded += LoadedsceneEvent;
     }
 
+    public void revive() 
+    {
+        StartCoroutine(ReStartCo());
+    }
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.R)) 
         {
             StartCoroutine(ReStartCo());
         }
+        checkSaveBoard();
+        Debug.DrawRay(transform.position, Vector3.down, Color.red, 0.3f);
     }
 
-    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
+    /*private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
     {
         _player = GameObject.FindGameObjectWithTag("Player");
         sceneCheck(scene);
         _savePoint = _startPoint;
-    }
+    }*/
 
-    private void OnCollisionEnter(Collision collision)
+    private void checkSaveBoard() 
     {
-        Debug.Log(_savePoint);
-        if (collision.gameObject.tag == "SaveBoard")
+        RaycastHit _hit;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out _hit, 1,4))
         {
-            _savePoint = collision.transform.position + Vector3.up;
-            //세이브 이펙트
-            Destroy(collision.gameObject,1f);
+            if (_hit.transform.CompareTag("SaveBoard"))
+            {
+                Debug.Log("세이브보드");
+                _savePoint = _hit.transform.position + Vector3.up;
+                //세이브 이펙트
+                Destroy(_hit.collider.gameObject, 1f);
+            }
         }
     }
     
-    IEnumerator ReStartCo()
+    public IEnumerator ReStartCo()
     {
-        //피이펙트
-        yield return new WaitForSeconds(1f);
-        _player.transform.position = _savePoint;
+        _playerRagdollController.SetRagdollState(true);
+        yield return new WaitForSeconds(5.1f);
+        gameObject.transform.position = _savePoint;
         _savePoint = _startPoint;
     }
 
     private void sceneCheck(Scene scene) 
     {
-        if (scene.name == "KJW")
+        if (scene.name == "KDH_Obstacle")
         {
             _startPoint = _firstStartPoint;
         }
         else if (scene.name == "99.BJH")
         {
             _startPoint = _SecondStartPoint;
+        }
+        else
+        {
+            _startPoint = Vector3.zero;
         }
     }
 }
@@ -115,19 +132,24 @@ public class SavePoint : MonoBehaviour
 ```
 </div>
 
-<br><br>
+SceneManager.sceneLoaded += LoadedsceneEvent;
 
-> - 풍선 터트리고 밟으면 1회성 세이브포인트  
-> - 씬바뀌면 씬 이름별로 startPosition 바꾸기.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
+    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        sceneCheck(scene);
+        _savePoint = _startPoint;
+    }
+
+씬 이동시 startpoint가 바뀌게 할려고 했다, 플레이어에 스크립트를 달았는데 그럼
+씬을 이동할 때 이 스크립트는 파괴되면 안된다고 생각이 됐고, 다른 방법으로 씬별 스타트 포지션을 바꾸기로 했다.
 
 
-<br><br><br><br><br>
-- - - 
+<br><br><br><br><br><br>
+- - -
 
 # 잡담,정리
-> - 내일 사운드, 파티클 하기.  
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
