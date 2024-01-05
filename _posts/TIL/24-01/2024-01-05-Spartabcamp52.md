@@ -133,6 +133,15 @@ public class AudioManager : MonoBehaviour
 ```
 </div>
 
+_audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName); 
+Load를 사용해서 Resources폴더에 있는 파일을 불러와 clip으로 사용하였다.  
+충돌하는 물체의 name과 Audio의 이름을 맞춰줘야 됐다.  
+clip을 리스트로 audiomanager가 가지고 있는 방법도 생각했었고,  
+여러 방법이 있을 때마다 무엇이 맞는지 고민하는 시간이 있었고,  
+비슷하다고 생각되면 편하고 끌리는 방법을 사용하자.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
+
 오디오소스  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/6aff610f-48b1-4354-886c-b0613dc0e9c5){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
