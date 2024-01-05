@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 51 강의 - SavePosition ⭐⭐ "
+title:  "[TIL] 52 강의 - 오디오매니저 (AudioManager) ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,17 +10,17 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-04 02:00
+date: 2024-01-05 02:00
 
 ---
 - - -
 
 
-`SavePosition`
+`AudioManager`
 
 <BR><BR>
 
-<center><H1>  SavePosition  </H1></center>
+<center><H1>  AudioManager  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 52  
 &nbsp;&nbsp; [o] 다른반 강의 듣기   
@@ -196,99 +196,6 @@ LandingSound 는 애니메이션이벤트에 추가
 <br><br><br><br><br>
 - - - 
 
-# AudioManager
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-public class AudioManager : MonoBehaviour
-{
-    private AudioClip _audioClip;
-    public AudioSource BgSound;
-    public AudioMixer Mixer;
-    private string _bgFilename;
-
-    public Slider _bgmSlider;
-    public Slider _sfxSlider;
-    public Slider _masterSlider;
-
-    private void Awake()
-    {
-        _audioClip = GetComponent<AudioClip>();
-        DontDestroyOnLoad(this);
-    }
-    private void Start()
-    {
-        SceneManager.sceneLoaded += LoadedsceneEvent;
-        
-        BgSoundPlay("BG1", 0.05f);
-    }
-
-    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
-    {
-        if (scene.name == "KDH_Obstacle")
-        {
-            _bgFilename = "BG1";
-        }
-        else if (scene.name == "99.BJH")
-        {
-            _bgFilename = "BG3";
-        }
-        BgSoundPlay(_bgFilename, 0.05f);
-    }
-
-    public void SFXPlay(string sfxName, Vector3 audioPosition, float audioVolume)
-    {
-        GameObject AudioGo = new GameObject(sfxName + "Sound");
-        AudioSource audiosource = AudioGo.AddComponent<AudioSource>();
-
-        audiosource.outputAudioMixerGroup = Mixer.FindMatchingGroups("SFX")[0];
-        _audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName);
-        if (_audioClip!=null) 
-        {
-            audiosource.clip = _audioClip;
-            audiosource.volume = audioVolume;
-            audiosource.Play();
-
-            Destroy(audiosource.gameObject, audiosource.clip.length);
-        }
-        
-    }
-
-    public void BgSoundPlay(string BgName, float audioVolume)
-    {
-        _audioClip = Resources.Load<AudioClip>("Audios/BGM/"+ BgName);
-        BgSound.clip = _audioClip;
-        BgSound.outputAudioMixerGroup = Mixer.FindMatchingGroups("BGSound")[0];
-        BgSound.loop = true;
-        BgSound.volume = audioVolume;
-        BgSound.Play();
-    }
-
-    //볼륨조절
-    public void BGSoundVolume() 
-    {
-        float bgmsound = _bgmSlider.value;
-        Mixer.SetFloat("BGVolume", bgmsound);
-    }
-    public void SFXSoundVolume()
-    {
-        float sfxsound = _sfxSlider.value;
-        Mixer.SetFloat("SFXVolume", sfxsound);
-    }
-    public void MasterVolume()
-    {
-        float mastersound = _masterSlider.value;
-        Mixer.SetFloat("Master", mastersound);
-    }
-}
-```
-</div>
 
 소리 재생, 소리 조절 (3종).  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
