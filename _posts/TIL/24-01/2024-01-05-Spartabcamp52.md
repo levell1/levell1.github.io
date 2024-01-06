@@ -34,6 +34,8 @@ date: 2024-01-05 02:00
 
 # AudioManager
 
+Resources.Load<AudioClip>("Audios/SFX/"+sfxName);  
+
 <div class="notice--primary" markdown="1"> 
 
 ```c#
@@ -133,12 +135,12 @@ public class AudioManager : MonoBehaviour
 ```
 </div>
 
-_audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName); 
-Load를 사용해서 Resources폴더에 있는 파일을 불러와 clip으로 사용하였다.  
-충돌하는 물체의 name과 Audio의 이름을 맞춰줘야 됐다.  
-clip을 리스트로 audiomanager가 가지고 있는 방법도 생각했었고,  
-여러 방법이 있을 때마다 무엇이 맞는지 고민하는 시간이 있었고,  
-비슷하다고 생각되면 편하고 끌리는 방법을 사용하자.  
+**_audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName);**   
+> - Load를 사용해서 Resources폴더에 있는 파일을 불러와 clip으로 사용하였다.  
+> - 충돌하는 물체의 name과 Audio의 이름을 맞춰줘야 됐다.   
+> - clip을 리스트로 audiomanager가 가지고 있는 방법도 생각했었고,   
+> - 여러 방법이 있을 때마다 무엇이 맞는지 고민하는 시간이 있었고,    
+> - 비슷하다고 생각되면 편하고 끌리는 방법을 사용하자.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
@@ -215,6 +217,7 @@ LandingSound 는 애니메이션이벤트에 추가
 - - - 
 
 # 잡담,정리
+Resources.Load<AudioClip>("Audios/SFX/"+sfxName);  
 오디오매니저, 게임매니저, 싱글톤은 게임매니저만, 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
