@@ -217,7 +217,7 @@ LandingSound 는 애니메이션이벤트에 추가
 - - - 
 
 # 잡담,정리
-Resources.Load<AudioClip>("Audios/SFX/"+sfxName);  
+Resources.Load`<AudioClip>`("Audios/SFX/"+sfxName);  
 오디오매니저, 게임매니저, 싱글톤은 게임매니저만, 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
