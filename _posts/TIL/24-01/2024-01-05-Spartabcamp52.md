@@ -34,7 +34,7 @@ date: 2024-01-05 02:00
 
 # AudioManager
 
-Resources.Load<AudioClip>("Audios/SFX/"+sfxName);  
+Resources.Load`<AudioClip>`("Audios/SFX/"+sfxName);  
 
 <div class="notice--primary" markdown="1"> 
 
@@ -135,7 +135,7 @@ public class AudioManager : MonoBehaviour
 ```
 </div>
 
-**_audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName);**   
+_audioClip = Resources.Load`<AudioClip>`("Audios/SFX/"+sfxName);   
 > - Load를 사용해서 Resources폴더에 있는 파일을 불러와 clip으로 사용하였다.  
 > - 충돌하는 물체의 name과 Audio의 이름을 맞춰줘야 됐다.   
 > - clip을 리스트로 audiomanager가 가지고 있는 방법도 생각했었고,   

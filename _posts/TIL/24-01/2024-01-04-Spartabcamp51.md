@@ -132,18 +132,17 @@ public class SavePoint : MonoBehaviour
 ```
 </div>
 
-SceneManager.sceneLoaded += LoadedsceneEvent;
-
-    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
-    {
-        _player = GameObject.FindGameObjectWithTag("Player");
-        sceneCheck(scene);
-        _savePoint = _startPoint;
-    }
-
+SceneManager.sceneLoaded += LoadedsceneEvent;  
+    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)  
+    {  
+        _player = GameObject.FindGameObjectWithTag("Player");  
+        sceneCheck(scene);  
+        _savePoint = _startPoint;  
+    }  
 씬 이동시 startpoint가 바뀌게 할려고 했다, 플레이어에 스크립트를 달았는데 그럼
 씬을 이동할 때 이 스크립트는 파괴되면 안된다고 생각이 됐고, 다른 방법으로 씬별 스타트 포지션을 바꾸기로 했다.
-
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
 
 <br><br><br><br><br><br>
 - - -
