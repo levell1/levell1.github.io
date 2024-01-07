@@ -193,24 +193,41 @@ public void MasterVolume(Slider _masterSlider)
 # 깃털 이펙트 추가
 
 
-ParticleSystem
+ParticleSystem  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/65acba88-70da-404e-a765-c611b4a3fc20){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
 
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
-어택시 {
-    ParticleEffectManager.Instance.Playfeather(gameObject.transform.position+Vector3.up*1);
+PlayerController
+private void Attack()
+{
+    lastAttackTime += Time.deltaTime;
+    if (_isAttack && (lastAttackTime >= (1 / attackSpeed)))
+    {
+        GameObject chicken= Instantiate(chickenPrefab, chickenSpaawnPos.transform.position, Quaternion.identity);
+        ParticleEffectManager.Instance.Playfeather(chicken);
+    }
 }
 
-    public void Playfeather(Vector3 position)
-    {
+ParticleEffectManager
+public void Playfeather(GameObject chicken)
+{
+    StartCoroutine(feather(chicken));
+}
+IEnumerator feather(GameObject chicken)
+{
+    int count = 0;
+    while (count<=3) 
+    { 
         ParticleSystem FeaterEffect = Resources.Load<ParticleSystem>("FeaterEffect");
-        ParticleSystem particle = Instantiate(FeaterEffect, position, Quaternion.identity);
+        ParticleSystem particle = Instantiate(FeaterEffect, chicken.transform.position, Quaternion.identity);
         particle.Play();
+        yield return new WaitForSeconds(0.3f);
+        count++;
     }
-
+}
 ```
 </div>
 
