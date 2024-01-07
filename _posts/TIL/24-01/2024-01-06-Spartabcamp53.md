@@ -107,9 +107,11 @@ Resources.Load("/Texture/Acc/ACC0001);
 빌더 패턴은 객체의 초기화를 체계적으로 하도록 도와주는 패턴  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/acd76f04-303b-441d-8fcf-165a9e075331){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 
+<br><br><br><br><br>
+- - - 
 
-**탐색방법**  
-[탐색방법 DFS,BFS, A* 시각화](https://www.youtube.com/watch?v=aW9kZcJx64o)  
+# 탐색방법 
+[탐색방법 DFS,BFS, A* 영상](https://www.youtube.com/watch?v=aW9kZcJx64o)  
 
 ## 깊이 우선(DFS)
 `Depth-First Search`  
