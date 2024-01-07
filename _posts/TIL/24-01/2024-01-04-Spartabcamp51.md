@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 51 강의 - SavePosition ⭐⭐ "
+title:  "[TIL] 51  SavePosition ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

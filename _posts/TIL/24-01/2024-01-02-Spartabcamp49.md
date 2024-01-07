@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 49 강의 - 팀프로젝트 alt f4  ⭐⭐ "
+title:  "[TIL] 49 강의, 팀프로젝트 alt f4  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 50 강의 - AddForce player.SetParent ⭐⭐ "
+title:  "[TIL] 50 AddForce player.SetParent ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -227,6 +227,7 @@ public class SavePoint : MonoBehaviour
 
 ```
 </div>
+
 SceneManager.sceneLoaded += LoadedsceneEvent;
 
     private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
@@ -243,115 +244,9 @@ SceneManager.sceneLoaded += LoadedsceneEvent;
 <br><br><br><br><br>
 - - - 
 
-# Audio
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-
-using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-public class AudioManager : MonoBehaviour
-{
-    private AudioClip _audioClip;
-    public AudioSource BgSound;
-    public AudioSource[] SFXSound;
-    public AudioMixer Mixer;
-    private string _bgFilename;
-
-    public Slider _bgmSlider;
-    public Slider _sfxSlider;
-    public Slider _masterSlider;
-
-
-    private void Awake()
-    {
-        _audioClip = GetComponent<AudioClip>();
-        DontDestroyOnLoad(this);
-    }
-    private void Start()
-    {
-        SceneManager.sceneLoaded += LoadedsceneEvent;
-        
-        BgSoundPlay("BG1", 0.05f);
-    }
-
-    private void LoadedsceneEvent(Scene scene, LoadSceneMode arg1)
-    {
-        if (scene.name == "KDH_Obstacle")
-        {
-            _bgFilename = "BG1";
-        }
-        else if (scene.name == "99.BJH")
-        {
-            _bgFilename = "BG3";
-        }
-        BgSoundPlay(_bgFilename, 0.05f);
-    }
-
-    public void SFXPlay(string sfxName, Vector3 audioPosition, float audioVolume)
-    {
-        GameObject AudioGo = new GameObject(sfxName + "Sound");
-        AudioSource audiosource = AudioGo.AddComponent<AudioSource>();
-
-        audiosource.outputAudioMixerGroup = Mixer.FindMatchingGroups("SFX")[0];
-        _audioClip = Resources.Load<AudioClip>("Audios/SFX/"+sfxName);
-        if (_audioClip!=null) 
-        {
-            audiosource.clip = _audioClip;
-            audiosource.volume = audioVolume;
-            audiosource.Play();
-
-            Destroy(audiosource.gameObject, audiosource.clip.length);
-        }
-        
-    }
-
-
-    public void BgSoundPlay(string BgName, float audioVolume)
-    {
-        _audioClip = Resources.Load<AudioClip>("Audios/BGM/"+ BgName);
-        BgSound.clip = _audioClip;
-        BgSound.outputAudioMixerGroup = Mixer.FindMatchingGroups("BGSound")[0];
-        BgSound.loop = true;
-        BgSound.volume = audioVolume;
-        BgSound.Play();
-    }
-
-
-    
-    //볼륨조절
-    public void BGSoundVolume() 
-    {
-        float bgmsound = _bgmSlider.value;
-        Mixer.SetFloat("BGVolume", bgmsound);
-    }
-    public void SFXSoundVolume()
-    {
-        float sfxsound = _sfxSlider.value;
-        Mixer.SetFloat("SFXVolume", sfxsound);
-    }
-    public void MasterVolume()
-    {
-        float mastersound = _masterSlider.value;
-        Mixer.SetFloat("Master", mastersound);
-    }
-}
-
-```
-</div>
-
-오디오소스  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/6aff610f-48b1-4354-886c-b0613dc0e9c5)  
-
-
 
 # 잡담,정리
-오늘 처음 30분 지각했다. 열심히 하자..   
-AudioManager 보기   
+
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

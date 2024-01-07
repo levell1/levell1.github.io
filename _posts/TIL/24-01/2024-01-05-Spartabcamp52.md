@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 52 강의 - 오디오매니저 (AudioManager) ⭐⭐⭐ "
+title:  "[TIL] 52 오디오매니저 (AudioManager) ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
