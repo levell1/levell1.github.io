@@ -40,6 +40,8 @@ paths 검사하고싶은 코드 보기
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/6f89e6fd-1011-49f4-b1f4-2979758f1cb6){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
+> - included Paths 에 검사 할 cs  
+> - Report Option에 검사하고싶은 항목 체크   
 
 <br><br><br><br><br>
 - - - 
