@@ -100,6 +100,154 @@ Resources.Load("/Texture/Acc/ACC0001);
 
 리소스의 이름을 팀원과 정한 이름으로 맞추어서 관리.  
 
+<br><br><br><br><br>
+- - - 
+
+# 빌더
+빌더 패턴은 객체의 초기화를 체계적으로 하도록 도와주는 패턴  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/acd76f04-303b-441d-8fcf-165a9e075331){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
+
+
+**탐색방법**  
+[탐색방법 DFS,BFS, A* 시각화](https://www.youtube.com/watch?v=aW9kZcJx64o)  
+
+## 깊이 우선(DFS)
+`Depth-First Search`  
+![dfs](https://github.com/levell1/levell1.github.io/assets/96651722/b4fd178e-dd32-4aa1-85ca-adaa2b235184){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+
+class Graph
+{
+    int[,] adj = new int[6, 6]
+    {
+            { 0, 1, 0, 1, 0, 0},
+            { 1, 0, 1, 1, 0, 0},
+            { 0, 1, 0, 0, 0, 0},
+            { 1, 1, 0, 0, 1, 0},
+            { 0, 0, 0, 1, 0, 1},
+            { 0, 0, 0, 0, 1, 0},
+    };
+    bool[] visited = new bool[6];
+
+    //1) now부터 방문
+    //2) now와 연결된 정점들을 하나씩 확인해서 [아직 미방문 상태라면]방문
+    public void DFS(int now)
+    {
+        Console.WriteLine(now);
+        visited[now] = true; //1) now부터 방문
+
+        for (int next = 0; next < 6; next++)
+        {
+            if (adj[now, next] == 0)//연결된 정점이라면 스킵
+                continue;
+            if (visited[next])//이미 방문한 곳이라면 스킵
+                continue;
+
+            DFS(next);
+        }
+    }
+}
+```
+</div>
+
+
+## 너비 우선(BFS)
+`Breadth-First Search`  
+![bfs](https://github.com/levell1/levell1.github.io/assets/96651722/d82d5315-cdde-4b82-b657-4803252301af){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] adj = new int[6, 6]
+            {
+                { 0, 1, 0, 1, 0, 0},
+                { 1, 0, 1, 1, 0, 0},
+                { 0, 1, 0, 0, 0, 0},
+                { 1, 1, 0, 0, 1, 0},
+                { 0, 0, 0, 1, 0, 1},
+                { 0, 0, 0, 0, 1, 0},
+            };
+
+            BFS bfs = new BFS();
+            bfs.Initurlize(adj);
+            var resault = bfs.Search(0);
+
+            foreach (var dic in resault)
+            {
+                foreach (var value in dic.Value)
+                    Console.WriteLine($"{dic.Key} - {value}");
+            }
+        }
+    }
+    public class BFS
+    {
+        int[,] _graph;
+        public void Initurlize(int[,] graph)
+        {
+            _graph = graph;
+        }
+
+        public Dictionary<string, int[]> Search(int start)
+        {
+            if (_graph == null)
+                return null;
+
+            int num = _graph.GetLength(0);//정점 총수
+
+            Queue<int> queue = new Queue<int>();
+            bool[] found = new bool[num];//경유 유무
+            List<int> sequence = new List<int>();//경유 순서
+            int[] parent = new int[num];//정점의 부모
+            int[] distance = new int[num];//start정점과 각 정점사이거리
+
+            queue.Enqueue(start);
+            found[start] = true;
+            parent[start] = start;
+            distance[start] = 0;
+
+            while (queue.Count > 0)
+            {
+                int now = queue.Dequeue();
+                sequence.Add(now);
+
+                for (int next = 0; next < num; next++)
+                {
+                    if (_graph[now, next] == 0)
+                        continue;
+
+                    if (found[next])
+                        continue;
+
+                    queue.Enqueue(next);
+                    found[next] = true;
+                    parent[next] = now;
+                    distance[next] = distance[now] + 1;
+                }
+            }
+
+            Dictionary<string, int[]> answer = new Dictionary<string, int[]>()
+            {
+                {"sequence",sequence.ToArray() },
+                {"parent",parent },
+                {"distance",distance },
+            };
+
+            return answer;
+        }
+    }
+```
+</div>
+
+<br><br><br><br><br>
+- - - 
+
 # 잡담,정리
 게임 기획 -> 처음기획 너무 크게x, 처음기획에 집착, 점진적으로 아이디어 추가  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
