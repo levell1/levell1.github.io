@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 53 강의 디버깅(CodeCoverage) ⭐⭐⭐ "
+title:  "[TIL] 53 강의 디버깅(CodeCoverage), 게임개발TIP, 팀프로젝트 수정 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-06 02:00
+date: 2024-01-07 02:00
 
 ---
 - - -
@@ -160,6 +160,59 @@ class Graph
 `Breadth-First Search`  
 ![bfs](https://github.com/levell1/levell1.github.io/assets/96651722/d82d5315-cdde-4b82-b657-4803252301af){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
+<br><br><br><br><br>
+- - - 
+
+# SoundManager mixer 수정
+Slider 어떻게 쓸 지 수정, 움직이는벽 소리 추가. 상어 소리 추가.  
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+
+public Slider _masterSlider;
+
+public void SFXSoundVolume()
+{
+    float masterSlider = _masterSlider.value;
+    Mixer.SetFloat("SFXVolume", masterSlider);
+}
+
+public void MasterVolume(Slider _masterSlider)
+{
+    _soundValue = _masterSlider.value;
+    Mixer.SetFloat("Master", _soundValue);
+}
+
+```
+</div>
+
+<br><br><br><br><br>
+- - - 
+
+# 깃털 이펙트 추가
+
+
+ParticleSystem
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/65acba88-70da-404e-a765-c611b4a3fc20){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
+
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+어택시 {
+    ParticleEffectManager.Instance.Playfeather(gameObject.transform.position+Vector3.up*1);
+}
+
+    public void Playfeather(Vector3 position)
+    {
+        ParticleSystem FeaterEffect = Resources.Load<ParticleSystem>("FeaterEffect");
+        ParticleSystem particle = Instantiate(FeaterEffect, position, Quaternion.identity);
+        particle.Play();
+    }
+
+```
+</div>
 
 <br><br><br><br><br>
 - - - 
