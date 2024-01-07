@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 33. DevelopTip20  "
+title:  "[Memo-Unity] 33. 게임개발팁 DevelopTip20  "
 excerpt: ""
 
 categories:
@@ -15,11 +15,11 @@ date: 2024-01-07 01:20
 ---
 - - -
 
-`DevelopTip`
+`DevelopTip20`
 <BR><BR>
 
-<center><H1>  DevelopTip  </H1></center>
-Dictionary
+<center><H1>  DevelopTip20  </H1></center>
+DevelopTip20
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 <br><br><br><br><br><br>
@@ -74,7 +74,7 @@ Dictionary
 <br><br>
 - - - 
 
-[Unity] Abstract Interface
+[Unity] DevelopTip20
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -

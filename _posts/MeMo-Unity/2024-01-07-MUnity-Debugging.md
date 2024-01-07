@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 32. Debugging  "
+title:  "[Memo-Unity] 32. 디버깅 Debugging(CodeCoverage)  "
 excerpt: ""
 
 categories:
@@ -19,7 +19,7 @@ date: 2024-01-07 01:14
 <BR><BR>
 
 <center><H1>  Debugging  </H1></center>
-Dictionary
+Debugging
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 <br><br><br><br><br><br>
@@ -54,7 +54,7 @@ CodeCoverage
 <br><br>
 - - - 
 
-[Unity] Abstract Interface
+[Unity] Debugging
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
 <br>
 - - -
