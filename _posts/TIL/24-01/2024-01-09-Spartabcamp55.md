@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-08 02:00
+date: 2024-01-09 02:00
 
 ---
 - - -
@@ -143,6 +143,19 @@ Controller - 행동
 
 # 1인 개발 동기부여 
 인디라- 정보  
+
+<br><br><br><br><br>
+- - - 
+
+# 라이센스 강의
+[라이센스](https://levell1.github.io/memo%20unity/MUnity-License/)
+
+<br><br><br><br><br>
+- - - 
+
+# 유니티 공식문서 잘 사용하기
+공식문서는 원래 어렵다 어렵다고 안본다? X  
+이해하고 쓰려고 노력하자  
 
 <br><br><br><br><br>
 - - - 
