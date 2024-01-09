@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 55 1인개발 강의  ⭐⭐ "
+title:  "[TIL] 55 1인개발, 라이센스, 강의  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -20,7 +20,7 @@ date: 2024-01-09 02:00
 
 <BR><BR>
 
-<center><H1>  1인개발 강의  </H1></center>
+<center><H1>  강의  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 53  
 &nbsp;&nbsp; [o] 다른반 강의 듣기   
@@ -156,6 +156,19 @@ Controller - 행동
 # 유니티 공식문서 잘 사용하기
 공식문서는 원래 어렵다 어렵다고 안본다? X  
 이해하고 쓰려고 노력하자  
+
+<br><br><br><br><br>
+- - - 
+
+# 유니티 공식 문서
+
+[유니티](https://docs.unity3d.com/kr/)  
+왼쪽 위 버전 체크하기, Manual, Scripting API  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/2d85765e-bc38-4147-a5bb-2c10702912c1){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+제일먼저 문제해결 -> 공식문서 -> 이해안되면 검색 -> 다시 공식문서  
+
+Scripting API -> c# 은 클래스(필드 메서드)로 구성 -> 만들어진 클래스들이 모여있다.  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/4f4be9a4-ec27-481a-a059-805d1fb41da9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <br><br><br><br><br>
 - - - 
