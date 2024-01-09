@@ -71,19 +71,19 @@ date: 2024-01-08 02:00
 
 ## 상태 패턴
 캐릭터 상태가 끊임없이 전환  
-객체가 내부 상태를 기반으로 움직이는 시스템
-상태를 불러내는 호출자 -> 인터페이스 -> 상태ABC
+객체가 내부 상태를 기반으로 움직이는 시스템  
+상태를 불러내는 호출자 -> 인터페이스 -> 상태ABC  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
 **장점**  
-&nbsp;&nbsp;1. 캡슐화
-&nbsp;&nbsp;2. 긴 조건문, 방대한 클래스 구현하는 것을 막음
+&nbsp;&nbsp;1. 캡슐화  
+&nbsp;&nbsp;2. 긴 조건문, 방대한 클래스 구현하는 것을 막음  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
 **단점**  
-&nbsp;&nbsp;1. 만약 상태가 전환되는 사이에서 발생하는건 따로 구현을 해야함.
+&nbsp;&nbsp;1. 만약 상태가 전환되는 사이에서 발생하는건 따로 구현을 해야함.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
@@ -100,24 +100,24 @@ date: 2024-01-08 02:00
 
 ## 이벤트 버스 패턴
 전역 이벤트를 관리하는 중앙 허브 개념  
-게임에서 월드 이벤트 발생시 해당 캐릭터들에게 이벤트를 발송하는 식
+게임에서 월드 이벤트 발생시 해당 캐릭터들에게 이벤트를 발송하는 식  
 구현하기 의외로 매우 간단해서 많이 쓰임.  
-어떤 객체에서 이벤트가 발생하면 다른 구독자가 신호를 받는 시스템
-발행/구독 패턴
-발행자와 구독자는 서로인식x 중간에 버스가 있다.
+어떤 객체에서 이벤트가 발생하면 다른 구독자가 신호를 받는 시스템  
+발행/구독 패턴  
+발행자와 구독자는 서로인식x 중간에 버스가 있다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
 **장점**  
-&nbsp;&nbsp;1. 오브젝트를 직접 참조x, 이벤트 통신
-&nbsp;&nbsp;2. 구독 시스템을 쉽게 구현하게 만듬
-&nbsp;&nbsp;3. 프로토타입 만들 때 많이 쓰임 , 쉽고 빠르다
+&nbsp;&nbsp;1. 오브젝트를 직접 참조x, 이벤트 통신  
+&nbsp;&nbsp;2. 구독 시스템을 쉽게 구현하게 만듬  
+&nbsp;&nbsp;3. 프로토타입 만들 때 많이 쓰임 , 쉽고 빠르다  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
 **단점**  
-&nbsp;&nbsp;1. 약간의 성능비용
-&nbsp;&nbsp;2. 이벤트 버스가 static 전역 변수라, 전역변수의 단점을 모두 가지게 됨.
+&nbsp;&nbsp;1. 약간의 성능비용  
+&nbsp;&nbsp;2. 이벤트 버스가 static 전역 변수라, 전역변수의 단점을 모두 가지게 됨.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
 
