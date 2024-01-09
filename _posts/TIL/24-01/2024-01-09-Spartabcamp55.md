@@ -47,6 +47,8 @@ date: 2024-01-09 02:00
 
 ## 애니메이션 직접 만듬 - 유니티 내장 
 
+<br><br>
+
 ## 모델 
 복셀 모델과 폴리곤 모델로 구성  
 지형은 폴리곤  
@@ -55,13 +57,20 @@ date: 2024-01-09 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+
+<br><br>
+
 ## 지형 레벨 디자인 - 만드는 환경을 자체적으로 개발하여 자동생성
+
+<br><br>
 
 ## 콘텐츠 아이콘
 아이템, 스킬아이콘  
 dall.e -> 생성형 인공지능  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
+
+<br><br>
 
 ## 효과음/ 음악
 외주 -> 사이브 라이브러리 결제  
@@ -93,6 +102,8 @@ NO SQL/ 클라우드 기반
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+<br><br>
+
 **실행이 오래걸릴 때**  
 유니티 ENTER PLAY MODE 선택사항 -> 실행 화면이 뜰 때 까지의 시간을 향상시켜줌  
 정적 필드에 대한 문제를 해결해 줘야 함.  
@@ -103,10 +114,14 @@ NO SQL/ 클라우드 기반
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+<br><br>
+
 **씬은 최대한 작게** 
 씬 속 오브젝트의개수, 등 가능한 작게.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
+
+<br><br>
 
 **프리팹 과 반복주기 향상**  
 씬에서 하나만 수정하고싶다 -> 프리팹으로 다른씬으로 옮겨서 작업하면 에디터에서의 시간을 줄일 수 있다.  
@@ -167,7 +182,9 @@ Controller - 행동
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/2d85765e-bc38-4147-a5bb-2c10702912c1){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 제일먼저 문제해결 -> 공식문서 -> 이해안되면 검색 -> 다시 공식문서  
 
-Scripting API -> c# 은 클래스(필드 메서드)로 구성 -> 만들어진 클래스들이 모여있다.  
+<br><br>
+
+**Scripting API** -> c# 은 클래스(필드 메서드)로 구성 -> 만들어진 클래스들이 모여있다.  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4f4be9a4-ec27-481a-a059-805d1fb41da9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <br><br><br><br><br>
