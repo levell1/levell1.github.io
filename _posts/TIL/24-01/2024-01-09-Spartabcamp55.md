@@ -16,7 +16,7 @@ date: 2024-01-09 02:00
 - - -
 
 
-
+수정 필요
 
 <BR><BR>
 
@@ -85,6 +85,7 @@ dall.e -> 생성형 인공지능
 
 # 저장
 실시간으로 동기화되는 백엔드가 필요하다고 판단.  
+
 **Google Firebase**   
 생산성과 확장성면 좋다.  
 NO SQL/ 클라우드 기반  
@@ -104,7 +105,7 @@ NO SQL/ 클라우드 기반
 
 <br><br>
 
-**실행이 오래걸릴 때**  
+## 실행이 오래걸릴 때
 유니티 ENTER PLAY MODE 선택사항 -> 실행 화면이 뜰 때 까지의 시간을 향상시켜줌  
 정적 필드에 대한 문제를 해결해 줘야 함.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -116,14 +117,14 @@ NO SQL/ 클라우드 기반
 
 <br><br>
 
-**씬은 최대한 작게** 
+## 씬은 최대한 작게
 씬 속 오브젝트의개수, 등 가능한 작게.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 <br><br>
 
-**프리팹 과 반복주기 향상**  
+## 프리팹 과 반복주기 향상
 씬에서 하나만 수정하고싶다 -> 프리팹으로 다른씬으로 옮겨서 작업하면 에디터에서의 시간을 줄일 수 있다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -141,8 +142,8 @@ Controller - 행동
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-경험치 행동은 MODEL 만 고친다 -> MODEL를 기반으로 UI를 수정 한다.  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/9c139900-6c53-41f9-bba7-6d1243273084){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+경험치 행동은 MODEL 만 고친다 -> MODEL를 기반으로 UI를 수정 한다.   
 행동 -> MODEL 의 값이 바뀜 -> 바뀌면 해당 객체의 상태 바꿈.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -163,7 +164,7 @@ Controller - 행동
 - - - 
 
 # 라이센스 강의
-[라이센스](https://levell1.github.io/memo%20unity/MUnity-License/)
+[**라이센스**](https://levell1.github.io/memo%20unity/MUnity-License/)
 
 <br><br><br><br><br>
 - - - 
@@ -171,24 +172,29 @@ Controller - 행동
 # 유니티 공식문서 잘 사용하기
 공식문서는 원래 어렵다 어렵다고 안본다? X  
 이해하고 쓰려고 노력하자  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}  
 
 <br><br><br><br><br>
 - - - 
 
 # 유니티 공식 문서
-
-[유니티](https://docs.unity3d.com/kr/)  
-왼쪽 위 버전 체크하기, Manual, Scripting API  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/2d85765e-bc38-4147-a5bb-2c10702912c1){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 제일먼저 문제해결 -> 공식문서 -> 이해안되면 검색 -> 다시 공식문서  
 
+[**유니티**](https://docs.unity3d.com/kr/)  
+
+왼쪽 위 버전 체크하기, Manual, Scripting API  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/2d85765e-bc38-4147-a5bb-2c10702912c1){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+ 
 <br><br>
 
-**Scripting API** -> c# 은 클래스(필드 메서드)로 구성 -> 만들어진 클래스들이 모여있다.  
+**Scripting API**  
+c# 은 클래스(필드 메서드)로 구성 -> 만들어진 클래스들이 모여있다.  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4f4be9a4-ec27-481a-a059-805d1fb41da9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <br><br><br><br><br>
 - - - 
+
 
 # 잡담,정리
 SO 씬을 넘나드는 싱글톤?  
