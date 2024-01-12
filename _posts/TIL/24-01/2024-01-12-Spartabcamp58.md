@@ -92,7 +92,7 @@ int로 치면 5~15가 10으로 표현되어서 9개의 숫자를 추가로 더 �
 {: .notice--success} 
 
 **고민의 흔적**  
-**float 가 ^38인 이유?**
+**float 가 ^38인 이유?**  
 **자리수 7자리?**
 
 <div class="notice--primary" markdown="1"> 
