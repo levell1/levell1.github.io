@@ -110,8 +110,6 @@ public class Player
 Player player = new Player();
 player.HandleInput("SPACE"); // 점프 상태로 변경
 player.Update(); // 현재 상태(점프)에 맞는 행동 실행
-
-
 ```
 </div>
 </details>

@@ -1,41 +1,30 @@
 ---
-title:  "[TIL] 56 최종 팀 시작, 강의 디자인패턴  ⭐⭐ "
-excerpt: "Sparta"
+title:  "[Design Pattern] 10. Object Pool"
+excerpt: ""
 
 categories:
-    - Til
+    - Design Pattern
 tags:
-    - [Unity, Sparta, TIL]
+    - [C#, Design Pattern]
 
 toc: true
 toc_sticky: true
  
-date: 2024-01-10 02:00
+date: 2024-01-14 13:10
 
 ---
 - - -
-
-
-`Object Pool`, `Strategy` `Commend`
-
 <BR><BR>
 
-<center><H1>  최종 팀 프로젝트 시작  </H1></center>
 
-&nbsp;&nbsp; [o] 알고리즘 문제  - 53  
-&nbsp;&nbsp; [o] 다른반 강의 듣기 스탠다드2 챌~   
-&nbsp;&nbsp; [x] 심화주차 강의 듣기.  
-&nbsp;&nbsp; [x] 디자인 패턴 이해,정리하기.   
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}  
+<center><H1> Object Pool   </H1></center>
 
-<br><br><br><br><br>
+`Object Pool`
+
+<br><br><br><br>
 - - - 
 
-
-# 디자인패턴 
-
-## Object Pool
+# Object Pool
 **프레임 속도유지**, 자주 생성되는 요소를 일부 **메모리에 예약**하는게 좋음  
 메모리에서 없애는 대신 다시 사용할 수 있도록 오브젝트 풀에 추가  
 엔티티의 **새로운 인스턴스를 로드하는 초기의 초기화 비용이 들지 않음**  
@@ -225,7 +214,6 @@ public class DroneObjectPool : MonoBehaviour
         }
     }
 }
-
 ```
 </div>
 </details>
@@ -292,7 +280,6 @@ public class Drone : MonoBehaviour
             ReturnToPool();
     }
 }
-
 ```
 </div>
 </details>
@@ -321,8 +308,6 @@ public class ClientObjectPool : MonoBehaviour
             _pool.Spawn();
     }
 }
-
-
 ```
 </div>
 </details>
@@ -330,152 +315,15 @@ public class ClientObjectPool : MonoBehaviour
 <br><br><br><br><br>
 - - - 
 
-
-## 전략 패턴(Strategy)
-**드론구현**  
-드론의 다양한 동작을 구현하는 상황  
-**런타임에 특정 동작을 객체에 바로 할당**할 수 있음  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
-
-context : 자신의 작업을 수행하는데 **필요한 전략을 선택**하는 클래스  
-strategy : 전략 인터페이스를 구현한 클래스들로, **특정 행동을 제공**함
-Client : 클라이언트에서 **context 클래스를 생성**  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ec46bec5-1f43-4bc3-ac21-4f8094b5e626){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-
-
-**장점**  
-&nbsp;&nbsp;1. **캡슐화** 잘 될 수 있음.  
-&nbsp;&nbsp;2. 런타임에 객체가 사용하는 **알고리즘을 교환**할 수 있음.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info} 
-
-
-**전략 패턴과 상태패턴이 혼동될 수 있음, 구조가 유사하지만 의도가 매우 다름.**  
-전략 패턴 : 같은 문제를 해결하는 여러 알고리즘이 있을 때 이들 중 하나를 런타임에 선택해야 할 때, 즉 **알고리즘 선택에 중점**  
-상태 패턴 : 객체가 여러 상태를 가지고 있고, 상태에 따라 행동이 달라져야 할 때. 즉, **상태에 따른 행동 변경**  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--warning} 
-
-<details>
-<summary>Drone</summary>
-<div class="notice--primary" markdown="1"> 
-
-```c# 
-using UnityEngine;
-
-public class Drone : MonoBehaviour {
-    public void ApplyStrategy(IBehaviour strategy) {
-        strategy.Maneuver(this);
-    }
-}
-
-
-```
-</div>
-</details>
+# 잡담, 정리
+> - 디자인 패턴은 애초에 특정 문제를 해결하기 위해 고려된 것.(성능, 메모리 사용 고려)
+> - 추가 내용 정리
+{: .notice--success} 
 
 <br><br>
-
-<details>
-<summary>ClientStrategy</summary>
-<div class="notice--primary" markdown="1"> 
-
-```c# 
-using UnityEngine;
-using System.Collections.Generic;
-
-public class ClientStrategy : MonoBehaviour {
-    
-    private GameObject _drone;
-    private List<IBehaviour> 
-        _components = new List<IBehaviour>();
-    
-    private void SpawnDrone() {
-        _drone = 
-            GameObject.CreatePrimitive(PrimitiveType.Cube);
-        
-        _drone.AddComponent<Drone>();
-        
-        _drone.transform.position = 
-            Random.insideUnitSphere * 10;
-        
-        ApplyRandomStrategies();
-    }
-
-    private void ApplyRandomStrategies() {
-        _components.Add(
-            _drone.AddComponent<Weaving>());
-        _components.Add(
-            _drone.AddComponent<Bopping>());
-        _components.Add(
-            _drone.AddComponent<Fallback>());
-        
-        int index = Random.Range(0, _components.Count);
-        
-        _drone.GetComponent<Drone>().
-            ApplyStrategy(_components[index]);
-    }
-    
-    void OnGUI() {
-        if (GUILayout.Button("Spawn Drone")) {
-            SpawnDrone();
-        }
-    }
-}
-```
-</div>
-</details>
-
-<br><br><br><br><br>
 - - - 
 
-## 커맨드 패턴
-
-커맨드 패턴은 게임 내에서 발생하는 모든 행동을 명령으로 캡슐화를 할 수 있음, 그리고 이 명령들은 모두 **쉽게 기록**이 됨!.  
-기록을 재생하여 **리플레이 시스템**을 구현할 수 있다.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
-
-Client : 커맨드 **객체를 생성**, 그 커맨드가 어떤 **receiver와 연결될 지 결정**  
-Invoker(호출자) : 커맨드를 받아서 실행함.  
-Command(커맨드) : 실행될 모든 명령에 대한 인터페이스  
-Receiver(수신자): 실제로 **작업을 수행할 객체**  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/e7b43e8f-8a1b-4191-8f1b-3d3c563d1b3b){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-
-**장점**  
-&nbsp;&nbsp;1. **분리** : 실행하는 객체와 호출하는 객체가 분리됨   
-&nbsp;&nbsp;2. 명령하는 것을 **큐에 넣어서 리플레이**, **매크로**, 명령 큐 등을 구현할 수 있음.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info} 
-
-
-**단점**  
-&nbsp;&nbsp;1. 각각의 명령을 하나의 클래스로 구현해야돼서 좀 **복잡함**.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--warning} 
-
-<br><br><br><br><br>
-- - - 
-
-
-# 잡담,정리
-SO 씬을 넘나드는 싱글톤?  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
-
-<br><br>
-- - -
-
-참고 : [유니티](https://docs.unity3d.com/kr/)
+[C#] 디자인 패턴 (Design Pattern)  
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}
-
-
-<br><br>
+<br>
 - - -
