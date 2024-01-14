@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 27. Design Pattern : `singleton`, `state`, `observer`, `command` `component`, `builder`, `flyweight`  "
+title:  "[Memo-Unity] 27. Design Pattern : `singleton`, `state`, `observer`, `command` `component`, `builder`, `flyweight`, `EventBus`  "
 excerpt: ""
 
 categories:
@@ -17,8 +17,9 @@ date: 2023-12-26 01:00
 <BR><BR>
 
 Design Pattern  
-`singleton`, `state`, `observer`, `command`  
-`component`, `builder`, `flyweight`  
+
+`싱글턴(singleton)`, `상태(state)`, `관찰자(observer)`, `커맨드(command)`  
+`component`, `builder`, `flyweight`, `EventBus`
 
 <center><H1> Design Pattern </H1></center>
 
@@ -100,6 +101,11 @@ AudioManager.Instance.PlaySound("backgroundMusic");
 
 **제네릭 싱글톤 만들어서 필요한 매니저에 상속**  
 
+
+
+<details>
+<summary>제네릭 싱글톤</summary>
+
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
@@ -152,7 +158,7 @@ public class GameManager : Singleton<GameManager>
 }
 ```
 </div>
-
+</details>
 
 <br><br><br><br><br><br>
 - - - 
@@ -161,7 +167,8 @@ public class GameManager : Singleton<GameManager>
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8ef94cd9-ef44-4cae-911f-1ba64cdbc912){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 
-> - 객체의 상태에 따라 객체의 행동을 변경 해주는 디자인 패턴
+> - 객체의 상태에 따라 **객체의 행동을 변경** 해주는 디자인 패턴
+> - 캐릭터 상태가 **끊임없이 전환** 객체가 내부 상태를 기반으로 움직이는 시스템  
 > - 조건문으로 나누는 것이 아니라 **객체의 상태를 별도의 클래스로 캡슐화**
 > - 게임 캐릭터의 상태(대기, 이동, 공격)에 따라 행동이 달라지게 구현
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -246,6 +253,118 @@ player.Update(); // 현재 상태(점프)에 맞는 행동 실행
 ```
 </div>
 </details>
+
+<h3> 추가 </h3>  
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/18deb7d4-6bf5-4971-9c33-e5fd610adec0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+> - 상태를 불러내는 호출자 -> 인터페이스 -> 상태ABC  
+> - Context 클래스는 객체의 내부 상태를 변경하도록 요청하는 클래스  
+> - IState 인터페이스는 구체적인 상태 클래스로 연결할 수 있도록 설정함  
+> - Context 오브젝트가 Istate 인터페이스를 구현한 클래스들을 호출함  
+
+**장점**  
+&nbsp;&nbsp;1. 캡슐화  
+&nbsp;&nbsp;2. 긴 조건문, 방대한 클래스 구현하는 것을 막음  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+**단점**  
+&nbsp;&nbsp;1. 만약 상태가 전환되는 사이에서 발생하는건 따로 구현을 해야함.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning} 
+
+**코드**  
+`CharaccterStateContext`, `ICharacterState`, `CharacterController`, `CharacterStartState`
+
+<details>
+<summary>state 예시</summary>
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+CharaccterStateContext  
+public class CharaccterStateContext
+    {
+        public ICharacterState CurrentState
+        {
+            get; set;
+        }
+        
+        private readonly CharacterController _characterController;
+
+        public CharacterStateContext(CharacterController characterController)
+        {
+            _characterController = characterController;
+        }
+
+        public void Transition()
+        {
+            CurrentState.Handle(_characterController);
+        }
+        
+        public void Transition(ICharacterState state)
+        {
+            CurrentState = state;
+            CurrentState.Handle(_characterController);
+        }
+    }
+
+ICharacterState
+public interface ICharacterState
+{
+    void Handle(CharacterController controller);
+}
+
+using UnityEngine;
+
+CharacterController
+public class CharacterController : MonoBehaviour {
+            
+    private ICharacterState 
+        _startState, _stopState, _turnState;
+    
+    private CharacterStateContext _characterStateContext;
+
+    private void Start() {
+        _chracterStateContext = 
+            new CharacterStateContext(this);
+        
+        _startState = 
+            gameObject.AddComponent<CharacterStartState>();
+        _stopState = 
+            gameObject.AddComponent<CharacterStopState>();
+        _turnState = 
+            gameObject.AddComponent<CharacterTurnState>();
+        
+        _characterStateContext.Transition(_stopState);
+    }
+
+    public void StartCharacter() {
+        _characterStateContext.Transition(_startState);
+    }
+
+    public void StopCharacter() {
+        _chracterStateContext.Transition(_stopState);
+    }
+}
+
+CharacterStartState
+ public class CharacterStartState : MonoBehaviour, ICharacterState
+{
+    private CharacterController _characterController; 
+    
+    public void Handle(CharacterController characterController)
+    {
+        if (!_characterController)
+            _characterController = characterController;
+        
+        _characterController.CurrentSpeed = 10.0f;
+    }
+}
+```
+</div>
+</details>
+
 
 <br><br><br><br><br><br>
 - - - 
@@ -645,6 +764,93 @@ foreach (var tree in trees)
 
 <br><br><br><br><br><br>
 - - - 
+
+# 8. 이벤트 버스 패턴
+**발행/구독** 패턴  
+발행자와 구독자는 서로인식x **중간에 버스**가 있다.  
+전역 이벤트를 관리하는 **중앙 허브 개념**  
+게임에서 월드 이벤트 발생시 해당 캐릭터들에게 **이벤트를 발송**하는 식  
+구현하기 의외로 매우 간단해서 많이 쓰임.  
+어떤 객체에서 이벤트가 발생하면 다른 구독자가 신호를 받는 시스템  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+**장점**  
+&nbsp;&nbsp;1. 오브젝트를 직접 참조x, 이벤트 통신  
+&nbsp;&nbsp;2. 구독 시스템을 쉽게 구현하게 만듬  
+&nbsp;&nbsp;3. 프로토타입 만들 때 많이 쓰임 , 쉽고 빠르다  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+**단점**  
+&nbsp;&nbsp;1. 약간의 성능비용  
+&nbsp;&nbsp;2. 이벤트 버스가 static 전역 변수라, 전역변수의 단점을 모두 가지게 됨.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+
+<details>
+<summary>EvnetBus 코드보기</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+using UnityEngine.Events;
+using System.Collections.Generic;
+
+public enum WorldEventType
+{
+    COUNTDOWN, START, PAUSE, STOP, FINISH, RESTART, QUIT
+}
+
+
+public class WorldEventBus
+{
+    private static readonly 
+        IDictionary<WorldEventType, UnityEvent> 
+        Events = new Dictionary<WorldEventType, UnityEvent>();
+
+    public static void Subscribe
+        (WorldEventType eventType, UnityAction listener) {
+        
+        UnityEvent thisEvent;
+
+        if (Events.TryGetValue(eventType, out thisEvent)) {
+            thisEvent.AddListener(listener);
+        }
+        else {
+            thisEvent = new UnityEvent();
+            thisEvent.AddListener(listener);
+            Events.Add(eventType, thisEvent);
+        }
+    }
+
+    public static void Unsubscribe
+        (WorldEventType type, UnityAction listener) {
+
+        UnityEvent thisEvent;
+
+        if (Events.TryGetValue(type, out thisEvent)) {
+            thisEvent.RemoveListener(listener);
+        }
+    }
+
+    public static void Publish(WorldEventType type) {
+
+        UnityEvent thisEvent;
+
+        if (Events.TryGetValue(type, out thisEvent)) {
+            thisEvent.Invoke();
+        }
+    }
+}
+```
+</div>
+</details>
+
+
+<br><br><br><br><br>
+- - - 
+
 
 # 잡담, 정리
 > - 디자인 패턴은 애초에 특정 문제를 해결하기 위해 고려된 것.(성능, 메모리 사용 고려)
