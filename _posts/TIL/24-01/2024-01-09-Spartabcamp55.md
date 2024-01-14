@@ -35,15 +35,19 @@ date: 2024-01-09 02:00
 - - - 
 
 
-<H3> 1인개발자 강의 </H3>
-퇴근길랠리 - 문홍재님
+<H3> 1인개발자 강의 - 퇴근길랠리 - 문홍재님 </H3>
+
+<br><br><br><br><br>
+- - - 
 
 # 에셋
 ## UI 작업  
-손으로 그리는 UI 시간많이걸림 -> UI. 기본도형의 조합으로 조합을 짜서 구현  
-아이콘 - 저작권 없는 아이콘 사용(Noun Project)  
+손으로 그리는 UI 시간많이걸림 -> **UI. 기본도형의 조합**으로 조합을 짜서 구현  
+아이콘 - **저작권 없는 아이콘** 사용(Noun Project)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
+
+<br><br>
 
 ## 애니메이션 직접 만듬 - 유니티 내장 
 
@@ -52,30 +56,32 @@ date: 2024-01-09 02:00
 ## 모델 
 복셀 모델과 폴리곤 모델로 구성  
 지형은 폴리곤  
-캐릭터 자잘한거, 차량은 복셀 모델  
-중요한 부분, 은 외부 협력자에게 하는 방법도 좋다.  
+캐릭터 자잘한 거, 차량은 복셀 모델  
+중요한 부분은 **외부 협력자**에게 하는 방법도 좋다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 
 <br><br>
 
-## 지형 레벨 디자인 - 만드는 환경을 자체적으로 개발하여 자동생성
-
+## 지형 레벨 디자인 
+만드는 환경을 **자체적으로 개발**하여 **자동생성**  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 <br><br>
 
 ## 콘텐츠 아이콘
 아이템, 스킬아이콘  
-dall.e -> 생성형 인공지능  
+[**dall.e**](https://openai.com/dall-e-2) -> 생성형 인공지능  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 <br><br>
 
 ## 효과음/ 음악
-외주 -> 사이브 라이브러리 결제  
+외주, 사이트에서 사용   
 효과음 선별시간이 많이 걸림.  
-효과음 없고 있고의 차이는 있지만  
+효과음 **없고 있고의 차이는 있지만**  
 효과음의 퀄리티는 크지않다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -85,6 +91,9 @@ dall.e -> 생성형 인공지능
 
 # 저장
 실시간으로 동기화되는 백엔드가 필요하다고 판단.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
 
 **Google Firebase**   
 생산성과 확장성면 좋다.  
@@ -105,8 +114,8 @@ NO SQL/ 클라우드 기반
 
 <br><br>
 
-## 실행이 오래걸릴 때
-유니티 ENTER PLAY MODE 선택사항 -> 실행 화면이 뜰 때 까지의 시간을 향상시켜줌  
+## 유니티 실행이 오래걸릴 때
+유니티 **ENTER PLAY MODE** 선택 -> 실행 화면이 뜰 때 까지의 시간을 향상시켜줌  
 정적 필드에 대한 문제를 해결해 줘야 함.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -125,7 +134,7 @@ NO SQL/ 클라우드 기반
 <br><br>
 
 ## 프리팹 과 반복주기 향상
-씬에서 하나만 수정하고싶다 -> 프리팹으로 다른씬으로 옮겨서 작업하면 에디터에서의 시간을 줄일 수 있다.  
+씬에서 **하나만 수정**하고싶다 -> 프리팹으로 **다른씬으로 옮겨서 작업**하면 에디터에서의 시간을 줄일 수 있다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -133,17 +142,16 @@ NO SQL/ 클라우드 기반
 - - - 
 
 # 데이터/UI 의 관계의 설계
-MVC (Model, View, Controller)  
-
+**MVC** (Model, View, Controller)  
 M V C 를 나눠어서 협업  
 Model - 데이터  
 View - UI  
-Controller - 행동  
+Controller - 기능  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/9c139900-6c53-41f9-bba7-6d1243273084){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-경험치 행동은 MODEL 만 고친다 -> MODEL를 기반으로 UI를 수정 한다.   
+경험치 행동은 **MODEL 만 고친다** -> **MODEL를 기반으로 UI를 수정** 한다.   
 행동 -> MODEL 의 값이 바뀜 -> 바뀌면 해당 객체의 상태 바꿈.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -158,7 +166,7 @@ Controller - 행동
 <br><br>
 
 # 1인 개발 동기부여 
-인디라- 정보  
+[**인디라**](https://www.facebook.com/groups/indiera/?locale=ko_KR) - 정보  
 
 <br><br><br><br><br>
 - - - 
