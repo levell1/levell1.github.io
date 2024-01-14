@@ -164,7 +164,7 @@ void Update()
 }
 
 ```
-- StopCoroutine(함수명()) 은 원하는 때에 멈추지 않을 수 도 있다.  
+- StopCoroutine(함수명()) 은 원하는 때에 멈추지 않을 수도 있다.  
 - StopCoroutine("함수명"), stopAllCoroutine  
 - StopCoroutine("함수명")은 추적이안된다.  
 - 위 방법으로 변수를 이용해서 사용하자.  

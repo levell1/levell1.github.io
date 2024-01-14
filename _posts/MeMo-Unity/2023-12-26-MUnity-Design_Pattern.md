@@ -35,6 +35,18 @@ Design Pattern
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+**장점**  
+&nbsp;&nbsp;1. 전역적 접근 가능  
+&nbsp;&nbsp;2. 공유 자원에 동시 접근을 제한하거나 사용할 수 있음.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+**단점**  
+&nbsp;&nbsp;1. 유닛 테스트가 어려움  
+&nbsp;&nbsp;2. 잘못된 프로그래밍 습관을 유발함  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
 <details>
 <summary>singleton 코드보기</summary>
 
@@ -83,6 +95,64 @@ AudioManager.Instance.PlaySound("backgroundMusic");
 ```
 </div>
 </details>
+
+<br><br>
+
+**제네릭 싱글톤 만들어서 필요한 매니저에 상속**  
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+using UnityEngine;
+
+public class Singleton <T>: MonoBehaviour where T: Component
+{
+    private static T_instance;
+
+    public static T instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<T>();
+
+                if (_instance == null)
+                {
+                    GameObject obj = new GameObject();
+                    obj.name = typeof(T).Name;
+                    _instance = obj.AddComponent<T>();
+                }
+            }
+
+            return _instance;
+        }
+    }
+
+    public void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this as T;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+}
+
+public class GameManager : Singleton<GameManager>
+{
+    void Start()
+    {
+
+    }
+}
+```
+</div>
+
 
 <br><br><br><br><br><br>
 - - - 
