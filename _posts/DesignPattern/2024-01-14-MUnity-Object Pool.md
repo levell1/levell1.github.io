@@ -17,7 +17,7 @@ date: 2024-01-14 13:10
 <BR><BR>
 
 
-<center><H1> Object Pool   </H1></center>
+<center><H1> Object Pool  </H1></center>
 
 `Object Pool`
 
@@ -134,7 +134,6 @@ public class DroneObjectPool : MonoBehaviour
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>DroneObjectPool</summary>
@@ -218,7 +217,6 @@ public class DroneObjectPool : MonoBehaviour
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>Drone</summary>
@@ -284,7 +282,6 @@ public class Drone : MonoBehaviour
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>ClientObjectPool</summary>

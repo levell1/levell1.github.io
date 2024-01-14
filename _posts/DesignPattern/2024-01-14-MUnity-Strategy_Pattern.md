@@ -70,7 +70,6 @@ public class Drone : MonoBehaviour {
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>ClientStrategy</summary>

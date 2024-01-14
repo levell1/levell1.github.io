@@ -145,7 +145,6 @@ public class DroneObjectPool : MonoBehaviour
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>DroneObjectPool</summary>
@@ -230,7 +229,6 @@ public class DroneObjectPool : MonoBehaviour
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>Drone</summary>
@@ -297,7 +295,6 @@ public class Drone : MonoBehaviour
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>ClientObjectPool</summary>
@@ -372,13 +369,10 @@ public class Drone : MonoBehaviour {
         strategy.Maneuver(this);
     }
 }
-
-
 ```
 </div>
 </details>
 
-<br><br>
 
 <details>
 <summary>ClientStrategy</summary>
@@ -460,6 +454,78 @@ Receiver(수신자): 실제로 **작업을 수행할 객체**
 &nbsp;&nbsp;1. 각각의 명령을 하나의 클래스로 구현해야돼서 좀 **복잡함**.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--warning} 
+
+<details>
+<summary>Command</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+public abstract class Command
+{
+    public abstract void Execute();
+}
+```
+</div>
+</details>
+
+<details>
+<summary>TurnRight</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+public class TurnRight : Command
+{
+    private CharacterController _controller;
+
+    public TurnRight(CharacterController controller)
+    {
+        _controller = controller;
+    }
+
+    public override void Execute()
+    {
+        _controller.Turn(CharacterController.Direction.Right);
+    }
+}
+```
+</div>
+</details>
+
+<details>
+<summary>TurnLeft</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+public class TurnLeft : Command
+{
+    private CharacterController _controller;
+
+    public TurnLeft(CharacterController controller)
+    {
+        _controller = controller;
+    }
+
+    public override void Execute()
+    {
+        _controller.Turn(CharacterController.Direction.Left);
+    }
+}
+```
+</div>
+</details>
+
+<details>
+<summary>Command</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+public abstract class Command
+{
+    public abstract void Execute();
+}
+```
+</div>
+</details>
 
 <br><br><br><br><br>
 - - - 
