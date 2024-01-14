@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 1. 싱글톤 패턴(singleton)"
+title:  "[Design Pattern] 1. 싱글톤 패턴(singleton)"
 excerpt: "싱글톤"
 
 categories:

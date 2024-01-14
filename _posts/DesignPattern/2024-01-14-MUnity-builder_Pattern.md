@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 6. 빌더 패턴(builder)"
+title:  "[Design Pattern] 6. 빌더 패턴(builder)"
 excerpt: ""
 
 categories:

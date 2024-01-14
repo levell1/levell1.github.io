@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 4. 커맨드 패턴(command) "
+title:  "[Design Pattern] 4. 커맨드 패턴(command) "
 excerpt: ""
 
 categories:

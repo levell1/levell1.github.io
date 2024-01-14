@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 8. 이벤트 버스 패턴(EventBus) "
+title:  "[Design Pattern] 8. 이벤트 버스 패턴(EventBus) "
 excerpt: ""
 
 categories:

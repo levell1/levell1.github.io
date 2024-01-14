@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 3. 관찰자 패턴(observer)"
+title:  "[Design Pattern] 3. 관찰자 패턴(observer)"
 excerpt: ""
 
 categories:

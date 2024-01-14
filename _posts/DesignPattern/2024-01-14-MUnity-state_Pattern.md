@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 2. 상태 패턴(state)  "
+title:  "[Design Pattern] 2. 상태 패턴(state)  "
 excerpt: ""
 
 categories:
