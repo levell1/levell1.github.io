@@ -780,17 +780,19 @@ foreach (var tree in trees)
 &nbsp;&nbsp;2. 구독 시스템을 쉽게 구현하게 만듬  
 &nbsp;&nbsp;3. 프로토타입 만들 때 많이 쓰임 , 쉽고 빠르다  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
+{: .notice--info}  
 
 **단점**  
 &nbsp;&nbsp;1. 약간의 성능비용  
 &nbsp;&nbsp;2. 이벤트 버스가 static 전역 변수라, 전역변수의 단점을 모두 가지게 됨.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
+{: .notice--warning} 
 
+**코드**  
 
 <details>
-<summary>EvnetBus 코드보기</summary>
+<summary>EventBus 코드보기</summary>
+
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
@@ -846,7 +848,6 @@ public class WorldEventBus
 ```
 </div>
 </details>
-
 
 <br><br><br><br><br>
 - - - 

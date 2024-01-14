@@ -56,6 +56,9 @@ date: 2024-01-08 02:00
 
 제네릭 싱글톤 만들어서 필요한 매니저에 상속
 
+<details>
+<summary>제네릭 싱글톤</summary>
+
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
@@ -106,8 +109,11 @@ public class GameManager : Singleton<GameManager>
 
     }
 }
+
 ```
+
 </div>
+</details>
 
 <br><br><br><br><br>
 - - - 
@@ -139,6 +145,9 @@ public class GameManager : Singleton<GameManager>
 
 **코드**  
 `CharaccterStateContext`, `ICharacterState`, `CharacterController`, `CharacterStartState`
+
+<details>
+<summary>state 예시</summary>
 
 <div class="notice--primary" markdown="1"> 
 
@@ -224,6 +233,7 @@ CharacterStartState
 }
 ```
 </div>
+</details>
 
 <br><br><br><br><br>
 - - - 
@@ -243,15 +253,17 @@ CharacterStartState
 &nbsp;&nbsp;2. 구독 시스템을 쉽게 구현하게 만듬  
 &nbsp;&nbsp;3. 프로토타입 만들 때 많이 쓰임 , 쉽고 빠르다  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
+{: .notice--info}  
 
 **단점**  
 &nbsp;&nbsp;1. 약간의 성능비용  
 &nbsp;&nbsp;2. 이벤트 버스가 static 전역 변수라, 전역변수의 단점을 모두 가지게 됨.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
+{: .notice--warning} 
 
 **코드**  
+
+
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
