@@ -37,6 +37,8 @@ date: 2024-01-11 02:00
 
 ## 배열
 
+### 특징, 장단점
+
 **특징**  
 &nbsp;&nbsp; 1. 고정된 크기  
 &nbsp;&nbsp; 2. 연속된 메모리 할당  
@@ -51,44 +53,74 @@ date: 2024-01-11 02:00
 {: .notice--info}  
 
 **단점**  
-고정된 크기
-낭비되는 메모리 공간
-복잡한 삽입.삭제
-메모리 할당 문제
+&nbsp;&nbsp; 1. 고정된 크기
+&nbsp;&nbsp; 2. 낭비되는 메모리 공간
+&nbsp;&nbsp; 3. 복잡한 삽입.삭제
+&nbsp;&nbsp; 4. 메모리 할당 문제
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning}  
 
-예시
-슬롯이 정해진 인벤토리 - 
-맵 타일 관리
-애니메이션 프레임 관리
-오디오 트랙 관리
-스킬 및 능력치 시스템
+### 게임 개발 활용
+
+**활용 상황**  
+&nbsp;&nbsp; 1. 데이터 접근 빈번
+&nbsp;&nbsp; 2. 데이터 크기나 요소 수가 고정
+&nbsp;&nbsp; 3. 요소 삽입, 삭제가 적을 때
+&nbsp;&nbsp; 4. 순차적 접근이 주를 이룰 때
+&nbsp;&nbsp; 5. 메모리 사용이 중요한 상황일 때
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
+**활용 예시**  
+&nbsp;&nbsp; 1. 슬롯이 정해진 인벤토리 - 
+&nbsp;&nbsp; 2. 맵 타일 관리
+&nbsp;&nbsp; 3. 애니메이션 프레임 관리
+&nbsp;&nbsp; 4. 오디오 트랙 관리 - 특정 상황에 오디오를 배열에서 바로 찾아 재생하기 용이
+&nbsp;&nbsp; 5. 스킬 및 능력치 시스템
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
 
 <br><br>
 
 ## 연결 리스트
-특징
-노드 기반 구조 : 데이터 , 포인터
-비연속적 메모리 할당
-동적 크기 조정
 
-장점 
-동적인 메모리 관리
-데이터 삽입. 삭제 편함
+### 특징, 장단점
+**특징**  
+&nbsp;&nbsp; 1. 노드 기반 구조 : 데이터 , 포인터  
+&nbsp;&nbsp; 2. 비연속적 메모리 할당  
+&nbsp;&nbsp; 3. 동적 크기 조정  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
-단점 
-메모리 오버헤드 : 각 노드가 데이터, 포인터를 저장, 메모리 많이 사용
-순차 탐색 접근 : 배열과 달리 특정 요소에 접근하기 위해서는 리스트를 순차적으로 탐색해야함.
+**장점**  
+&nbsp;&nbsp; 1. 동적인 메모리 관리  
+&nbsp;&nbsp; 2. 데이터 삽입. 삭제 편함   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
 
-예시
-데이터가 자주 추가되거나 제거될 때
-접근하는게 순차적일때
-크기가 불확실할 때
+**단점**  
+&nbsp;&nbsp; 1. 메모리 오버헤드 : 각 노드가 데이터, 포인터를 저장, 메모리 많이 사용  
+&nbsp;&nbsp; 2. 순차 탐색 접근 : 배열과 달리 특정 요소에 접근하기 위해서는 리스트를 순차적으로 탐색해야함.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning}  
 
-동적 인벤토리 시스템
-npc 행동 관리(순차적)
-레벨 내 동적 객체 관리(맵에서 적, 아이템 장애물 등 추가 제거)
-멀티플레이어 게임에서 플레이어 관리
-타이머 이벤트 관리
+### 게임 개발 활용
+
+**활용 상황**  
+&nbsp;&nbsp; 1. 데이터가 자주 추가되거나 제거 상황   
+&nbsp;&nbsp; 2. 접근하는게 순차적일때    
+&nbsp;&nbsp; 3. 크기가 불확실할 때     
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
+**활용 예시**  
+&nbsp;&nbsp; 1. 동적 인벤토리 시스템  
+&nbsp;&nbsp; 2. npc 행동 관리(순차적)  
+&nbsp;&nbsp; 3. 레벨 내 동적 객체 관리(맵에서 적, 아이템 장애물 등 추가 제거)  
+&nbsp;&nbsp; 4. 멀티플레이어 게임에서 플레이어 관리(접속해제 빈번, 플레이어 관리 용이)  
+&nbsp;&nbsp; 5. 타이머 이벤트 관리(시간 순서 이벤트, 예전된 이벤트 실행, 제거에 편리)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
 
 <br><br><br><br><br>
 - - - 
@@ -96,45 +128,100 @@ npc 행동 관리(순차적)
 # 스택과 큐
 
 ## 스택
-특징
-LIFO(Last in First Out)
-간단한 연산 (push,pop)
-빠른 연산 속도
 
-장점 
-단순한 구조
-데이터 순서 유지
-고정된 메모리 사용
+### 특징, 장단점
+PUSH, POP  
 
-단점
-유연성 부족 : 중간요소에 접근, 수정 어려움
-메모리 제한 : 스택크기 고정되어 있을 경우 , 메모리 용량 초과 -> 오버플로우 
+**특징**  
+&nbsp;&nbsp; 1. LIFO(Last in First Out)  
+&nbsp;&nbsp; 2. 간단한 연산 (push,pop)  
+&nbsp;&nbsp; 3. 빠른 연산 속도  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
-PUSH, POP
+**장점**  
+&nbsp;&nbsp; 1. 단순한 구조  
+&nbsp;&nbsp; 2. 데이터 순서 유지  
+&nbsp;&nbsp; 3. 고정된 메모리 사용  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
 
-예시 
-역순 처리가 필요한 상황
-임시 데이터 저장할 때
-재귀적 구조를 처리할 때
-UI 관리할 때도 적합함
+**단점**  
+&nbsp;&nbsp; 1. 유연성 부족 : 중간요소에 접근, 수정 어려움  
+&nbsp;&nbsp; 2. 메모리 제한 : 스택크기 고정되어 있을 경우 , 메모리 용량 초과 -> 오버플로우   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning}  
 
-되돌리기
-대화 시스템 . 탐색지, 이전대화로
-이벤트 처리
-재귀적 탐색
-메뉴 시스템
+### 게임 개발 활용
+
+**활용 상황**  
+&nbsp;&nbsp; 1. 역순 처리가 필요한 상황   
+&nbsp;&nbsp; 2. 임시 데이터 저장할 때     
+&nbsp;&nbsp; 3. 재귀적 구조를 처리할 때  
+&nbsp;&nbsp; 4. UI 관리할 때도 적합함  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
+**활용 예시**  
+&nbsp;&nbsp; 1. 되돌리기   
+&nbsp;&nbsp; 2. 대화 시스템 . 탐색지, 이전대화로 복귀  
+&nbsp;&nbsp; 3. 이벤트 처리 - 순차적으로 처리될 경우  
+&nbsp;&nbsp; 4. 재귀적 탐색 - 복잡한 퍼즐,재귀적으로 해결 경로를 찾을 때, 각 단계 스택에 저장    
+&nbsp;&nbsp; 5. 메뉴 시스템 - 다양한 메뉴가 중첩적으로 열릴 때 , 각 메뉴의 상태가 스택에 저장, 이전메뉴로 돌아감  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
 
 <br><br>
 
 ## 큐
+
+### 특징, 장단점
+PUSH, POP  
+
+**특징**  
+&nbsp;&nbsp; 1. FIFO(First In, First Out)  
+&nbsp;&nbsp; 2. 순차적 처리  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+**장점**  
+&nbsp;&nbsp; 1. 직관적인 구조  
+&nbsp;&nbsp; 2. 데이터 처리에 공정함  
+&nbsp;&nbsp; 3. 자원 관리에 유용함(cpu 스케쥴링, 네트워크 요청)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+**단점**  
+&nbsp;&nbsp; 1. 유연성 부족 : 중간요소에 접근, 수정 어려움  
+&nbsp;&nbsp; 2. 메모리 제한 : 스택크기 고정되어 있을 경우 , 메모리 용량 초과 -> 오버플로우   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning}  
+
+### 게임 개발 활용
+
+**활용 상황**  
+&nbsp;&nbsp; 1. 역순 처리가 필요한 상황   
+&nbsp;&nbsp; 2. 임시 데이터 저장할 때     
+&nbsp;&nbsp; 3. 재귀적 구조를 처리할 때  
+&nbsp;&nbsp; 4. UI 관리할 때도 적합함  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
+**활용 예시**  
+&nbsp;&nbsp; 1. 되돌리기   
+&nbsp;&nbsp; 2. 대화 시스템 . 탐색지, 이전대화로 복귀  
+&nbsp;&nbsp; 3. 이벤트 처리 - 순차적으로 처리될 경우  
+&nbsp;&nbsp; 4. 재귀적 탐색 - 복잡한 퍼즐,재귀적으로 해결 경로를 찾을 때, 각 단계 스택에 저장    
+&nbsp;&nbsp; 5. 메뉴 시스템 - 다양한 메뉴가 중첩적으로 열릴 때 , 각 메뉴의 상태가 스택에 저장, 이전메뉴로 돌아감  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success} 
+
+
 특징
-FIFO(First In, First Out)
-순차적 처리
+
 
 장점
-직관적인 구조
-데이터 처리에 공정함
-자원 관리에 유용함
 
 단점
 낮은 유연성 : 중간에 위치한 요소에 직접접근 어려움.

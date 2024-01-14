@@ -45,6 +45,7 @@ date: 2024-01-12 02:00
 # Stop Coroutine
 
 [**stop Coroutine**](https://levell1.github.io/til/Spartabcamp48/#%EC%BD%94%EB%A3%A8%ED%8B%B4coroutine)  
+배경음볼륨 서서히 증가, 감소 추가.  
 오늘 배경음 작업하면서 원하는대로 코루틴이 멈춰지지 않는 상황을 겪었다.  
 그리고 저번에 튜터님의 강의에서 본 내용이 생각났고 강의내용으로 적용해보고 해결되었다. 🙏  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
