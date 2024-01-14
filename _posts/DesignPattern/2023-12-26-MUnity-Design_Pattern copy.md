@@ -3,162 +3,23 @@ title:  "[Memo-Unity] 2.`state`, `observer`, `command` `component`, `builder`, `
 excerpt: ""
 
 categories:
-    - MeMo Unity
+    - DesignPattern
 tags:
-    - [C#, MeMo Unity]
+    - [C#, DesignPattern]
 
 toc: true
 toc_sticky: true
  
-date: 2023-12-26 01:00
+date: 2024-01-14 13:00
 
 ---
 - - -
 <BR><BR>
 
-Design Pattern  
-
-`싱글턴(singleton)`, `상태(state)`, `관찰자(observer)`, `커맨드(command)`  
+`상태(state)`, `관찰자(observer)`, `커맨드(command)`  
 `component`, `builder`, `flyweight`, `EventBus`
 
 <center><H1> Design Pattern </H1></center>
-
-<br><br><br><br><br><br>
-- - - 
-
-# 1. 싱글톤 패턴 (singleton)
-
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/357ef27b-e877-445f-b3a5-a8c679541e91){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
-
-> - 특정 클래스의 인스턴스가 단 하나만 존재하도록 보장하는 디자인 패턴
-> - 클래스의 인스턴스를 전역적으로 접근 가능
-> - 게임의 설정, 오디오 매니저, UI 매니저 같이 전역적으로 하나만 존재
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info} 
-
-**장점**  
-&nbsp;&nbsp;1. 전역적 접근 가능  
-&nbsp;&nbsp;2. 공유 자원에 동시 접근을 제한하거나 사용할 수 있음.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
-
-**단점**  
-&nbsp;&nbsp;1. 유닛 테스트가 어려움  
-&nbsp;&nbsp;2. 잘못된 프로그래밍 습관을 유발함  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice} 
-
-<details>
-<summary>singleton 코드보기</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c#
-public class AudioManager
-{
-    // 이 인스턴스는 프로그램의 실행 동안 단 한 번만 생성됨
-    private static AudioManager _instance;
-
-    // 싱글톤 인스턴스에 대한 접근자
-    public static AudioManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new AudioManager();
-            }
-            return _instance;
-        }
-    }
-
-    // 생성자를 private으로 설정하여 외부에서 인스턴스를 생성하는 것을 방지
-    private AudioManager() 
-    {
-        // 초기화 코드
-    }
-
-    // 오디오 관련 메소드
-    public void PlaySound(string soundName)
-    {
-        // 소리 재생
-    }
-
-    public void StopSound(string soundName)
-    {
-        // 소리 중지
-    }
-}
-
-// 메모리 사용을 최적화하고 코드를 깔끔하게 사용할 수 있게 해주는 싱글톤 패턴!
-AudioManager.Instance.PlaySound("backgroundMusic");
-
-```
-</div>
-</details>
-
-<br><br>
-
-**제네릭 싱글톤 만들어서 필요한 매니저에 상속**  
-
-
-
-<details>
-<summary>제네릭 싱글톤</summary>
-
-<div class="notice--primary" markdown="1"> 
-
-```c# 
-using UnityEngine;
-
-public class Singleton <T>: MonoBehaviour where T: Component
-{
-    private static T_instance;
-
-    public static T instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<T>();
-
-                if (_instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    obj.name = typeof(T).Name;
-                    _instance = obj.AddComponent<T>();
-                }
-            }
-
-            return _instance;
-        }
-    }
-
-    public void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this as T;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-}
-
-public class GameManager : Singleton<GameManager>
-{
-    void Start()
-    {
-
-    }
-}
-```
-</div>
-</details>
 
 <br><br><br><br><br><br>
 - - - 
