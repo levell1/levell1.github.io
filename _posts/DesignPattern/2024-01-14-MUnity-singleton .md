@@ -16,9 +16,11 @@ date: 2024-01-14 13:01
 - - -
 <BR><BR>
 
-`싱글톤 패턴(singleton)`
+
 
 <center><H1> 싱글톤 패턴(singleton)</H1></center>
+
+`싱글톤 패턴(singleton)`
 
 <br><br><br><br><br>
 - - - 

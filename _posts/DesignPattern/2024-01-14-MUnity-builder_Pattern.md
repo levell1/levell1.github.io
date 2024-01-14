@@ -15,12 +15,13 @@ date: 2024-01-14 13:06
 ---
 - - -
 <BR><BR>
- 
-`builder`, 
+
 
 <center><H1> builder패턴   </H1></center>
 
-<br><br><br><br><br><br>
+`builder`
+
+<br><br><br><br>
 - - - 
 
 # 빌더 패턴 (builder)

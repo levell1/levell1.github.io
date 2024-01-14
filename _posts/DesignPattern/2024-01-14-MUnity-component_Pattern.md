@@ -16,11 +16,12 @@ date: 2024-01-14 13:05
 - - -
 <BR><BR>
  
-`component`, `builder`, `flyweight`, `EventBus`
 
 <center><H1> component패턴   </H1></center>
 
-<br><br><br><br><br><br>
+`component` 
+
+<br><br><br><br>
 - - - 
 
 # 5. 컴포넌트 패턴 (component)

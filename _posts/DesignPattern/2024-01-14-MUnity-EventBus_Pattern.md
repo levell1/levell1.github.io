@@ -16,11 +16,13 @@ date: 2024-01-14 13:08
 - - -
 <BR><BR>
  
-`EventBus`
+
 
 <center><H1> EventBus패턴   </H1></center>
 
-<br><br><br><br><br><br>
+`EventBus`
+
+<br><br><br><br>
 - - - 
 
 

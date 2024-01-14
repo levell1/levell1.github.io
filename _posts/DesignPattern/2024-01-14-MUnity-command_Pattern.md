@@ -16,11 +16,13 @@ date: 2024-01-14 13:04
 - - -
 <BR><BR>
 
-`커맨드(command)패턴`  
+
 
 <center><H1> 커맨드(command)패턴   </H1></center>
 
-<br><br><br><br><br><br>
+`커맨드(command)패턴`  
+
+<br><br><br><br>
 - - - 
 
 # 커맨드 패턴 (command)

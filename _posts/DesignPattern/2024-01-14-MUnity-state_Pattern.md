@@ -16,11 +16,13 @@ date: 2024-01-14 13:02
 - - -
 <BR><BR>
 
+
+
+<center><H1> 상태 패턴(state) </H1></center>
+
 `상태(state)패턴`
 
-<center><H1> `상태(state)패턴` </H1></center>
-
-<br><br><br><br><br><br>
+<br><br><br><br>
 - - - 
 
 # 상태패턴 (state)

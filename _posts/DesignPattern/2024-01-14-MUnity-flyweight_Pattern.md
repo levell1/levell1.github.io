@@ -16,11 +16,13 @@ date: 2024-01-14 13:07
 - - -
 <BR><BR>
  
-`flyweight`
+
 
 <center><H1> flyweight패턴   </H1></center>
 
-<br><br><br><br><br><br>
+`flyweight`
+
+<br><br><br><br>
 - - - 
 
 # 플라이웨이트 패턴(flyweight)

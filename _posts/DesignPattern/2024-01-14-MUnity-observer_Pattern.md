@@ -16,11 +16,13 @@ date: 2024-01-14 13:03
 - - -
 <BR><BR>
 
-`관찰자(observer)`
+
 
 <center><H1> 관찰자(observer) Pattern </H1></center>
 
-<br><br><br><br><br><br>
+`관찰자(observer)`
+
+<br><br><br><br>
 - - - 
 
 # 관찰자 패턴 (observer)
