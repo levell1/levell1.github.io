@@ -3,9 +3,9 @@ title:  "[Memo-Unity] 1. 싱글톤 패턴(singleton)"
 excerpt: "싱글톤"
 
 categories:
-    - DesignPattern
+    - Design Pattern
 tags:
-    - [C#, DesignPattern]
+    - [C#, Design Pattern]
 
 toc: true
 toc_sticky: true

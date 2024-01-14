@@ -3,9 +3,9 @@ title:  "[Memo-Unity] 2.`state`, `observer`, `command` `component`, `builder`, `
 excerpt: ""
 
 categories:
-    - DesignPattern
+    - Design Pattern
 tags:
-    - [C#, DesignPattern]
+    - [C#, Design Pattern]
 
 toc: true
 toc_sticky: true

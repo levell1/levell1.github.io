@@ -3,9 +3,9 @@ title:  "[Memo-Unity] 2.상태(state)패턴  "
 excerpt: ""
 
 categories:
-    - DesignPattern
+    - Design Pattern
 tags:
-    - [C#, DesignPattern]
+    - [C#, Design Pattern]
 
 toc: true
 toc_sticky: true
