@@ -25,7 +25,7 @@ date: 2024-01-12 02:00
 &nbsp;&nbsp; [o] 다른반 강의 듣기 스탠다드2 챌~   
 &nbsp;&nbsp; [x] 심화주차 강의 듣기.  
 &nbsp;&nbsp; [x] 디자인 코드 패턴 이해,정리하기.   
-&nbsp;&nbsp; [x] TIL 57 정리   
+&nbsp;&nbsp; [x] 자료구조 디자인패턴 강의 다시 듣기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
