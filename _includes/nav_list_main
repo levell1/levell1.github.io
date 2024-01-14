@@ -40,7 +40,7 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "DesignPattern" %}
+                        {% if category[0] == "Design Pattern" %}
                             <li><a href="/categories/designpattern" class=""> Unity 디자인패턴 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}

@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 6. `builder`패턴,"
+title:  "[Memo-Unity] 6. 빌더 패턴(builder)"
 excerpt: ""
 
 categories:

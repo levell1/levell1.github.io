@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 5. `component`패턴"
+title:  "[Memo-Unity] 5. 컴포넌트 패턴(component)"
 excerpt: ""
 
 categories:

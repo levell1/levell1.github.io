@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 7. `flyweight`패턴"
+title:  "[Memo-Unity] 7. 플라이웨이트 패턴(flyweight)"
 excerpt: ""
 
 categories:

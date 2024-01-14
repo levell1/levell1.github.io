@@ -1,5 +1,5 @@
 ---
-title:  "[Memo-Unity] 4.`command`패턴 "
+title:  "[Memo-Unity] 4. 커맨드 패턴(command) "
 excerpt: ""
 
 categories:
@@ -32,6 +32,33 @@ date: 2024-01-14 13:04
 > - 입력 처리를 깔끔, 유연하게 관리, 명령을 추가, 재사용 쉬워짐
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
+커맨드 패턴은 게임 내에서 발생하는 모든 행동을 명령으로 캡슐화를 할 수 있음, 그리고 이 명령들은 모두 **쉽게 기록**이 됨!.  
+기록을 재생하여 **리플레이 시스템**을 구현할 수 있다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+Client : 커맨드 **객체를 생성**, 그 커맨드가 어떤 **receiver와 연결될 지 결정**  
+Invoker(호출자) : 커맨드를 받아서 실행함.  
+Command(커맨드) : 실행될 모든 명령에 대한 인터페이스  
+Receiver(수신자): 실제로 **작업을 수행할 객체**  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/e7b43e8f-8a1b-4191-8f1b-3d3c563d1b3b){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+**장점**  
+&nbsp;&nbsp;1. **분리** : 실행하는 객체와 호출하는 객체가 분리됨   
+&nbsp;&nbsp;2. 명령하는 것을 **큐에 넣어서 리플레이**, **매크로**, 명령 큐 등을 구현할 수 있음.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+
+**단점**  
+&nbsp;&nbsp;1. 각각의 명령을 하나의 클래스로 구현해야돼서 좀 **복잡함**.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning} 
+
 
 <details>
 <summary>command 코드보기</summary>

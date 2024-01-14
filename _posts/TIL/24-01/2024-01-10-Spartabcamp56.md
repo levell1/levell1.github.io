@@ -433,13 +433,6 @@ public class ClientStrategy : MonoBehaviour {
 
 # 커맨드 패턴
 
-
-장점  
-
-
-단점  
-
-
 커맨드 패턴은 게임 내에서 발생하는 모든 행동을 명령으로 캡슐화를 할 수 있음, 그리고 이 명령들은 모두 **쉽게 기록**이 됨!.  
 기록을 재생하여 **리플레이 시스템**을 구현할 수 있다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -453,7 +446,6 @@ Receiver(수신자): 실제로 **작업을 수행할 객체**
 {: .notice} 
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/e7b43e8f-8a1b-4191-8f1b-3d3c563d1b3b){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-
 
 **장점**  
 &nbsp;&nbsp;1. **분리** : 실행하는 객체와 호출하는 객체가 분리됨   
