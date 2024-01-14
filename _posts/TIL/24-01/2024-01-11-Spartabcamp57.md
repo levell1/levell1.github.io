@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 57 강의 자료구조  ⭐⭐ "
+title:  "[TIL] 57 강의 자료구조  ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -33,20 +33,24 @@ date: 2024-01-11 02:00
 <br><br><br><br><br>
 - - - 
 
-
 # 배열과 연결리스트
 
 ## 배열
-특징  
-고정된 크기
-연속된 메모리 할당
-동일한 데이터 타입
 
-장점 
-빠른 읽기와 쓰기
-메모리 효율성
+**특징**  
+&nbsp;&nbsp; 1. 고정된 크기  
+&nbsp;&nbsp; 2. 연속된 메모리 할당  
+&nbsp;&nbsp; 3. 동일한 데이터 타입  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
-단점
+**장점**  
+&nbsp;&nbsp; 1. 빠른 읽기와 쓰기 : 인덱스 사용  
+&nbsp;&nbsp; 2. 메모리 효율성 : 연속적 - 캐싱 효율적   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+**단점**  
 고정된 크기
 낭비되는 메모리 공간
 복잡한 삽입.삭제
