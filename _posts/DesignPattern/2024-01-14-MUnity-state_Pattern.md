@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-14 13:00
+date: 2024-01-14 13:02
 
 ---
 - - -
@@ -23,7 +23,7 @@ date: 2024-01-14 13:00
 <br><br><br><br><br><br>
 - - - 
 
-# 1. 상태패턴 (state)
+# 상태패턴 (state)
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/8ef94cd9-ef44-4cae-911f-1ba64cdbc912){:style="border:1px solid #EAEAEA; border-radius: 7px;"}   
 

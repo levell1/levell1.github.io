@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-14 13:00
+date: 2024-01-14 13:01
 
 ---
 - - -
@@ -20,12 +20,7 @@ date: 2024-01-14 13:00
 
 <center><H1> 싱글톤 패턴(singleton)</H1></center>
 
-<BR><BR>
-
-
-<h1>싱글톤 패턴</h1>
-
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 - - - 
 
 # 1. 싱글톤 패턴 사용이유
