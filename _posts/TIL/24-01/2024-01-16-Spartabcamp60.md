@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 60 Sound - coroutine  ⭐⭐ "
+title:  "[TIL] 60 ? ⭐ "
 excerpt: "Sparta"
 
 categories:

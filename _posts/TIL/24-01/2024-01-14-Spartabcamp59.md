@@ -44,12 +44,38 @@ date: 2024-01-14 02:00
 
 # Stop Coroutine
 
-[**stop Coroutine**](https://levell1.github.io/til/Spartabcamp48/#%EC%BD%94%EB%A3%A8%ED%8B%B4coroutine)  
+[**stop Coroutine**](https://levell1.github.io/til/Spartabcamp48/#%EC%BD%94%EB%A3%A8%ED%8B%B4coroutine)   
 배경음볼륨 서서히 증가, 감소 추가.  
 오늘 배경음 작업하면서 원하는대로 코루틴이 멈춰지지 않는 상황을 겪었다.  
 그리고 저번에 튜터님의 강의에서 본 내용이 생각났고 강의내용으로 적용해보고 해결되었다. 🙏  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}
+
+## **문제점**
+오늘 배경음 작업하면서 원하는대로 코루틴이 멈춰지지 않는 상황을 겪었다.
+StopCoroutine(함수명())을 사용했는데 원하는 때에 멈추지 않는 경우를 겪었다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--warning}
+
+## **시도**
+StopCoroutine(“함수명”), stopAllCoroutine 을 시도했고, 그래도 되지 않았다, 
+또 위 두 방법은 추적이 되지 않는다고 하였다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+## **해결**
+**Coroutine coroutine**
+**coroutine = StartCoroutine(BgmVolumeUp(audiosource));**
+**StopCoroutine(coroutine);**
+변수명을 이용해서 해결
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}
+
+## 알게된 점
+StopCoroutine(“함수명”), stopAllCoroutine 으로 되지 않을 때 
+변수명을 이용해서 해결하자
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--success}
 
 <br><br>
 
