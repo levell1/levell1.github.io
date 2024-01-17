@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 60 UI, GC ⭐⭐ "
+title:  "[TIL] 61 UI, GC ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -110,6 +110,7 @@ X세대가 가비지 컬렉션이 일어나면 X이하 세대가 모두 가비�
 Unity에서는 가비지 컬렉터를 사용하여 애플리케이션과 Unity에서 더 이상 사용하지 않는 오브젝트로부터 메모리를 회수합니다. 스크립트가 관리되는 힙에 할당하려고 하지만 할당을 수용할 수 있는 사용 가능한 힙 메모리가 충분하지 않으면 Unity는 가비지 컬렉터를 실행합니다. 가비지 콜렉터가 실행되면 힙의 모든 오브젝트를 검사하고 애플리케이션에서 더 이상 레퍼런스가 없는 오브젝트를 삭제하도록 표시합니다. 그런 다음 Unity는 레퍼런스가 없는 오브젝트를 삭제하여 메모리를 확보합니다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
 ### 작은 힙과 빠르고 빈번한 가비지 컬렉션.(주기적으로 GC를 행하라.)
 <div class="notice--primary" markdown="1"> 
 
