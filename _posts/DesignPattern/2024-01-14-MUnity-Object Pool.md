@@ -1,5 +1,5 @@
 ---
-title:  "[Design Pattern] 10. Object Pool"
+title:  "[Design Pattern] 10. 오브젝트 풀(Object Pool)"
 excerpt: ""
 
 categories:
