@@ -51,7 +51,7 @@ date: 2024-01-18 02:00
 
 <br><br>
 
-## 상점
+## 식당
 **식당메뉴 선택**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/29f840b2-0467-40fc-ad58-f0d74303bec9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/18998383-db23-4d22-bd96-3edfa62dfd7b){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
@@ -63,9 +63,7 @@ date: 2024-01-18 02:00
 
 
 # 잡담,정리
-UI작업 중... 잘 하고 있는 지 어디서 문제가 없는 지 잘 모르겠다.   
-다하고 스텟에 연결   
-유니티 가비지 컬렉션  
+UI작업 중
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
