@@ -15,7 +15,7 @@ date: 2024-01-21 02:00
 ---
 - - -
 
-`UIManager`
+`UI`
 
 <BR><BR>
 
@@ -200,15 +200,12 @@ OnChangeHpUI.Invoke(_health, _maxHealth);
 ```
 </div>
 
-
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/be460435-2061-4ae4-ab70-8545756f8935){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
-
-
+<br><br><br><br><br>
+- - - 
 
 # 잡담,정리
-ctrl \ + t -> todo주석찾기  
-UI로 캔버스를 불러오는 게 맞는걸까? 캔버스안의 것을 변수에 저장하는 게 맞는지 생각해보기.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
