@@ -63,19 +63,23 @@ public class UIManager
     private Stack<GameObject> _popupStack = new Stack<GameObject>();
     public Dictionary<string, GameObject> _popupDic = new Dictionary<string, GameObject>();
 
-
     public void CreateCanvas() 
     {
-        var pre = Resources.LoadAll<GameObject>("UI/Canvas");
-        foreach (var p in pre) 
+        GameObject uiObject = GameObject.Find("Uis");
+        if (uiObject == null)
         {
-            Debug.Log(p.name);
-            _popupDic.Add(p.name, Object.Instantiate(p));
-            _popupDic[p.name].SetActive(false);
+            uiObject = new GameObject("Uis");
+        
+            var pre = Resources.LoadAll<GameObject>("UI/Canvas");
+            foreach (var p in pre) 
+            {
+                _popupDic.Add(p.name, Object.Instantiate(p,uiObject.transform));
+                _popupDic[p.name].SetActive(false);
+            }
         }
     }
 
-    public void Popup(string uiname)
+    public void ShowCanvas(string uiname)
     {
         _popupDic[uiname].GetComponent<Canvas>().sortingOrder = _canvasSortOrder;
         _popupStack.Push(_popupDic[uiname]);
@@ -84,20 +88,27 @@ public class UIManager
         Cursor.lockState = CursorLockMode.None;
     }
 
-    public void CloseLastPopup()
+    public void CloseLastCanvas()
     {
+        if (_popupStack.Count == 1)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         if (_popupStack.Count == 0) 
         {
-            Popup("SettingUI");
+            ShowCanvas("SettingUI");
         }
-        else { 
-        GameObject currentUi = _popupStack.Pop();
-        currentUi.SetActive(false);
-        currentUi = null;
-        _canvasSortOrder--;
+        else 
+        { 
+            GameObject currentUi = _popupStack.Pop();
+            currentUi.SetActive(false);
+            currentUi = null;
+            _canvasSortOrder--;
         }
     }
 }
+
 ```
 
 - CreateCanvas() : 모든 UI Instantiate 
@@ -124,7 +135,8 @@ if (Input.GetKeyDown(KeyCode.R))
 
 
 # 잡담,정리
-UI작업 중
+ctrl \ + t -> todo주석찾기  
+UI로 캔버스를 불러오는 게 맞는걸까? 캔버스안의 것을 변수에 저장하는 게 맞는지 생각해보기.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
