@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 64 UI 에 PLAYER 정보  ⭐⭐ "
+title:  "[TIL] 65 UI 에 PLAYER 정보  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-21 02:00
+date: 2024-01-22 02:00
 
 ---
 - - -
