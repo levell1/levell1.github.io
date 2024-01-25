@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 67 장비, 강화  ⭐⭐ "
+title:  "[TIL] 67 카메라감도-POV  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,16 +10,16 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-01-24 02:00
+date: 2024-01-25 02:00
 
 ---
 - - -
 
-`UI`
+`UI`,`POV`
 
 <BR><BR>
 
-<center><H1>  최종 팀 프로젝트 11일차  </H1></center>
+<center><H1>  최종 팀 프로젝트 12일차  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 53  
 &nbsp;&nbsp; [o] 면접 문제 풀기 - 5     
@@ -35,21 +35,39 @@ date: 2024-01-24 02:00
 
 # 장비, 강화
 
-## EquipmentData
-**장비 데이터 SO+LEVEL,현스탯**  
+## POV
+**카메라 감도 조정**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/9e689fdf-32bf-47fb-8ff2-7f09ee8b1dd6){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+카메라 감도를 바꾸기 위해서는 Virtual Camera에 Aim ->POV -> Vertical,Horizontal Axis 의 Speed 를 바꿔야 됐다.  
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
-[Serializable]
-public class EquipmentData
+using Cinemachine;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class MouseSettingUI : MonoBehaviour
 {
-    private int _level = 0;
-    [field: SerializeField] private EquipmentBase _equipment;
-    private float _currenthealth;
-    private float _currentDef;
-    private float _currentAttack;
-    private float _currentUpgradeGold;
+    private Slider _slider;
+    private CinemachinePOV _virtualcamera;
+
+    private void Awake()
+    {
+        _slider = GetComponent<Slider>();
+        _virtualcamera = GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachinePOV>();
+    }
+    private void Start()
+    {
+        _slider.onValueChanged.AddListener(SetCam);
+    }
+    void SetCam(float value)
+    {
+        _virtualcamera.m_VerticalAxis.m_MaxSpeed = value;
+        _virtualcamera.m_HorizontalAxis.m_MaxSpeed = value;
+    }
 }
+
+
 ```
 </div>
 
