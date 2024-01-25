@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 67 카메라감도-POV  ⭐⭐ "
+title:  "[TIL] 68 카메라감도-POV  ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
