@@ -74,7 +74,6 @@ public class MouseSettingUI : MonoBehaviour
 - - - 
 
 # 잡담,정리
-리펙토링이 많이 필요할 거 같다..
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
