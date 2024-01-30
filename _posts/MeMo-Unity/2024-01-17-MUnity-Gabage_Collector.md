@@ -104,10 +104,7 @@ if (Time.frameCount % 30 == 0)
 
 [**유니티 자동 메모리 관리**](https://docs.unity3d.com/kr/2018.4/Manual/UnderstandingAutomaticMemoryManagement.html)  
 [**유니티 가비지 컬렉터 개요**](https://docs.unity3d.com/kr/2021.3/Manual/performance-garbage-collector.html)
-<br><br><br><br><br>
-- - - 
-<br><br><br><br><br>
-- - - 
+
 <br><br><br><br><br>
 - - - 
 
