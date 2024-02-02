@@ -56,8 +56,6 @@ MemoryStructure
 ### 힙 데이터  
 > - 동적으로 관리
 > - 참조형식()  
-> - c#에서 스택 영역 용량이 작다(1mb?)  
-> - 0으로 초기화 되는 자료형  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

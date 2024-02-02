@@ -97,7 +97,6 @@ for (int i = 0; i < arr.Length - 1; i++)
 </div>
 
 
-출처: https://todamfather.tistory.com/88 [여러가지 개발/학습 블로그:티스토리]
 <br><br><br><br><br>
 - - - 
 
