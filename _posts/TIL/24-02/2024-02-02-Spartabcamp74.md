@@ -34,7 +34,9 @@ date: 2024-02-02 02:00
 - - - 
 
 # 발표 자료 
-[중간 발표 자료](https://gamma.app/docs/-1c7umk2nyh82in0?mode=doc)    
+[중간 발표 예비 자료](https://gamma.app/docs/-1c7umk2nyh82in0?mode=doc)    
+[시연 영삿](https://www.youtube.com/watch?v=T5k1utlrnFE)
+
 
 <br><br><br><br><br>
 - - - 
