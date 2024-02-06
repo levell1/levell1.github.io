@@ -54,6 +54,8 @@ date: 2024-02-05 02:00
 > - 스택영역에 저장  
 > - 해당 변수에 할당하거나 전달 할 때 값이 복사  
 > - 해당 변수의 값만 변경, 다른 변수에 영향 x - int, float, double, bool.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 **참조형**  
 > - 변수의 데이터에 대한 참조(데이터 주소)를 저장  
@@ -61,9 +63,13 @@ date: 2024-02-05 02:00
 > - 변수가 실제 데이터를 가리키는 참조를 갖고있다. 
 > - 변수가 다른 변수를 할당하거나 전달할 때는 참조가 복사  
 > - 참조형 변수는 동일한 데이터를 가리키고 있다, - 클래스, 배열, 인터페이스 등  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 값형은 변수 간의 값 복사가 이루어지고, 참조형은 변수 간의 참조 복사가 이루어집니다.  
 값형은 변수가 독립적으로 데이터를 가지며, 참조형은 변수가 동일한 데이터를 참조합니다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 <br><br><br><br><br>
 - - - 

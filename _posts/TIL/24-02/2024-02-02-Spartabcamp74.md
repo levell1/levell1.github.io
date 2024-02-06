@@ -34,9 +34,7 @@ date: 2024-02-02 02:00
 - - - 
 
 # 발표 자료 
-[중간 발표 예비 자료](https://gamma.app/docs/-1c7umk2nyh82in0?mode=doc)    
-[시연 영삿](https://www.youtube.com/watch?v=T5k1utlrnFE)
-
+[중간 발표 자료](https://gamma.app/docs/-1c7umk2nyh82in0?mode=doc)    
 
 <br><br><br><br><br>
 - - - 
@@ -85,6 +83,8 @@ public void ReturnCamSpeed()
 </div>
 
 Setting에서 카메라 감도 조절시 버그 발생 스크롤 변경 시 CamaraManager에 있는 CamaraSpeed로 저장  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
 
 <br><br><br><br><br>
 - - - 
@@ -94,6 +94,9 @@ Setting에서 카메라 감도 조절시 버그 발생 스크롤 변경 시 Cama
 **스택 메모리** : 잠시 사용하고 삭제하는 데이터 저장(지역변수, 매개변수) 지역이 끝나면 해제된다, 값형식, 힙보다 빠름   
 **힙 메모리** : 스택보다 큰 메모리를 할당받기 위해 사용, 동적 메모리 할당 (NEW), 스택보다 느림. Delete를 이용해 객체 메모리 반환.GC가 없으면 직접 관리 해야줘야 함   
 스택에는 힙의 주소가 힙메모리에는 실제 주소값이 저장된다. 
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
 <br><br><br><br><br>
 - - - 
 
