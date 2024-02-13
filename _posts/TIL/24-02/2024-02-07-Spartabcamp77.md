@@ -71,7 +71,6 @@ date: 2024-02-07 02:00
 - - - 
 
 # 잡담,정리
-Behavior Tree이외 이번 작업에 도움될 강의 듣기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
