@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 79 UI 최적화 강의 ⭐⭐ "
+title:  "[TIL] 78 UI 최적화 강의 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
