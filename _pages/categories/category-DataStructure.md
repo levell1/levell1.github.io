@@ -9,6 +9,6 @@ sidebar_main: true
 ***
 <!-- 공백포함 -> site.categories.['a b c'] -->
 
-{% assign posts = site.categories.['Data Structure']%}
+{% assign posts = site.categories['Data Structure']%}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
 
