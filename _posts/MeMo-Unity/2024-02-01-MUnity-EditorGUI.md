@@ -18,7 +18,7 @@ date: 2024-02-01 01:21
 `EditorGUI`
 <BR><BR>
 
-<center><H1>  EditorGUI </H1></center>
+<center><H1> EditorGUI </H1></center>
 EditorGUI
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
