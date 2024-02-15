@@ -34,7 +34,7 @@ date: 2024-02-13 02:00
 - - - 
 
 # UI 최적화 강의
-
+1
 ## 1.Frame Debugger
 window -> analysis -> Frame Debugger -> enable
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4f900f1b-acf4-4a05-8739-fc1d68357b96){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
