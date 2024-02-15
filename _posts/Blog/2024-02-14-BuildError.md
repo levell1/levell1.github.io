@@ -37,9 +37,11 @@ build with jekyll,
 Could not find jekyll-4.3.2, ~~~~ in locally installed gemsRun `bundle install` to install missing gems.  
 
 
-**해결?**
+**해결?**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/d097b974-2c4b-4de9-9a66-b567301b9439){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-[사이트](https://stackoverflow.com/questions/34557887/run-bundle-install-to-install-missing-gems)  
+
+## 추가 
+JEKYLL 버전맞추기 등 많은 시도 후 왜인지 모르겠지만 다음날 됐다.?  
 
 <br><br>
 - - -

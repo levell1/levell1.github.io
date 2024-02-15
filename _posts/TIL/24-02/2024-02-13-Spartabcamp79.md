@@ -34,7 +34,7 @@ date: 2024-02-13 02:00
 - - - 
 
 # UI 최적화 강의
-1
+
 ## 1.Frame Debugger
 window -> analysis -> Frame Debugger -> enable
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4f900f1b-acf4-4a05-8739-fc1d68357b96){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
@@ -49,6 +49,8 @@ window -> analysis -> Frame Debugger -> enable
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+<br><br>
+
 ## Batches 줄이는 법 
 > - 스프라이트 아틀라스 오브젝트 패킹에 이미지들을 넣는다  폴더를 통째로 넣는다
 > - 한 장에 모든 이미지가 들어감 -> ui를 그릴 때 한 번에 그려줌 -> 배치가 줄어듦
@@ -61,11 +63,15 @@ window -> analysis -> Frame Debugger -> enable
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+<br><br>
+
 ## 카메라 끄기
 > - 메인 카메라를 꺼도 배치 수가 줄어든다.
 > - 카메라 끄고 뒤에 캡쳐한 이미지를 넣는 방법도 있다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
+
+<br><br>
 
 ## UI 애니메이션
 > - UI에서는 애니메이션을 안 쓰는 게 좋다.
@@ -74,6 +80,8 @@ window -> analysis -> Frame Debugger -> enable
 > - 이미지타입 -> 슬라이스로
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
+
+<br><br>
 
 ## 이미지 레이케스트 타겟 
 > - 이미지 레이케스트 타겟 헤제
