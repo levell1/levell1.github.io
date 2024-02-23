@@ -113,6 +113,10 @@ date: 2024-02-15 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
+
+## Materials - Gpu instancing
+똑같은 materials에 ebable gpu instancing 을 하면 한번에 그린다.
+묶어서 한번에 그린다.
 <br><br><br><br><br>
 - - - 
 
