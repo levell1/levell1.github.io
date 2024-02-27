@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 83 버그 수정, 사운드 추가 빌드 준비⭐⭐ "
+title:  "[TIL] 84 에셋 애니메이션 이벤트⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-02-21 02:00
+date: 2024-02-25 02:00
 
 ---
 - - -
@@ -18,7 +18,7 @@ date: 2024-02-21 02:00
 
 <BR><BR>
 
-<center><H1>  최종 팀 프로젝트 25일차  </H1></center>
+<center><H1>  최종 팀 프로젝트 26일차  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 53  
 &nbsp;&nbsp; [o] 면접 문제 풀기 - 5     
@@ -32,12 +32,8 @@ date: 2024-02-21 02:00
 <br><br><br><br><br>
 - - - 
 
-# 오브젝트 풀 버그
-여러종류 동시에 오브젝트풀 사용시 오류가 발생.
--> 따로 빼서 오브젝트 풀 사용
-
-# 사운드 추가
-배경음, 배경음페이드 아웃 , 효과음 오브젝트풀로 추가
+# 에셋 스토어 애니메이션 이벤트 추가
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/02005596-578e-4343-bd29-513af21ae08e){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 # 기술면접
 ## 24. 디자인 패턴(Singleton, Observer 등) 사용하는 이유는 무엇인가요?
