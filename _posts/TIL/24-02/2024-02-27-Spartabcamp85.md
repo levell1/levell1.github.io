@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 85 에셋 애니메이션 이벤트⭐⭐ "
+title:  "[TIL] 85 해상도 관련 UI수정⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -32,22 +32,64 @@ date: 2024-02-25 02:00
 <br><br><br><br><br>
 - - - 
 
-# 에셋 스토어 애니메이션 이벤트 추가
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/02005596-578e-4343-bd29-513af21ae08e){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+# 해상도
+해상도 관련해서 신경쓰지않고 UI를 만들었다.  
+그리고 **WIDE** 모니터, 등 많은 다른 모니터들이 있고, 화면마다 다르게 UI 가 보이는 현상이 있었다.  다른 해상도로 체크해보면서 앵커,UI 배치 등 바꾸었다.  
+UI 설정 시 앵커, 위치등 다음부턴 처음에 만들 때 신경쓸 거 같다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 # 기술면접
-## 24. 디자인 패턴(Singleton, Observer 등) 사용하는 이유는 무엇인가요?
+## 26. 유니티 생명주기
 
-1. (꼬리질문) 프로젝트에 디자인패턴을 적용해 본 경험이 있나요? 왜 그 디자인패턴을 선택해서 구현하였나요?  
-싱글톤패턴, 오브젝트풀,
-싱글톤패턴은 전역적으로 관리하는 매니저를 위해 사용했고, 오브젝트 풀은 소리, 원거리공격의 총알 등을 생성 파괴되신 오브젝트 풀로 메모리를 관리하는데 사용햇습니다,
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info} 
+1. Unity의 생명주기(Unity Life Cycle)는 게임 오브젝트 및 스크립트가 실행되는 과정을 설명하는 것입니다. 이것은 게임 오브젝트의 초기화, 업데이트, 렌더링 및 파괴 과정을 포함합니다.  
+초기화(awke onenable start), 업데이트 (FixedUpdate - update - lateUpdate), 렌더링, 소멸 의 순서로 여러개의 함수가 실행, 반복합니다.  
 
-2. (꼬리질문) Unity를 사용하면서 경험해볼 수 있는 대표적인 디자인패턴이 무엇인지 설명해주세요.
-상태패턴, 관찰자패턴, 이벤트 버스 패턴, 전략패턴 등이 있습니다.
+<br><br>
+
+2. Initialization(초기화):
+> - Awake: 이 함수는 항상 Start 함수 전에 호출되며 프리팹이 인스턴스화 된 직후에 호출됩니다. 게임 오브젝트가 시작하는 동안 비활성 상태인 경우 **Awake 함수는 활성화될 때까지 호출되지 않습니다.**
+> - OnEnable: 오브젝트 활성화 직후 이 함수를 호출합니다. 레벨이 로드되거나 스크립트 컴포넌트를 포함한 게임 오브젝트가 인스턴스화될 때와 같이 MonoBehaviour를 생성할 때 이렇게 할 수 있습니다.
+> - Start: 스크립트 인스턴스가 활성화된 경우에만 첫 번째 프레임 업데이트 전에 호출됩니다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info} 
+{: .notice}  
+
+<br><br>
+
+3. FixedUpdate(고정 업데이트):
+> - Update 보다 더 자주 호출됩니다. 프레임 속도가 낮은 경우 프레임당 여러 번 호출될 수 있으며 프레임 속도가 높은 경우 프레임 사이에 호출되지 않을 수 있습니다. 모든 물리 계산 및 업데이트는 FixedUpdate 후 즉시 발생합니다. 
+> - FixedUpdate 의 움직임 계산을 적용할 때 Time.deltaTime 만큼 값을 곱할 필요가 없습니다.  물리 엔진 업데이트와 관련된 작업에 사용됩니다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br><br>
+
+4. Update(업데이트):
+> - 프레임당 한 번 호출됩니다. 프레임 업데이트를 위한 주요 작업 함수입니다.
+> - 게임 로직이나 사용자 입력 처리 등 게임 상태의 변경을 다룹니다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br><br>
+
+5. LateUpdate(늦은 업데이트):
+> - Update 가 끝난 후 프레임당 한 번 호출됩니다. Update 에서 수행된 모든 계산은 LateUpdate 가 시작할 때 완료됩니다. LateUpdate 는 일반적으로 다음의 3인칭 카메라에 사용합니다.
+> - 캐릭터를 움직이고 Update 로 방향을 바꾸게 하는 경우 LateUpdate 에서 모든 카메라 움직임과 로테이션 계산을 수행할 수 있습니다. 이렇게 하면 카메라가 포지션을 추적하기 전에 캐릭터가 완전히 움직였는지 확인할 수 있습니다.
+> - 주로 카메라 이동이나 따르는 오브젝트의 처리와 같은 작업에 사용됩니다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br><br>
+
+6. Rendering(렌더링): 화면에 그려질 내용을 처리합니다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br><br>
+
+7. Destruction(소멸):
+OnDestroy: 오브젝트 존재의 마지막 프레임에 대해 모든 프레임 업데이트를 마친 후 이 함수가 호출됩니다. 오브젝트는 Object.Destroy 또는 씬 종료에 대한 응답으로 파괴될 수 있습니다. 리소스 해제나 정리 작업을 수행합니다.
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br><br><br><br>
 - - - 
