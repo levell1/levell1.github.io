@@ -35,6 +35,7 @@ date: 2024-02-20 02:00
 
 # 간단한 CSV 불러오기
 로딩씬 TIP 부분에 쓰기위한 CSV사용 , 불러오기  [CSVReader 스크립트 참조](https://bravenewmethod.com/2014/09/13/lightweight-csv-reader-for-unity/#comment-7111)  
+
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/653b79d5-14f8-41c3-8f5f-6b751b2c7b2f)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
@@ -114,15 +115,13 @@ _tipText.text = (data_Dialog[_randomIndex]["Tip"].ToString());
 
 # 프로파일러(ProFiler)
 
-똑같은 metarial -> enable gpuinstance 같은 matarial을 한번에 드로우콜로 넘긴다.
+똑같은 metarial -> enable gpuinstance 같은 matarial을 한번에 드로우콜로 넘긴다.  
 왼쪽에 체크해서 해당 내역을 볼 수 있다.   
 하단좌측 timeline, hierarchy  
 최적화 할 요소 찾기.  
 핵심 gfx waitforpresent~~~ -> gpu 가 기다리고 있다 -> 렌더링 최적화 필요  
 핵심 gfx waitforcommand~~~ -> cpu가 바빠서 명령을 기다리고있다 -> cpu최적화 해야된다  
-세부적으로 볼려면  
-상단에 deep profile 활성화  
-하단우측 에 체크 다 하기    
+세부적으로 볼려면 상단에 deep profile 활성화 하단우측 에 체크 다 하기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -138,7 +137,7 @@ mymarker.begin ~ mymarker.end 까지의를 체크할 수 있다.
 
 
 # 잡담,정리
-
+CSV, 프로파일러 
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
