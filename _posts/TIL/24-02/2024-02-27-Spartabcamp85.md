@@ -103,7 +103,7 @@ OnDestroy: 오브젝트 존재의 마지막 프레임에 대해 모든 프레임
 
 
 # 잡담,정리
-
+해상도, 생명주기
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
