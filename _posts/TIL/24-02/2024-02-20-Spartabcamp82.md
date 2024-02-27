@@ -34,9 +34,11 @@ date: 2024-02-20 02:00
 - - - 
 
 # 간단한 CSV 불러오기
-로딩씬 TIP 부분에 쓰기위한 CSV사용 , 불러오기  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/e8d1dd6d-2ca1-4750-96e9-459c41fca5c7)  
-[CSVReader 스크립트 참조](https://bravenewmethod.com/2014/09/13/lightweight-csv-reader-for-unity/#comment-7111)  
+로딩씬 TIP 부분에 쓰기위한 CSV사용 , 불러오기  [CSVReader 스크립트 참조](https://bravenewmethod.com/2014/09/13/lightweight-csv-reader-for-unity/#comment-7111)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/653b79d5-14f8-41c3-8f5f-6b751b2c7b2f)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
 
 **CSVReader.cs**  
 <div class="notice--primary" markdown="1"> 

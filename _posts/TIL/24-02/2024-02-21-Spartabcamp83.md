@@ -46,8 +46,13 @@ date: 2024-02-21 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+<br><br>
+
 ## SoundManager
 모든 리소스 캐싱 후 배경음악, 효과음 재생메서드, 수정필요
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
 <details>
 <summary>SoundManager</summary>
 <div class="notice--primary" markdown="1"> 
@@ -257,6 +262,8 @@ public class SoundManager : MonoBehaviour
 </div>
 </details>
 
+<br><br><br><br><br>
+- - - 
 
 # 맵 구현
 > - RenderTexture를 이용한 구현  
@@ -267,12 +274,15 @@ public class SoundManager : MonoBehaviour
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+<br><br>
+
 ## 던전 맵 구현
 > - 던전 방 별로 카메라에 표시되는 오브젝트 하나 생성
 > - 방 클리어 시 갈 수 있는 방 색변경 -> 맵에 표시
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/67a59af9-2199-4160-a592-61ffcf71d910){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
+
 <br><br><br><br><br>
 - - - 
 
@@ -297,7 +307,7 @@ Unity를 사용하면서 경험해볼 수 있는 대표적인 디자인패턴이
 
 
 # 잡담,정리
-오브젝트 풀 생각, 사운드 추가, 디자인패턴
+오브젝트 풀 생각, 사운드 추가, 디자인패턴, 맵 구현
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
