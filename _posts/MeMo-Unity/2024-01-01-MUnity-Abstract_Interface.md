@@ -28,20 +28,20 @@ Abstract Interface 생각나서 한번 정리
 
 # 추상클래스, 인터페이스 차이
 
-**추상클래스(Abstract)** - **설계목적** 구현가능  
-상속받은 자식이 새로 구현(반드시 오버라이딩)  
-반드시 구현해야 할 건 추상클래스로 선언하자.  
-부모 public abstract void 함수();  
-자식 public override void 함수();  
+**다형성을 구현하는 방법이지만 차이점이 있습니다.**
+> - 추상클래스 추상메서드는 브 클래스에서 반드시 구현(오버라이딩)   
+> - 일반 메서드, 필드, 생성자 등을 포함할 수 있습니다.   
+> - 다른 하위 클래스들이 공유하는 기본 동작을 제공하고, 하위 클래스들이 필요에 맞게 확장할 수 있도록 합니다.
+> - 다중상속x  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
-추상클래스 **문제점**  -> 다중상속 x -> Interface 사용  
-다중상속 안되는 이유 -> 추상클래스에는 **일반함수도 포함**되어 있다.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--warning} 
-
-**인터페이스(Interface)** -> 일반함수, 일반변수 선언 X, 구현X -> **다중상속 O**  
+**인터페이스(Interface)** 
+> - 함수 선언만 할 수 있다.  
+> - 인터페이스 안에 선언한 모든 함수는 인터페이스를 상속하는 클래스에서 반드시 구현  
+> - 서로 다른 클래스 간에 공통된 동작을 정의할 때 사용됩니다.  
+> - 인터페이스를 사용하여 클래스 간의 계약(Contract)을 정의  
+> - 다중상속O  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success} 
 
