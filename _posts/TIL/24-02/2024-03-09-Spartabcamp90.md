@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 87 해상도 ui대응, ⭐⭐ "
+title:  "[TIL] 90  최종 프로젝트 끝. ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-02-29 02:00
+date: 2024-03-09 02:00
 
 ---
 - - -
@@ -18,7 +18,7 @@ date: 2024-02-29 02:00
 
 <BR><BR>
 
-<center><H1>  최종 팀 프로젝트 29일차  </H1></center>
+<center><H1>  최종 팀 프로젝트 32일차  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 53  
 &nbsp;&nbsp; [o] 면접 문제 풀기 - 5     
@@ -32,14 +32,15 @@ date: 2024-02-29 02:00
 <br><br><br><br><br>
 - - - 
 
-# 해상도 대응
+# BT
 
+# 던전 정리
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
-해상도 대응  
+최적화, 던전 정리
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

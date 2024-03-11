@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 87 해상도 ui대응, ⭐⭐ "
+title:  "[TIL] 91 강의 FSM⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -10,15 +10,16 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-02-29 02:00
+date: 2024-03-10 02:00
 
 ---
 - - -
 
+`FSM`, `ProBuilder`
 
 <BR><BR>
 
-<center><H1>  최종 팀 프로젝트 29일차  </H1></center>
+<center><H1>  최종 팀 프로젝트 30일차  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 53  
 &nbsp;&nbsp; [o] 면접 문제 풀기 - 5     
@@ -32,14 +33,19 @@ date: 2024-02-29 02:00
 <br><br><br><br><br>
 - - - 
 
-# 해상도 대응
+# ProBuilder
+프로빌더(ProBuilder)는 Unity의 유용한 에셋 중 하나로, 게임 개발자들이 빠르고 쉽게 3D 모델을 만들고 편집하는 도구입니다. 기본적으로 Unity에서 제공하는 기능으로, 유료 라이선스가 필요 없이 무료로 사용할 수 있습니다.
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/97db89c2-8ec0-46f5-b929-0a5a4fd40581)  
 
+# FSM
+
+# 던전 정리
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
-해상도 대응  
+최적화, 던전 정리
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
