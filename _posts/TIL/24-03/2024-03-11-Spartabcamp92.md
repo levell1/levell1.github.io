@@ -47,7 +47,9 @@ date: 2024-03-10 02:00
 - - - 
 
 # 잡담,정리
-시네머신(Cinemachine Camera)  
+시네머신(Cinemachine Camera) 
+이력서 : 취업 목적으로 자신의 정보를 보여주기 위한 문서
+회사에 필요한 사람인가?를 보여줘야된다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
