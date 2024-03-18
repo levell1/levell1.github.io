@@ -39,16 +39,18 @@ date: 2024-03-10 02:00
 > - **body** - **Framing Transposer** : 이 가상 카메라 Body 알고리즘은 카메라를 Follow 타겟과의 고정된 스크린 공간 관계로 이동시킵니다. 프레이밍 트랜스포저 는 카메라의 공간상 포지션만 변경하며, 카메라 방향을 바꾸거나 기타 다른 방식으로 카메라를 조준하지 않습니다.  
 > - **Aim - POV** : 이 가상 카메라 Aim 알고리즘은 사용자 입력에 대한 응답으로 카메라를 조준합니다.  
 > - **CinemachineVirtualCamera** - Add Extension ->Cinemachine Collider 추가 -> 카메라에 콜라이더 추가(장애물에 관하여 처리) - damping - 0.1  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/9b9c54a0-280d-4928-a874-82d190936934)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/9b9c54a0-280d-4928-a874-82d190936934){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
-시네머신(Cinemachine Camera) 
-이력서 : 취업 목적으로 자신의 정보를 보여주기 위한 문서
+시네머신(Cinemachine Camera)  
+이력서 : 취업 목적으로 자신의 정보를 보여주기 위한 문서  
 회사에 필요한 사람인가?를 보여줘야된다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  

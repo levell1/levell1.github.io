@@ -39,30 +39,38 @@ date: 2024-03-04 02:00
 
 미니맵에서 RanderTexture로 사용 시 모든 맵을 그리기 때문에 배치수가 1000이상이 증가 되어서 최적화필요.
 뒤의 배경은 RanderTexture 대신 이미지 한장으로 배치수 1000 → 2 로 줄었고, 보스, 플레이어 표시하는 오브젝트는 RanderTexture로 실시간으로 하여서 표시.
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/34b06880-ccd6-4dea-8558-12d95bcf7528)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/34b06880-ccd6-4dea-8558-12d95bcf7528){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <br><br>
 
 ## 컬링
 프러스텀 컬링 사용 시야거리 줄이기
 -> 부자연스러운 시야 -> 안개를 사용해 자연스러운 연출
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br>
 
 ## LOD
 몬스터 거리에따라 다른 모습, 보이지않게, 랜더링
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br>
 
 ## Sprite Atlas
-UI에 사용되는 요소를 Sprite Atlas를 이용하여 배치수를 줄임.
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/0b2da0d3-9095-445c-a707-d987b9dbd9d0)
+UI에 사용되는 요소를 Sprite Atlas를 이용하여 배치수를 줄임.  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/0b2da0d3-9095-445c-a707-d987b9dbd9d0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
-그외 비동기 로드, ObjectPool  
+### 비동기 로드, 오브젝트 풀링
+비동기 로드, ObjectPool  
 
 <br><br>
 
-마을 최적화  
+## 마을 최적화    
 **전**  
 ![01아무처리도안했을경우](https://github.com/levell1/levell1.github.io/assets/96651722/f94541a1-73d2-4c85-b5f8-df903397e2b7){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 

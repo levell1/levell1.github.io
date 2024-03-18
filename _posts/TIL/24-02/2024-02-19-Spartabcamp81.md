@@ -34,10 +34,11 @@ date: 2024-02-19 02:00
 - - - 
 
 # 던전
-던전 랜덤방 생성 시도했지만...
--> 맵은 고정, 다음층으로 가는 포탈 랜덤. 방 문 다음 방 연결
-
-보스 BT를 사용
+던전 랜덤방 생성 시도했지만...  
+-> 맵은 고정, 다음층으로 가는 포탈 랜덤. 방 문 다음 방 연결  
+보스 BT를 사용  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ced5eb38-762f-4308-a64d-09f37058b65c){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 <br><br><br><br><br>
@@ -58,15 +59,6 @@ date: 2024-02-19 02:00
 
 <br><br><br><br><br>
 - - - 
-
-
-# 잡담,정리
-
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
-
-<br><br>
-- - -
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}

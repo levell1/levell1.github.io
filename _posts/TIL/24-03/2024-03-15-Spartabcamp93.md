@@ -37,18 +37,11 @@ date: 2024-03-15 02:00
 > - 점프키 입력시 JumpForce만큼 힘주기, velocity.y<=0 이면 FallState로 넘어가기
 > - FallState상태에서 GroundCheck 되면 다시 IdleState로 변경
 > - velocity를 이용하여 상태전환
-
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br><br><br><br>
 - - - 
-
-# 잡담,정리
-
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--success}  
-
-<br><br>
-- - -
 
 참고 : [유니티](https://docs.unity3d.com/kr/)
 [TOP](#){: .btn .btn--info .btn--small }{: .align-right}

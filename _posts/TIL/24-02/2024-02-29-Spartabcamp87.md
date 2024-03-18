@@ -33,13 +33,17 @@ date: 2024-02-29 02:00
 - - - 
 
 # 해상도 대응
+UI가 다른해상도에 따라 다르게 적용되는 문제  
+Canvas Scaler - match-Height , 앵커 수정.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
 
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
-해상도 대응  
+해상도 대응, 코드를 이용해서 UI들 해상도 대응 생각해보기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

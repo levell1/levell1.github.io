@@ -19,12 +19,12 @@ date: 2024-03-10 02:00
 
 <BR><BR>
 
-<center><H1>  최종 팀 프로젝트 30일차  </H1></center>
+<center><H1>  이력서 진행중  </H1></center>
 
 &nbsp;&nbsp; [o] 알고리즘 문제  - 53  
 &nbsp;&nbsp; [o] 면접 문제 풀기 - 5     
 &nbsp;&nbsp; [o] 1,2반 마무리정리  챌~   
-&nbsp;&nbsp; [x] 심화주차 강의 듣기.   
+&nbsp;&nbsp; [x] 심화주차 강의 듣기. 진행중  
 &nbsp;&nbsp; [x] 디자인 코드 패턴 이해,정리하기.   
 &nbsp;&nbsp; [x] 자료구조 디자인패턴 강의 다시 듣기.   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -35,11 +35,13 @@ date: 2024-03-10 02:00
 
 # ProBuilder
 프로빌더(ProBuilder)는 Unity의 유용한 에셋 중 하나로, 게임 개발자들이 빠르고 쉽게 3D 모델을 만들고 편집하는 도구입니다. 기본적으로 Unity에서 제공하는 기능으로, 유료 라이선스가 필요 없이 무료로 사용할 수 있습니다.
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/97db89c2-8ec0-46f5-b929-0a5a4fd40581)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/97db89c2-8ec0-46f5-b929-0a5a4fd40581){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 # FSM
 
-# 던전 정리
 
 <br><br><br><br><br>
 - - - 
