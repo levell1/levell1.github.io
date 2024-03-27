@@ -64,9 +64,15 @@ date: 2024-03-04 02:00
 ## Sprite Atlas
 UI에 사용되는 요소를 Sprite Atlas를 이용하여 배치수를 줄임.  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/0b2da0d3-9095-445c-a707-d987b9dbd9d0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
+
+<br><br>
 
 ### 비동기 로드, 오브젝트 풀링
 비동기 로드, ObjectPool  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br>
 
