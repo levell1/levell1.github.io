@@ -49,7 +49,7 @@ date: 2024-03-26 02:00
 - - - 
 
 # 잡담, 일기?
-포톤강의- 아직 포톤에대한 거 보다 더 중요하게 배워야 할 게 있다고 생각.
+포톤강의 - 나중에 필요할 때 더 알아보기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
