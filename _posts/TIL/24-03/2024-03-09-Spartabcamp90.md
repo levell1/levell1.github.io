@@ -35,6 +35,8 @@ date: 2024-03-09 02:00
 [**Find Aieht 브로셔**](https://teamsparta.notion.site/Find-Aieht-21da25a1bba54bb695202615261aac52)  
 [**Find Aieht 깃허브**](https://github.com/levell1/Find_aiehT)  
 
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/fa436bfb-1d1b-4b5c-9b10-eb533ee77843){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
 <br><br><br><br><br>
 - - - 
 

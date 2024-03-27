@@ -96,7 +96,8 @@ date: 2024-03-08 02:00
 {: .notice--success}  
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/e74ca520-181b-4600-85a8-838aa6d47283){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-맵 끝에 랜덤으로 포탈이 생성, 다음층으로 연결 1 -> 2-> 3(보스방)층으로 구성 보스를 깨면 클리어.  
+맵 끝에 랜덤으로 포탈이 생성, 다음층으로 연결  
+1 -> 2-> 3(보스방)층으로 구성 보스를 깨면 클리어.  
 
 <br><br><br><br><br>
 - - - 
