@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 86 소리크기 저장 , 면접 준비⭐⭐ "
+title:  "[TIL] 86 소리크기 저장 , 면접 준비 ⭐ "
 excerpt: "Sparta"
 
 categories:

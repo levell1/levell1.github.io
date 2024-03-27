@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 91 강의 FSM⭐⭐ "
+title:  "[TIL] 91 Probuilder ⭐ "
 excerpt: "Sparta"
 
 categories:

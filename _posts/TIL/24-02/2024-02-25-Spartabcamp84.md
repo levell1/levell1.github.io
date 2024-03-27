@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 84 에셋 애니메이션 이벤트⭐⭐ "
+title:  "[TIL] 84 에셋 애니메이션 이벤트 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:

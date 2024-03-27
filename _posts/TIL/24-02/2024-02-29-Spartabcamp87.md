@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 87 해상도 ui대응, ⭐⭐ "
+title:  "[TIL] 87 해상도 UI 대응, ⭐ "
 excerpt: "Sparta"
 
 categories:

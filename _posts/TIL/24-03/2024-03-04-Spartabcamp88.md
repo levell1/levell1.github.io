@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 88 최적화 글 BT⭐⭐ "
+title:  "[TIL] 88 최적화 글 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:

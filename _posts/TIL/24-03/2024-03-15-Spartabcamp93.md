@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 93 FSM 점프⭐⭐ "
+title:  "[TIL] 93 FSM 점프 ⭐ "
 excerpt: "Sparta"
 
 categories:

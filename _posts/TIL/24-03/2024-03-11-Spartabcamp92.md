@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 92 강의 시네머신 카메라⭐⭐ "
+title:  "[TIL] 92 강의 시네머신 카메라 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
