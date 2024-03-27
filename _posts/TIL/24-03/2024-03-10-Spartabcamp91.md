@@ -40,14 +40,11 @@ date: 2024-03-10 02:00
 
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/97db89c2-8ec0-46f5-b929-0a5a4fd40581){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
-# FSM
-
-
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
-최적화, 던전 정리
+FSM 강의 진행중, 프로빌더 사용.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

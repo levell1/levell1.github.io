@@ -24,19 +24,12 @@ date: 2024-03-25 02:00
 &nbsp;&nbsp; [o] 1,2반 마무리정리  챌~   
 &nbsp;&nbsp; [x] 심화주차 강의 듣기. 진행중  
 &nbsp;&nbsp; [x] 디자인 코드 패턴 이해,정리하기. 책사기  
-&nbsp;&nbsp; [x] 자료구조 디자인패턴 강의 다시 듣기.   
+&nbsp;&nbsp; [x] 자료구조 디자인패턴 강의 다시 듣기.     
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
 <br><br><br><br><br>
 - - - 
-
-# 취업 설명회
-
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice}
-
-<br><br>
 
 # FSM 공격(콤보어택)
 
@@ -51,10 +44,11 @@ date: 2024-03-25 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-## Animation
+## Animation fix
 플레이어의 공격 타격안되는 부분 수정.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
 <br><br><br><br><br>
 - - - 
 
@@ -79,6 +73,7 @@ Idle, Chsing, Attack 상태
 4. 'Player Settings'에서 게임의 설정을 변경할 수 있습니다. (예: 회사 이름, 게임 아이콘 등)
 5. 'Build' 버튼을 클릭하여 빌드를 시작합니다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice}  
 
 <br><br>
 
@@ -112,7 +107,7 @@ Idle, Chsing, Attack 상태
 5. 'Minimum API Level'과 'Target API Level'을 적절하게 설정합니다.
 6. 'Build' 버튼을 클릭하여 빌드를 시작합니다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"} 
-
+{: .notice}  
 <br><br>
 
 ### 유의사항
