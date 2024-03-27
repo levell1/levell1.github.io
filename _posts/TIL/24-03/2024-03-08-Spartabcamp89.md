@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 89 Behavior Tree(BT) ⭐⭐ "
+title:  "[TIL] 89 Behavior Tree(BT), 던전 정리 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -15,7 +15,7 @@ date: 2024-03-08 02:00
 ---
 - - -
 
-`Behavior Tree` `BT`
+`Behavior Tree` `BT` `던전`
 
 <BR><BR>
 
@@ -41,7 +41,7 @@ date: 2024-03-08 02:00
 ## 노드
 **Action**, **Selector**, **Sequence** 로 구성  
 
-> **Action** 행동을 정의한 노드  
+> **Action** : 행동을 정의한 노드  
 > - 플레이어체크, 에어본스킬, 원거리공격, 빛전기공격, 도망, 돌진 공격 등등  
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/0ab02bcd-bc4d-499e-9e42-eb6097a869da){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -49,7 +49,7 @@ date: 2024-03-08 02:00
 
 <br><br>
 
-> **Selector** or 연산자의 기능 
+> **Selector** : or 연산자의 기능 
 > - 왼쪽에서 오른쪽으로 진행 (성공한 노드가 있다면 노드를 실행하고 종료.)
 > - 여러 행동 중 하나만 실행 할 때 사용하기 좋다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -57,7 +57,7 @@ date: 2024-03-08 02:00
 
 <br><br>
 
-> **Sequence** and연산자의 기능
+> **Sequence** : and연산자의 기능
 > - 자식노드중 실패한 노드가 있을 때 까지 진행
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/06973421-2474-4592-853f-c0e4d8e8a060){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -86,7 +86,7 @@ date: 2024-03-08 02:00
 > - -> 1주안에 힘들다 생각하여 고정맵을 만들고, 포탈만 랜덤생성으로 변경  
 > - -> 1층, 2층, 3층(보스방) 던전  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--warnig}  
+{: .notice--warning}  
 
 > **몬스터 생성, 던전진행**
 > - 층마다 다른 몬스터들을 랜덤종류, 랜덤수만큼 생성
@@ -102,7 +102,7 @@ date: 2024-03-08 02:00
 - - - 
 
 # 잡담,정리
-`Behavior Tree` `BT` 던전 정리  
+`Behavior Tree` `BT` `던전` 정리  
 아직 BT사용에 미숙하고 써보지못한 노드들 Decorator 등 많은 기능을 사용 할 수 있었다.  
 다음에 다시 할 때 더 완성된 형태로 할 수 있을 거 같다..  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}

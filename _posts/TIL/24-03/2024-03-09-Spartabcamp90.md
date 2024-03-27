@@ -32,13 +32,14 @@ date: 2024-03-09 02:00
 <br><br><br><br><br>
 - - - 
 
-링크, 이력서, 브로셔내용 적기
+[**Find Aieht 브로셔**](https://teamsparta.notion.site/Find-Aieht-21da25a1bba54bb695202615261aac52)  
+[**Find Aieht 깃허브**](https://github.com/levell1/Find_aiehT)  
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담,정리
-최적화, 던전 정리
+최종 프로젝트 종료.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
