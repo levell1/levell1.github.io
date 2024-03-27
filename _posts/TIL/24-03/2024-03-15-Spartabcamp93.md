@@ -40,12 +40,5 @@ date: 2024-03-15 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
-<br><br><br><br><br>
-- - - 
-
-참고 : [유니티](https://docs.unity3d.com/kr/)
-[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
-
-
 <br><br>
 - - -

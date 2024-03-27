@@ -63,12 +63,6 @@ TIL, 배운내용 4월전까지 정리하기.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
-<br><br>
-- - -
-
-참고 : [유니티](https://docs.unity3d.com/kr/)
-[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
-
 
 <br><br>
 - - -

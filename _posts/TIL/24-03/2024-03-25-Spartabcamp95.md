@@ -155,12 +155,6 @@ FSM 강의 듣기(공격), 적구현, 프로젝트 빌드 관련 내용
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
-<br><br>
-- - -
-
-참고 : [유니티](https://docs.unity3d.com/kr/)
-[TOP](#){: .btn .btn--info .btn--small }{: .align-right}
-
 
 <br><br>
 - - -
