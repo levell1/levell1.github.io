@@ -67,11 +67,11 @@ Idle, Chsing, Attack 상태
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/b3e8c541-0352-411c-9d50-2ace72595733){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 ## 윈도우
-&nbsp;&nbsp; 1. 'File' > 'Build Settings'로 이동합니다.  
-&nbsp;&nbsp; 2. 'Platform' 목록에서 'Windows'를 선택하고, 'Switch Platform'을 클릭합니다.  
-&nbsp;&nbsp; 3. 원하는 씬을 'Scenes in Build' 목록에 추가합니다.  
-&nbsp;&nbsp; 4. 'Player Settings'에서 게임의 설정을 변경할 수 있습니다. (예: 회사 이름, 게임 아이콘 등)  
-&nbsp;&nbsp; 5. 'Build' 버튼을 클릭하여 빌드를 시작합니다.  
+&nbsp;&nbsp; 1. **File** > **Build Settings**로 이동합니다.  
+&nbsp;&nbsp; 2. **Platform** 목록에서 **Windows**를 선택하고, **Switch Platform**을 클릭합니다.  
+&nbsp;&nbsp; 3. 원하는 씬을 **Scenes in Build** 목록에 추가합니다.  
+&nbsp;&nbsp; 4. **Player Settings**에서 게임의 설정을 변경할 수 있습니다. (예: 회사 이름, 게임 아이콘 등)  
+&nbsp;&nbsp; 5. **Build** 버튼을 클릭하여 빌드를 시작합니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}  
 
@@ -103,9 +103,9 @@ Idle, Chsing, Attack 상태
 
 ## 안드로이드
 **1 2 3** 윈도우와 동일  
-&nbsp;&nbsp; 4. 'Player Settings'에서 게임의 설정을 변경할 수 있습니다. (예: 회사 이름, 게임 아이콘, 번들 식별자 등)  
-&nbsp;&nbsp; 5. 'Minimum API Level'과 'Target API Level'을 적절하게 설정합니다.  
-&nbsp;&nbsp; 6. 'Build' 버튼을 클릭하여 빌드를 시작합니다.  
+&nbsp;&nbsp; 4. **Player Settings**에서 게임의 설정을 변경할 수 있습니다. (예: 회사 이름, 게임 아이콘, 번들 식별자 등)  
+&nbsp;&nbsp; 5. **Minimum API Level**과 **Target API Level**을 적절하게 설정합니다.  
+&nbsp;&nbsp; 6. **Build** 버튼을 클릭하여 빌드를 시작합니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"} 
 {: .notice}  
 <br><br>
