@@ -48,11 +48,11 @@ date: 2024-04-01 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-**AR Foundation** -> AR 플랫폼 간에 전환할 때 현재 사용할 수 없는 기능을 어디에서나 이용가능하게 해주는 역할
-**AR Session** -> AR에 맞는 생명주기,세팅의 기본
-**XR Origin** -> 실제 세계 좌표를 유니티 좌표로 변경, 카메라 관련
-AR Core는 Vulkan 지원 x
-minimum API Level -Nougat(24) 부터 AR 가능
+**AR Foundation** -> AR 플랫폼 간에 전환할 때 현재 사용할 수 없는 기능을 어디에서나 이용가능하게 해주는 역할  
+**AR Session** -> AR에 맞는 생명주기,세팅의 기본  
+**XR Origin** -> 실제 세계 좌표를 유니티 좌표로 변경, 카메라 관련  
+AR Core는 Vulkan 지원 x  
+minimum API Level -Nougat(24) 부터 AR 가능  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ed97f84c-6f1b-4756-94b6-603fac29d6b6){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
@@ -78,17 +78,45 @@ minimum API Level -Nougat(24) 부터 AR 가능
 <br><br>
 
 ## AR Plane
-> **포인트 체크**
+> **바닥 체크**
 > - AR Default Plane -> 프리팹화
 > - AR Origin 에 AR Plane Manager 컴포넌트추가  만든 프리팹 연결
-> - 빌드 후 실행 -> 포인트 잘 나오는지 체크
+> - 빌드 후 실행 -> Plane 잘 나오는지 체크
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
 **AR Plane Manager Detection Mode -> 설정가능**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/b3a751dd-5b51-4e42-b7f8-eb05c91499ca)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/b3a751dd-5b51-4e42-b7f8-eb05c91499ca){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 
+**테스트**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc08dd31-fc8f-4784-9e42-c5ce3bbf8400){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+<br><br>
+
+## AR Face
+> **Face 체크**
+> - AR Default Face -> 프리팹화
+> - AR Origin 에 AR Face Manager 컴포넌트추가  만든 프리팹 연결
+> - Maximam count (인식 face 수) 설정
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1215e89c-eb22-47c2-aef7-a8cbd04768fa)
+> - 전면 후면 카메라 인식 설정 AR CametaManager -> Facing Direction World - 후면  User - 전면
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4aa98aa6-fe63-4216-b41d-196590b1d47d)
+> - New Material -> albedo 에 넣어주고 (이미지는 sprite)
+> - default face 의 materials 부분에 교체 해주면 이미지 확인
+> - 빌드 후 실행 -> Plane 잘 나오는지 체크
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+**AR Plane Manager Detection Mode -> 설정가능**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc08dd31-fc8f-4784-9e42-c5ce3bbf8400){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+
+
+완전 정확하지 않은 것 같다.  
+Manager 코드 보기
+
+
+월드 후면 유저 전면
 <br><br><br><br><br>
 - - - 
 
