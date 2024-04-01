@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 98 AR VR 스터디 ⭐ "
+title:  "[TIL] 98 AR VR 강의 세팅, 스터디 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -48,11 +48,11 @@ date: 2024-04-01 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-**AR Foundation** -> AR 플랫폼 간에 전환할 때 현재 사용할 수 없는 기능을 어디에서나 이용가능하게 해주는 역할  
-**AR Session** -> AR에 맞는 생명주기,세팅의 기본  
-**XR Origin** -> 실제 세계 좌표를 유니티 좌표로 변경, 카메라 관련  
-AR Core는 Vulkan 지원 x  
-minimum API Level -Nougat(24) 부터 AR 가능  
+> - **AR Foundation** -> AR 플랫폼 간에 전환할 때 현재 사용할 수 없는 기능을 어디에서나 이용가능하게 해주는 역할  
+> - **AR Session** -> AR에 맞는 생명주기,세팅의 기본  
+> - **XR Origin** -> 실제 세계 좌표를 유니티 좌표로 변경, 카메라 관련  
+> - AR Core는 Vulkan 지원 x  
+> - minimum API Level -Nougat(24) 부터 AR 가능  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ed97f84c-6f1b-4756-94b6-603fac29d6b6){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
@@ -112,7 +112,12 @@ minimum API Level -Nougat(24) 부터 AR 가능
 
 # AR Plane 활용
 
-패키지 XR Interaction Toolkit 설치
+> **Plane**  
+> - 패키지 **XR Interaction Toolkit** 설치  
+> - Hierarchy XR Origin(AR) 추가  
+> - XR Origin 에 **Plane**, **Raycast** Manager 추가  
+> - Hierarchy AR Placement Interactable 추가 XR Interaction Manager , Origin 연결
+> - 빈오브젝트 속 큐브하나 만들기 스케일 1 = 1M 조정하기
 
 <br><br><br><br><br>
 - - - 
