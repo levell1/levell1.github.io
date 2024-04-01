@@ -39,12 +39,14 @@ date: 2024-04-01 02:00
 > **AR 프로젝트 세팅**  
 > - 3D 프로젝트 생성  
 > - &nbsp;&nbsp; 1. 플러그인 설치 [AR Foundation](https://unity.com/unity/features/arfoundation)  
-> - &nbsp;&nbsp; 2. 윈도우 -> 패키지 매니저 -> AR Foundation설치, ARCore(Google ARCore XR Plugin) 설치
-> - &nbsp;&nbsp; 3. Edit > Project Settings > **XR Plug-in Management** > Android ARCore 체크 , 빌드세팅 안드로이드로 변경
-> - &nbsp;&nbsp; 4. hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가 
-> - &nbsp;&nbsp; 5. Edit > Project Settings > **Player** - Other Settings -> autoGraphics API 체크해제, Vulkan 삭제  
-> - &nbsp;&nbsp; 6. Identification -> minimum API Level -Nougat(24), Configuration -> Scripting Backend =IL2CPP, Target Architectures = ARM 64 체크 
-> - &nbsp;&nbsp; 프로젝트 빌드 세팅 끝. 
+> - &nbsp;&nbsp; 2. 윈도우 -> 패키지 매니저 -> **AR Foundation**설치, **AR Core**(Google ARCore XR Plugin) 설치  
+> - &nbsp;&nbsp; 3. Edit > Project Settings > **XR Plug-in Management** > **Android AR Core** 체크 , 빌드세팅 안드로이드로 변경  
+> - &nbsp;&nbsp; 4. hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가  
+> - &nbsp;&nbsp; 5. Edit > Project Settings > **Player**  
+> - &nbsp;&nbsp; Other Settings -> **AutoGraphics API** 체크해제, **Vulkan** 삭제  
+> - &nbsp;&nbsp; Identification -> Minimum API Level - **Nougat(24)**  
+> - &nbsp;&nbsp; Configuration -> Scripting Backend = **IL2CPP**, Target Architectures = **ARM 64** 체크  
+> - &nbsp;&nbsp; 프로젝트 빌드 세팅 끝.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
@@ -112,25 +114,48 @@ date: 2024-04-01 02:00
 
 # AR Plane 활용
 
-> **Plane**  
+## 오브젝트 배치
+
+> **Plane에 큐브 놓기**  
 > - 패키지 **XR Interaction Toolkit** 설치  
 > - Hierarchy XR Origin(AR) 추가  
 > - XR Origin 에 **Plane**, **Raycast** Manager 추가 Raycastmanager none으로  
-> - Hierarchy AR Placement Interactable 추가 XR Interaction Manager , Origin 연결   
-> - 빈오브젝트 속 큐브하나 만들기 스케일 1 = 1M 조정하기 선택 시 효과  
+> - Hierarchy **AR Placement Interactable** 추가 XR Interaction Manager , Origin 연결   
+> - 빈오브젝트 속 큐브 만들기 Scale 1 = 1M 조정하기 선택 시 효과   
 > - SelectCube Material Randeringmode TransParent로, 색 변경, 큐브에 Material 추가  
 > - 오브젝트 프리팹화 하기  
 > - AR Placement Interactable 에 프리팹 등록  
 > - Main Camera에 **AR Gesture Interactor**컴포넌트 추가 Interaction, origin 연결  
-> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4e382eea-2b83-4d05-9b6f-5acfb28ec5e3)
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4e382eea-2b83-4d05-9b6f-5acfb28ec5e3){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+**테스트**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/88beec57-ff85-4cb3-af68-6c143cdd1423){:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 
 터치 인식 [AR Gesture Interactor](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit%402.0/manual/ar-gesture-interactor.html) 
 
+## 오브젝트 옮기기
+
+> **배치된큐브 옮기기**   
+> - 큐브 오브젝트에 **AR Translation Interactalbe** 컴포넌트 추가   
+> - AR Selection Interactable 컴포넌트에 Selection Visualizatior 에 selectcube 넣으면 선택시 효과 가능   
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ce6dbd55-5fcd-4fc1-bc5b-db4755652891){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+> **큐브 회전, 줌**
+> - 큐브 오브젝트에 **AR Scale Interactalbe**, **AR Rotation Interactalbe** 컴포넌트   
+> - 등 많은 컴포넌트 추가로 효과를 줄 수 있다.  
+> - 두손으로 스케일, 회전 가능.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
 **테스트**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/88beec57-ff85-4cb3-af68-6c143cdd1423)
+선택 후 이동이 된다!.
+
+AR Selection Interactable 선택된 오브젝티 효과
+
 <br><br><br><br><br>
 - - - 
 
