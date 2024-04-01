@@ -43,9 +43,9 @@ date: 2024-04-01 02:00
 > - &nbsp;&nbsp; **3.** Edit > Project Settings > **XR Plug-in Management** > **Android AR Core** 체크 , 빌드세팅 안드로이드로 변경  
 > - &nbsp;&nbsp; **4.** hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가  
 > - &nbsp;&nbsp; **5.** Edit > Project Settings > **Player**  
-> - &nbsp;&nbsp; - Other Settings -> **AutoGraphics API** 체크해제, **Vulkan** 삭제  
-> - &nbsp;&nbsp; - Identification -> Minimum API Level - **Nougat(24)**  
-> - &nbsp;&nbsp; - Configuration -> Scripting Backend = **IL2CPP**, Target Architectures = **ARM 64** 체크  
+> - &nbsp;&nbsp; **-** Other Settings -> **AutoGraphics API** 체크해제, **Vulkan** 삭제  
+> - &nbsp;&nbsp; **-** Identification -> Minimum API Level - **Nougat(24)**  
+> - &nbsp;&nbsp; **-** Configuration -> Scripting Backend = **IL2CPP**, Target Architectures = **ARM 64** 체크  
 > - &nbsp;&nbsp; 프로젝트 빌드 세팅 끝.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -100,7 +100,7 @@ date: 2024-04-01 02:00
 > **Face**  
 > - AR Default Face -> 프리팹화  
 > - AR Origin 에 AR Face Manager 컴포넌트추가  만든 프리팹 연결  
-> - Maximam Count (인식 face 수) 설정  
+> - **Maximam Count** (인식 face 수) 설정  
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1215e89c-eb22-47c2-aef7-a8cbd04768fa){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 > - 전면 후면 카메라 설정 **AR CametaManager** -> **Facing Direction** 
 > - (**World** - 후면),  (**User** - 전면)  
@@ -135,9 +135,9 @@ date: 2024-04-01 02:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
-**테스트**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/88beec57-ff85-4cb3-af68-6c143cdd1423){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 터치 인식 [AR Gesture Interactor](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit%402.0/manual/ar-gesture-interactor.html) 
+
+<br><br>
 
 ## 오브젝트 옮기기
 
@@ -147,6 +147,8 @@ date: 2024-04-01 02:00
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ce6dbd55-5fcd-4fc1-bc5b-db4755652891){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
+
+<br><br>
 
 ## 오브젝트 줌, 회전
 
@@ -158,14 +160,17 @@ date: 2024-04-01 02:00
 {: .notice--info} 
 
 **테스트**  
-선택 후 이동이 된다!.
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/a5dea1d2-eeea-47c0-bd26-ef7680560fa9){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+배치, 선택 후 이동, 줌, 회전이 된다!. 신기
+
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담, 일기?
 Point, Face, Plane Manager 코드 보기  
-다양한 컴포넌트 확인
+오브젝트 배치, 이동, 줌, 회전  
+다양한 컴포넌트 확인  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
