@@ -115,10 +115,22 @@ date: 2024-04-01 02:00
 > **Plane**  
 > - 패키지 **XR Interaction Toolkit** 설치  
 > - Hierarchy XR Origin(AR) 추가  
-> - XR Origin 에 **Plane**, **Raycast** Manager 추가  
-> - Hierarchy AR Placement Interactable 추가 XR Interaction Manager , Origin 연결
-> - 빈오브젝트 속 큐브하나 만들기 스케일 1 = 1M 조정하기
+> - XR Origin 에 **Plane**, **Raycast** Manager 추가 Raycastmanager none으로  
+> - Hierarchy AR Placement Interactable 추가 XR Interaction Manager , Origin 연결   
+> - 빈오브젝트 속 큐브하나 만들기 스케일 1 = 1M 조정하기 선택 시 효과  
+> - SelectCube Material Randeringmode TransParent로, 색 변경, 큐브에 Material 추가  
+> - 오브젝트 프리팹화 하기  
+> - AR Placement Interactable 에 프리팹 등록  
+> - Main Camera에 **AR Gesture Interactor**컴포넌트 추가 Interaction, origin 연결  
+> - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4e382eea-2b83-4d05-9b6f-5acfb28ec5e3)
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
+
+터치 인식 [AR Gesture Interactor](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit%402.0/manual/ar-gesture-interactor.html) 
+
+**테스트**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/88beec57-ff85-4cb3-af68-6c143cdd1423)
 <br><br><br><br><br>
 - - - 
 
