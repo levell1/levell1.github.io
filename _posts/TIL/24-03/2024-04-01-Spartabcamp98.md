@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-03-28 02:00
+date: 2024-04-01 02:00
 
 ---
 - - -
@@ -32,7 +32,6 @@ date: 2024-03-28 02:00
 <br><br><br><br><br>
 - - - 
 
-**AR**
 
 # AR세팅 준비
 [AR_Sample](https://github.com/Unity-Technologies/arfoundation-samples/tree/5.1)  
@@ -46,14 +45,17 @@ date: 2024-03-28 02:00
 > - &nbsp;&nbsp; 5. Edit > Project Settings > **Player** - Other Settings -> autoGraphics API 체크해제, Vulkan 삭제  
 > - &nbsp;&nbsp; 6. Identification -> minimum API Level -Nougat(24), Configuration -> Scripting Backend =IL2CPP, Target Architectures = ARM 64 체크 
 > - &nbsp;&nbsp; 프로젝트 빌드 세팅 끝. 
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
 
 **AR Foundation** -> AR 플랫폼 간에 전환할 때 현재 사용할 수 없는 기능을 어디에서나 이용가능하게 해주는 역할
 **AR Session** -> AR에 맞는 생명주기,세팅의 기본
 **XR Origin** -> 실제 세계 좌표를 유니티 좌표로 변경, 카메라 관련
 AR Core는 Vulkan 지원 x
 minimum API Level -Nougat(24) 부터 AR 가능
-
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ed97f84c-6f1b-4756-94b6-603fac29d6b6){:style="border:1px solid #EAEAEA; border-radius: 7px;"}    
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 <br><br><br><br><br>
 - - - 
@@ -61,15 +63,31 @@ minimum API Level -Nougat(24) 부터 AR 가능
 # AR 
 **AR 테스트**
 
+## AR Point
 > **포인트 체크**
 > - AR Default Point Cloud -> 프리팹화
 > - AR Origin 에 AR Point Cloud Manager 컴포넌트추가 (포인트 추출을 위해), 만든 프리팹 연결
 > - 빌드 후 실행 -> 포인트 잘 나오는지 체크
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 **테스트**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/ea5a8956-1c88-41de-902e-ddc423010be0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
-AR Default Point Cloud 꼭짓점
+
+<br><br>
+
+## AR Plane
+> **포인트 체크**
+> - AR Default Plane -> 프리팹화
+> - AR Origin 에 AR Plane Manager 컴포넌트추가  만든 프리팹 연결
+> - 빌드 후 실행 -> 포인트 잘 나오는지 체크
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+**AR Plane Manager Detection Mode -> 설정가능**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/b3a751dd-5b51-4e42-b7f8-eb05c91499ca)
+
 
 <br><br><br><br><br>
 - - - 
