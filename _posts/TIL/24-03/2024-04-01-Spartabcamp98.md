@@ -99,7 +99,7 @@ minimum API Level -Nougat(24) 부터 AR 가능
 > - AR Origin 에 AR Face Manager 컴포넌트추가  만든 프리팹 연결  
 > - Maximam count (인식 face 수) 설정  
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1215e89c-eb22-47c2-aef7-a8cbd04768fa){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-> - 전면 후면 카메라 인식 설정 AR CametaManager -> Facing Direction World - 후면  User - 전면  
+> - 전면 후면 카메라 인식 설정 AR CametaManager -> Facing Direction (World - 후면),  (User - 전면)  
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4aa98aa6-fe63-4216-b41d-196590b1d47d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 > - New Material -> albedo 에 넣어주고 (이미지는 sprite)  
 > - default face 의 materials 부분에 교체 해주면 이미지 확인  
@@ -107,18 +107,13 @@ minimum API Level -Nougat(24) 부터 AR 가능
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
-**AR Plane Manager Detection Mode -> 설정가능**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc08dd31-fc8f-4784-9e42-c5ce3bbf8400){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
-
-완전 정확하지 않은 것 같다.  
-Manager 코드 보기  
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담, 일기?
-포톤강의 - 나중에 필요할 때 더 알아보기.  
+Manager 코드 보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
