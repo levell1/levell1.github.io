@@ -43,9 +43,9 @@ date: 2024-04-01 02:00
 > - &nbsp;&nbsp; **3.** Edit > Project Settings > **XR Plug-in Management** > **Android AR Core** 체크 , 빌드세팅 안드로이드로 변경  
 > - &nbsp;&nbsp; **4.** hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가  
 > - &nbsp;&nbsp; **5.** Edit > Project Settings > **Player**  
-> - &nbsp;&nbsp; Other Settings -> **AutoGraphics API** 체크해제, **Vulkan** 삭제  
-> - &nbsp;&nbsp; Identification -> Minimum API Level - **Nougat(24)**  
-> - &nbsp;&nbsp; Configuration -> Scripting Backend = **IL2CPP**, Target Architectures = **ARM 64** 체크  
+> - &nbsp;&nbsp; - Other Settings -> **AutoGraphics API** 체크해제, **Vulkan** 삭제  
+> - &nbsp;&nbsp; - Identification -> Minimum API Level - **Nougat(24)**  
+> - &nbsp;&nbsp; - Configuration -> Scripting Backend = **IL2CPP**, Target Architectures = **ARM 64** 체크  
 > - &nbsp;&nbsp; 프로젝트 빌드 세팅 끝.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -127,7 +127,7 @@ date: 2024-04-01 02:00
 > - XR Origin 에 **Plane**, **Raycast** Manager 추가 Raycastmanager none으로  
 > - Hierarchy **AR Placement Interactable** 추가 XR Interaction Manager , Origin 연결   
 > - 빈오브젝트 속 큐브 만들기 Scale 1 = 1M 조정하기 선택 시 효과   
-> - SelectCube Material Randeringmode TransParent로, 색 변경, 큐브에 Material 추가  
+> - SelectCube Material Randeringmode - **TransParent** 로, 색 변경, 큐브에 Material 추가  
 > - 오브젝트 프리팹화 하기  
 > - AR Placement Interactable 에 프리팹 등록  
 > - Main Camera에 **AR Gesture Interactor**컴포넌트 추가 Interaction, origin 연결  
