@@ -41,7 +41,7 @@ date: 2024-04-01 02:00
 > - &nbsp;&nbsp; 1. 플러그인 설치 [AR Foundation](https://unity.com/unity/features/arfoundation)  
 > - &nbsp;&nbsp; 2. 윈도우 -> 패키지 매니저 -> AR Foundation설치, ARCore(Google ARCore XR Plugin) 설치
 > - &nbsp;&nbsp; 3. Edit > Project Settings > **XR Plug-in Management** > Android ARCore 체크 , 빌드세팅 안드로이드로 변경
-> - &nbsp;&nbsp; 4. hierarchy 메인카메라 삭제, XR -> **AR Sessio**n 추가, **XR Origin** 추가 
+> - &nbsp;&nbsp; 4. hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가 
 > - &nbsp;&nbsp; 5. Edit > Project Settings > **Player** - Other Settings -> autoGraphics API 체크해제, Vulkan 삭제  
 > - &nbsp;&nbsp; 6. Identification -> minimum API Level -Nougat(24), Configuration -> Scripting Backend =IL2CPP, Target Architectures = ARM 64 체크 
 > - &nbsp;&nbsp; 프로젝트 빌드 세팅 끝. 
@@ -63,7 +63,7 @@ minimum API Level -Nougat(24) 부터 AR 가능
 # AR 테스트
 
 ## AR Point
-> **포인트 체크**  
+> **Point Cloud**  
 > - AR Default Point Cloud -> 프리팹화  
 > - AR Origin 에 AR Point Cloud Manager 컴포넌트추가 (포인트 추출을 위해), 만든 프리팹 연결  
 > - 빌드 후 실행 -> 포인트 잘 나오는지 체크  
@@ -71,13 +71,13 @@ minimum API Level -Nougat(24) 부터 AR 가능
 {: .notice--info} 
 
 **테스트**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/ea5a8956-1c88-41de-902e-ddc423010be0){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/8547a07f-8b96-4f81-bfe8-767fdc5720af){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 
 <br><br>
 
 ## AR Plane
-> **바닥 체크**  
+> **Plane**  
 > - AR Default Plane -> 프리팹화  
 > - AR Origin 에 AR Plane Manager 컴포넌트추가  만든 프리팹 연결  
 > - 빌드 후 실행 -> Plane 잘 나오는지 체크  
@@ -94,7 +94,7 @@ minimum API Level -Nougat(24) 부터 AR 가능
 <br><br>
 
 ## AR Face
-> **Face 체크**  
+> **Face**  
 > - AR Default Face -> 프리팹화  
 > - AR Origin 에 AR Face Manager 컴포넌트추가  만든 프리팹 연결  
 > - Maximam count (인식 face 수) 설정  
@@ -107,13 +107,18 @@ minimum API Level -Nougat(24) 부터 AR 가능
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+<br><br><br><br><br>
+- - - 
 
+# AR Plane 활용
+
+패키지 XR Interaction Toolkit 설치
 
 <br><br><br><br><br>
 - - - 
 
 # 잡담, 일기?
-Manager 코드 보기  
+point, face, plane Manager 코드 보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
