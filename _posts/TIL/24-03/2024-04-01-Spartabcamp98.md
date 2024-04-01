@@ -38,11 +38,11 @@ date: 2024-04-01 02:00
 
 > **AR 프로젝트 세팅**  
 > - 3D 프로젝트 생성  
-> - &nbsp;&nbsp; 1. 플러그인 설치 [AR Foundation](https://unity.com/unity/features/arfoundation)  
-> - &nbsp;&nbsp; 2. 윈도우 -> 패키지 매니저 -> **AR Foundation**설치, **AR Core**(Google ARCore XR Plugin) 설치  
-> - &nbsp;&nbsp; 3. Edit > Project Settings > **XR Plug-in Management** > **Android AR Core** 체크 , 빌드세팅 안드로이드로 변경  
-> - &nbsp;&nbsp; 4. hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가  
-> - &nbsp;&nbsp; 5. Edit > Project Settings > **Player**  
+> - &nbsp;&nbsp; **1.** 플러그인 설치 [AR Foundation](https://unity.com/unity/features/arfoundation)  
+> - &nbsp;&nbsp; **2.** 윈도우 -> 패키지 매니저 -> **AR Foundation**설치, **AR Core**(Google ARCore XR Plugin) 설치  
+> - &nbsp;&nbsp; **3.** Edit > Project Settings > **XR Plug-in Management** > **Android AR Core** 체크 , 빌드세팅 안드로이드로 변경  
+> - &nbsp;&nbsp; **4.** hierarchy 메인카메라 삭제, XR -> **AR Session** 추가, **XR Origin** 추가  
+> - &nbsp;&nbsp; **5.** Edit > Project Settings > **Player**  
 > - &nbsp;&nbsp; Other Settings -> **AutoGraphics API** 체크해제, **Vulkan** 삭제  
 > - &nbsp;&nbsp; Identification -> Minimum API Level - **Nougat(24)**  
 > - &nbsp;&nbsp; Configuration -> Scripting Backend = **IL2CPP**, Target Architectures = **ARM 64** 체크  
@@ -102,8 +102,8 @@ date: 2024-04-01 02:00
 > - AR Origin 에 AR Face Manager 컴포넌트추가  만든 프리팹 연결  
 > - Maximam Count (인식 face 수) 설정  
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1215e89c-eb22-47c2-aef7-a8cbd04768fa){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
-> - 전면 후면 카메라 설정 AR CametaManager -> Facing Direction 
-> - (World - 후면),  (User - 전면)  
+> - 전면 후면 카메라 설정 **AR CametaManager** -> **Facing Direction** 
+> - (**World** - 후면),  (**User** - 전면)  
 > - ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4aa98aa6-fe63-4216-b41d-196590b1d47d){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
@@ -111,7 +111,6 @@ date: 2024-04-01 02:00
 > **Face 효과**  
 > - New Material 생성 -> Albedo 에 넣어주고 (이미지는 sprite)  
 > - Default Face 의 Materials 부분에 교체 해주면 이미지 확인  
-> - 빌드 후 실행 -> Plane 잘 나오는지 체크  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
