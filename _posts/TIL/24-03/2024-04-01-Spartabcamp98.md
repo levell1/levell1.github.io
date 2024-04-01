@@ -88,8 +88,8 @@ minimum API Level -Nougat(24) 부터 AR 가능
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/b3a751dd-5b51-4e42-b7f8-eb05c91499ca){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 
-**테스트**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc08dd31-fc8f-4784-9e42-c5ce3bbf8400){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
+**예시**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/8d024721-ec65-4ba1-8eca-91a04a238e3b){:style="border:1px solid #EAEAEA; border-radius: 7px;"}  
 
 <br><br>
 
