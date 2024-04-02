@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 98 VR 강의 세팅, 스터디 ⭐⭐⭐ "
+title:  "[TIL] 99 VR 강의 세팅, 스터디 ⭐⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -114,15 +114,6 @@ XR Device Simulator - HMD 연결없이 마우스 키로 시뮬레이션 가능�
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4e6a6496-e11a-42b8-9529-06d1365b0910)
 
 공부 : [Unity Learn](https://learn.unity.com/course/create-with-vr)보면서 따라해보기  
-
-<br><br><br><br><br>
-- - - 
-
-# AR 이미지 트렉킹
-XR Origin - AR Tracked Image Manager컴포넌트 추가
-
-
-
 
 <br><br><br><br><br>
 - - - 
