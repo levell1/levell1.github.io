@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 99 VR 강의 세팅, 스터디 ⭐⭐ "
+title:  "[TIL] 99 VR 강의 세팅 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
