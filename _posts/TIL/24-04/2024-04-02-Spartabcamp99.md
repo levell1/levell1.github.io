@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 99 VR 강의 세팅, 스터디 ⭐⭐⭐ "
+title:  "[TIL] 99 VR 강의 세팅, 스터디 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
@@ -108,12 +108,13 @@ date: 2024-04-02 02:00
 
 
 
-**XR Origin** - 중심점 
-XR Device Simulator - HMD 연결없이 마우스 키로 시뮬레이션 가능하게 해준다.
+**XR Origin** - 중심점  
+XR Device Simulator - HMD 연결없이 마우스 키로 시뮬레이션 가능하게 해준다.  
+
 **트레킹 컴포넌트**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/4e6a6496-e11a-42b8-9529-06d1365b0910)
 
-공부 : [Unity Learn](https://learn.unity.com/course/create-with-vr)보면서 따라해보기  
+공부 : [Unity Learn](https://learn.unity.com/course/create-with-vr) 보면서 따라해보기  
 
 <br><br><br><br><br>
 - - - 
