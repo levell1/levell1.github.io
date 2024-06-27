@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 83 버그 수정, 사운드 추가 빌드 준비⭐⭐ "
+title:  "[TIL] 83 버그 수정, 사운드 추가 빌드 준비 ⭐⭐ "
 excerpt: "Sparta"
 
 categories:

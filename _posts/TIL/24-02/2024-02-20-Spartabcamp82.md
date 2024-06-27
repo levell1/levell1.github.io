@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 82 CSV ,ProFiler⭐⭐ "
+title:  "[TIL] 82 CSV ,ProFiler ⭐⭐ "
 excerpt: "Sparta"
 
 categories:
