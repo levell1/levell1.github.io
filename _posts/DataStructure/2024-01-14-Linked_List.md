@@ -1,5 +1,5 @@
 ---
-title:  "[자료구조] 2. 연결 리스트(Linked_List) ->deque"
+title:  "[자료구조] 2. 연결 리스트(Linked_List) -> deque"
 excerpt: "Data Structure"
 
 categories:
@@ -109,6 +109,7 @@ public class EnemyManager : MonoBehaviour
 
 <details>
 <summary>Linked List 로 Deque</summary>
+[Deque 문제](https://www.acmicpc.net/problem/10866)
 
 <div class="notice--primary" markdown="1"> 
 
