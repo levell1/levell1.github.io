@@ -48,17 +48,17 @@ date: 2024-01-14 14:02
 {: .notice--warning}  
 
 **프로퍼티**  
-&nbsp;&nbsp; 1. First() 첫번째 요소 값 가져오기
-&nbsp;&nbsp; 2. Last() 마지막 값
+&nbsp;&nbsp; 1. First() 첫번째 요소 값 가져오기  
+&nbsp;&nbsp; 2. Last() 마지막 값  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
 **프로퍼티 메서드**  
-&nbsp;&nbsp; 1. AddFirst() 맨 앞 요소 추가
-&nbsp;&nbsp; 2. AddLast() 맨 뒤 요소 추가
-&nbsp;&nbsp; 3. AddBefore(x,y) x 요소 앞 y추가  (LinkedListNode<int>, value)
-&nbsp;&nbsp; 4. AddAfter(x,y) x 요소 뒤 y 추가  before,after은 LinkedListNode<int> 를 사용하여야된다.
-&nbsp;&nbsp; 5. Remove(x) x 요소 제거
+&nbsp;&nbsp; 1. AddFirst() 맨 앞 요소 추가  
+&nbsp;&nbsp; 2. AddLast() 맨 뒤 요소 추가  
+&nbsp;&nbsp; 3. AddBefore(x,y) x 요소 앞 y추가  (LinkedListNode<int>, value)  
+&nbsp;&nbsp; 4. AddAfter(x,y) x 요소 뒤 y 추가  before,after은 LinkedListNode<int> 를 사용하여야된다.  
+&nbsp;&nbsp; 5. Remove(x) x 요소 제거  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
