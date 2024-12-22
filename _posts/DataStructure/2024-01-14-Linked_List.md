@@ -11,7 +11,6 @@ toc: true
 toc_sticky: true
  
 date: 2024-01-14 14:02
-update: 2024-12-20 09:00
 
 ---
 - - -
@@ -47,6 +46,47 @@ update: 2024-12-20 09:00
 &nbsp;&nbsp; 2. 순차 탐색 접근 : 배열과 달리 특정 요소에 접근하기 위해서는 리스트를 순차적으로 탐색해야함.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--warning}  
+
+**프로퍼티**  
+&nbsp;&nbsp; 1. First() 첫번째 요소 값 가져오기
+&nbsp;&nbsp; 2. Last() 마지막 값
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+**프로퍼티 메서드**  
+&nbsp;&nbsp; 1. AddFirst() 맨 앞 요소 추가
+&nbsp;&nbsp; 2. AddLast() 맨 뒤 요소 추가
+&nbsp;&nbsp; 3. AddBefore(x,y) x 요소 앞 y추가  (LinkedListNode<int>, value)
+&nbsp;&nbsp; 4. AddAfter(x,y) x 요소 뒤 y 추가  before,after은 LinkedListNode<int> 를 사용하여야된다.
+&nbsp;&nbsp; 5. Remove(x) x 요소 제거
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<details>
+<summary>LinkedList메서드 예시</summary>
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+LinkedList<int> lList = new LinkedList<int> (new[] {1,2,3,4});
+
+int a = lList.First();  // a = 1
+int b = lList.Last();   // b = 4 
+
+lList.AddFirst(9);      // { 9, 1, 2, 3, 4 }
+lList.RemoveFirst();    // { 1, 2, 3, 4 }
+lList.AddLast(9);       // { 1, 2, 3, 4, 9 }
+lList.RemoveLast();     // { 1, 2, 3, 4 }
+
+LinkedListNode<int> pos = lList.Find(3);
+LinkedListNode<int> firstpos = lList.First;
+lList.AddBefore(pos,9);         // { 1, 2, 9, 3, 4 } 
+lList.Remove(9);                // { 1, 2, 3, 4 } 
+lList.AddAfter(firstpos, 9);    // { 1, 9, 2, 3, 4 }
+```
+</div>
+</details>
+
 
 <br><br>
 
