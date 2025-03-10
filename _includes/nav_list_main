@@ -26,7 +26,7 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "Clicker Unity" %}
+                        {% if category[0] == "Class Clicker" %}
                             <li><a href="/categories/class-clicker" class=""> Unity Clicker ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}

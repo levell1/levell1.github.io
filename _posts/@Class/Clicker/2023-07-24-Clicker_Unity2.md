@@ -1,9 +1,9 @@
 ---
-title:  "[2D Clicker-Unity] Clicker Unity 2 ⭐⭐ "
+title:  "[Unity 강의] Clicker Unity 2 ⭐⭐ "
 excerpt: " UI "
 
 categories:
-    - Clicker Unity
+    - Class Clicker
 tags:
     - [Unity, Clicker, 2D]
 
