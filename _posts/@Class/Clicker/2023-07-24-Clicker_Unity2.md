@@ -1,6 +1,6 @@
 ---
 title:  "[Unity 강의] Clicker Unity 2 ⭐⭐ "
-excerpt: " UI "
+excerpt: ""
 
 categories:
     - Class Clicker

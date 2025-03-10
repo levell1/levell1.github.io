@@ -1,6 +1,6 @@
 ---
 title:  "[Unity 강의] Clicker Unity 1 ⭐ "
-excerpt: " Spine Animation , TextMeshPro "
+excerpt: ""
 
 categories:
     - Class Clicker
