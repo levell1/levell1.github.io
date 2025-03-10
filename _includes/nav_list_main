@@ -47,6 +47,13 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
+                        {% if category[0] == "Class VamSurLike" %}
+                            <li><a href="/categories/class-vamsurlike" class=""> Unity 뱀서라이크 강의 ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
                         {% if category[0] == "Data Structure" %}
                             <li><a href="/categories/datastructure" class=""> 자료구조 ({{category[1].size}})</a></li>
                         {% endif %}

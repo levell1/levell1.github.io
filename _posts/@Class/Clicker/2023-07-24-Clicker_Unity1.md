@@ -1,5 +1,5 @@
 ---
-title:  "[2D Clicker-Unity] Clicker Unity 1 ⭐ "
+title:  "[Unity 강의] Clicker Unity 1 ⭐ "
 excerpt: " Spine Animation , TextMeshPro "
 
 categories:
