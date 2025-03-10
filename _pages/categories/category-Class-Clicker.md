@@ -1,7 +1,7 @@
 ---
 title: "Clicker 유니티 강의"
 layout: archive
-permalink: categories/clicker
+permalink: categories/class-clicker
 author_profile: true
 sidebar_main: true
 ---

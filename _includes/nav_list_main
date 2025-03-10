@@ -27,7 +27,14 @@
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Clicker Unity" %}
-                            <li><a href="/categories/clicker" class=""> Unity Clicker ({{category[1].size}})</a></li>
+                            <li><a href="/categories/class-clicker" class=""> Unity Clicker ({{category[1].size}})</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                        {% if category[0] == "Class VamSurLike" %}
+                            <li><a href="/categories/class-vamsurlike" class=""> Unity 뱀서라이크 강의 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
@@ -45,13 +52,7 @@
                         {% endif %}
                     {% endfor %}
                 </ul>
-                <ul>
-                    {% for category in site.categories %}
-                        {% if category[0] == "Class VamSurLike" %}
-                            <li><a href="/categories/class-vamsurlike" class=""> Unity 뱀서라이크 강의 ({{category[1].size}})</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Data Structure" %}
