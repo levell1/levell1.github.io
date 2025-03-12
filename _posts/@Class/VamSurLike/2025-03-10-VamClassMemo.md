@@ -41,6 +41,16 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# 3강(조이스틱)
+✔ 게임오브젝트 - 컴포넌트의 연결 좋은방법으로 고민하기.(Find,Manager사용)  
+✔ Canvas Scaler - UI Scale Mode -> Scale With Screen Size (화면크기에 맞게 UI조정 )
+✔ Raycast Target 체크 확인  
+✔ magnitude = vector의 크기(거리)  
+✔ Static - 객채랑 무관하다. (종속x) Static에 관하여 공부.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
 
 
 <br><br><br>
