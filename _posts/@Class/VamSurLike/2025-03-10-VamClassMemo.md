@@ -55,7 +55,7 @@ date: 2025-03-10 08:00
 
 <br><br><br><br>
 
-# 3강 (매니저)
+# 4강 (매니저)
 ✔ 설계적인 부분을 생각하며 만들자.  
 ✔ 오브젝트간 연결 - 코드에서 관리   
 ✔ 최상위 매니저(싱글톤) - MonoBehaviour - 다른매니저를 들고있는  
@@ -64,6 +64,14 @@ date: 2025-03-10 08:00
 ✔ [Manager](https://levell1.github.io/class%20vamsurlike/VamClass04/#1-manager)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
+<br><br><br><br>
+
+# ⭐ 5강 (Addressable) ⭐
+[Addressable](https://levell1.github.io/class%20vamsurlike/VamClass05)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
 
 <br><br><br>
 - - - 
