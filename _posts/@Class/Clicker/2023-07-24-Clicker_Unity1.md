@@ -21,10 +21,10 @@ Clicker Unity  Spine Animation , TextMeshPro
 
 
 # 1. Spine Animation
-25년도 다시듣기 정리하기
+25년도 다시 듣기 정리하기
 
 # 3. 정리
-25년도 다시듣기 정리하기
+25년도 다시 듣기 정리하기
 
 
 <br><br>
