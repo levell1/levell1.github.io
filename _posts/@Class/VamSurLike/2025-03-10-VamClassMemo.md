@@ -59,7 +59,7 @@ date: 2025-03-10 08:00
 ✔ 설계적인 부분을 생각하며 만들자.  
 ✔ 오브젝트 간 연결 - 코드에서 관리   
 ✔ 최상위 매니저(싱글톤) - MonoBehaviour - 다른 매니저를 들고 있는  
-✔ 하위 매니저 - 일반 클래스로  
+✔ 하위 매니저 - 일반 클래스로 (MonoBehaviour X)  
 ✔ 델리게이트 공부하기  
 ✔ [Manager](https://levell1.github.io/class%20vamsurlike/VamClass04/#1-manager)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
