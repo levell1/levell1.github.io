@@ -37,7 +37,6 @@ date: 2025-03-10 08:00
 ✔ Prefabs 작업 시 override 체크  
 ✔ 배경 작업할 때 - Order in Layer 규칙 정하기.  
 ✔ 리소스 관리 규칙 정하기(오브젝트별, 폴더 분류)  
-✔ Order in Layer 규칙 정하기.  
 ✔ 게임 플레이에 따라 순차적으로 작업 (플레이어 이동 -> 스킬 -> 드랍)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -72,6 +71,12 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# ⭐ 6강 ObjectManager, Controller(충돌, 데미지) ⭐
+[ObjectManager, Controller](https://levell1.github.io/class%20vamsurlike/VamClass05)  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
 
 <br><br><br>
 - - - 
