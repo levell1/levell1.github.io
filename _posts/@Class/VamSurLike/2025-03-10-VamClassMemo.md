@@ -74,7 +74,7 @@ date: 2025-03-10 08:00
 <br><br><br><br>
 
 # ⭐ 6강 ObjectManager, Controller(충돌, 데미지) ⭐
-[ObjectManager, Controller](https://levell1.github.io/class%20vamsurlike/VamClass05)  
+[ObjectManager, Controller](https://levell1.github.io/class%20vamsurlike/VamClass06)  
 ✔ 게임에 등장하는 물체들 관리 (Player, Monster, Projectile)  
 ✔ 자료구조 어떤 걸로 오브젝트들을 관리할지  
 ✔ ID를 string, int로 할지  
