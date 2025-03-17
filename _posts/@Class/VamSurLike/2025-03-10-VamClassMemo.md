@@ -88,9 +88,9 @@ date: 2025-03-10 08:00
 
 # ⭐ 7강 PoolManager ⭐
 [PoolManager](https://levell1.github.io/class%20vamsurlike/VamClass07)  
-✔ Instantiate는 자주 사용시 성능 문제가 발생할 수 있다.  
-✔ 게임오브젝트를 Destroy하지 않고 비활성화하고 남겨둔다.  
-✔ 필요할 때 Instantiate를 하지않고 숨겨둔 오브젝트를 활성화시켜서 보여준다.  
+✔ Instantiate는 자주 사용 시 성능 문제가 발생할 수 있다.  
+✔ 게임 오브젝트를 Destroy 하지 않고 비활성화하고 남겨둔다.  
+✔ 필요할 때 Instantiate를 하지 않고 숨겨둔 오브젝트를 활성화시켜서 보여준다.  
 ✔ ObjectPool`<T>`()  
 ✔ ObjectPool로 몬스터 생성, 삭제 과정  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
