@@ -77,17 +77,33 @@ date: 2025-03-10 08:00
 [ObjectManager, Controller](https://levell1.github.io/class%20vamsurlike/VamClass06)  
 ✔ 게임에 등장하는 물체들 관리 (Player, Monster, Projectile)  
 ✔ 자료구조 어떤 걸로 오브젝트들을 관리할지  
+✔ **Transform.Position** VS **MovePosition**
 ✔ ID를 string, int로 할지  
 ✔ 데미지관리 코드는 주는 쪽에서 코드로 관리 상황에 맞게   
 ✔ as T , virtual, Init
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# ⭐ 7강 PoolManager ⭐
+[PoolManager](https://levell1.github.io/class%20vamsurlike/VamClass07)  
+✔ Instantiate는 자주 사용시 성능 문제가 발생할 수 있다.  
+✔ 게임오브젝트를 Destroy하지 않고 비활성화하고 남겨둔다.  
+✔ 필요할 때 Instantiate를 하지않고 숨겨둔 오브젝트를 활성화시켜서 보여준다.  
+✔ ObjectPool`<T>`()  
+✔ ObjectPool로 몬스터 생성, 삭제 과정  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+
 <br><br><br>
 - - - 
 
 # 잡담, 일기?
-모든 강의 정리.
+프로젝트 작업 순서.  
+1.&nbsp;  
+2.&nbsp;  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 

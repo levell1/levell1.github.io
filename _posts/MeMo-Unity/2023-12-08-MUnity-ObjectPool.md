@@ -136,7 +136,7 @@ public class ObjectPool : MonoBehaviour
 
 </div>
 
-## 3) 유니티 내장 함수 
+## 3) Objectpool() 유니티에서 제공하는 클래스
 Objectpool()  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/1ccfec3e-1679-477d-9c19-43006778c5bd)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
