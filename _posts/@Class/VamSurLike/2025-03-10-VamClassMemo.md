@@ -99,6 +99,16 @@ date: 2025-03-10 08:00
 
 # ⭐ 8강 DataManager, Xml ⭐
 [DataManager](https://levell1.github.io/class%20vamsurlike/VamClass08)  
+✔ Data 설계 중요  (내가 생각한 대로 되려면 데이터를 어떻게 설계해야 할지 많이 생각해 보고 프로젝트에 적용하기.)  
+✔ 하드코딩, AI, TemplateID 등 => 데이터로 빼서 사용  
+✔ JSOM XML 비교  
+✔ 엑셀파일로 원본 데이터를 만든 후 json이나 xml로 변환해 사용한다.  
+✔ c# - 데이터 파싱이 다른 언어 에비해 좋다.  
+✔ XML 변환 과정  
+✔ DataManager.Init에서 PlayerDic = `LoadXml<Data.PlayerDataLoader, int, Data.PlayerData>("PlayerData.xml").MakeDict();`  
+&nbsp;&nbsp;✔ `LoadXml<>()`을 호출하여 PlayerData.xml을 PlayerDataLoader 객체로 변환  
+&nbsp;&nbsp;✔ `MakeDict()`를 호출하여 `List<PlayerData>`를 `Dictionary<int, PlayerData>`로 변환  
+&nbsp;&nbsp;✔ 최종적으로 PlayerDic에 level을 key로 데이터들 저장  
 ✔ Addressable로 Prefabs를 로드하는 것처럼 라델로 Data로드  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
