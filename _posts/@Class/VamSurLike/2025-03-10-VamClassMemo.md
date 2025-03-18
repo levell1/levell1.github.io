@@ -97,6 +97,12 @@ date: 2025-03-10 08:00
 {: .notice--info}  
 
 
+# ⭐ 8강 DataManager, Xml ⭐
+[DataManager](https://levell1.github.io/class%20vamsurlike/VamClass08)  
+✔ Addressable로 Prefabs를 로드하는 것처럼 라델로 Data로드  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
 <br><br><br>
 - - - 
 
