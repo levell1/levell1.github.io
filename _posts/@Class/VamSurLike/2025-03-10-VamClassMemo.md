@@ -114,6 +114,22 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# 9강 아이템 드롭
+[아이템 드롭](https://levell1.github.io/class%20vamsurlike/VamClass09)  
+✔ 스프라이트(드롭템) 작업 전 addressable 관리  
+✔ 스프라이트 -> 어드레서블 - sprite가 아니라 png(texture2d)고 내부에 있다.  
+✔ 로드 부분(LoadAsync)에서 texture2d가 아닌 sprite의 키값을 불러오기 위한 코드필요  
+✔ 어드레서블 라벨을 preload로 시작 전 로드할 것을 묶어 로드   
+✔ 오브젝트 풀 에러가능성  
+✔ 위에서부터 순차적으로 그리기  
+&nbsp;&nbsp;edit - Project Setting - Graphics - Transparency SortMode(Custrom Axis) - x: 0 y:1 z :0  
+✔ extension 확인  
+✔ 드롭 템 간의 order in layer 규칙 필요   
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
 <br><br><br>
 - - - 
 
