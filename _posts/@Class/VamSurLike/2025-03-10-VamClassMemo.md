@@ -96,12 +96,13 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
 
 # ⭐ 8강 DataManager, Xml ⭐
 [DataManager](https://levell1.github.io/class%20vamsurlike/VamClass08)  
 ✔ Data 설계 중요  (내가 생각한 대로 되려면 데이터를 어떻게 설계해야 할지 많이 생각해 보고 프로젝트에 적용하기.)  
 ✔ 하드코딩, AI, TemplateID 등 => 데이터로 빼서 사용  
-✔ JSOM XML 비교  
+✔ JSON XML 비교  
 ✔ 엑셀파일로 원본 데이터를 만든 후 json이나 xml로 변환해 사용한다.  
 ✔ c# - 데이터 파싱이 다른 언어 에비해 좋다.  
 ✔ XML 변환 과정  
