@@ -130,15 +130,71 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# 10강 아이템 줍기(그리드)
+[아이템 줍기(그리드)](https://levell1.github.io/class%20vamsurlike/VamClass10)  
+✔ 메모리 효율을 위해 게임 내 모든 오브젝트를 표시하지 않고 주변 영역의 오브젝트만 표시하기 위한 최적화  
+✔ Grid를 이용해 월드 좌표를 그리드 좌표로 변경하고 관리   
+&nbsp;&nbsp;`Dictionary<Vector3Int, Cell> _cells = new Dictionary<Vector3Int, Cell>();`  
+✔ Cell(칸)에 있는 모든 오브젝트들을 Hashset을 이용하여 관리  
+&nbsp;&nbsp;`public HashSet<GameObject> Objects { get; } = new HashSet<GameObject>();`  
+✔ 탐색하고자 하는 위치에서 range 범위까지의 셀들 중 물체가 있는 모든 셀 탐색  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<br><br><br><br>
+
+# 11강 스킬(데이터)
+[스킬(데이터)](https://levell1.github.io/class%20vamsurlike/VamClass11)  
+✔ 피격 판정 어떻게 할 것인가?  
+✅ 싱글게임 - 스킬 쓸 때 판정 범위를 켜 범위에 있으면 대미지  
+✅ 온라인게임 - 서버에서 계산해서 판정  
+✔ 스킬 데이터 설계도 중요하다 (어렵다)  
+✔ 정해진 규칙이 없어 게임마다 다르다.  
+✔ 스킬업 시 대미지만 변경? 스킬이 업그레이드된다? nextSkillID?  
+✔ 스킬에 대한 정보가 많아지면 복잡해진다 -> 계층구조로 세분화  
+✔ 필요한 데이터만 받고 조립할 수 있는 데이터는 조립  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+
+<br><br><br><br>
+
+# 12강 스킬(투사체) 
+[스킬(투사체)](https://levell1.github.io/class%20vamsurlike/VamClass12)  
+**투사체 스킬 구성**   
+🔹 투사체를 발사한 객체 : _owner  
+🔹 투사체의 방향 : _moveDir  
+🔹 투사체 속도 : _speed  
+🔹 투사체 지속시간 : _lifeTime  
+✅ 초기화하는 코드 Init()  
+✅ SET 코드 (정보를 세팅하는) (🔹위 4개를 세팅)  
+✅ OnTriggerEnter2D 몬스터 Trigger 시 대미지, Despawn  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+
 <br><br><br>
 - - - 
 
 # 잡담, 일기?
+코드 기본 구성  
+✅ 초기화하는 코드 Init()   
+✅ SET 코드 (정보를 세팅하는)  
 ✔ 데이터 로드 더 공부    
 ✔ Grid 더 알아보기  
 프로젝트 작업 순서.  
 1.&nbsp;  
 2.&nbsp;  
+**투사체 스킬 구성**   
+🔹 투사체를 발사한 객체 : _owner  
+🔹 투사체의 방향 : _moveDir  
+🔹 투사체 속도 : _speed  
+🔹 투사체 지속시간 : _lifeTime  
+✅ 초기화하는 코드 Init()  
+✅ SET 코드 (정보를 세팅하는) (🔹위 4개를 세팅)  
+✅ OnTriggerEnter2D 몬스터 Trigger 시 대미지, Despawn  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
