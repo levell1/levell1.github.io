@@ -132,7 +132,7 @@ date: 2025-03-10 08:00
 
 <br><br><br><br>
 
-# 10강 아이템 줍기(그리드)
+# ⭐ 10강 아이템 줍기(그리드) ⭐
 [아이템 줍기(그리드)](https://levell1.github.io/class%20vamsurlike/VamClass10)  
 ✔ 메모리 효율을 위해 게임 내 모든 오브젝트를 표시하지 않고 주변 영역의 오브젝트만 표시하기 위한 최적화  
 ✔ Grid를 이용해 월드 좌표를 그리드 좌표로 변경하고 관리   
@@ -161,8 +161,10 @@ date: 2025-03-10 08:00
 
 <br><br><br><br>
 
-# 12강 스킬(투사체) 
+# ⭐ 12강 스킬(투사체) ⭐ 
 [스킬(투사체)](https://levell1.github.io/class%20vamsurlike/VamClass12)  
+플레이어 생성 시 x초마다 투사체 발사 (코루틴)  
+투사체 - 몬스터 충돌(Trigger), 투사체 스폰, 디스폰  
 **투사체 스킬 구성**   
 🔹 투사체를 발사한 객체 : _owner  
 🔹 투사체의 방향 : _moveDir  
@@ -170,7 +172,7 @@ date: 2025-03-10 08:00
 🔹 투사체 지속시간 : _lifeTime  
 ✅ 초기화하는 코드 Init()  
 ✅ SET 코드 (정보를 세팅하는) (🔹위 4개를 세팅)  
-✅ OnTriggerEnter2D 몬스터 Trigger 시 대미지, Despawn  
+✅ OnTriggerEnter2D 몬스터 Trigger 시 대미지, Despawn   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
