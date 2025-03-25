@@ -176,6 +176,18 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# ⭐ 13강 스킬 맵(무한맵) 개선 ⭐ 
+[스킬 맵(무한맵) 개선](https://levell1.github.io/class%20vamsurlike/VamClass12)  
+✔ 코드 개선  
+✔ 평타스킬 추가  
+✔ 몬스터 스폰위치 설정  
+✔ typeof(T).IsSubclassOf(typeof(SkillController))  
+✔ **무한맵** - X(4) 개의 map을 플레이어 위치에 따라 위치 변경해서 무한처럼 만든다. (방법은 다양)  
+✔ 상대에게 충돌 범위를 없애면 무적이 될 수 있다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
 
 <br><br><br>
 - - - 
