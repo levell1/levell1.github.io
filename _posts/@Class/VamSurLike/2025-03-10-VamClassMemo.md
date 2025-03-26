@@ -179,13 +179,44 @@ date: 2025-03-10 08:00
 <br><br><br><br>
 
 # ⭐ 13강 스킬 맵(무한맵) 개선 ⭐ 
-[스킬 맵(무한맵) 개선](https://levell1.github.io/class%20vamsurlike/VamClass12)  
+[스킬 맵(무한맵) 개선](https://levell1.github.io/class%20vamsurlike/VamClass13)  
 ✔ 코드 개선  
 ✔ 평타스킬 추가  
 ✔ 몬스터 스폰위치 설정  
 ✔ typeof(T).IsSubclassOf(typeof(SkillController))  
 ✔ **무한맵** - X(4) 개의 map을 플레이어 위치에 따라 위치 변경해서 무한처럼 만든다. (방법은 다양)  
 ✔ 상대에게 충돌 범위를 없애면 무적이 될 수 있다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<br><br><br><br>
+
+# ⭐ 14강 스킬 맵(무한맵) 개선 ⭐ 
+[스킬 맵(무한맵) 개선](https://levell1.github.io/class%20vamsurlike/VamClass13)  
+✔ 코드 개선  
+✔ 평타스킬 추가  
+✔ 몬스터 스폰위치 설정  
+✔ typeof(T).IsSubclassOf(typeof(SkillController))  
+✔ **무한맵** - X(4) 개의 map을 플레이어 위치에 따라 위치 변경해서 무한처럼 만든다. (방법은 다양)  
+✔ 상대에게 충돌 범위를 없애면 무적이 될 수 있다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<br><br><br><br>
+
+# ⭐ 14강 UI ⭐ 
+[UI](https://levell1.github.io/class%20vamsurlike/VamClass14)  
+✔ UI배치, 몬스터 처치 시 UI변경, 경험치 Slider 변경, 레벨업 시 Popup표시  
+✔ UI작업 시 주의점  
+✔ UI Prefab - Script 1:1 대응되도록 하나의 스크립트로 내부 ui 관리  
+✔ POP UP - Stack으로 키고 끄는 관리  
+✔ UI에서 게임 중 변화되는 부분 확인, 체크 - Script 1개로 관리   
+✔ UI 코드 보기  
+🔹 UI 갱신 흐름  
+1.&nbsp;Player,MonsterController에서 GameManager의 데이터 변경 시도.  
+2.&nbsp;GameManager - 데이터의 set 부분의 구독된 이벤트들 호출  
+3.&nbsp;GameScene에서 미리 구독된 Handler의 실행  
+4.&nbsp;데이터에 맞게 UI 변경  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
