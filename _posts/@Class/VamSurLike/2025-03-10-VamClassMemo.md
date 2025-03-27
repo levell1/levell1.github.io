@@ -220,6 +220,18 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br><br>
+
+# ⭐ 15강 UI(2) ⭐ 
+[UI(2)](https://levell1.github.io/class%20vamsurlike/VamClass15)  
+✔ UI_SkillSelectPopup, UI_SkillCardItem 작업   
+✔ Horizontal Layout Group를 이용한 UI 배치  
+✔ Button - Onclick을 사용한 함수 실행.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+
+
 <br><br><br>
 - - - 
 
