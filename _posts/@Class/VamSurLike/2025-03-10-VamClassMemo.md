@@ -230,6 +230,20 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+<br><br><br><br>
+
+# ⭐ 16강 보스 ,AI(상태패턴) ⭐
+[보스 ,AI(상태패턴)](https://levell1.github.io/class%20vamsurlike/VamClass16)  
+✔ 보스 추가  
+✔ 코드 수정, 추가  
+🔹 GameScene.cs => 조건(목표 킬 달성) -> 필드 내 몬스터 디스폰, 일반 몹 스폰 x, 보스 생성  
+🔹 ObjectManager => 몬스터 소환(일반 몹 ~ 보스 몹) 수정, DespawnAllMonsters() 추가  
+🔹 MonsterController => 상태 패턴 추가.  
+🔹 BossController => 상태로 보스 관리 (Idle, Moving, Skill, Dead)  
+✔ 애니메이션 - Sprite들을 여러 개 드래그해서 Hierarchy에 올리면 자동으로 만들어진다.  
+✔ 보스 어드레서블 등록하면 포함된 애니메이션도 포함되어 등록된다.  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 
 <br><br><br>
