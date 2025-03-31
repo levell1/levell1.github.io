@@ -248,27 +248,27 @@ date: 2025-03-10 08:00
 <br><br><br><br>
 
 # ⭐ 17 스킬 개선 ⭐
-[ 스킬 개선](https://levell1.github.io/class%20vamsurlike/VamClass17)  
+[스킬 개선](https://levell1.github.io/class%20vamsurlike/VamClass17)  
 ✔ FireBall.cs 추가 - 파이어볼을 주기적으로 생성하는 cs  
-✔ EgoSword - Rigidbody2D.simulate를 고쳐서 키고 끄던부분 -> 파티클 시스템 옵션 변경  
-&nbsp;&nbsp; Play On Awake, Stop Action 으로 키고끄는 방식  
-&nbsp;&nbsp; EgoSwordChild 코드삭제, Rigidbody2D 제거.  
-🔹 PlayerController - 스킬관련 삭제 -> Skillbook으로, init에서 스킬생성, 스킬에서 써야할 변수 프로퍼티  
+✔ EgoSword - Rigidbody2D.simulate를 고쳐서 키고 끄던 부분 -> 파티클 시스템 옵션 변경  
+&nbsp;&nbsp; Play On Awake, Stop Action으로 키고 끄는 방식  
+&nbsp;&nbsp; EgoSwordChild 코드 삭제, Rigidbody2D 제거.  
+🔹 PlayerController - 스킬 관련 삭제 -> Skillbook으로, init에서 스킬 생성, 스킬에서 써야 할 변수 프로퍼티  
 🔹 CreatureController init() -> 스킬북 addcomponent  
 🔹 SkillBook 추가 스킬들 관리, Player에 컴포넌트 추가  
 🔹 RepeatSkill.cs 추가  
 🔹 FireBall.cs 추가 - 파이어볼을 생성  
 🔹 Egosword 수정 파티클 시스템에서 onoff , EgoswordcHILD 삭제- Egosword에서 관리  
 🔹 SkillController -> SkillBase  
-🔹 Define -> 스킬타입 반복스킬, 엑티브 스킬   
-✅ **Player - Init()이 두번실행**  
-&nbsp;&nbsp; 스킬들 2개 씩 생성  
-&nbsp;&nbsp; Player init 2번 => 1번으로 수정 ObjectManager - 스폰후 init 제거  
+🔹 Define -> 스킬 타입 반복 스킬, 엑티브 스킬   
+✅ **Player - Init()이 두 번 실행**  
+&nbsp;&nbsp; 스킬들 2개씩 생성  
+&nbsp;&nbsp; Player init 2번 => 1번으로 수정 ObjectManager - 스폰 후 init 제거  
 ✅ **FireProjectile 삭제 안되는 오류**  
 &nbsp;&nbsp; SkillBase에서 상속받은 것을 사용하려고 하니까  
-&nbsp;&nbsp; objectManager.Despawn 코드 까지 실행이 되는데 ProjectileController, SkillBase 타입관련해서 문제가 있는 것 같다.  
-✅ **pool에 들어갔다가 나오면 코루틴stop되어서 다시 삭제가 안되는부분**  
-&nbsp;&nbsp; oOnenable로 코루틴실행  
+&nbsp;&nbsp; objectManager.Despawn 코드까지 실행이 되는데 ProjectileController, SkillBase 타입 관련해서 문제가 있는 것 같다.  
+✅ **pool에 들어갔다가 나오면 코루틴 stop 되어서 다시 삭제가 안 되는 부분**  
+&nbsp;&nbsp; oOnenable로 코루틴 실행  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
@@ -276,9 +276,9 @@ date: 2025-03-10 08:00
 
 # ⭐ 18 보스 스킬 개선 ⭐
 [보스 스킬 개선](https://levell1.github.io/class%20vamsurlike/VamClass18)  
-✔ Sequence스킬 - Move, Dash 추가  
-✔ SkillBook - Sequence스킬 목록을 순서대로 발동  
-✔ Move - Target을 향해 X초 움직이는 코드  
+✔ Sequence 스킬 - Move, Dash 추가  
+✔ SkillBook - Sequence 스킬 목록을 순서대로 발동  
+✔ Move - Target을 향해 X 초 움직이는 코드  
 ✔ Dash - Target을 향해 돌진  
 ✔ BossController - 이동 부분 없애고 -> SequenceSkill로  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
