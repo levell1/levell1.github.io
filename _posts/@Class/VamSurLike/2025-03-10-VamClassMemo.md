@@ -284,6 +284,19 @@ date: 2025-03-10 08:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
+<br><br><br><br>
+
+# ⭐ UI개선 ⭐
+[UI개선](https://levell1.github.io/class%20vamsurlike/VamClass19)  
+✔ Enum, Type, `Dictionary<Type, UnityEngine.Object[]>` 를 이용해 효율적인 UI관리  
+✔ 드래그 앤 드롭 대신 Enum, Find로 자동화  
+✅ Bind - UI코드에서 Enum으로 분류된 UI이름으로 된 정보를 가져와 _objects에 FindChild를 이용해 찾아서 추가한다.  
+✅ Get - 어떤 UI를 변경하고자 할 때 그 UI를 _objects에서 가져온다.  
+✅ BindEvent - EventHandler를 통해 Onclick, drag등 이벤트를 적용한다.  
+🔹 Extension - BindEvent (Button의 gameobject에BindEvent()확장 메서드 추가 )  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
 <br><br><br>
 - - - 
 
