@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2025-03-10 08:00
+date: 2025-04-01 08:00
 
 ---
 - - -
@@ -66,7 +66,7 @@ date: 2025-03-10 08:00
 
 <br><br><br><br>
 
-# ⭐ 5강 (Addressable) ⭐
+# ⭐⭐ 5강 (Addressable) ⭐⭐
 [Addressable](https://levell1.github.io/class%20vamsurlike/VamClass05)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -191,19 +191,6 @@ date: 2025-03-10 08:00
 
 <br><br><br><br>
 
-# ⭐ 14강 스킬 맵(무한맵) 개선 ⭐ 
-[스킬 맵(무한맵) 개선](https://levell1.github.io/class%20vamsurlike/VamClass13)  
-✔ 코드 개선  
-✔ 평타스킬 추가  
-✔ 몬스터 스폰위치 설정  
-✔ typeof(T).IsSubclassOf(typeof(SkillController))  
-✔ **무한맵** - X(4) 개의 map을 플레이어 위치에 따라 위치 변경해서 무한처럼 만든다. (방법은 다양)  
-✔ 상대에게 충돌 범위를 없애면 무적이 될 수 있다.  
-{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}  
-
-<br><br><br><br>
-
 # ⭐ 14강 UI ⭐ 
 [UI](https://levell1.github.io/class%20vamsurlike/VamClass14)  
 ✔ UI배치, 몬스터 처치 시 UI변경, 경험치 Slider 변경, 레벨업 시 Popup표시  
@@ -286,7 +273,7 @@ date: 2025-03-10 08:00
 
 <br><br><br><br>
 
-# ⭐ UI개선 ⭐
+# ⭐⭐⭐ 19 UI 개선 자동화 ⭐⭐⭐
 [UI개선](https://levell1.github.io/class%20vamsurlike/VamClass19)  
 ✔ Enum, Type, `Dictionary<Type, UnityEngine.Object[]>`를 이용해 효율적인 UI 관리  
 ✔ 드래그 앤 드롭 대신 Enum, Find로 자동화  
@@ -294,6 +281,13 @@ date: 2025-03-10 08:00
 ✅ Get - 어떤 UI를 변경하고자 할 때 그 UI를 _objects에서 가져온다.  
 ✅ BindEvent - EventHandler를 통해 Onclick, drag 등 이벤트를 적용한다.  
 🔹 Extension - BindEvent (Button의 gameobject에BindEvent() 확장 메서드 추가 )  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+<br><br><br><br>
+
+# 부록 게임서버
+[게임서버](https://levell1.github.io/class%20vamsurlike/VamClass20)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
