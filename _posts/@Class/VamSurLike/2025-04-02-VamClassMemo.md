@@ -287,7 +287,10 @@ date: 2025-04-01 08:00
 <br><br><br><br>
 
 # 부록 게임서버
-[게임서버](https://levell1.github.io/class%20vamsurlike/VamClass20)  
+✔ 게임서버 - 데이터를 계속 주고 받는 양방향  
+✔ Java - Spring  
+✔ JS - Node.JS  
+✔ C# - ASP.NET  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
