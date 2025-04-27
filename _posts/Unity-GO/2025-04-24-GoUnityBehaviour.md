@@ -78,7 +78,8 @@ BlackBoard에 List - GameObject List 추가, 드래그
 - - - 
 
 # 잡담, 일기?
-내일 또 정리  
+내일 또 정리, c# 기초 강의 찾아보고 기초 다지기.  
+이력서다듬기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
