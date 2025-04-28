@@ -75,10 +75,70 @@ BlackBoard : 사용하는 변수 목록, 기본적으로 자기 자신을 나타
 ## 순찰(Patrols)
 1.&nbsp; 노드 생성 : Add -> Action -> Navigation -> Patrol  
 2.&nbsp; Agent - Self 드래그  
-3.&nbsp; WayPoint 설정  
+3.&nbsp; WayPoint 설정(PatrolPoints)  
 BlackBoard에 List - GameObject List 추가, 드래그  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
+## Enemy Prefab
+1.&nbsp; Behavior Agent 컴포넌트 추가  
+2.&nbsp; Behavior Agent Graph 등록    
+3.&nbsp; EnemySpawner WayPoint 설정  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}  
+
+<br><br><br><br>
+
+# 코드
+
+## EnemyFSM
+behaviorAgent.SetVariableValue("PatrolPoints", wayPoints.ToList());  
+Behavior Graph의 Blackboard에 선언한 변수 값을 설정  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
+
+<details>
+<summary>EnemyFSM</summary>
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+using System.Linq;
+using UnityEngine;
+using UnityEngine.AI;
+using Unity.Behavior;
+
+public class EnemyFSM : MonoBehaviour
+{
+	private	Transform			target;
+	private	NavMeshAgent		navMeshAgent;
+	private	BehaviorGraphAgent	behaviorAgent;
+
+	public void Setup(Transform target, GameObject[] wayPoints)
+	{
+		this.target = target;
+
+		navMeshAgent	= GetComponent<NavMeshAgent>();
+		behaviorAgent	= GetComponent<BehaviorGraphAgent>();
+		navMeshAgent.updateRotation = false;
+		navMeshAgent.updateUpAxis = false;
+
+		behaviorAgent.SetVariableValue("PatrolPoints", wayPoints.ToList());
+	}
+}
+```
+</div>
+</details>
+
+<br><br><br>
+
+# 이것저것 메모
+
+## UI 관리, UI 이름 변경 시 수정  
+AI Navigation에 있는 NavMeshAgent와 자동으로 연동해 작동  
+없으면 transform을 이용해 이동. 
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice} 
+
 
 
 <br><br><br>
@@ -87,6 +147,7 @@ BlackBoard에 List - GameObject List 추가, 드래그
 # 잡담, 일기?
 내일 또 정리, c# 기초 강의 찾아보고 기초 다지기.  
 이력서다듬기.  
+유니티6 NavMesh 먼저 듣고 다시 보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
