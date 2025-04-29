@@ -23,7 +23,7 @@ date: 2025-04-28 05:00
 [Behaviour Tree Manual](https://docs.unity3d.com/Packages/com.unity.behavior@1.0/manual/index.html)  
 -&nbsp;Behaviour Tree - AI 캐릭터의 행동 제어나 상태 관리를 위해 사용합니다.  
 -&nbsp;Behaviour Tree는 게임 개발에서 비선형적이고, 복잡한 AI 의사 결정을 간단하게 모듈화하여 구현할 수 있게 해줍니다.  
--&nbsp;Unity6 부터 Built-in으로 지원, 노드기반으로 관리할 수 있게 제공합니다.  
+-&nbsp;Unity6부터 Built-in으로 지원, 노드 기반으로 관리할 수 있게 제공합니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
@@ -39,7 +39,7 @@ date: 2025-04-28 05:00
 ✔ Sequencing Node : 해당 노드가 아닌 자식 노드들을 **특정 조건**에 따라 실행  
 &nbsp;&nbsp; 모든 자식 노드가 성공해야 자신도 성공 상태 반환  
 &nbsp;  
-✔ Join Node : 여러 노드에서 발생한 결과를 결합해 행동을 결정하는데 사용  
+✔ Join Node : 여러 노드에서 발생한 결과를 결합해 행동을 결정하는 데 사용  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
@@ -60,10 +60,10 @@ date: 2025-04-28 05:00
 
 ## Behavior Graph
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior3.png?raw=true)  
-BlackBoard : 사용하는 변수 목록, 기본적으로 자기 자신을 나타내는 Self 변수 생성  
-&nbsp;BlackBoard에 선언한 변수는 외부에서 접근 가능하기 때분에 Insspector View에 출력되며, 스크립트에서 Get/Set 가능  
+**BlackBoard** : 사용하는 변수 목록, 기본적으로 자기 자신을 나타내는 Self 변수 생성  
+&nbsp;BlackBoard에 선언한 변수는 외부에서 접근 가능하기 때문에 Insspector View에 출력되며, 스크립트에서 Get/Set 가능  
 &nbsp;  
-노드 생성 : 우클릭 - Add  
+**노드 생성** : 우클릭 - Add  
 &nbsp;Action -> Navigation -> Nav To Target(목표에게 이동), To Location, Patrol(순찰)을 제공  
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior4.png?raw=true)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -147,7 +147,7 @@ public class EnemyFSM : MonoBehaviour
 
 ## EnemySpawner
 EnemySpawner WayPoint 설정  
-EnemySpawner 적의 스폰가능위치 스폰, WayPoint(순찰구역)을 정하여 Enemy스폰.  
+EnemySpawner 적의 스폰 가능 위치 스폰, WayPoint(순찰구역)을 정하여 Enemy 스폰.  
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior8.png?raw=true)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
@@ -234,7 +234,7 @@ public class EnemySpawner : MonoBehaviour
 # 이것저것 메모
 
 ## BehaviorGraph 정렬  
-노드위 우클릭 - Align - All Children (노드정렬)  
+노드 위 우클릭 - Align - All Children (노드 정렬)  
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior9.png?raw=true)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice} 
