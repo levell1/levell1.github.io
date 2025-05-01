@@ -22,13 +22,13 @@ date: 2025-04-29 05:00
 # 열거형을 이용한 행동 관리
 1.&nbsp;BlackBoard -> (+) -> **Enumeration**  
 &nbsp;  
-2.&nbsp;Enumeration생성 (currentState)  (Idle, Patrol, Wander, Chase, Attack)  
+2.&nbsp;Enumeration 생성 (currentState)  (Idle, Patrol, Wander, Chase, Attack)  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_1.png?raw=true)  
 &nbsp;  
 3.&nbsp;**Switch** 노드 추가 -> currentState (열거형이 자식노드로 자동생성)  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_3.png?raw=true)  
 &nbsp;  
-4.&nbsp;**Try in order**, **Abort**(타겟이 있으면 중단), **Random**, **Set Variable Value** 노드를 사용하여 행동변환  
+4.&nbsp;**Try in order**, **Abort**(타겟이 있으면 중단), **Random**, **Set Variable Value** 노드를 사용하여 행동 변환  
 &nbsp;- 각 노드 [Node](https://levell1.github.io/go%20unity/GoUnityBehavior2/#node)에 설명  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -36,19 +36,19 @@ date: 2025-04-29 05:00
 <br><br><br>
 
 ## Idle
-**Target이 범위에 없으면 1~3초 대기 후 Patrol, Wander상태로, 있다면 Chase**  
+**Target이 범위에 없으면 1~3초 대기 후 Patrol, Wander 상태로, 있다면 Chase**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_idle.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
 ## Patrol
-**Target이 없다면 순찰 (10초가 지나면 대기살태로 변경), 있다면 Chase**  
+**Target이 없다면 순찰 (10초가 지나면 대기 상태로 변경), 있다면 Chase**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_patrol.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
 ## Wander
-**Target이 없다면 임의의위치로 배회, 있다면 Chase**  
+**Target이 없다면 임의의 위치로 배회, 있다면 Chase**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_Wander.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -57,17 +57,17 @@ date: 2025-04-29 05:00
 <br><br><br>
 
 # Node
-✔ **Switch** : Enumeration를 선택하면 열거형이 자식노드로 자동생성됩니다.  
+✔ **Switch** : Enumeration를 선택하면 열거형이 자식 노드로 자동 생성됩니다.  
 &nbsp;  
 ✔ **Try in order** : 성공할 때까지 분기를 순서대로 실행(좌->우)  
 &nbsp;  
 ✔ **Abort** : 지정된 조건이 참이면 해당 분기 중단  
-&nbsp;&nbsp; Inspector 뷰에서 설정가능 (변수값 비교)  
+&nbsp;&nbsp; Inspector 뷰에서 설정 가능 (변숫값 비교)  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_4.png?raw=true)  
 &nbsp;  
-✔ **Random** : 임의의 자식노드를 선택해서 실행  
+✔ **Random** : 임의의 자식 노드를 선택해서 실행  
 &nbsp;  
-✔ **Set Variable Value** : Blackboard에 있는 변수 값을 설정하는 노드  
+✔ **Set Variable Value** : Blackboard에 있는 변숫값을 설정하는 노드  
 &nbsp;  
 ✔ [Create New Action](https://levell1.github.io/go%20unity/GoUnityBehavior2/#create-new-action-node) : 새로운 행동 노드 구현   
 &nbsp;- 원하는 노드가 없으면 직접 새로운 노드를 만들 수 있습니다.   
@@ -109,7 +109,7 @@ public enum EnemyState
 
 ## Create New Action Node
 모든 노드는 ⭐ NodeDescription 어트리뷰트에 노드의 이름, Story, Category, id 정보가 출력된다.  
-⭐SerializeReference를 사용하고, **BlackboardVariable<>**로 선언하면 Behavior Graph의 Intpector에 변수 노출이 가능합니다.  
+⭐ SerializeReference를 사용하고, **BlackboardVariable<>**로 선언하면 Behavior Graph의 Intpector에 변수 노출이 가능합니다.  
 OnStart(), OnUdpdate(), OnEnd()  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -120,7 +120,7 @@ Add - Action - Create New Action
 **Name : Wander로 하면 WanderAction.cs 스크립트가 생성.**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_CreateActionNode.png?raw=true)  
 &nbsp;  
-**Story : 단어 단위로 뛰어쓰기 하며 단어마다 변수, 일반 텍스트 형식으로 설정 가능.**  
+**Story : 단어 단위로 띄어쓰기 하며 단어마다 변수, 일반 텍스트 형식으로 설정 가능합니다.**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_CreateActionNode2.png?raw=true)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
