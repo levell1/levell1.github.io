@@ -27,6 +27,7 @@ date: 2025-04-29 05:00
 &nbsp;  
 3.&nbsp;**Switch** 노드 추가 -> currentState (열거형이 자식노드로 자동생성)  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_3.png?raw=true)  
+&nbsp;  
 4.&nbsp;**Try in order**, **Abort**(타겟이 있으면 중단), **Random**, **Set Variable Value** 노드를 사용하여 행동변환  
 &nbsp;- 각 노드 [Node](https://levell1.github.io/go%20unity/GoUnityBehavior2/#node)에 설명  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -116,10 +117,10 @@ OnStart(), OnUdpdate(), OnEnd()
 
 **Behavior Graph에서 생성**  
 Add - Action - Create New Action  
-**Name : Wander로 하면 WanderAction.cs 스크립트가 생성**  
+**Name : Wander로 하면 WanderAction.cs 스크립트가 생성.**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_CreateActionNode.png?raw=true)  
 &nbsp;  
-**Story : 단어 단위로 뛰어쓰기 하며 단어마다 변수, 일반 텍스트 형식으로 설정 가능합니다.**  
+**Story : 단어 단위로 뛰어쓰기 하며 단어마다 변수, 일반 텍스트 형식으로 설정 가능.**  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_CreateActionNode2.png?raw=true)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -136,12 +137,12 @@ using Action = Unity.Behavior.Action;
 using Unity.Properties;
 using UnityEngine.AI;
 
-//모든 노드는  NodeDescription 어트리뷰트에 노드의 이름, Story, Category, id 정보가 출력된다.  
+//⭐ NodeDescription 어트리뷰트에 노드의 이름, Story, Category, id 정보가 출력된다.  
 [Serializable, GeneratePropertyBag]
 [NodeDescription(name: "Wander", story: "[Self] Navigate To WanderPosition", category: "Action", id: "7ca2472cbc539bcb9415b66682de271e")]
 public partial class WanderAction : Action
 {
-    //SerializeReference를 사용하고, BlackboardVariable<>로 선언하면 Behavior Graph의 Intpector에 변수 노출이 가능합니다.  
+    //⭐ SerializeReference를 사용하고, BlackboardVariable<>로 선언하면 Behavior Graph의 Intpector에 변수 노출이 가능합니다.  
     [SerializeReference] public BlackboardVariable<GameObject> Self;
 
     private NavMeshAgent agent;
