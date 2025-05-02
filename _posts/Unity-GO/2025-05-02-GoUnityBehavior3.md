@@ -20,13 +20,14 @@ date: 2025-04-30 05:00
 - - - 
 
 # Chase, Attack 행동
-1.&nbsp;Blackboard 거리변수추가  
-**currentDistance** : Target과의 거리 체크  
+1.&nbsp;Blackboard 거리 변수 추가  
+**currentDistance** : Target 과의 거리 체크  
 **chaseDistance** : chaseDistance에 들어오면 따라가기  
-**attackDistance** : attackDistance안에 들어오면 Attack  
-**fallOutDistance** : fallOutDistance보다 멀어지면 Idle상태,순찰  
+**attackDistance** : attackDistance 안에 들어오면 Attack  
+**fallOutDistance** : fallOutDistance보다 멀어지면 Idle 상태, 순찰  
 &nbsp;  
 2.&nbsp;투사체, 무기 관련 작업  
+&nbsp;  
 3.&nbsp;EnemyPrefab - Behavior Agent, weapon 설정하기
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -44,14 +45,16 @@ date: 2025-04-30 05:00
 <br><br><br><br>
 
 ## Chase
-**Target이attackDistance보다 멀면 따라가기 / 가까우면 Attack행동 Target이 fallOutDistance보다 멀어지면 Idle**  
+**Target이 attackDistance보다 멀면 따라가기 / 가까우면 Attack 행동 Target이 fallOutDistance보다 멀어지면 Idle**  
+&nbsp;  
 [Chase](https://levell1.github.io/go%20unity/GoUnityBehavior3/#chase-1) : Self Navigation To Target  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_Chase.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
 ## Attack
-**현재무기로 공격/ 타겟이 멀어지면 Idle**  
+**현재 무기로 공격/ Target이 멀어지면 Idle**  
+&nbsp;  
 [Weapon](https://levell1.github.io/go%20unity/GoUnityBehavior3/#weapon) : Try Attack With currentWeapon  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_Attack.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
@@ -67,8 +70,10 @@ date: 2025-04-30 05:00
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+<br><br><br>
+
 ## Chase
-**Chase Action** : agent의 속도, 이동위치 설정  
+**Chase Action** : agent의 속도, 이동 위치 설정  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info} 
 
