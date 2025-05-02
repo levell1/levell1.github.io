@@ -1,5 +1,5 @@
 ---
-title:  "[Unity6] 2D Behavior Tree 2( Chase, Attack  ) "
+title:  "[Unity6] 2D Behavior Tree 3( Chase, Attack  ) "
 excerpt: ""
 
 categories:
@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2025-04-29 05:00
+date: 2025-04-30 05:00
 
 ---
 - - -
@@ -26,16 +26,16 @@ date: 2025-04-29 05:00
 **attackDistance** : attackDistance안에 들어오면 Attack  
 **fallOutDistance** : fallOutDistance보다 멀어지면 Idle상태,순찰  
 &nbsp;  
-2.&nbsp;투사체, 무기 관련 작업 
+2.&nbsp;투사체, 무기 관련 작업  
 3.&nbsp;EnemyPrefab - Behavior Agent, weapon 설정하기
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
 
-**거리계산**
-새로운 On Start Node 생성(별도의 로직으로 처리)  
-[new Action(UpdateDistance)](https://levell1.github.io/go%20unity/GoUnityBehavior3/#updatedistance) CurrentDistance를 갱신  
-[Conditional Branch, Create New Condition](https://levell1.github.io/go%20unity/GoUnityBehavior3/#conditional_branch,_create_new_condition)로 조건(current, chaseDistance 비교)에 따라 IstargetDetected 변경  
+**거리계산**  
+새로운 **On Start** Node 생성(별도의 로직으로 처리)  
+[UpdateDistance](https://levell1.github.io/go%20unity/GoUnityBehavior3/#updatedistance) CurrentDistance를 갱신  
+[Conditional Branch, Create New Condition](https://levell1.github.io/go%20unity/GoUnityBehavior3/#conditional-branch-create-new-condition)로 조건(current, chaseDistance 비교)에 따라 IstargetDetected 변경  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior3_1.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -45,17 +45,17 @@ date: 2025-04-29 05:00
 
 ## Chase
 **Target이attackDistance보다 멀면 따라가기 / 가까우면 Attack행동 Target이 fallOutDistance보다 멀어지면 Idle**  
-[new Action(Chase)](https://levell1.github.io/go%20unity/GoUnityBehavior3/#chase)  Self Navigation To Target  
+[Chase](https://levell1.github.io/go%20unity/GoUnityBehavior3/#chase-1) : Self Navigation To Target  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_Chase.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}  
+{: .notice--success}  
 
 ## Attack
 **현재무기로 공격/ 타겟이 멀어지면 Idle**  
-[new Action(Weapon)](https://levell1.github.io/go%20unity/GoUnityBehavior3/#weapon)  Try Attack With currentWeapon  
+[Weapon](https://levell1.github.io/go%20unity/GoUnityBehavior3/#weapon) : Try Attack With currentWeapon  
 &nbsp;![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Unity6_AiNav/Behavior2_Attack.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
-{: .notice--info}  
+{: .notice--success}  
 
 
 <br><br><br><br>
@@ -68,7 +68,9 @@ date: 2025-04-29 05:00
 {: .notice--info}  
 
 ## Chase
-**Chase Action** : Self Navigate To Target  
+**Chase Action** : agent의 속도, 이동위치 설정  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 <details>
 <summary>EnemyState</summary>
@@ -107,7 +109,9 @@ public partial class ChaseAction : Action
 <br>
 
 ## UpdateDistance
-**UpdateDistance Action** : Update Self and Target CurrentDistance  
+**UpdateDistance Action** : CurrentDistance(target과 자신과의 거리)를 갱신  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
 
 <details>
 <summary>EnemyState</summary>
@@ -144,7 +148,9 @@ public partial class UpdateDistanceAction : Action
 <br>
 
 ## Weapon
-**Weapon Action** : try attack with CurrentWeapon  
+**Weapon Action** : 무기에 맞게 TryAttack() 실행  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}
 
 <details>
 <summary>EnemyState</summary>
@@ -182,7 +188,6 @@ public partial class WeaponAction : Action
 두 수 비교조건 Inspector - Assign Condition - Variable Comparison  
 Create New Action과 같이 **Create New Condition**으로 새로운 조건을 생성할 수 있다.  
 CheckTargetDetect : Compare values of CurrentDistance and ChaseDistance  
-
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
