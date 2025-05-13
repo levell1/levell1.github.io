@@ -68,6 +68,8 @@ OnGUI() : GUI 출력
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}
 
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/8.png?raw=true)   
+
 <details>
 <summary>TestEditorWindow</summary>
 <div class="notice--primary" markdown="1"> 
@@ -397,13 +399,9 @@ textGUILayout = GUILayout.TextField(textGUILayout, GUILayout.Height(50), GUILayo
 <br><br><br><br><br>
 - - - 
 
-text
-![Image](https://github.com/user-attachments/assets/ef3a2698-da78-44a8-ae41-e6f36fcffe6f)  
 
 # 잡담, 일기?
 Custom Editor로 개발 효율성을 높일 수 있다.  
-**TestEditorWindow** Editor 화면  
-![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/8.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
