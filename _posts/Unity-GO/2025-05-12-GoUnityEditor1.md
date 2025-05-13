@@ -41,13 +41,13 @@ EditorGUIUtility.Load(string path) "sample.png"로 불러올 수 있습니다.
 에디터 확장을 위한 UI 출력에 사용하는 클래스  
 **GUI**, **GUILayout**, **EditorGUI**, **EditorGUILayout**  
 &nbsp;  
-Runtime(O) / Editor, button(O)
 **GUI** : 가장 오래된 GUI 시스템 주로 OnGUI() 메소드를 통해 사용  
 **GUILayout** : 상대적인 레이아웃을 사용해 UI 요소를 배치할 때 사용  
+Runtime(O) / Editor, button(O)  
 &nbsp;  
-Runtime(X) / Editor, button(X)
 **EditorGUI** : 에디터 윈도우 및 에디터 환경에서 사용하는 유니티 GUI 요소  
 **EditorGUILayout** : EditorGUI의 레이아웃 버전 상대적인 레이아웃을 사용해 UI 배치  
+Runtime(X) / Editor, button(X)  
 &nbsp;  
 GUI / Layout  
 **GUI**, **EditorGUI** : Rect(x,y,width,heigh)를 통해 UI의 위치 설정, 넓이 높이를 직접 설정  
@@ -181,6 +181,8 @@ GUILayout.Label(content);
 </div>
 </details>
 
+<br><br><br><br>
+
 ## Label
 Lable, LabelField  
 GUI.Label(Rect rect,string text)  
@@ -202,6 +204,8 @@ EditorGUILayout.LabelField("EditorGUILayout.LabelField()");
 ```
 </div>
 </details>
+
+<br><br>
 
 ## TextField
 string result = **GUI**.TextField(Rect rect, string text);  
@@ -234,6 +238,7 @@ textEditorGUILayout = EditorGUILayout.TextField("EditorGUILayout : ", textEditor
 </div>
 </details>
 
+<br><br>
 
 ## Button
 GUI만 가능 Editor(x)  
@@ -263,6 +268,8 @@ if (GUILayout.Button("GUILayout.Button()"))
 ```
 </div>
 </details>
+
+<br><br>
 
 ## Color
 기본 색상 저장 - GUI 색상 변경 - 변경된 색상으로 출력 - GUI 기본 색상으로 복구  
@@ -295,6 +302,8 @@ GUI.backgroundColor = defaultBackgroundColor;
 </div>
 </details>
 
+<br><br>
+
 ## GUIContent
 UI에 마우스를 hover 했을 때 출력할 설명 설정  
 Label, TextField 등과 같이 텍스트를 출력하는 모든 메소드에서 string, GUIContent를 선택해서 사용 가능  
@@ -320,6 +329,8 @@ if (GUI.Button(new Rect(0, 210, 300, 20), btnContent))
 ```
 </div>
 </details>
+
+<br><br>
 
 ## GUIStyle
 특정 style을 설정하고 원하는 UI에 적용해 변경   
@@ -349,6 +360,8 @@ GUILayout.Label("GUILayout.Label()", customLabelStyle2);
 ```
 </div>
 </details>
+
+<br><br>
 
 ## GUILayoutOption
 Layout의 최소, 최대 크기 등을 설정할 때 사용  
