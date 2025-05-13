@@ -29,7 +29,7 @@ Editor가 아닌 다른 폴더에 Editor, EditorWindow 클래스를 상속받은
 &nbsp;  
 2.&nbsp;Editor Default Resources 폴더  
 Resources 폴더와 마찬가지로 Custrom Editor에서만 사용하는 리소스 저장 폴더.  
-EditorGUIUtility.Load(string path) "sample.png" 로 불러올 수 있습니다.  
+EditorGUIUtility.Load(string path) "sample.png"로 불러올 수 있습니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
@@ -43,15 +43,15 @@ EditorGUIUtility.Load(string path) "sample.png" 로 불러올 수 있습니다.
 &nbsp;  
 Runtime(O) / Editor, button(O)
 **GUI** : 가장 오래된 GUI 시스템 주로 OnGUI() 메소드를 통해 사용  
-**GUILayout** : 상대적인 레이아웃을 사용해 UI요소를 배치할 때 사용  
+**GUILayout** : 상대적인 레이아웃을 사용해 UI 요소를 배치할 때 사용  
 &nbsp;  
 Runtime(X) / Editor, button(X)
 **EditorGUI** : 에디터 윈도우 및 에디터 환경에서 사용하는 유니티 GUI 요소  
 **EditorGUILayout** : EditorGUI의 레이아웃 버전 상대적인 레이아웃을 사용해 UI 배치  
 &nbsp;  
 GUI / Layout  
-**GUI**, **EditorGUI** : Rect(x,y,width,heigh) 를 통해 UI의 위치설정, 넓이 높이를 직접 설정  
-**GUILayout**, **EditorGUILayout** : UI위치, 크기를 자동으로 설정, 정렬, (높이 : 18, 코드작성 순으로 정렬)  
+**GUI**, **EditorGUI** : Rect(x,y,width,heigh)를 통해 UI의 위치 설정, 넓이 높이를 직접 설정  
+**GUILayout**, **EditorGUILayout** : UI 위치, 크기를 자동으로 설정, 정렬, (높이 : 18, 코드 작성 순으로 정렬)  
 &nbsp; GUILayoutOption, Space(float Width)를 사용해 간격 조절  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
@@ -91,8 +91,8 @@ public class TestEditorWindow : EditorWindow
     {
         window = GetWindow<TestEditorWindow>();
 
-        //SceneView 에 포함되도록 설정
-        //window = GetWindow<TestEditorWindow>(typeof(SceneView));
+        // SceneView 에 포함되도록 설정
+        // window = GetWindow<TestEditorWindow>(typeof(SceneView));
 
         // 윈도우 제목(Title) 설정
         window.titleContent = new GUIContent("Unitynote");
@@ -113,7 +113,7 @@ public class TestEditorWindow : EditorWindow
         GUI.contentColor = Color.red;
 
         // 아래와 같이 new로 메모리를 할당하지 않고 참조해서 사용하면 유니티 에디터 스타일 전체가 변경된다.
-        //GUIStyle customLabelStyle	= EditorStyles.label;
+        // GUIStyle customLabelStyle	= EditorStyles.label;
         GUIStyle customLabelStyle = new GUIStyle(EditorStyles.label);
         customLabelStyle.alignment = TextAnchor.MiddleCenter;
         customLabelStyle.fontStyle = FontStyle.BoldAndItalic;
@@ -188,6 +188,8 @@ GUILayout.LabelField(string text)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/1.png?raw=true)   
+
 <details>
 <summary>Label</summary>
 <div class="notice--primary" markdown="1"> 
@@ -217,6 +219,8 @@ textGUILayout = GUILayout.TextField(textGUILayout, GUILayout.Height(50), GUILayo
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/2.png?raw=true)   
+
 <details>
 <summary>TextField</summary>
 <div class="notice--primary" markdown="1"> 
@@ -238,14 +242,16 @@ bool isClick = Button(Rect rect, string text)
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/3.png?raw=true)   
+
 <details>
 <summary>Button</summary>
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
- GUIContent btnContent = new GUIContent("GUI.Button()", "[GUIContent Hover]");
+GUIContent btnContent = new GUIContent("GUI.Button()", "[GUIContent Hover]");
 
-if (GUI.Button(new Rect(0, 210, 300, 20), btnContent))
+if (GUI.Button(new Rect(0, 40, 300, 20), btnContent))
 {
     Debug.Log("GUI.Button() Click");
 }
@@ -259,9 +265,11 @@ if (GUILayout.Button("GUILayout.Button()"))
 </details>
 
 ## Color
-기본색상 저장 - GUI 색상 변경 - 변경된 색상으로 출력 - GUI 기본색상으로 복구  
+기본 색상 저장 - GUI 색상 변경 - 변경된 색상으로 출력 - GUI 기본 색상으로 복구  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
+
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/4.png?raw=true)   
 
 <details>
 <summary>Color</summary>
@@ -269,18 +277,18 @@ if (GUILayout.Button("GUILayout.Button()"))
 
 ```c# 
 // 글 색상 변경
-Color defaultContentColor = GUI.contentColor;   // 기본색상 저장  
+Color defaultContentColor = GUI.contentColor;   // 기본 색상 저장  
 GUI.contentColor = Color.red;                   // GUI 색상 변경  
 
-GUI.Label(new Rect(0, 130, 300, 20), "GUI.Label()", customLabelStyle);  // 변경된 색상으로 출력
+GUI.Label(new Rect(0, 0, 300, 20), "GUI.Label()", customLabelStyle);  // 변경된 색상으로 출력
 
-GUI.contentColor = defaultContentColor;         // GUI 기본색상으로 복구 
+GUI.contentColor = defaultContentColor;         // GUI 기본 색상으로 복구 
 
 // 배경 색 변경
 Color defaultBackgroundColor = GUI.backgroundColor;
 GUI.backgroundColor = Color.blue;
 
-textGUI = GUI.TextField(new Rect(0, 170, 300, 20), textGUI);
+textGUI = GUI.TextField(new Rect(0, 30, 300, 20), textGUI);
 
 GUI.backgroundColor = defaultBackgroundColor;
 ```
@@ -288,11 +296,14 @@ GUI.backgroundColor = defaultBackgroundColor;
 </details>
 
 ## GUIContent
-UI에 마우스를 hover했을 때 출력할 설명 설정  
+UI에 마우스를 hover 했을 때 출력할 설명 설정  
 Label, TextField 등과 같이 텍스트를 출력하는 모든 메소드에서 string, GUIContent를 선택해서 사용 가능  
 GUIContent textandhovertext = new GUIContent("Text", "HoverText");  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/5.png?raw=true)   
+
 <details>
 <summary>GUIContent</summary>
 <div class="notice--primary" markdown="1"> 
@@ -306,7 +317,6 @@ if (GUI.Button(new Rect(0, 210, 300, 20), btnContent))
 {
     Debug.Log("GUI.Button() Click");
 }
-
 ```
 </div>
 </details>
@@ -317,13 +327,15 @@ new로 메모리를 할당하지 않고 참조해서 사용하면 유니티 에�
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/6.png?raw=true)   
+
 <details>
 <summary>GUIStyle</summary>
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
 // 아래와 같이 new로 메모리를 할당하지 않고 참조해서 사용하면 유니티 에디터 스타일 전체가 변경된다.
-//GUIStyle customLabelStyle	= EditorStyles.label;
+// GUIStyle customLabelStyle	= EditorStyles.label;
 GUIStyle customLabelStyle = new GUIStyle(EditorStyles.label);
 customLabelStyle.alignment = TextAnchor.MiddleCenter;
 customLabelStyle.fontStyle = FontStyle.BoldAndItalic;
@@ -332,7 +344,7 @@ customLabelStyle.fontSize = 20;
 GUIStyle customLabelStyle2 = new GUIStyle(GUI.skin.label);
 customLabelStyle2.fontStyle = FontStyle.Bold;
 
-GUI.Label(new Rect(0, 130, 300, 20), "GUI.Label()", customLabelStyle);
+GUI.Label(new Rect(0, 30, 300, 20), "GUI.Label()", customLabelStyle);
 GUILayout.Label("GUILayout.Label()", customLabelStyle2);
 ```
 </div>
@@ -347,12 +359,14 @@ ExpandHeight  남는 공간만큼 UI를 채워서 출력
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/7.png?raw=true)   
+
 <details>
 <summary>Color</summary>
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
-//textGUILayout = GUILayout.TextField(textGUILayout);
+textGUILayout = GUILayout.TextField(textGUILayout);
 textGUILayout = GUILayout.TextField(textGUILayout, GUILayout.Height(50), GUILayout.MaxWidth(500));
 ```
 </div>
@@ -362,8 +376,7 @@ textGUILayout = GUILayout.TextField(textGUILayout, GUILayout.Height(50), GUILayo
 
 # 이것저것 메모
 
-## EditorWindow.Show
-
+기본적으로 Layout을 사용하고 상황에 맞게 GUI/Editor, 기본/Layout 결정해서 쓰면 될 거 같다.
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
@@ -373,7 +386,9 @@ textGUILayout = GUILayout.TextField(textGUILayout, GUILayout.Height(50), GUILayo
 
 
 # 잡담, 일기?
-Editor   
+Custom Editor로 개발 효율성을 높일 수 있다.  
+**TestEditorWindow** Editor 화면  
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/1.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
