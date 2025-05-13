@@ -43,11 +43,11 @@ EditorGUIUtility.Load(string path) "sample.png"로 불러올 수 있습니다.
 &nbsp;  
 **GUI** : 가장 오래된 GUI 시스템 주로 OnGUI() 메소드를 통해 사용  
 **GUILayout** : 상대적인 레이아웃을 사용해 UI 요소를 배치할 때 사용  
-Runtime(O) / Editor, button(O)  
+Runtime(O) / button(O)  
 &nbsp;  
 **EditorGUI** : 에디터 윈도우 및 에디터 환경에서 사용하는 유니티 GUI 요소  
 **EditorGUILayout** : EditorGUI의 레이아웃 버전 상대적인 레이아웃을 사용해 UI 배치  
-Runtime(X) / Editor, button(X)  
+Runtime(X) / button(X)  
 &nbsp;  
 GUI / Layout  
 **GUI**, **EditorGUI** : Rect(x,y,width,heigh)를 통해 UI의 위치 설정, 넓이 높이를 직접 설정  
@@ -397,11 +397,13 @@ textGUILayout = GUILayout.TextField(textGUILayout, GUILayout.Height(50), GUILayo
 <br><br><br><br><br>
 - - - 
 
+text
+![Image](https://github.com/user-attachments/assets/ef3a2698-da78-44a8-ae41-e6f36fcffe6f)  
 
 # 잡담, 일기?
 Custom Editor로 개발 효율성을 높일 수 있다.  
 **TestEditorWindow** Editor 화면  
-![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/1.png?raw=true)   
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/8.png?raw=true)   
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
