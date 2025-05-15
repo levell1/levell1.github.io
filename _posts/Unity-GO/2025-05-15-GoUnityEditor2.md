@@ -44,6 +44,8 @@ toggleValue = EditorGUILayout.ToggleLeft("Toggle Left", toggleValue);
 </div>
 </details>
 
+<br><br>
+
 # ChangeSkin (Button Toggle)
 GUI.skin.toggle, GUI.skin.Button 을 통해 기능과 다르게 외형을 변경할 수 있다.  
 GUILayout은 내부에 텍스트, 이미지 출력 가능  
@@ -79,6 +81,8 @@ public void ChangeSkin(GUIStyle titleStyle)
 ```
 </div>
 </details>
+
+<br><br>
 
 # ToggleGroup (Toolbar, SelectionGrid)
 유니티 Scene View에 Toolbar 처럼 Button외형의 Toggle을 그룹으로 관리해 그룹 소속 토글중 하나만 선택 가능합니다.  
@@ -143,6 +147,8 @@ EditorGUILayout.EndHorizontal();
 ```
 </div>
 </details>
+
+<br><br>
 
 ## PreferencesKeysElement
 버튼 테두리없이 토글형식  
