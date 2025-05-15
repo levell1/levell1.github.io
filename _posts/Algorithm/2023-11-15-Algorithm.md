@@ -37,8 +37,8 @@ Algorithm
 디버깅 밥법 
 중단점 설정, 순서대로 실행   
 조사식에서 변수값 확인  
-호출스택 확인 하면서 디버깅 진행
-재귀함수 디버깅 해보기  
+호출 스택 확인하면서 디버깅 진행
+재귀 함수 디버깅해보기  
 하루에 3개씩 풀어보기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice}

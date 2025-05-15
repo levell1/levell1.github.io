@@ -21,8 +21,8 @@ date: 2023-02-26
 ## 유튜브 영상 삽입하기.
 
 ### 1.  HTML 태그 사용  
-iframe태그 : 유튜브 영상에 마우스 우클릭 후 소스 코드 복사 후  
-포스트 파일에 붙여넣기. HTML의 iframe태그로 이루어진 코드가 나온다.
+iframe 태그 : 유튜브 영상에 마우스 우클릭 후 소스 코드 복사 후  
+포스트 파일에 붙여넣기. HTML의 iframe 태그로 이루어진 코드가 나온다.
 {: .notice}
 ![image](https://user-images.githubusercontent.com/96651722/226311210-e292c8b7-653e-4419-a603-dbc6585de8fb.png){:style="border:1px solid #eaeaea; border-radius: 7px;"}  
 
