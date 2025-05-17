@@ -91,7 +91,8 @@ GUILayout 클래스만 사용 가능.
 Toolbar(int, string[], GUIStyle) : 가로로 정렬되는 버튼 형태의 Toggle Group  
 SelectionGrid(int, string[], int, GUIStyle) : 가로/세로 격자로 정렬되는 버튼 형태의 Toggle Group  
 &nbsp; 3번째 int 로 x축에 배치되는 개수 설정  
-{: .notice--info}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info} 
 
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/12.png?raw=true)   
 

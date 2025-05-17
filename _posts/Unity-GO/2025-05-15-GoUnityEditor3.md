@@ -80,7 +80,8 @@ float result = EditorGUILayout.knob(Vector2 knobSize, float value, float minValu
 knobSize - 게이지 크기  
 unit - 출력할 텍스트  
 showValue - 게이지 수치를 출력할 지 여부  
-{: .notice--info}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}   
 
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/16.png?raw=true)  
 
@@ -102,7 +103,8 @@ ProgressBar 중앙에 text 내용 출력
 EditorGUI로 사용 가능  
 void EditorGUI.ProgressBar(Rect position, float value, string text)  
 showValue - 게이지 수치를 출력할 지 여부  
-{: .notice--info}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}   
 
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/18.png?raw=true)  
 
@@ -125,12 +127,13 @@ EditorGUI.ProgressBar(rect, (float)intValue / 100, $"체력 {intValue}/100");
 UI 들여쓰기  
 int EditorGUI.indentLevel{set; get;}  
 showValue - 게이지 수치를 출력할 지 여부  
-{: .notice--info}  
+{:style="border:1px solid #EAEAEA; border-radius: 7px;"}
+{: .notice--info}   
 
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/17.png?raw=true)  
 
 <details>
-<summary>Knob</summary>
+<summary>IndentLevel</summary>
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
@@ -149,7 +152,7 @@ EditorGUILayout.HelpBox("Error", MessageType.Error);
 
 
 # 잡담, 일기?
-`Slider`, `HelpBox`, `Knob`, `IndentLevel`, `ProgressBar`
+`Slider`, `HelpBox`, `Knob`, `IndentLevel`, `ProgressBar`  
 ![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/20.png?raw=true)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
