@@ -76,7 +76,7 @@ EditorGUILayout.HelpBox("Error", MessageType.Error);
 
 # Knob 
 Drag로 조절 가능한 원형 게이지  
-float result = EditorGUILayout.knob(Vector2 knobSize, float value, float minValue, float MaxValue, strin unit, Color backgroundColor, Color activeColor, bool showValue);
+float result = EditorGUILayout.knob(Vector2 knobSize, float value, float minValue, float MaxValue, strin unit, Color backgroundColor, Color activeColor, bool showValue);  
 knobSize - 게이지 크기  
 unit - 출력할 텍스트  
 showValue - 게이지 수치를 출력할 지 여부  
