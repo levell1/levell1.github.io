@@ -122,7 +122,6 @@ EditorGUI.ProgressBar(rect, (float)intValue / 100, $"체력 {intValue}/100");
 <br><br><br><br><br>
 
 # 이것저것 메모
-
 ## IndentLevel 
 UI 들여쓰기  
 int EditorGUI.indentLevel{set; get;}  
