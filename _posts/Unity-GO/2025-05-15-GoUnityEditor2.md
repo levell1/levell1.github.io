@@ -125,7 +125,7 @@ public void ToggleGroup(GUIStyle titleStyle)
 </details>
 
 
-<br><br><br><br>
+<br><br><br><br><br><br>
 
 # 이것저것 메모
 
@@ -156,7 +156,7 @@ EditorGUILayout.EndHorizontal();
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
 
-![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/13.png?raw=true)   
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/13.png?raw=true)  
 
 <details>
 <summary>Toolbar</summary>
@@ -174,6 +174,7 @@ selected = GUILayout.SelectionGrid(selected, new string[] { "1", "2", "3" }, 1, 
 
 # 잡담, 일기?
 Toggle, ToggleGroup, Skin  
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/19.png?raw=true)  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
