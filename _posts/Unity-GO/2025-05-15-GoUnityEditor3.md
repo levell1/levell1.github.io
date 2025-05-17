@@ -79,7 +79,7 @@ Drag로 조절 가능한 원형 게이지
 float result = EditorGUILayout.knob(Vector2 knobSize, float value, float minValue, float MaxValue, strin unit, Color backgroundColor, Color activeColor, bool showValue);  
 knobSize - 게이지 크기  
 unit - 출력할 텍스트  
-showValue - 게이지 수치를 출력할 지 여부  
+showValue - 게이지 수치를 출력할지 여부  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 
@@ -102,7 +102,6 @@ floatValue = EditorGUILayout.Knob(Vector2.one * 64, floatValue, 0f, 10f, "게이
 ProgressBar 중앙에 text 내용 출력  
 EditorGUI로 사용 가능  
 void EditorGUI.ProgressBar(Rect position, float value, string text)  
-showValue - 게이지 수치를 출력할 지 여부  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 
@@ -125,7 +124,6 @@ EditorGUI.ProgressBar(rect, (float)intValue / 100, $"체력 {intValue}/100");
 ## IndentLevel 
 UI 들여쓰기  
 int EditorGUI.indentLevel{set; get;}  
-showValue - 게이지 수치를 출력할 지 여부  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 
