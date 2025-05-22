@@ -37,8 +37,8 @@ UI를 그룹으로 관리해 가로, 세로로 정렬하거나 활성, 비활성
 
 # Horizontal, Vertical
 **GUILayout, EditorGUILayout**제공  
-Rect BeginHorizontal(), Rect BeginVertical()  
-void EndHorizontal(), void EndVertical()  
+Rect BeginHorizontal(), void EndHorizontal()  
+Rect BeginVertical(), void EndVertical()  
 begin ~ end 사이 UI를 가로, 세로 정렬 | Rect는 해당 범위의 위치, 크기  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}    
@@ -51,45 +51,46 @@ begin ~ end 사이 UI를 가로, 세로 정렬 | Rect는 해당 범위의 위치
 <div class="notice--primary" markdown="1"> 
 
 ```c# 
-	private void Horizontal(GUIStyle titleStyle)
-	{
-		EditorGUILayout.LabelField("Begin/End Horizontal", titleStyle);
+private void Horizontal(GUIStyle titleStyle)
+{
+	EditorGUILayout.LabelField("Begin/End Horizontal", titleStyle);
 
-		var mainOptions = new GUILayoutOption[] { GUILayout.Width(256), GUILayout.Height(64) };
-		var subOptions = new GUILayoutOption[] { GUILayout.Width(32), GUILayout.Height(32) };
+	var mainOptions = new GUILayoutOption[] { GUILayout.Width(256), GUILayout.Height(64) };
+	var subOptions = new GUILayoutOption[] { GUILayout.Width(32), GUILayout.Height(32) };
 
-		GUILayout.BeginHorizontal("", GUI.skin.box, mainOptions);
-		GUILayout.Button("1", subOptions);
-		GUILayout.Button("2", subOptions);
-		GUILayout.Button("3", subOptions);
-		GUILayout.EndHorizontal();
+	GUILayout.BeginHorizontal("", GUI.skin.box, mainOptions);
+	GUILayout.Button("1", subOptions);
+	GUILayout.Button("2", subOptions);
+	GUILayout.Button("3", subOptions);
+	GUILayout.EndHorizontal();
 
-		Rect rect = EditorGUILayout.BeginHorizontal(GUI.skin.box, mainOptions);
-		if ( GUILayout.Button("Rect", subOptions) )	{ Debug.Log(rect); }
-		if ( GUILayout.Button("1", subOptions) )	{ Debug.Log("Play"); }
-		if ( GUILayout.Button("2", subOptions) )	{ Debug.Log("Pause"); }
-		if ( GUILayout.Button("3", subOptions) )	{ Debug.Log("Stop"); }
-		EditorGUILayout.EndHorizontal();
-	}
+	Rect rect = EditorGUILayout.BeginHorizontal(GUI.skin.box, mainOptions);
+	if ( GUILayout.Button("Rect", subOptions) )	{ Debug.Log(rect); }
+	if ( GUILayout.Button("1", subOptions) )	{ Debug.Log("Play"); }
+	if ( GUILayout.Button("2", subOptions) )	{ Debug.Log("Pause"); }
+	if ( GUILayout.Button("3", subOptions) )	{ Debug.Log("Stop"); }
+	EditorGUILayout.EndHorizontal();
+}
 
-	private void Vertical(GUIStyle titleStyle)
-	{
-		EditorGUILayout.Space(EditorGUIUtility.singleLineHeight);
-		EditorGUILayout.LabelField("Begin/End Vertical", titleStyle);
+private void Vertical(GUIStyle titleStyle)
+{
+	EditorGUILayout.Space(EditorGUIUtility.singleLineHeight);
+	EditorGUILayout.LabelField("Begin/End Vertical", titleStyle);
 
-		var options = new GUILayoutOption[] { GUILayout.Width(32), GUILayout.Height(32) };
+	var options = new GUILayoutOption[] { GUILayout.Width(32), GUILayout.Height(32) };
 
-		EditorGUILayout.BeginVertical();
-		if ( GUILayout.Button("1", options) )	{ Debug.Log("Push 1"); }
-		if ( GUILayout.Button("2", options) )	{ Debug.Log("Push 2"); }
-		if ( GUILayout.Button("3", options) )	{ Debug.Log("Push 3"); }
-		EditorGUILayout.EndVertical();
-	}
+	EditorGUILayout.BeginVertical();
+	if ( GUILayout.Button("1", options) )	{ Debug.Log("Push 1"); }
+	if ( GUILayout.Button("2", options) )	{ Debug.Log("Push 2"); }
+	if ( GUILayout.Button("3", options) )	{ Debug.Log("Push 3"); }
+	EditorGUILayout.EndVertical();
+}
 ```
 </div>
 </details>
 
 <br><br>
+- - - 
 
 # ScrollView 
 **GUILayout, EditorGUILayout**제공  
@@ -126,12 +127,13 @@ private void ScrollView(GUIStyle titleStyle)
 </details>
 
 <br><br>
+- - - 
 
 # DisabledGroup 
 **EditorGUI**제공  
-void BeginDisabledGroup(bool)
-void EndDisabledGroup()
-UI의 상호작용 활성, 비활성 설정
+void BeginDisabledGroup(bool)  
+void EndDisabledGroup()  
+UI의 상호작용 활성, 비활성 설정  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 
@@ -164,13 +166,13 @@ private void DisabledGroup(GUIStyle titleStyle)
 </details>
 
 <br><br>
+- - - 
 
 # ChageCheck 
 **EditorGUI**제공  
-void BeginChageCheck()
-void EndChageCheck()
+void BeginChageCheck()  
+void EndChageCheck()  
 UI가 상호작용했을 때 End 메소드가 True를 반환  
-&nbsp;  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}   
 
@@ -200,6 +202,7 @@ private void ChangeCheck(GUIStyle titleStyle)
 </details>
 
 <br><br>
+- - - 
 
 # Foldout 
 **EditorGUI, EditorLayout**제공  
@@ -234,6 +237,7 @@ private void Foldout(GUIStyle titleStyle)
 </details>
 
 <br><br>
+- - - 
 
 # FoldoutHeaderGroup 
 **EditorGUI, EditorLayout**제공  
@@ -287,6 +291,7 @@ private void ShowHeaderContextMenu(Rect position)
 </details>
 
 <br><br><br><br><br>
+- - - 
 
 # 이것저것 메모
 
