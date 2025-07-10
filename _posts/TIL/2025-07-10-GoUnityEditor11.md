@@ -35,6 +35,9 @@ date: 2025-07-09 05:00
 string S = ABCDE;
 // S[^1] = 'E' 뒤에서 1번째
 // S[^2] = 'D' 뒤에서 2번째
+
+int[] nums = { 10, 20, 30, 40, 50 };
+int last = nums[^1];        // 50
 ```
 </div>
 </details>
@@ -58,6 +61,9 @@ string S = ABCDE;
 // S[2] = 'CDE' 2부터 끝까지
 // S[..^1] = 'ABCD' 처음부터 뒤에서 1번째 전까지
 // S[^3..^1] = 'CD' 뒤에서 3번째에서 1번째  전까지
+
+int[] nums = { 10, 20, 30, 40, 50 };
+var firstThree = nums[..3]; // {10, 20, 30}
 ```
 </div>
 </details>
@@ -67,8 +73,8 @@ string S = ABCDE;
 - - - 
 
 
-# 잡담, 일기?
-^기호, ..기호 사용하기.  
+# 메모
+`^`기호, `..`기호 사용하기.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--success}  
 
