@@ -89,7 +89,7 @@ private void Vertical(GUIStyle titleStyle)
 </div>
 </details>
 
-<br><br>
+<br><br><br>
 - - - 
 
 # ScrollView 
@@ -126,7 +126,7 @@ private void ScrollView(GUIStyle titleStyle)
 </div>
 </details>
 
-<br><br>
+<br><br><br>
 - - - 
 
 # DisabledGroup 
@@ -165,7 +165,7 @@ private void DisabledGroup(GUIStyle titleStyle)
 </div>
 </details>
 
-<br><br>
+<br><br><br>
 - - - 
 
 # ChageCheck 
@@ -201,7 +201,7 @@ private void ChangeCheck(GUIStyle titleStyle)
 </div>
 </details>
 
-<br><br>
+<br><br><br>
 - - - 
 
 # Foldout 
@@ -236,7 +236,7 @@ private void Foldout(GUIStyle titleStyle)
 </div>
 </details>
 
-<br><br>
+<br><br><br>
 - - - 
 
 # FoldoutHeaderGroup 
