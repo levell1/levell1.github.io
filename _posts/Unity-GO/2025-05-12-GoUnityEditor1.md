@@ -32,6 +32,7 @@ Resources 폴더와 마찬가지로 Custrom Editor에서만 사용하는 리소�
 EditorGUIUtility.Load(string path) "sample.png"로 불러올 수 있습니다.  
 {:style="border:1px solid #EAEAEA; border-radius: 7px;"}
 {: .notice--info}  
+![Image](https://github.com/levell1/levell1.github.io/blob/main/Image/Editor/0.png?raw=true)  
 
 <BR><BR><BR><BR>
 
